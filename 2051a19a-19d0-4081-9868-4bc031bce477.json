@@ -281,7 +281,7 @@
           "type": "payout",
           "required": true,
           "role": "project manager",
-          "percentageOfBalance": "30",
+          "percentageOfBalance": "20",
           "key": "046920d3-96ac-feda-f337-26b10f65c719",
           "order": 2
         },
