@@ -1,5 +1,5 @@
 {
-  "title": "Premium speed fixes 17",
+  "title": "Premium speed fixes 18",
   "roles": [
     {
       "name": "fixer",
@@ -226,21 +226,6 @@
       "order": 6
     },
     {
-      "title": "Quality control",
-      "completeRole": "project manager",
-      "stepItems": [
-        {
-          "title": "Check that all SEO fixes have been completed and the Plug in SEO verdict has improved",
-          "type": "confirmation",
-          "required": true,
-          "key": "a6d9e97e-b36d-ccfc-9758-9f706c2db6fb",
-          "order": 1
-        }
-      ],
-      "key": "a10d3dc7-01b1-9c18-7a45-dc4c2e0a07d9",
-      "order": 8
-    },
-    {
       "title": "Image ALT tags",
       "completeRole": "fixer",
       "stepItems": [
@@ -263,6 +248,21 @@
       ],
       "key": "42774f70-4abd-9e2f-f833-f941b7533ef0",
       "order": 7
+    },
+    {
+      "title": "Quality control",
+      "completeRole": "project manager",
+      "stepItems": [
+        {
+          "title": "Check that all SEO fixes have been completed and the Plug in SEO verdict has improved",
+          "type": "confirmation",
+          "required": true,
+          "key": "a6d9e97e-b36d-ccfc-9758-9f706c2db6fb",
+          "order": 1
+        }
+      ],
+      "key": "a10d3dc7-01b1-9c18-7a45-dc4c2e0a07d9",
+      "order": 8
     },
     {
       "title": "Complete the work",
