@@ -1,0 +1,102 @@
+{
+  "title": "Basic speed analysis {{ step2.stepItem1 }}",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "bd87ecc8-47ab-2299-2aac-caa3649a1919"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "72657670-dd6f-45ca-b779-8c643bfdcd4d",
+      "key": "da6bd47d-2bc8-dffc-db21-e896c4b87ca3"
+    },
+    {
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "3628dab1-15c2-9581-d56f-be6a4ddaccdc"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Payment",
+          "type": "pay",
+          "required": true,
+          "totalUSD": "49",
+          "key": "de5c7a48-581c-6015-f9ad-765be1ca2a29",
+          "order": 1
+        }
+      ],
+      "key": "c7ac8cad-d40e-9580-9756-ee7ee094decb",
+      "order": 1
+    },
+    {
+      "title": "Analyse site speed to pinpoint bottlenecks",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Analyse site speed to pinpoint bottlenecks",
+          "type": "confirmation",
+          "required": true,
+          "key": "c8ee1914-8444-741e-1479-338bb9608173",
+          "order": 1
+        }
+      ],
+      "key": "1b0395c2-ca6a-a78d-e9dc-a43c454c2a3b",
+      "order": 2
+    },
+    {
+      "title": "Recommend highest impact actions to take",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Recommend highest impact actions to take",
+          "type": "confirmation",
+          "required": true,
+          "key": "18655435-6517-ab76-321a-32570dfd475d",
+          "order": 1
+        }
+      ],
+      "key": "ac06da32-2b34-0f8d-3fab-81c19872d645",
+      "order": 3
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "required": true,
+          "for": "fixer",
+          "key": "b638214d-cf37-c8d0-bf2b-5a82213c34b3",
+          "order": 1
+        },
+        {
+          "key": "b88c1cbf-de09-c366-9fb7-0931969a0f1c",
+          "title": "Payout project manager",
+          "type": "payout",
+          "role": "project manager",
+          "percentageOfBalance": "12.81",
+          "order": 2
+        },
+        {
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "08dc283e-ad18-7034-8f92-cd367e4a86a5",
+          "order": 3
+        }
+      ],
+      "key": "a7fb1ec8-1dbd-c0e4-ffc6-28f35bf5588e",
+      "order": 4
+    }
+  ],
+  "description": "Analyze what's slowing down your site the most (apps/plugins/theme components etc.) and recommend actions for you to take."
+}
