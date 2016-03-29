@@ -1,0 +1,280 @@
+{
+  "title": "Foundation blogging {{ step2.stepItem1 }}",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "e7e4fbd1-44c7-ab2d-5a46-cec7edf3a07f"
+    },
+    {
+      "key": "206d1762-12a3-cc14-c821-c5213c6a87c7",
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "51d9d132-cf0a-42ea-acc6-5cf6bd5037e9"
+    },
+    {
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "f55866c1-ded2-cc17-b92f-d85367004651"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start your Foundation blogging job",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Pay",
+          "type": "pay",
+          "help": "It's a one off payment of $419, you will not be charged again.",
+          "required": true,
+          "totalUSD": "419",
+          "key": "01f21554-65d8-98ae-61fb-82a40c9fe70c",
+          "order": 1
+        }
+      ],
+      "key": "85d63870-4a88-fac9-b5ad-ce82df6ec20f",
+      "order": 1
+    },
+    {
+      "title": "Set up access",
+      "completeRole": "customer",
+      "reviewRole": "",
+      "stepItems": [
+        {
+          "title": "What website is the work for?",
+          "type": "text",
+          "required": true,
+          "key": "52a02050-2ab7-a4b8-62d0-311561d0e9b3",
+          "order": 1
+        },
+        {
+          "title": "Create a login",
+          "type": "login",
+          "description": "Add a new user to your site admin with the details shown below. Instructions for: <a href=\"https://docs.shopify.com/manual/settings/account/staff-members#add-new-staff-member\" target=\"_blank\">Shopify, adding a staff member</a>, <a href=\"https://support.bigcommerce.com/articles/Public/Adding-Editing-Users\" target=\"_blank\">Bigcommerce, adding a user</a>.",
+          "required": true,
+          "for": "fixer",
+          "key": "40a0450b-501d-0d74-b919-dcda6633e17a",
+          "order": 2
+        }
+      ],
+      "key": "284e1219-fca7-3058-4f4d-c8cc9cab591c",
+      "order": 2
+    },
+    {
+      "title": "Answer questions",
+      "completeRole": "customer",
+      "reviewRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Do you have any topic ideas for the blog posts?",
+          "type": "text",
+          "help": "<ul> <li>If a particular post has been popular in the past writing a similar one now could be too</li> <li>Have your competitors had strong success with any topics</li> <li>Is there anything that's very current and talked-about on social media</li></ul>",
+          "required": true,
+          "key": "2357776a-46e0-66b5-9f4a-fba952d58ebd",
+          "order": 1
+        },
+        {
+          "title": "Can your writer start writing straight away or do you want to approve the topics first?",
+          "type": "text",
+          "help": "<ul>  <li>For the fastest work, if you answer all questions in detail it's best to let the writer get writing straight away</li><li>You can approve the post drafts before publishing (below) if you like</li></ul>",
+          "required": true,
+          "key": "3469a7f9-c63b-065e-83b6-812b66b6c9bd",
+          "order": 2
+        },
+        {
+          "title": "Are there any keywords you'd like to include?",
+          "type": "text",
+          "help": "<ul> <li>If you're running an AdWords campaign with keywords that convert well, tell us about them here</li> <li>Look in your analytics for keywords that already drive traffic to your site</li><li>If you have a search function on your site these can be a great source too</li>  <li>The keywords will be included naturally for maximum SEO benefit</li></ul>",
+          "required": true,
+          "key": "f978e43d-c4d8-25fa-2393-e8d3bb46074f",
+          "order": 3
+        },
+        {
+          "title": "Are there particular products/collections/pages or other places you'd like to link to?",
+          "type": "text",
+          "help": "<ul><li>Paste their URLs in here</li> <li>Aim for at least three links per post</li> <li>Choose things in harmony with your desired topics</li></ul>",
+          "required": true,
+          "key": "dfdc0358-abca-8b57-ea40-1f71a5c98ca0",
+          "order": 4
+        },
+        {
+          "title": "What are the main call to actions for the posts?",
+          "type": "text",
+          "help": "<ul>  <li>A call to action is the action you'd ideally like the reader to complete</li><li>Things like browse to a product, sign up to your newsletter or subscribe to your blog</li> <li>It's important to have a call to action so that your blog converts readers to do something valuable to your business rather than being a passive visit</li></ul>",
+          "required": true,
+          "key": "2e571a12-4c7b-3ad8-e843-23cdb25c3561",
+          "order": 5
+        },
+        {
+          "title": "Are you happy for the posts to be published immediately or would you like to review them first?",
+          "type": "text",
+          "required": true,
+          "key": "f52424f5-36b2-b110-e3ec-4db5747520dd",
+          "order": 6
+        }
+      ],
+      "key": "bd220052-a8db-ca99-a3ce-f96e4e54531b",
+      "order": 3
+    },
+    {
+      "title": "Discuss good topics for SEO",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Write about these topics or come up with similar ideas: {{ step3.stepItem1 }}",
+          "type": "confirmation",
+          "required": true,
+          "key": "1037337a-0219-c219-faf2-e08f9c7c456f",
+          "order": 1
+        },
+        {
+          "title": "Get writing straight away or get approval for the topics, the customer would like: {{ step3.stepItem2 }}",
+          "type": "confirmation",
+          "required": true,
+          "key": "dabfe25e-e2f6-bf2d-ee8f-a1a61d5524fe",
+          "order": 2
+        }
+      ],
+      "key": "f92bdaf2-1bbb-3c91-3ff3-8918a4511db7",
+      "order": 4
+    },
+    {
+      "title": "Consult and write the blogging strategy",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Consult and write the blogging strategy",
+          "type": "confirmation",
+          "required": true,
+          "key": "d608ec06-0976-699e-7bb5-a2d462bca72a",
+          "order": 1
+        }
+      ],
+      "key": "2d720cc4-3b22-181f-0796-791b79b5b97c",
+      "order": 5
+    },
+    {
+      "title": "Produce the blogging plan document",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Produce the blogging plan document",
+          "type": "confirmation",
+          "required": true,
+          "key": "ce6cfa01-9665-a22d-6f84-d4ece74d36d7",
+          "order": 1
+        }
+      ],
+      "key": "025ac8e5-aeac-585a-62ba-0e9fd4ad7792",
+      "order": 6
+    },
+    {
+      "title": "Write three 600-800 word blog posts structured for best SEO",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Include these keywords naturally (no excessive repetition): {{ step3.stepItem3 }}",
+          "type": "confirmation",
+          "required": true,
+          "key": "f1367b81-5f61-3ada-7a52-1771549e50c0",
+          "order": 1
+        },
+        {
+          "title": "Choose great titles to entice readers, include keywords",
+          "type": "confirmation",
+          "required": true,
+          "key": "f295f90b-e9d6-f9aa-b75c-7300853fb51e",
+          "order": 2
+        },
+        {
+          "title": "Make sure the posts are split into sections, each with a heading (the headings should be H2, H3 etc. HTML tag not H1)",
+          "type": "confirmation",
+          "required": true,
+          "key": "a5f5d0b5-023c-73fc-b94e-850872016170",
+          "order": 3
+        },
+        {
+          "title": "Feature and link to these URLs:",
+          "type": "confirmation",
+          "description": "{{ step3.stepItem4 }}",
+          "required": true,
+          "key": "6f195323-099a-64a6-a398-489c766efcd9",
+          "order": 4
+        },
+        {
+          "title": "Include this call to action:",
+          "type": "confirmation",
+          "description": "{{ step3.stepItem5 }}",
+          "required": true,
+          "key": "fbd3ce99-5838-e4e2-ebc5-22d033060bc3",
+          "order": 5
+        },
+        {
+          "title": "Write between 600-800 words for each post",
+          "type": "confirmation",
+          "required": true,
+          "key": "7f6f07bc-cc3b-917f-8526-c25b00ee7aea",
+          "order": 6
+        },
+        {
+          "title": "Include three images per post (quality, interesting images perhaps taken from the website)",
+          "type": "confirmation",
+          "required": true,
+          "key": "accdafe6-f12c-9615-8bc4-b51912c80227",
+          "order": 7
+        }
+      ],
+      "key": "673e4bf2-84cc-0fc4-5f8a-6da241e4608a",
+      "order": 7
+    },
+    {
+      "title": "Publish direct to the blog",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Publish the posts immediately or send drafts: the customer would like... {{ step3.stepItem6 }}",
+          "type": "confirmation",
+          "required": true,
+          "key": "a4ba1088-8626-1e7b-1a2b-3a78712ca1cb",
+          "order": 1
+        }
+      ],
+      "key": "2ca33dd0-ed43-2767-5be8-98879baf005a",
+      "order": 8
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "key": "f64e35a1-a355-e74c-eb92-245ea060a813",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work completed?",
+          "key": "80c67992-2c29-9110-e9d4-35c9a9e4c9fb",
+          "type": "faceRating",
+          "required": true,
+          "for": "fixer",
+          "order": 1
+        },
+        {
+          "key": "d33a64c2-5178-a7b1-edaf-bd4f9355f236",
+          "title": "Payout project manager",
+          "type": "payout",
+          "role": "project manager",
+          "percentageOfBalance": "56.52",
+          "order": 2
+        },
+        {
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "002ebc1e-8c27-1683-aa6f-10b6151364c2",
+          "order": 3
+        }
+      ],
+      "order": 9
+    }
+  ],
+  "description": "Having a blogging plan is an often overlooked but key part of having a blog that generates traffic. This job includes everything from the Three blog posts job plus it delivers a strategy and topics you can take forward month-to-month.\n\nIt's more than being organised: you'll benefit from an experienced online marketer who's worked on successful blogging strategies for leading e-commerce sites."
+}
