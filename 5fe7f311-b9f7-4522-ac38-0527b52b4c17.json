@@ -1,0 +1,236 @@
+{
+  "title": "Premium speed fixes {{ step2.stepItem1 }}",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "a67064b0-516a-a1a4-9142-ba061a8a6dab"
+    },
+    {
+      "key": "e667113b-e8bd-858f-9175-9fcd001a4a55",
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "72657670-dd6f-45ca-b779-8c643bfdcd4d"
+    },
+    {
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "b75b0df1-15ff-7d6c-8747-c76cf809ebe8"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start your Premium speed fixes job",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Pay",
+          "type": "pay",
+          "help": "It's a one off payment of $320, you will not be charged again.",
+          "required": true,
+          "totalUSD": "320",
+          "key": "d1eda51c-13c9-97c6-8085-b8197ce7d64c",
+          "order": 1
+        }
+      ],
+      "key": "35849512-3a10-e4b0-5f9e-fcc9b1e3fb11",
+      "order": 1
+    },
+    {
+      "title": "Set up access",
+      "completeRole": "customer",
+      "reviewRole": "",
+      "stepItems": [
+        {
+          "title": "What website is the work for?",
+          "type": "text",
+          "required": true,
+          "key": "a7d2fa63-9c4c-3253-e577-1cff62aee5f5",
+          "order": 1
+        },
+        {
+          "title": "Create a login",
+          "type": "login",
+          "description": "Add a new user to your site admin with the details shown below. Instructions for: <a href=\"https://docs.shopify.com/manual/settings/account/staff-members#add-new-staff-member\" target=\"_blank\">Shopify, adding a staff member</a>, <a href=\"https://support.bigcommerce.com/articles/Public/Adding-Editing-Users\" target=\"_blank\">Bigcommerce, adding a user</a>.",
+          "required": true,
+          "for": "fixer",
+          "key": "9f9e05f0-6aa5-ccf1-a480-15c6cc55c556",
+          "order": 2
+        }
+      ],
+      "key": "6c3912c2-738b-b01a-3e28-099e5e2f3277",
+      "order": 2
+    },
+    {
+      "title": "Answer questions",
+      "completeRole": "customer",
+      "reviewRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Are there any apps or plugins that can be removed?",
+          "type": "text",
+          "description": "Cleanly removing apps and plugins that you no longer use is one of the key things to speed up your site. List apps or plugins you no longer require and can be cleanly removed. If there are none, write 'none'.",
+          "required": true,
+          "key": "db265302-1326-ef93-1473-82ea422c121e",
+          "order": 1
+        }
+      ],
+      "key": "c4a7aed6-1140-27fe-f97e-ad8da5390d0b",
+      "order": 3
+    },
+    {
+      "title": "Remove redundant code",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Remove unused apps and plugins",
+          "type": "confirmation",
+          "description": "Remove these apps and plugins and their associated code: {{ step3.stepItem1 }}",
+          "required": true,
+          "key": "40b48a54-7117-d654-f26b-8fbf032309c8",
+          "order": 1
+        }
+      ],
+      "key": "a6f7c08b-4872-f059-902c-39d047d7644e",
+      "order": 4
+    },
+    {
+      "title": "Optimise CSS for speed",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Optimise CSS for speed",
+          "type": "confirmation",
+          "required": true,
+          "key": "f6685697-62ac-4e88-9263-2e2536f5ff2a",
+          "order": 1
+        }
+      ],
+      "key": "5bb1760b-a258-297c-fbed-f93f66c5f0cf",
+      "order": 5
+    },
+    {
+      "title": "Optimise Javascript for speed",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Optimise Javascript for speed",
+          "type": "confirmation",
+          "required": true,
+          "key": "0f2a2bd5-9552-d2e6-5d84-f4b89ccf20a5",
+          "order": 1
+        }
+      ],
+      "key": "066adc95-3097-b5f6-d844-4e7980af66cd",
+      "order": 6
+    },
+    {
+      "title": "Optimise key images for speed",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Optimise key images for speed",
+          "type": "confirmation",
+          "required": true,
+          "key": "873c9591-0c4b-f35f-add4-f73a0c55ab53",
+          "order": 1
+        }
+      ],
+      "key": "2f184bcf-cb82-a452-7f39-2a7c7aacd59c",
+      "order": 7
+    },
+    {
+      "title": "Reduce number of HTTP requests",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Reduce number of HTTP requests",
+          "type": "confirmation",
+          "required": true,
+          "key": "9bdc5e0e-1a80-b749-4aad-fc59d3323f4d",
+          "order": 1
+        }
+      ],
+      "key": "55fe4ab6-7eaa-e667-1eb6-3b2e6a37751c",
+      "order": 8
+    },
+    {
+      "title": "Apply other speed enhancements from experience",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Apply other speed enhancements from experience",
+          "type": "confirmation",
+          "required": true,
+          "key": "c0c7d9ba-12f0-0d6a-0262-de9a97a6c75a",
+          "order": 1
+        }
+      ],
+      "key": "ee72a46b-2bf3-c1a5-13d0-83d4a28b3530",
+      "order": 9
+    },
+    {
+      "title": "Test everything on site works as normal",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Test everything on site works as normal",
+          "type": "confirmation",
+          "required": true,
+          "key": "08cd15bc-f2cf-f823-4b09-4c1d5184c20d",
+          "order": 1
+        }
+      ],
+      "key": "98f36aa7-70a4-2166-9cd1-b9cc05954e55",
+      "order": 10
+    },
+    {
+      "title": "Detail what's been done",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Write up what you've done and message the customer with details",
+          "type": "confirmation",
+          "required": true,
+          "key": "860370a8-4b72-5931-769d-ef9b2e6e5d2a",
+          "order": 1
+        }
+      ],
+      "key": "a5af725a-cc41-17c8-25b8-dd3695fdfd91",
+      "order": 11
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "required": true,
+          "for": "fixer",
+          "key": "540939e4-a648-9ee2-32d6-e7aacc3a53da",
+          "order": 1
+        },
+        {
+          "key": "f3f1bede-5a80-c050-35af-65b1f86ed80b",
+          "title": "Payout project manager",
+          "type": "payout",
+          "role": "project manager",
+          "percentageOfBalance": "65.21",
+          "order": 2
+        },
+        {
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "58a4c8c0-754c-2b79-35de-715e7c6d299d",
+          "order": 3
+        }
+      ],
+      "key": "bdfbabfc-39be-4a27-16a4-f2e36760820d",
+      "order": 12
+    }
+  ],
+  "description": "Similar to the Complete speed fixes job, this job goes further and improves all of your failing Plug in SEO 'Speed' checks."
+}
