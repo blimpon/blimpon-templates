@@ -36,43 +36,130 @@
       "order": 1
     },
     {
-      "title": "Do the work",
-      "completeRole": "project manager",
+      "title": "Topic & Title",
+      "completeRole": "blogger",
       "stepItems": [
         {
-          "title": "Has the work been done?",
-          "type": "confirmation",
+          "title": "What topics and titles do you propose for these posts?",
+          "type": "text",
           "required": true,
           "key": "5d13fb59-80cd-57b5-5a90-f5b9ba8166ff",
           "order": 1
         }
       ],
       "key": "4660fdfc-7184-2b03-4d90-a608e974dc0f",
-      "order": 2
+      "order": 2,
+      "reviewRole": "customer"
     },
     {
-      "title": "Rate",
-      "completeRole": "customer",
+      "key": "67bf798e-9711-f7fd-bdfc-e64b4e09e293",
+      "title": "Draft the posts",
+      "order": 3,
+      "completeRole": "blogger",
       "stepItems": [
         {
-          "title": "How happy are you with the work completed?",
-          "type": "faceRating",
-          "for": "fixer",
-          "required": true,
-          "key": "8e47eecf-d77d-5c1b-5690-1d7da9ceb065",
-          "order": 1
+          "key": "a939cae0-f994-73e2-865a-47cea0f2fcc6",
+          "title": "Drafted the posts",
+          "order": 1,
+          "type": "confirmation",
+          "description": "Check the 'Learning.ly blogging plan' for more detail"
+        }
+      ]
+    },
+    {
+      "key": "75c00dc5-74ac-7c7d-21eb-c6a467b410d2",
+      "title": "Spelling & grammar check",
+      "order": 4,
+      "completeRole": "blogger",
+      "stepItems": [
+        {
+          "key": "813abed5-8078-eb15-8d61-ffdd734fe470",
+          "title": "Checked and corrected spelling and grammar",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
+    },
+    {
+      "key": "f11620f8-78fa-17ab-50bf-74fe48852551",
+      "title": "Plagarism check",
+      "order": 5,
+      "completeRole": "blogger",
+      "stepItems": [
+        {
+          "key": "24d6cd37-879f-d462-e15f-1923fcb8f695",
+          "title": "Checked each post for plagiarism with a recognized tool",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
+    },
+    {
+      "key": "b8aafe6d-e10a-2031-f0a6-744b8f552b1a",
+      "title": "SEO check",
+      "order": 6,
+      "completeRole": "blogger",
+      "stepItems": [
+        {
+          "key": "ac9b8229-2a92-648a-7bec-3bca66953a1a",
+          "title": "Each post passes the Plug in SEO SEO problems checker",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
+    },
+    {
+      "key": "25648450-4609-49b2-36f1-57d07789ca4a",
+      "title": "Drafts for approval",
+      "order": 7,
+      "completeRole": "blogger",
+      "reviewRole": "customer",
+      "stepItems": [
+        {
+          "key": "c1be916c-e2f1-469d-7d89-3d76c3499127",
+          "title": "Uploaded drafts for approval and messaged attachments/links",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
+    },
+    {
+      "key": "718e6009-8443-e044-307d-34c1ad121be1",
+      "title": "Publish",
+      "order": 8,
+      "completeRole": "blogger",
+      "stepItems": [
+        {
+          "key": "f0d041fc-980d-48bc-4b0f-82b26a9a34f7",
+          "title": "Published posts to the blog",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
+    },
+    {
+      "key": "4dfa1dad-4a8d-b53b-5f5d-f0061959c8aa",
+      "title": "Complete",
+      "order": 9,
+      "completeRole": "blogger",
+      "stepItems": [
+        {
+          "key": "84afee5d-b463-978a-8cb4-178c1429c364",
+          "title": "Payout blogger",
+          "order": 1,
+          "type": "payout",
+          "percentageOfBalance": "63",
+          "role": "blogger"
         },
         {
-          "title": "Payout fixer",
+          "key": "10df51d0-78b0-afd3-b461-f1c1159bc523",
+          "title": "Payout project manager",
+          "order": 2,
           "type": "payout",
-          "role": "fixer",
-          "percentageOfBalance": 100,
-          "key": "21733b67-5c0b-fec2-e058-f97404ea3818",
-          "order": 2
+          "percentageOfBalance": "100",
+          "role": "project manager"
         }
-      ],
-      "key": "7e2597d0-a2d7-e5d7-2d91-0b52bce192cf",
-      "order": 3
+      ]
     }
   ]
 }
