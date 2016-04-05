@@ -20,7 +20,7 @@
   "steps": [
     {
       "title": "Pay",
-      "completeRole": "customer",
+      "completeRole": "project manager",
       "order": 1,
       "stepItems": [
         {
@@ -35,13 +35,13 @@
       "key": "af3c528a-c40e-7847-45e4-79c59e89f9f6"
     },
     {
-      "title": "Do the work",
+      "title": "Write the blogging plan",
       "completeRole": "project manager",
       "order": 2,
       "stepItems": [
         {
           "order": 1,
-          "title": "Has the work been done?",
+          "title": "Blogging plan delivered by email",
           "type": "confirmation",
           "required": true,
           "key": "edd097fe-449f-2fe1-e1da-b9a817e5ea8a"
@@ -50,25 +50,25 @@
       "key": "64643309-e05c-4f06-a5a0-9e888d8a7593"
     },
     {
-      "title": "Rate",
-      "completeRole": "customer",
+      "title": "Complete",
+      "completeRole": "project manager",
       "order": 3,
       "stepItems": [
         {
           "order": 1,
-          "title": "How happy are you with the work completed?",
-          "type": "faceRating",
-          "for": "fixer",
-          "required": true,
-          "key": "62e95222-5e16-f7ad-f806-f2f0ea48c84f"
+          "title": "Payout blogger",
+          "type": "payout",
+          "role": "blogger",
+          "percentageOfBalance": "54.4",
+          "key": "af651fc8-073d-cfe5-284a-dc732e762f18"
         },
         {
+          "key": "821d86f5-87be-c6cf-336b-48a3439193f1",
+          "title": "Payout project manager",
           "order": 2,
-          "title": "Payout fixer",
           "type": "payout",
-          "role": "fixer",
-          "percentageOfBalance": 100,
-          "key": "af651fc8-073d-cfe5-284a-dc732e762f18"
+          "percentageOfBalance": "100",
+          "role": "project manager"
         }
       ],
       "key": "ad550973-f1bb-e1bd-c620-e05edc4e0585"
