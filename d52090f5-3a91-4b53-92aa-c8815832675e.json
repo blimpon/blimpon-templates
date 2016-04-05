@@ -2,14 +2,19 @@
   "title": "Blogging plan",
   "roles": [
     {
+      "key": "b3abbcc4-c4c0-d22c-559e-9bd06c1c8ca0",
       "name": "customer",
-      "key": "b3abbcc4-c4c0-d22c-559e-9bd06c1c8ca0"
+      "defaultUser": "d4db57d9-d7de-4baf-a4e3-a220ba610bf3"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "admin": true,
-      "key": "92511682-6673-7623-6ab7-4c7323384ed1"
+      "key": "92511682-6673-7623-6ab7-4c7323384ed1",
+      "name": "project manager",
+      "admin": true
+    },
+    {
+      "key": "0a7b79a4-d0c7-63ee-8b7a-461cd4733080",
+      "name": "blogger",
+      "defaultUser": "51d9d132-cf0a-42ea-acc6-5cf6bd5037e9"
     }
   ],
   "steps": [
@@ -31,7 +36,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "project manager",
       "order": 2,
       "stepItems": [
         {
