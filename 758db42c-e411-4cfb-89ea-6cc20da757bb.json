@@ -2,72 +2,77 @@
   "title": "Four blog posts: learning.ly",
   "roles": [
     {
+      "key": "2af625d4-d5a2-877d-79f5-8e40472c10b6",
       "name": "customer",
-      "key": "2af625d4-d5a2-877d-79f5-8e40472c10b6"
+      "defaultUser": "d4db57d9-d7de-4baf-a4e3-a220ba610bf3"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "admin": true,
-      "key": "841f58c2-f583-ae3c-4956-8ac97fac7bc4"
+      "key": "841f58c2-f583-ae3c-4956-8ac97fac7bc4",
+      "name": "project manager",
+      "admin": true
+    },
+    {
+      "key": "9ae20d03-1991-1668-ea37-ca2c0000de0b",
+      "name": "blogger",
+      "defaultUser": "51d9d132-cf0a-42ea-acc6-5cf6bd5037e9",
+      "admin": true
     }
   ],
   "steps": [
     {
       "title": "Pay",
       "completeRole": "customer",
-      "order": 1,
       "stepItems": [
         {
-          "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": 180,
+          "totalUSD": "159",
           "required": true,
-          "key": "cca8b0d4-14f4-24c0-8dce-abae6a5fc767"
+          "key": "cca8b0d4-14f4-24c0-8dce-abae6a5fc767",
+          "order": 1
         }
       ],
-      "key": "d51108ca-f1c7-bfc5-a6ee-284f2c3436ea"
+      "key": "d51108ca-f1c7-bfc5-a6ee-284f2c3436ea",
+      "order": 1
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
-      "order": 2,
+      "completeRole": "project manager",
       "stepItems": [
         {
-          "order": 1,
           "title": "Has the work been done?",
           "type": "confirmation",
           "required": true,
-          "key": "5d13fb59-80cd-57b5-5a90-f5b9ba8166ff"
+          "key": "5d13fb59-80cd-57b5-5a90-f5b9ba8166ff",
+          "order": 1
         }
       ],
-      "key": "4660fdfc-7184-2b03-4d90-a608e974dc0f"
+      "key": "4660fdfc-7184-2b03-4d90-a608e974dc0f",
+      "order": 2
     },
     {
       "title": "Rate",
       "completeRole": "customer",
-      "order": 3,
       "stepItems": [
         {
-          "order": 1,
           "title": "How happy are you with the work completed?",
           "type": "faceRating",
           "for": "fixer",
           "required": true,
-          "key": "8e47eecf-d77d-5c1b-5690-1d7da9ceb065"
+          "key": "8e47eecf-d77d-5c1b-5690-1d7da9ceb065",
+          "order": 1
         },
         {
-          "order": 2,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
-          "key": "21733b67-5c0b-fec2-e058-f97404ea3818"
+          "key": "21733b67-5c0b-fec2-e058-f97404ea3818",
+          "order": 2
         }
       ],
-      "key": "7e2597d0-a2d7-e5d7-2d91-0b52bce192cf"
+      "key": "7e2597d0-a2d7-e5d7-2d91-0b52bce192cf",
+      "order": 3
     }
-  ],
-  "id": "758db42c-e411-4cfb-89ea-6cc20da757bb"
+  ]
 }
