@@ -233,5 +233,6 @@
     }
   ],
   "description": "Similar to the Complete speed fixes job, this job goes further and improves all of your failing Plug in SEO 'Speed' checks.",
-  "collectionId": "9021c072-efaf-4a80-bf57-cbfd72d9ea1f"
+  "collectionId": "9021c072-efaf-4a80-bf57-cbfd72d9ea1f",
+  "jobTemplateImageId": "ce3fa33d-d35a-4c29-9daa-ea6473d852cb"
 }
