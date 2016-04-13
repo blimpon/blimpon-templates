@@ -1,0 +1,75 @@
+{
+  "collectionId": "166a54fc-1dbd-4369-9ce4-18488150de91",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "1af846b5-e524-7701-af5a-e22384e887a5"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "045cd81e-d9a8-5075-ef65-ce38d066aa60"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 156,
+          "required": true,
+          "key": "ae22686c-2ff9-d77e-59af-5e3ae1291c6e"
+        }
+      ],
+      "key": "aa78e184-5803-bbb0-f38b-5b4a871f70f3"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "a99efb6a-ae29-df15-0b75-bf1893e2323e"
+        }
+      ],
+      "key": "a0f271b6-f655-33d0-8032-d6c9f4aad0e8"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "3a0c4eb0-898a-e75b-816a-cfd78b9c869f"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "71856634-5e4b-ff20-5db0-0850925ef00e"
+        }
+      ],
+      "key": "b82bf05f-4d2d-54c0-8cf2-6fa0143d5505"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nYou can set a minumum number of items for any product intended for wholesale market. If the minimum is 5 units, the customer will not be able to add less than that to their purchase. You can display the minimum on product page, and disable \"Add to cart\" for any amount less than the minimum, adding a special info message for the wholesaler. An additional feature will disable from typing a figure below this minimum in My Cart section. Control the minimum amount from your Admin product page, and customize the info message in your theme settings.",
+  "title": "Minimum product quantity",
+  "id": "209ebd9f-ab25-4a84-9864-569b875a7a62"
+}
