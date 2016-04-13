@@ -1,0 +1,73 @@
+{
+  "title": "Google Adwords PLA (product listing ads) campaign creation",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "2e8b5ce4-f63a-4ad2-7f42-bb643a6e274c"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "087dd1b2-268c-c24c-94bb-e36830f78fe0"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 360,
+          "required": true,
+          "key": "d2f89f1a-043f-ba8d-de47-ffddd7e8338f"
+        }
+      ],
+      "key": "6d7f8732-8403-4318-ee09-e8bdf9cf0ecf"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e92c2d23-8ae1-5fb1-5cdb-bb56ed1c8dc0"
+        }
+      ],
+      "key": "9b29fd13-35c6-fed9-3b69-bd195a1b86ec"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "6c17e11e-7f25-7ac5-6aeb-0ad3fc55203d"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "0aeccbc8-25bb-3242-9ac1-a041d9dc6ea5"
+        }
+      ],
+      "key": "e2129349-cf80-234b-9d49-efc50af11821"
+    }
+  ],
+  "id": "a0f70dac-3fbd-4c05-affc-f8fb089dd3d4"
+}
