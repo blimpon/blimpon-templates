@@ -1,0 +1,75 @@
+{
+  "collectionId": "ae048a6c-8226-47a6-9b4b-0a720c1878fd",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "d492aee5-1eeb-9917-acbd-cfdc0ac6a1cf"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "3ee45186-6c15-2e01-45bb-614bef80645a"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 2495,
+          "required": true,
+          "key": "6ed5f482-ba6c-3ba2-5631-d2c2ceece27a"
+        }
+      ],
+      "key": "4debdd00-3621-c747-66ea-e5d5dd3a1910"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "dced82ad-18bd-439a-ae41-ac4796bab177"
+        }
+      ],
+      "key": "8e4905a2-5b1c-e816-e9a7-090c38ab4d2d"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "376f85fa-4c0c-0c41-8d3c-941bbb8c471a"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "732a71d0-471f-455d-47e4-acaeb3f2e8e4"
+        }
+      ],
+      "key": "2b3757cb-b801-a8f0-3b34-38ada3873c47"
+    }
+  ],
+  "description": "https://ethercycle.com/pricing/shopify-theme-setup/\n\nHave a premium theme you like but don't have the time or inclination to set it up? We can take care of it for you.\n\nAfter a discovery call, we'll install and configure a theme of your choice from the Shopify Theme Store and then bring that theme to life with your branding, logo, colors, typography and a layout approach that suits your store, your brand, your products and your audience.\n\nDepending on the theme, we'll also create homepage banners, featured images, etc.\n\nFinally we'll review your store against our own best practices to ensure it's optimized for conversions.\n\nIncluded at no additional charge is two rounds of ten revisions. You are welcome to make design suggestions, but as the ecommerce experts, it’s probably a waste of both of our time for you to even worry about it.\n\nHere's some examples of premium theme setups we've done:\n\neverestbands.com\nmademannutrition.com\nstrappedwatchcompany.com\n",
+  "title": "Premium theme setup",
+  "id": "09e0b47c-3d9b-4cd3-ab7a-bc95c7f6bfb9"
+}
