@@ -1,0 +1,75 @@
+{
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "07a079e6-ae75-9a79-ab45-70d046fe8ae8"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "4dce7d30-16bc-ec00-028f-17f566e91c57"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 156,
+          "required": true,
+          "key": "f0526947-ccb7-b531-b19f-13ae64dc09ad"
+        }
+      ],
+      "key": "cb2e87ac-ac24-ed63-cd27-df7f8b531d45"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "0588482c-eef3-8779-6558-750bb5dbec91"
+        }
+      ],
+      "key": "55c55e9e-dcca-e71c-3146-2349d8e1654e"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "d72cfb18-1953-f8c4-eb68-3d39529db1ec"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "bedd4d65-45d7-6d28-86d6-040c805e3562"
+        }
+      ],
+      "key": "4fb91be3-882d-1215-7d94-2f7e27e230a1"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nFor products with negotiable price or special purchase conditions (depending on the number of units or other variables), you can hide the price box and \"Add to cart\" button, display a customized message with your contact details, or a special request form to enable customers to get in touch with you regarding the price.\n\nYou will receive an email like the one on the screenshot below.",
+  "title": "Ask for price products",
+  "id": "5b5e35e6-f8fc-45b9-bad4-1c06d62f7a64"
+}
