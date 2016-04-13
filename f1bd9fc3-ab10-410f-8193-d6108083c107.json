@@ -1,0 +1,75 @@
+{
+  "collectionId": "166a54fc-1dbd-4369-9ce4-18488150de91",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "c66991a8-ac65-0608-202f-5945fc8e48b8"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "258ee090-fc16-55f5-80d2-b8239e8a1d23"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 240,
+          "required": true,
+          "key": "3692bfa6-60a6-c731-af59-f9f060fd3779"
+        }
+      ],
+      "key": "cabcdf3e-906d-3cc8-200a-ccde026d1b59"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "9c7a13b6-1f49-7375-5cd6-d90c2b977b20"
+        }
+      ],
+      "key": "3bedce98-3e90-c825-b05a-c7097a7dc007"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "1aefef16-b1b9-bda5-38ef-21ad6f872a59"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "50f6ea5d-81a4-e49f-cdf4-10ddfe12c69c"
+        }
+      ],
+      "key": "9c4148c3-fa66-ee9c-2534-41e49d765b50"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nYour wholesalers want to know more than regular customers. Add extra descriptions, special conditions or any other information on the product, only visible to wholesalers. This can be added directly to product description or presented as a separate info section on the product page, targeting wholesaler customers exclusively.",
+  "title": "Extra product information for wholesalers",
+  "id": "f1bd9fc3-ab10-410f-8193-d6108083c107"
+}
