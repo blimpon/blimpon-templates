@@ -1,0 +1,75 @@
+{
+  "collectionId": "166a54fc-1dbd-4369-9ce4-18488150de91",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "962d27ca-8967-a165-1e8e-e67cda837baa"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "f32ae6d7-b4ff-5f87-be7a-77d40e860f77"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 120,
+          "required": true,
+          "key": "2c55190e-4360-11cc-acff-410557a19952"
+        }
+      ],
+      "key": "f2edb7e2-5856-f53e-3af9-ec04ae616244"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "bdd35b7f-4b55-df2e-9f3b-3637beec09ab"
+        }
+      ],
+      "key": "0d840a71-4dd9-c1aa-da28-c1b05aff5f8c"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "dcf9072f-72d8-57ea-1223-b05fc6996b2f"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "4b0585e6-758c-1288-1305-93ce1f352d73"
+        }
+      ],
+      "key": "f69ec68b-c59b-d27a-0128-0447e674ec6c"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nWant to control the total order from your wholesaler customers? Wholesaler Minimum Order presets the minimum total amount of the shopping cart and reacts accordingly if the buyer’s cart is below the estimated amount, by disabling the \"Go to Checkout\" button and displaying a message that prompts the buyer to add more items in order to reach the required minimum order. Both the message and the amount are customizable through your theme settings section. Optionally, you can display, next to \"Go to Checkout\" button, a message to wholesalers to remind of any conditions that apply.",
+  "title": "Minimum order value",
+  "id": "aa60e3ab-2d0b-4d3a-9d85-257fa79acbb8"
+}
