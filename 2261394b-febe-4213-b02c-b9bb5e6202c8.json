@@ -1,0 +1,75 @@
+{
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "e6303714-e4f4-5abc-4d4d-fef593082f02"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "7d07fd88-4194-f589-8b2d-28cbb699f8d0"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 600,
+          "required": true,
+          "key": "37debad3-dc63-8422-9e74-a9f405b94ca9"
+        }
+      ],
+      "key": "bc0e0947-7a36-d963-1aaf-26c8875fbe24"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "6a87ebff-b119-5f65-caa4-e4366968c7e4"
+        }
+      ],
+      "key": "352555da-0b80-6ac2-f4f7-b8c1ba9936a6"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "521d8afd-cfb3-aa46-19fb-c4519f877ca1"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "783dee25-6a07-0f95-ed15-873daf26da77"
+        }
+      ],
+      "key": "8a573f8a-00c5-ce07-7b00-1ac7ebec4e6b"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/integrated-customer-accounts\n\nAs I have described elsewhere, Shopify uses a reduced-friction enclosed checkout process—once a customer has completed their purchase, then they can sign up for an account. This gives them the ability to see their order history, track fulfillment status of existing orders, and also means their address details are pre-filled if they come to make a repeat purchase.\nDepending on your Theme, the Customer Accounts section may be initially styled with Shopify’s standard corporate Theme rather than your own. If this is the case, then that is what you need me for! \nYou will also need my help if you want to install any apps that may require a Customer Account prior to a purchasing being made e.g. @jeffiedotcom’s awesome Wishlist app. I will do some mangling to your Customer Accounts templates in order to optimise your sign up flow for that kind of scenario.",
+  "title": "Customer accounts integration",
+  "id": "2261394b-febe-4213-b02c-b9bb5e6202c8"
+}
