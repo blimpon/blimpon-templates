@@ -1,0 +1,75 @@
+{
+  "collectionId": "166a54fc-1dbd-4369-9ce4-18488150de91",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "8fc3cdab-ac86-f251-1509-a13b1c8942cf"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "794f35ad-a7e3-765a-bb86-5f3627526a4c"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 72,
+          "required": true,
+          "key": "6a801a93-7149-3523-44b6-593e2e17b452"
+        }
+      ],
+      "key": "787ac132-a1b4-2389-949c-f5a93f2ccf2c"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "a6e8a345-2a97-a3bd-07a9-80e3683959b2"
+        }
+      ],
+      "key": "75f39fb5-dbac-f3a8-fe10-b25b8edd87fa"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "50f795a2-2099-3246-657f-00c6cfa41084"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "97acf076-36a2-9056-a424-00c6dedb1aca"
+        }
+      ],
+      "key": "1dd665ab-c08b-a3fa-ff04-4adf87944b66"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nMinimum cart items cuztomization for Wholesalers controls the total amount of units (of all products) in the cart for a wholesale order. If you set, for example, a minimum of 20 items, the wholesaler will not be able to go to checkout if the total number of items of all products in the cart is less than 20, and will be shown a customized info message. Go to your theme settings section to set the minimum number of cart items for a wholesale purchase.",
+  "title": "Minimum cart quantity",
+  "id": "e07edec8-f273-4d3f-aec7-2fdef71cc26f"
+}
