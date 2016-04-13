@@ -1,0 +1,75 @@
+{
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "f32d8841-24f9-0706-6de8-c14cc21e741f"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "24b47f9f-6797-d328-f798-64d185b19469"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 380,
+          "required": true,
+          "key": "d4d24058-d958-991f-7d50-9f064d93252b"
+        }
+      ],
+      "key": "96c7b048-567f-2937-e7cf-961538f9a353"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "5f8b2e45-1b7b-7bf8-3431-6c8c36520ee6"
+        }
+      ],
+      "key": "e3c2229f-8425-7fe3-c306-3f132978a420"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "5901fe08-92cb-7ed7-2299-5ddf38b684da"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "e5902406-b6d1-76f7-7970-9528d61d1c07"
+        }
+      ],
+      "key": "7ed0bfc2-e9fb-afae-f7e1-fd31e44356ab"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/product-image-zoom\n\nYour Shopify store should be a vehicle for your products. High quality product images should be a given (if you don’t have any yet—spare no expense!) With an image zoom function, your high-resolution images can be brought right up close and personal, so your potential customers can view your products in all their glory.\nWe have over a dozen shops using Magic Zoom Plus™ from the guys at Magic Toolbox. Their product is very flexible and can be configured in numerous ways — check out any of the stores linked on this page in the ‘(Related) Portfolio’ to see some different implementations. All licensing is taken care of as part of our fee.",
+  "title": "Product image zoom",
+  "id": "b29fed8d-0842-4202-a8aa-6c4ce2fb13d2"
+}
