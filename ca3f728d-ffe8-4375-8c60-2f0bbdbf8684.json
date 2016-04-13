@@ -1,0 +1,75 @@
+{
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "bc407525-ae5f-3418-0b32-717776859482"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "67892c15-1641-99c3-9125-9577405f7f1b"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 192,
+          "required": true,
+          "key": "90e52a90-49bf-51b5-99c1-cff6d0d5b80c"
+        }
+      ],
+      "key": "6ce93170-6ffe-8956-7c88-a566abd755df"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "0ccc9375-5b39-f8f4-9c34-5cca1061d4c2"
+        }
+      ],
+      "key": "3ce80f7b-5d94-ed54-3f7a-b235bc96f211"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "f168de13-b7df-91cf-5a55-24a6a2f22104"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "7d3b11a5-4b56-30f8-8069-4ce46fb53143"
+        }
+      ],
+      "key": "ddaa0dc9-7ceb-f921-c226-3e4bd413702b"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nAdd Schema.org tags at your Shopify store to improve your SEO and get found by Search Engines.",
+  "title": "Schema.org tags",
+  "id": "ca3f728d-ffe8-4375-8c60-2f0bbdbf8684"
+}
