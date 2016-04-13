@@ -1,0 +1,75 @@
+{
+  "collectionId": "166a54fc-1dbd-4369-9ce4-18488150de91",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "e4cd7524-1a3c-33dd-500b-00d1f2ed4135"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "eac5c70f-28eb-70bd-8c8b-050b7403ba81"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 260,
+          "required": true,
+          "key": "1beee7d5-149f-d76b-2b19-b87197307aa4"
+        }
+      ],
+      "key": "78f4f635-17e9-22c2-cbfc-28b38da13ad4"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "bca7fc15-c5b3-5b4f-0427-52742f3caf62"
+        }
+      ],
+      "key": "8c77ccfc-a666-2d6c-052e-56e31d94fb60"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "e7420982-3bfe-5bcd-a06e-e7676359da26"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "f763f65a-1071-b548-9f8b-d6a8128a6003"
+        }
+      ],
+      "key": "60c7599b-4a38-1037-fc10-73f78ca48478"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nCreate a pack as a combination of variants and sell it as one product.\n\nSell by packs allows to sell your products in preconfigured paks with a combination of variants.\n\nI. E.:\nFor a dress with 4 sizes, you can prepare a pack with 1 S, 2 M, 2 L, and 1 XL, If a wholesaler buys 1 pack, he’s buying 6 units of the product ( 1S + 2M + 2L + 1XL)If he buys 2 packs, he’s buying 12 products ( 2S + 4M + 4L + 2XL)\n\nYou keep your unitary stock for each variant\nYou don’t need to create new products as packs\nYou can keep selling individual variants to retail customers",
+  "title": "Variant combination packs",
+  "id": "28963203-a242-4d4c-b204-cea221919c33"
+}
