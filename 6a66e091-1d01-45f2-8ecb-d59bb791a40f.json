@@ -1,0 +1,73 @@
+{
+  "title": "Retargeting campaign creation using Google Adwords + Google Shopping",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "745ec8f9-24a7-757a-f177-850e732a94bc"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "12c77ec6-608d-10f2-e5f6-796490aea51a"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 360,
+          "required": true,
+          "key": "73dd1528-7acf-50af-5dce-42d81da9ae82"
+        }
+      ],
+      "key": "502fbed7-d9ff-c1f0-1fa3-ab9ac0e34676"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "a4baf293-15a9-e6d5-9a4e-53a64d42795d"
+        }
+      ],
+      "key": "9cd46a4f-f91f-50d7-5455-b33b06a03ab0"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "3176fcb5-a193-3f8b-48f0-9106b594f771"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "ce5ed84b-b354-08aa-cd75-fc9cc8371cbb"
+        }
+      ],
+      "key": "4dc54f4a-ea20-a118-2eb8-d9c6a8c1bdff"
+    }
+  ],
+  "id": "6a66e091-1d01-45f2-8ecb-d59bb791a40f"
+}
