@@ -1,0 +1,75 @@
+{
+  "collectionId": "4bd8657a-5c0f-4d78-9c9d-64c39aaf33a9",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "383b3429-b3fc-6aa2-01fb-b97befddcabc"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "2fdb0d39-f4ea-79fd-a7cb-8df8c46a74b8"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 192,
+          "required": true,
+          "key": "4735db7b-697c-d214-a08c-688f78964254"
+        }
+      ],
+      "key": "a895e8e8-bb3a-7be5-896b-763bd65b5226"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "37d10b11-c1fc-607e-a5a0-385b5d5ae3ef"
+        }
+      ],
+      "key": "8013e48b-3a9d-53fb-0078-1a8563da3eea"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "87f55108-35ed-4284-ff69-b162d9b06bb9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "a619521c-3bbc-19d0-49b7-9d71deaca10f"
+        }
+      ],
+      "key": "f3de9ab0-4fa3-8834-876c-681deda878ff"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nAdd Open Graph tags at your Shopify store to improve your SEO and get found by Search Engines.",
+  "title": "Open Graph tags by Facebook",
+  "id": "352d81ef-c606-4fc1-a76c-d4337a58185a"
+}
