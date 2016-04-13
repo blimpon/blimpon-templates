@@ -1,0 +1,75 @@
+{
+  "collectionId": "166a54fc-1dbd-4369-9ce4-18488150de91",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "aee464ef-b13f-3097-e4ce-8f037f944b86"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "797b72fd-04e4-86b9-6266-3ecf59c0f8ab"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 499,
+          "required": true,
+          "key": "200c24f0-2a8b-18ce-67aa-e2ca04ecd95d"
+        }
+      ],
+      "key": "c76ab13a-5a93-af1f-cb54-70ec369b7942"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "3c273c9d-6e59-2030-e8d2-4298b10345b4"
+        }
+      ],
+      "key": "f61baeb6-2269-e735-274a-a278e127d955"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "49294128-210d-63e8-ec7a-4772406b0b5c"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "2d97075b-91ac-cd4b-c3e4-43c5d47b04ee"
+        }
+      ],
+      "key": "544e47f9-b302-e48e-2282-4ae3e4c7fcff"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nChange the common selectors of product page for a grid with all variants.\n\nDisplay a table with options on rows and columns: I. E: columns for sizes and rows for colors\nDisable unavailable variants: the customer can easily see what options have and which variants are unavailable\nSimplify cart view, group all product variants into one line and edit quantities\nSend an order confirmation with the same grid style, much more readable and comprehensive\nThis customization has three areas:\n\nProduct form: A form created from a product variants’ options / Style similar to a spreadsheet\nCart: Grouping all variants of a single product in one line. / Editing products: modify quantities of variants directly on cart\nOrder confirmation: Adaptation of order confirmation to the customer and the store owner to represent products with sizes and colors grouped",
+  "title": "Product grid form",
+  "id": "db3b357f-b905-4a56-aa2b-af8415a19e0a"
+}
