@@ -1,0 +1,75 @@
+{
+  "collectionId": "4bd8657a-5c0f-4d78-9c9d-64c39aaf33a9",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "0e6f5f28-ab10-1cbf-0175-c40757122fe8"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "b19ef583-b94e-8313-bac4-8f6f202c5e98"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 175,
+          "required": true,
+          "key": "709d5910-312d-f116-4b6a-7f6cce76cd02"
+        }
+      ],
+      "key": "e662bab5-119c-3c74-10f5-cc02adb6a7fd"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "1fea7b2b-9bcf-52ca-dab5-58885e194f57"
+        }
+      ],
+      "key": "57f3b65b-1f15-fea5-88bf-ebd26272b209"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "2cb219f9-c5af-ca19-9022-fe81048b4cc5"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "b920320e-adec-cd3b-51b6-15fb3d783869"
+        }
+      ],
+      "key": "76dad8c9-973d-0025-68e4-b593bccffedf"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/theme-wide-social-buttons\n\nUnderstand, there are two types of social button that you may want on your site:\nOnes that link to your social media pages: Your YouTube Channel, Your Flickr Photostream, Your Tumblr,  etc.\nOthers that allow users to share your products on their social media pages: their Facebook, their Twitter Feed, their Pinterest Board etc. & etc.\nThe former group you would most likely want on every page of your site, linking to your landing page. They can be text or any graphical form. They will probably some kind of icons—pick them if you have the time or inclination, otherwise I can source them for you. The latter group are intended for your product pages, so that people can share what you are selling. ",
+  "title": "Theme-wide social buttons",
+  "id": "f0682220-a910-4da0-9784-c53ce1e9c3c2"
+}
