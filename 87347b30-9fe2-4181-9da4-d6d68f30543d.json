@@ -1,0 +1,75 @@
+{
+  "collectionId": "b8d4461e-1357-4065-82e3-d9985ba7e91b",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "ffc72723-024a-7ce1-7827-dd5c0820b1c1"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "4c502f6f-2742-a83a-dfde-797bc3a8401d"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 949,
+          "required": true,
+          "key": "d0927511-9010-5c94-93e3-57c232eea210"
+        }
+      ],
+      "key": "638f9f1b-3d5a-9807-5203-67b2fff41ac7"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "a5896c21-68f1-8f61-8265-ce03c614cba5"
+        }
+      ],
+      "key": "0bba12f2-a94c-af32-9686-914a1cdfa790"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "73fe9db4-a034-a18d-607f-61af8dfd5e03"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "2f7e8086-34b1-5701-8433-f5cb0fb7ec24"
+        }
+      ],
+      "key": "77d6c337-a3f5-5a5c-ab53-96ae19215be7"
+    }
+  ],
+  "description": "http://doubleyouraudience.com/products/outreach/\n\nWhen it comes to promoting a new product, you want to reach as many potential customers as possible.\n\nThe question is, how do you do this?\n\nWe’ve all heard that to grow our business and make sales, we need to be building an audience, but that strategy takes time to do right.\n\nWhat if you have an audience, but it’s small?\nWhat if you’ve just started growing your email list?\nWhat if you want to reach a new audience, instead of continuing to market to the same people?\nWhat can you do today to get your products in front of a new, large, ready-to-buy audience?\n\nInfluencer Outreach\nThe fastest way is to leverage the audiences of powerful influencers in your industry: bloggers, podcasters, review sites, or businesses who reach the same people that you want to.\n\nThe most impactful marketing tool is the direct, personal contact that an influencer has with their audience. It’s a lot easier to get someone to buy your product if they already trust the person speaking to them.\n\nIs there an influencer that you could partner with to send you or your store new customers?\n\nBy first building a list of influencers in your industry and then consistently targeting and following up with them, you can nurture and educate them over time about the benefits of working with you. And then, you’ll have the opportunity to expose their audience to your best products and content.\n\nAnd when an influencer works with you, you’ll benefit from the trusting relationship they’ve built with their audience. When an influencer exposes their audience to your brand, you explicitly benefit from that endorsement.\n\nThe Digital Outreach Plan will help you build relationships with your dream partners, reach new audiences, and increase your sales.\n\nWhat Do I Get?\nIn our time together, the most effective thing we can do is develop a plan allowing you to identify your dream partners, gain their trust, and reach their audience.\n\nKickoff Workshop — First, we move through a workshop to create a profile of your ideal customer by looking at who your target customer is, where you can find them, and what they want that’s related to your business. Then, together, we build the outreach campaign for your business, defining the goals of the campaign, highlighting your unique story, and identifying how to reach your ideal customer.\nInfluencer Identification — Then, I compile a targeted list of 10 qualified influencers for you to contact, based off of the ideal customer profile we create and information about your product and your audience. I include each influencer’s name, website, email address (or contact form URL) and, if available social media pages and a blog post that shows their relevance to your business.\nUnique Outreach Templates — After that, I create a series of 5 outreach email templates that you can use for your outreach to these influencers. I include notes on how you can adapt the template to be specific to each influencer that you’re reaching out to.\nOutreach Timeline — Finally, I outline the multi-week, multi-channel outreach campaign that you’ll follow to reach these influencers and cut through the hundreds of messages that they receive every day.\nThe Outreach Blueprint — Additionally, you’ll receive a free copy of my book The Outreach Blueprint, diving further into strategies that you can use to make contact with these influencers through cold outreach.\nThe Digital Outreach Plan will teach you how to build the relationships with the influencers that you want to connect with and then go after them with consistent marketing.\n\nWould You Like To…\nIdentify your dream partners, gain their trust, and reach their audience? The most impactful marketing tool is the direct personal contact that an influencer has with their audience. The Digital Outreach Plan will set you up to directly connect with influencers and gain access to their audience.\nHave a streamlined outreach process? With the Digital Outreach Plan, you receive specific, customized direction on the best steps to take in your outreach, saving you time.\nTry out a low-risk, easy-out consulting relationship? The Digital Outreach Plan is a terrific way to determine how we work together. If you’re wondering how I work and whether I fit into your overall culture, a one-off commitment reduces your risk as much as possible. And if we continue working together, I’ll credit you for the cost of this project.\nWho Are You?\nKai Davis — Outreach Consultant I’m Kai Davis. I’m an Outreach Consultant in Oregon. I have over five years of experience helping my clients — eCommerce stores, Software as a Service websites, and Authors — reach new audiences and increase their sales.\n\nHow Do We Get Started?\nWhile many consultants at my level charge thousands for a report like this, I run my business lean, with smaller margins, and pass the savings on to you. Digital Outreach Plans are only $949 for everyone.\n\nI know you may be skeptical in the value this plan could have for your business. Well, here are some comments from past clients about the value of the Digital Outreach Plan:\n\nDaniel Warner\nKai prepared a Digital PR / Digital Outreach campaign that we’re using to talk to influencers and raise awareness of our company. I happily recommend Kai for any business looking to grow through targeted outreach.\n\n— Daniel Warner, Chief Evangelist, Portabee 3D Printers\nAnd here’s another:\n\nCharles Fitzgerald\nMy engagement with Kai was nothing short of a tremendous success. During the three months we were together, we saw a nearly 3x increase in organic search visitors. Kai has been instrumental in solidifying our outreach strategy, has set us up perfectly with influencers, and identified numerous ‘quick wins’ on the web site.\n\n— Charles Fitzgerald, CEO, The Kewl Shop\nOrder Now\nIf you want an actionable, custom-tailored digital outreach plan that will help you build relationships and increase your sales, you’ve come to the right place.\n\nI’ve helped dozens of people increase their sales through digital outreach — and now I want to help you, too. The Digital Outreach Plan is a detailed, comprehensive report that will save you time and make you money.\n\nRight after you pay me, I’ll send you a ten-minute questionnaire about your business. Once you send me your answers, I’ll give you a firm deadline for when to expect your outreach plan.\n\nI’ll create your outreach plan by analyzing your products, your competitors, and your marketing and writing up my findings. Once I’ve sent you your report, you can email me one round of feedback and questions and I promise I’ll respond to everything.\n\nAnd if you’re unsatisfied with my work for any reason, I provide an unconditional money-back guarantee.",
+  "title": "Digital outreach",
+  "id": "87347b30-9fe2-4181-9da4-d6d68f30543d"
+}
