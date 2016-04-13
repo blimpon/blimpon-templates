@@ -1,0 +1,75 @@
+{
+  "collectionId": "b8d4461e-1357-4065-82e3-d9985ba7e91b",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "6f037512-0a8c-9ad9-6cd0-1ec31a7f0240"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "f7982087-fa5a-d466-3f1c-47a1beadc31c"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 999,
+          "required": true,
+          "key": "6d9bb49d-2c1d-749d-93cc-6f27b2a49fb4"
+        }
+      ],
+      "key": "d3a50185-3920-825c-93c8-bf5e8aa51a4e"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "1f915bc7-39c8-5b33-e4fc-5e1dde79fb38"
+        }
+      ],
+      "key": "83c52f43-87e4-562f-d2a9-19ba2cd5304f"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "133464d6-db00-8316-7c8c-d19d51b4b417"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "62590db6-76ba-d3b8-a827-d2c6d29d945e"
+        }
+      ],
+      "key": "4ff3121b-f94d-7906-6cf0-f7729d042812"
+    }
+  ],
+  "description": "http://brasstacks.chrisvannoy.com/\n\nWhat are your analytics actually trying to tell you?\n\n“Measure all the things,” they say. So, you wire up Google Analytics, Chartbeat, WebTrends and all the rest.\n\nAnd then what?\n\nAll this data, but what is it actually trying to tell you? Are your questions being answered?\n\nAre you even measuring all the things in the first place?\n\nIf your website analytics have become a black hole you don’t dare look at anymore, or if you no longer know what all this data is supposed to be telling you, or if you just want peace of mind that you’ve got this nailed down and ready to rock, I want to help.\n\nThat’s what Brass Tacks, an Analytics Audit service, is here for.\n\nHere’s what you get:\n\nAn initial phone or Skype call where we can go over your site, your problems and your analytics setup. This is especially intended to not only get the lay of the land, but also what specific questions you’d like your analytics to answer.\nA thorough breakdown of your current analytics infrastructure, including any blind spots or flaws I can find. This report will also let you know of any oddities I spot - strange domains reporting into your interface, odd referral patterns, and the like. Most importantly, I’ll tell you how to fix those oddities - or if I can - I’ll fix them for you.\nFor each of the questions we discussed in #1 up there, you’ll get a custom report or segment set up in your analytics platform of choice that can give you the answers anytime you’d like. And since I wouldn’t want to leave you hanging, each will be thoroughly documented so you know what exactly it’s telling you in the first place.\nA closing phone or Skype call to go over the results and reports, talk about your site again and make sure that we have everything covered.\nMore than what's outlined above, you also get:\n\nPeace of mind: Once complete, you’ll know that your analytics are set up and primed to give you the answers you need to deliver actionable insights that drive your business forward.\nMore hours in the week: Once the reports and segments are set up, insights that would have taken you hours per week to sift through the data to find will instead be at your fingertips - anytime you need them.\nA helpline: Ever run into another question about your analytics that needs to be answered? Just give me a ring. Any question at all, I’ll be happy to answer.\nLet me give you an example ...\n\nThe website I was working with hosted files available for download - and we had those files wired up to Google Analytics so we could measure how often they were downloaded.\n\nSomewhat suddenly, downloads spiked by more than 200% and stayed at that sustained level despite no press, no additional traffic, and no obvious leads.\n\nInterestingly, the biggest spike was from users sending no headers and no referrer - which wasn't unusual because we had always had a segment of users downloading the files with cURL.\n\nA quick dip down to the server logs later and we had the spike pinpointed to a block of IPs in mainland China that were downloading the files like crazy. Rather than block them outright - and creating a game of whack-a-mole - I adjusted our Google Analytics setup to ignore that block of IPs and went on our merry way.\n\nThat's just a single example of the kind of odd quirks that can be found in your analytics data, and the steps Brass Tacks will take to mitigate them.\n\nSo, who am I, anyway?\n\nMy name is Chris Vannoy.\n\nI’ve set up, maintained and data mined web analytics for some of the world’s largest media companies, consumer rating services and simply some of the largest companies in general.\n\nIn that time, I’ve worked with:\n\nGoogle Analytics\nAdobe Omniture\nWebTrends\nPiwik\nGauges\nAdobe Test & Target\nOptimizely\nChartbeat\nWhat if you don’t like the results?\n\nI want to help, not leave anyone feeling as if I’d ripped them off.\n\nBrass Tacks comes with a 100% no-questions-asked refund guarantee.\n\nTell me you want your money back, and you’ll get it back.\n\nPricing\n\nAll the above comes with a one-time cost of $999.\n\nWhen you think about the amount of time this is going to save and the actionable insights this service will provide going forward, the service pays for itself in a matter of hours if your business is making any money at all.\n\nClick the button below to get the process started and start getting the analytics answers your business needs.",
+  "title": "Analytics audit",
+  "id": "7df5e4c4-fc5d-4227-9546-18507e4ac020"
+}
