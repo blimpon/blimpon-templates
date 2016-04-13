@@ -1,0 +1,75 @@
+{
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "839faa5d-ec4a-07fe-87aa-06c49e303ea3"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "8eac95f2-6ed6-cc34-ccda-7d45a1a9b690"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 192,
+          "required": true,
+          "key": "6d0e1573-a9f5-a7a2-6059-664aa4426983"
+        }
+      ],
+      "key": "28babf92-98ab-0762-33a4-cffce3b52d5b"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "d9221b8d-7641-59b8-1d73-d161aeff093e"
+        }
+      ],
+      "key": "12c7228f-014f-1fc2-e17a-f19239c6ef67"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "9775f165-ee8f-6d28-6812-d479fe822441"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "300b7c81-bd95-0242-9ad2-3415bb623dfa"
+        }
+      ],
+      "key": "427bc5d1-e44d-fdb8-004b-555f8d460c09"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nAdd Dublin core tags at your Shopify store to improve your SEO and get found by Search Engines.",
+  "title": "Dublin core tags",
+  "id": "bc3f5004-5463-43c1-9b76-a096f2f2ce13"
+}
