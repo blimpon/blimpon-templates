@@ -1,0 +1,75 @@
+{
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "c93fc25f-b53f-2af2-7b26-ccb1771defb7"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "73bd00a3-03b0-2496-112d-f8a7bdef9d77"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 300,
+          "required": true,
+          "key": "2b8588ba-563b-046e-915b-410148ccb257"
+        }
+      ],
+      "key": "5c62ec10-ebe7-145e-bc11-db2b1cb870ea"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "5f7fc483-92c1-8919-b880-c4f7c768c8ca"
+        }
+      ],
+      "key": "ef1be306-12c4-a173-fed2-110f9beef575"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "9f3455b2-1ca9-a2f7-71e1-232ba30b6ebc"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "6b5e713a-986a-b62e-1634-b3d15d04e17b"
+        }
+      ],
+      "key": "aba73ab1-93c3-a564-a560-1b77d1437ea3"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/featured-boxes\n\nYou know what I mean—a big splash box. Or, maybe three small ones. Five, who’s counting?! One goes to a page about your low-cost and efficient shipping. One goes towards highlighting your latest things, whatever they might be and however they might subsequently be displayed. You can link them, they can have rollover effects. Perhaps you would like a custom, over-layed caption. Control over all of it, @web-fonts? What is your vision?",
+  "title": "Featured boxes",
+  "id": "efc29a1b-f950-4b92-b3c8-b8ea9e3760bc"
+}
