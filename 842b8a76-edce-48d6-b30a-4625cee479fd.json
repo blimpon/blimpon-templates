@@ -1,0 +1,75 @@
+{
+  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "db43b871-7a39-cfd7-fcca-686a132447db"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "c35488fe-b6a1-77e2-b12b-7834fe34107e"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 3995,
+          "required": true,
+          "key": "5bb9032f-86c4-0b58-1bf1-8d154a180634"
+        }
+      ],
+      "key": "85b35647-1904-5b85-f517-82719c11d27f"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "5f74a3b8-2e59-e610-52ff-16bc7bd10bc6"
+        }
+      ],
+      "key": "e58d6b46-dd1d-6d95-bfef-0ed63972f1ee"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "df7f5901-0d67-4534-2863-a6d44782c206"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "d246c790-63c4-7c25-dbc6-a0f7b7b22726"
+        }
+      ],
+      "key": "9340b57f-1996-96f4-c1b4-ea3b781bf1bb"
+    }
+  ],
+  "description": "Rather than starting from scratch with a new website, we make dozens of small fixes to your existing Shopify theme.\n\nWhile no one change is major, all of those changes combined make a big impact on your conversion rate.",
+  "title": "Website rescue",
+  "id": "842b8a76-edce-48d6-b30a-4625cee479fd"
+}
