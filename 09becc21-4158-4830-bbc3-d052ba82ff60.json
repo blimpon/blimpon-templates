@@ -1,0 +1,75 @@
+{
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "fb25aa01-ea50-17ee-3e1a-7dd9f9f30b14"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "cf8df675-d4f0-8679-5626-006c6a85e575"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 450,
+          "required": true,
+          "key": "49d71c37-4d71-3d8c-cc4a-c14d8e8fcdfd"
+        }
+      ],
+      "key": "e0a263f2-0c1a-14f7-0a8e-27968895c33f"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "6b76c63f-ba4f-82f0-f8bc-0986a3870945"
+        }
+      ],
+      "key": "9139bc04-7bd1-e3bb-96f2-f835245bf4e1"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "629282f7-0d6b-6d31-f0fc-2594a1aed734"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "4d84f3cf-b213-5797-d8da-8e30f83033e1"
+        }
+      ],
+      "key": "be887879-2060-d3e3-e985-3f835b3c7036"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/re-stock-notifications\n\nIf you have a Product that is temporarily out of stock, we can add functionality that allows your customers to sign up for notification emails that get sent when you re-stock. This functionality can be manual, via your regular mailing list software, or automated via the awesome Back in Stock app. We have much experience with this app and have custom-coded different solutions, including embedded and popup forms, for a number of clients that tie in nicely with whatever option selectors already exist in their store.",
+  "title": "Back in stock notifications",
+  "id": "09becc21-4158-4830-bbc3-d052ba82ff60"
+}
