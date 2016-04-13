@@ -1,0 +1,75 @@
+{
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "08e08f91-b575-f81b-e804-e929f5b635a0"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "d0366bcb-1545-db0e-50d9-c8cddaa8221e"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 350,
+          "required": true,
+          "key": "17cd1bf1-0c2a-5b39-c885-af048b2ff228"
+        }
+      ],
+      "key": "c610034e-edc5-df5f-b5a8-c0281c4dd812"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "ca9d0282-381e-681c-93a6-1e62bb35dba8"
+        }
+      ],
+      "key": "53e35d1a-bcf1-dc7b-645f-82b98796919d"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "cc89a418-ffb3-20f1-f5ae-9e1ef62a9d83"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "f84a352e-4f84-ee74-0a5c-2da857cad5ae"
+        }
+      ],
+      "key": "10cb129a-7f96-8499-715e-c032439ee599"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/slider\n\nI can implement pretty much any kind of slider you want really. If you know what you want, great. If you don't, I can make suggestions regarding what it could look like and how it could function. Generally, I don't cover the stuff that gets slid, if you know what I mean? I don't have a studio or sweet camera. I am pretty creative though (how do you like \"Black RFIDay\"?!)",
+  "title": "Content / image slider",
+  "id": "9c86ac8b-e0d3-4579-99ab-22a4d9e92360"
+}
