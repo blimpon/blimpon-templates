@@ -1,0 +1,75 @@
+{
+  "collectionId": "4bd8657a-5c0f-4d78-9c9d-64c39aaf33a9",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "f4061a8b-b8b5-e055-65a1-1c031bb61de0"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "e80ac314-6414-9338-8d22-ac8cfe03ea0a"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 750,
+          "required": true,
+          "key": "47a04956-540d-0807-fc60-94a1598574fa"
+        }
+      ],
+      "key": "29ba34d2-ede6-c17b-ffc1-8f41cad9283d"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "d9643e09-6622-73f4-8b02-1e602dc8f87d"
+        }
+      ],
+      "key": "bb84d23e-b849-d6b2-0e85-011c07a508b8"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "f71cf188-535d-f3ad-b162-bc9bec2222d7"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "3be638fa-ddb5-26cf-d837-b6d455a0d8fd"
+        }
+      ],
+      "key": "f96777c1-1d2d-a957-5577-1af86e93ef7b"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/instagram-integration\n\ntrickyfeed takes your Instagram feed or a #hashtag stream (that can further curated by your company's likes) and embeds it on your front end store, in any way you see fit. Maybe there is a carousel or some kind of layout [non-square images coming soon!]",
+  "title": "Instagram integration",
+  "id": "adb1edf6-34d4-467f-b6f5-0165ec6a7a76"
+}
