@@ -1,0 +1,73 @@
+{
+  "title": "Facebook sales funnel",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "2e90af40-1f02-8503-bc7f-d4501e04cb9f"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "1b8d7d53-1112-289d-918f-652a20d84300"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 1995,
+          "required": true,
+          "key": "adc09d28-6e5b-1888-5fa8-cb2dd20efc47"
+        }
+      ],
+      "key": "d16daf40-d2bb-bd58-0d36-4fa559430f56"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "12549af8-d40e-cfc0-2702-87b50c218ce7"
+        }
+      ],
+      "key": "c5ca4639-369f-61c7-95e8-73bc0921428c"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "e4339667-cd9d-ce3b-2836-2934f73a9b4a"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "c4bda924-e53b-7b87-4378-914907ca76b7"
+        }
+      ],
+      "key": "11f2542c-cd54-33ca-73c0-2a9b34b8c0de"
+    }
+  ],
+  "id": "12aa8405-79f8-4e30-ad71-1dd8656880ad"
+}
