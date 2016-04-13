@@ -1,0 +1,73 @@
+{
+  "title": "Google Taxonomy creation/configuration for Google Shopping Product Feed",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "2ffbe783-09c4-7716-3f23-da9647af3d5b"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "160f0e52-ebc1-3b82-dcd7-e0fa701cfe5c"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 560,
+          "required": true,
+          "key": "0b6a7aa6-fe6a-fe3e-3f5c-a5b71af50228"
+        }
+      ],
+      "key": "28b47706-54b4-0d43-1a81-90323be3a016"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "f86f5b11-0f4a-d429-0a99-ea41c3f5e4d7"
+        }
+      ],
+      "key": "60099559-6bda-4e21-a207-a0fe52af8ed1"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "88119d17-076a-6e93-6ce6-fcaa2988a375"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "02d1b543-03c5-853f-0f8d-59f3c4dc9f7a"
+        }
+      ],
+      "key": "c54a47d5-7be2-add9-83d5-50721969b5da"
+    }
+  ],
+  "id": "9025ff0c-6da6-49eb-a0d5-00f7516dce06"
+}
