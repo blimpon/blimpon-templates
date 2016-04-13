@@ -1,0 +1,75 @@
+{
+  "collectionId": "166a54fc-1dbd-4369-9ce4-18488150de91",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "cb67f51a-846c-c7eb-ca8b-4fddd19ec7da"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "e6dc3d3e-18b6-c9d4-e523-feffd7f7fee0"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 120,
+          "required": true,
+          "key": "eb5dd81b-885d-7b93-f3a4-3011f44f236c"
+        }
+      ],
+      "key": "cfad81ca-b439-dd5d-f03c-b45171b11ce1"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "218b5f37-e677-777a-cb83-dd6f8224932a"
+        }
+      ],
+      "key": "60153b65-73ed-3cae-a626-18591d246d7b"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "8a645a9f-ef38-59a8-6833-96f5a6713b38"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "36675b15-a72c-2868-1e27-969aee1e1580"
+        }
+      ],
+      "key": "db3c5c5c-55f9-f5bd-697c-ac7077f49526"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nMake your wholesaler customers feel special and appreciated: provide them with a whole different menu, with exclusive collections, conditions or hidden features that retailers do not see.",
+  "title": "Exclusive wholesaler navigation",
+  "id": "f34b6cc4-85b4-4f4b-8283-767833e03277"
+}
