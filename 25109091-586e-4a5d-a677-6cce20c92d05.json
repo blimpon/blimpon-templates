@@ -1,0 +1,73 @@
+{
+  "title": "Adwords & Bing management monthly",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "6886551f-3fb9-f567-61ec-f814eafc9fc7"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "c6d09391-835d-5f10-0dce-75e6c320c185"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 1997,
+          "required": true,
+          "key": "9d541a6d-2fdb-a0d2-2dbb-55964260fe8b"
+        }
+      ],
+      "key": "9a3f95f1-3fc4-1ec4-5098-e2f4443eba8d"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "02b73711-9268-85ae-0692-331d59584110"
+        }
+      ],
+      "key": "38bb1884-25d6-bca7-8e3a-7c5351d95ca6"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "dd3ad0bb-f6c6-bc78-300b-310ba430f3c3"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "d33c6304-fa52-e5ba-b4e6-67b80194ca4e"
+        }
+      ],
+      "key": "8670c2f0-31ba-ee23-0d1a-4cafee31048b"
+    }
+  ],
+  "id": "25109091-586e-4a5d-a677-6cce20c92d05"
+}
