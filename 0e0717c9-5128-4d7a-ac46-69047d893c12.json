@@ -1,0 +1,75 @@
+{
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "3755da7f-8c95-910c-c248-2580a7c13b37"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "3cfb94d2-d0a2-19b5-6b8e-472a15c10ea9"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 599,
+          "required": true,
+          "key": "3d09b6aa-4f5f-4dd4-2df0-65f2168199ce"
+        }
+      ],
+      "key": "4b1b4819-a84d-45f5-4acf-fd7ccd0bd759"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "12545a83-bb9f-ee36-86af-f0739e07c8b0"
+        }
+      ],
+      "key": "8070c2a0-2431-f44a-3786-3de66231b137"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "01ed6ced-2893-0922-a670-e0891a9f627c"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "c4eaf5ab-a33c-90e8-a0d8-27d3dd60b74e"
+        }
+      ],
+      "key": "e2e68976-ff93-6389-1f88-70c4da4861b9"
+    }
+  ],
+  "description": "http://www.rockingbookcovers.com/pricing-services/\n\n",
+  "title": "eBook cover",
+  "id": "0e0717c9-5128-4d7a-ac46-69047d893c12"
+}
