@@ -1,0 +1,75 @@
+{
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "b91a10e6-571f-f0c7-2f7d-469099ecbbc2"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "a76a5968-2cde-8cdf-b4ba-c7c074e5115c"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 380,
+          "required": true,
+          "key": "0349e52c-2dfc-a811-1f4d-48b48b8ba79f"
+        }
+      ],
+      "key": "dc51420f-c770-4956-43ab-ace31fd915c6"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e565f5ac-2ac2-ee6b-be03-7adb6d28ee4b"
+        }
+      ],
+      "key": "6ec18092-57cb-76f2-9269-c62534543bfb"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "6d2e6bac-56cc-20dc-dd0e-3233a66042ad"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "b779cf96-59f8-4801-e6f6-c29eeea99723"
+        }
+      ],
+      "key": "38727a8a-40ef-b340-5056-e8e2522331e4"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/shipping-calculator\n\nThe steps to add a “Shipping Estimator” to your site are pretty well documented by Shopify but they may be over your head. Either way, I can implement this feature and offer a little further customization if you need it.",
+  "title": "Shipping calculator",
+  "id": "459bffa7-c7d7-47c5-b224-b77be553cc5d"
+}
