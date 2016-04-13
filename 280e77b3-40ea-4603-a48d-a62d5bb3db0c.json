@@ -1,0 +1,75 @@
+{
+  "collectionId": "7e17bc8a-863c-4f25-9ef6-641feb9981eb",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "3523f498-f81f-af02-ed45-4b471839c24a"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "215aa874-23fb-e7d5-a793-ef10dd0235d8"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 300,
+          "required": true,
+          "key": "7602eb2c-6f4b-11d7-00ee-8bfcae6c2588"
+        }
+      ],
+      "key": "0eb15fe3-dcdc-fbf9-61d3-6f4195881031"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "ca01191e-7cba-0d98-4fe0-64d6732401c9"
+        }
+      ],
+      "key": "c75f2810-db1f-59f0-e479-1166af686314"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "f8c21686-4f0e-ba70-6b0d-9afa7ebf0152"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "56e91ac6-8e34-8e40-bcfc-5f2acf0c3870"
+        }
+      ],
+      "key": "e5f02426-8682-7b56-7aae-1d392b425d3b"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/integrated-email-newsletter-sign-up-form\n\nThere's a box that you fill in or out. When submitted it goes to a list. Your choice. I recommend 3mail (our Campaign Monitor-based solution). We can do MailChimp if you would rather. Or, anything else. Shopify has forms; you could use a spreadsheet and mail-merge it. Whatever. Your choice.\nWhy You Should Be Using Popups on Your Online Store.\nTL;DR they will build your email list; Email lists are gold. Really, they are.\nWe have configurable embedded and cookie-based user-configurable modal popup modules with integrated Google Analytics Event-tracking, for both Campaign Monitor and MailChimp, that you are free to use if you know how. Otherwise we can take care of it for you…",
+  "title": "Email newsletter signup form",
+  "id": "280e77b3-40ea-4603-a48d-a62d5bb3db0c"
+}
