@@ -1,0 +1,75 @@
+{
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "52dbc9a1-982f-e6c5-f2d6-6196fdcdf83d"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "96b495e6-3e11-360b-5d40-1af2df69f186"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 180,
+          "required": true,
+          "key": "f874a61b-45d5-4cf6-a658-56057e858039"
+        }
+      ],
+      "key": "0613056b-fcec-af1d-8d93-86fda9ca71cf"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "88d47284-0f79-eceb-e420-3a25404face1"
+        }
+      ],
+      "key": "c7cd1c67-124b-4c02-c507-8440e394dee2"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "f15f2b8e-9f2b-6926-7a10-64112402b200"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "068e4e79-66ad-762c-5726-bf96276e2662"
+        }
+      ],
+      "key": "54d2ef97-5827-335a-e454-d06df7c54918"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nWe cut your Psd's to Html and make sure they are compatible to most browsers and devices.",
+  "title": "PSD to HTML",
+  "id": "4401a8fd-343f-4170-80c1-4809d05e1b24"
+}
