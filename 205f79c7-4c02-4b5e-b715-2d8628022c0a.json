@@ -1,0 +1,75 @@
+{
+  "collectionId": "4bd8657a-5c0f-4d78-9c9d-64c39aaf33a9",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "1ecd7ed6-1cfd-eee4-f03e-230396e96f09"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "9dbc5632-bc62-8d09-e628-7a92874b08a7"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 72,
+          "required": true,
+          "key": "bfb9f9c1-085a-d8ee-9cf3-58dd68e086f6"
+        }
+      ],
+      "key": "452aa72d-08fb-5d3c-c1d3-cddab0218dc9"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "d0f96beb-1436-9f24-f692-1f8ee3049be2"
+        }
+      ],
+      "key": "7dfb52a3-99cc-fefa-768a-31c1f19bf0e4"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "44bfebcb-14b8-1fb1-2d6c-7af67ed0f7d0"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "90193bd3-5c69-a1c5-d24b-1559841522d2"
+        }
+      ],
+      "key": "602394d6-f6d4-4748-d530-c69cd77222c1"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nAdd an eye catchy WhatsApp button for your customers to share your products with their friends.",
+  "title": "Add WhatsApp share button on product page",
+  "id": "205f79c7-4c02-4b5e-b715-2d8628022c0a"
+}
