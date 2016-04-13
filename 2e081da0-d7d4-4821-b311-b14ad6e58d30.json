@@ -1,0 +1,75 @@
+{
+  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "4b2d111d-0ea0-66f4-b6de-f1f563042a45"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "02d80f9b-a037-6cd4-1055-16226473ec90"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 499,
+          "required": true,
+          "key": "110fcfb8-86c7-ac3d-00ac-a4c2f7b56573"
+        }
+      ],
+      "key": "0df24021-0ee0-283f-be9d-ee54f6990ad7"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "63cf17fa-ebe3-a322-4faa-1ea4a7639a01"
+        }
+      ],
+      "key": "df6e8c36-4fd1-4bab-d785-d8d9822efea8"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "b66c97e8-f5c7-7578-a414-a2bb2e6bdc9b"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "f0463b1d-5585-7a40-7718-49f9f2c6cf75"
+        }
+      ],
+      "key": "cc6e472c-b7c9-9341-0e01-e6d4ffad019d"
+    }
+  ],
+  "description": "https://ethercycle.com/pricing/\n\nIf you think your website is important to your business success, and want a live workshop with two successful experts, then purchase your Website Teardown now to reserve your time on our calendar. You'll learn how to make your website your most effective salesperson.",
+  "title": "Website teardown",
+  "id": "2e081da0-d7d4-4821-b311-b14ad6e58d30"
+}
