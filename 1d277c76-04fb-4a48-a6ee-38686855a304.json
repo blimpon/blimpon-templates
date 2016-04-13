@@ -1,0 +1,75 @@
+{
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "51ee18dc-b744-f439-af87-09f57b2f694e"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "e185e0da-8078-3ce1-f11b-657ec01002a1"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 1800,
+          "required": true,
+          "key": "17f05abc-5cd7-0baa-986f-91b2519813be"
+        }
+      ],
+      "key": "1e09615b-9dc4-e899-31ce-1cc23463a60d"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "d9a91414-876d-4a8b-31b6-194194b58844"
+        }
+      ],
+      "key": "e4f2845c-c4ec-923a-0ff8-dc3b28187b48"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "9b75d578-6763-8e39-7c78-94c7b3881e21"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "95e2876d-e189-cc46-8e17-a07c09ff8397"
+        }
+      ],
+      "key": "9ed0d73b-5e11-74b1-eb51-f0ba60503690"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/html-to-shopify\n\nMaybe you are a web designer with no previous Shopify/Liquid experience. Perhaps you are an agency who needs a Shopify specialist. Or are you a shop owner looking to migrate from your existing Ecommerce platform to Shopify? Whoever you are and whatever your reasons, if you have a functioning set of HTML templates that you need converting for use with Shopify then look no further. \nI have experience with all of the above and can provide the service you are looking for. You should have at least basic HTML documents that represent an Index (home) page, some kind of product Collection matrices, and individual Product detail pages. You will most likely have some static (\"About Us\" etc.) Pages too, and possibly a Blog, maybe more than one. (See the wiki for more about Shopify’s templates.)",
+  "title": "HTML to Shopify",
+  "id": "1d277c76-04fb-4a48-a6ee-38686855a304"
+}
