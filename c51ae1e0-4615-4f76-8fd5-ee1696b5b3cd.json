@@ -1,0 +1,75 @@
+{
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "c572da7e-c177-9e2d-80c2-221ed4a8c15d"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "c61bcd1e-52e9-a40c-cc55-04b954e2970c"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 350,
+          "required": true,
+          "key": "d8c17e2c-ad64-888f-99a7-239aecad7fc6"
+        }
+      ],
+      "key": "0c70ca14-8f10-e215-9731-8285477344b5"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "cea27f50-9f72-8ae0-b288-c02202fe1424"
+        }
+      ],
+      "key": "dbd96fcc-8117-8a02-bf9b-8dceaeb92552"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "c1a57f89-9a28-1a9d-c9a6-a8f4cf7d1161"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "4134cce5-dc19-5bbc-690a-9a0dffd50e9b"
+        }
+      ],
+      "key": "6ae44c8d-af6f-5c09-25fd-a38b87014dc4"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/reviews-integration\n\nShopify has a free Product Reviews app. I can customize your install so that UI integration with your theme is seamless.",
+  "title": "Reviews integration",
+  "id": "c51ae1e0-4615-4f76-8fd5-ee1696b5b3cd"
+}
