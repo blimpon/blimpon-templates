@@ -1,0 +1,75 @@
+{
+  "collectionId": "b8d4461e-1357-4065-82e3-d9985ba7e91b",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "afa92d34-a880-43ff-a5c7-705d14cc1b13"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "26c6e524-1c63-4d53-97c5-05c2d5195357"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 995,
+          "required": true,
+          "key": "e6cf1931-4908-3dc0-4d1d-3e2a08308fff"
+        }
+      ],
+      "key": "0508d669-00ac-8420-925a-7a39e3875585"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "233ee84b-6471-a0bb-274f-3b69ccd11163"
+        }
+      ],
+      "key": "b159745b-8f8c-36b7-c122-294614dc50eb"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "701df204-d1ce-aaa1-8012-9ece0f3c9a9e"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "263c649b-1836-8d0b-e6f3-4bfc894dcc14"
+        }
+      ],
+      "key": "1f66eea7-0509-c5e3-d742-b13b19b004a1"
+    }
+  ],
+  "description": "https://ethercycle.com/pricing/\n\nDo you know who your best customers are & why they buy?\n\nHere's an uncomfortable truth: Most Shopify stores will fail within five years.\n\nNot because they have a conversion problem...\nNot because they didn't dial in their SEO...\nNot because they chose the wrong theme...\nBut because they never really nail how to market their products.\n\nYou can't expect success with little to no feedback from your customers. Until you've engaged in customer development, everything you think you know about your customers is a guess, and Shopify stores don't survive by guessing.\n\nYou need to have deep conversations with your customers. Knowing why your customers are buying as well as the language they use to describe the benefits of your products is the most critical insight to grow your business.\n\nInsights such as:\n\nUnderstanding who your core customers (and how to market directly to them)\nKnowing exactly who your real competition is\nDiscovering which benefits are making people buy\nPlus learn the exact language your customers use to talk about you\nWith clear direction from your customers, you'll be able to pivot your positioning and marketing, and watch as both sales and customer satisfaction increase.\n\nOur PsyOps Customer insights grew Everest Bands' revenue 50%\n\nOur friends at Everest Bands had been using conversion optimization for months before they plateaued and couldn't wring out additional revenue of their existing traffic. That's when we surveyed their customers and discovered that we had completely missed the reason why customers were buying. Using customer's own language from the survey results, we recommended new positioning, collections, rewritten tag lines and product descriptions. Within one month, their revenue improved 50%, yet again breaking sales records for the strap manufacturer. Had we not asked their customers, we never would have known to change the brand's positioning.\n\nUntil you ask, you're just guessing. PsyOps let's you find out why they're really buying.\n\nCustomer development is a proven approach to drive decisions and develop new insights into why customers buy.\n\nHere's how it works:\n\nWe'll send an eight question survey to your existing mailing list to collect customer feedback.\nWe'll use the answers to those questions to develop new insights about who your core audience is, as well as understand customers motivations, possibly unearthing new positioning and opportunities to better engage your existing customers.\nYou'll get a PDF report explaining how to interpret the results, insights we've developed about your customers, and action steps to improve your business based on the results.\nWe'll schedule a call to review the results and insights together and help you develop a plan of action to move the needle on your revenue.\nYou'll get a report with actionable insights on how to better fit your brand to your market (boosting your business) for $995 with a two week turn around. No hidden fees, and no variable rates— Just a dramatic ROI for you (and equitable compensation for me.)\n\nWould better understanding your customers help grow your business? If so, contact me, and we’ll schedule a short call to see if you’re a good fit.",
+  "title": "Customer development",
+  "id": "1f9e0d3b-8036-4739-a662-4ade5981a1a1"
+}
