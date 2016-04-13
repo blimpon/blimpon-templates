@@ -1,0 +1,75 @@
+{
+  "collectionId": "7e17bc8a-863c-4f25-9ef6-641feb9981eb",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "45ebbe49-b661-db07-8d3b-9337438f7860"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "f6d422e8-1ad1-cdb7-4a3a-da77b7d211f3"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 800,
+          "required": true,
+          "key": "c0fcec4a-cd3b-f378-2741-28d1a8e082fb"
+        }
+      ],
+      "key": "b2f3880d-5226-ae98-d603-9269cc00d265"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "638d63ac-8244-68a6-ca63-adc17e1f8ee9"
+        }
+      ],
+      "key": "d193014e-2f51-2d15-5dcc-bf6b4ab7c286"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "e803f70a-826e-5809-2e15-6004e6d280b5"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "79926454-c0af-10d3-f0aa-5a3b4593b936"
+        }
+      ],
+      "key": "04521b8e-0e92-7099-a6de-fb49e1aff67f"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/html-email-templates\n\nIf you have a Shopify store, there are three broad reasons you may want some custom HTML Email templates:\nYou wshould* like your customers to receive nicely styled order and shipping notification emails. (* because they can make you more money.)\nYou have potential customers in the form of abandoned checkouts that you would like to start a dialogue with.\nYou want to send out branded email marketing communications.\nI can design and build solid cross-device/client HTML Emails and implement them across your notification templates (see a little more about those at Shopify’s Email Variable Reference wiki.) I can also take the same code and adapt it for use with any Email list management and communications software that you use, like MailChimp, Campaign Monitor, Constant Contact, et al.",
+  "title": "HTML email templates",
+  "id": "2afae65c-8894-40e9-aa0a-12582796a233"
+}
