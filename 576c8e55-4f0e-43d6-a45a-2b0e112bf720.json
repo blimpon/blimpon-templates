@@ -1,0 +1,75 @@
+{
+  "collectionId": "166a54fc-1dbd-4369-9ce4-18488150de91",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "54317054-7dc2-307d-66da-fe45bfbca567"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "08640322-1458-5c0e-4653-9e34c51e2f30"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 312,
+          "required": true,
+          "key": "a9fb31ce-2213-edee-fdeb-1eabf13ec079"
+        }
+      ],
+      "key": "9e08c51b-fc39-ffc9-2cb9-745d684f499c"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "d96655f3-5e01-d417-ab30-afc6fe655070"
+        }
+      ],
+      "key": "26180c90-3ab9-551b-8ecd-f64caa79131f"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "52786b78-3082-5524-3529-33d9adb9504a"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "684e29ef-59c4-da94-5667-d5331bd78478"
+        }
+      ],
+      "key": "e798aeb4-c801-7c26-3d2b-9f59203bf36a"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nDealing exclusively with wholesalers? Close your Shopify store for retail customers and only allow approved wholesalers to complete an order. Regular visitors will not be able to use the \"Add to cart\" and will see a customized message. Your wholesaler customers will appreciate having your undivided attention.",
+  "title": "Wholesalers only store",
+  "id": "576c8e55-4f0e-43d6-a45a-2b0e112bf720"
+}
