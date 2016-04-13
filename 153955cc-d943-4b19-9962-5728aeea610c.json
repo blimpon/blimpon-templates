@@ -1,0 +1,75 @@
+{
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "136e3af2-4378-1e91-1288-c742a7308fc6"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "faa2af20-2f9e-fc37-5c79-aeafaa5b38f1"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 150,
+          "required": true,
+          "key": "bb6cb038-7b33-2b7e-ffbb-61c0ba409575"
+        }
+      ],
+      "key": "a1a12ae3-d066-27df-5ffb-5a48880a4593"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "7447a47d-d796-5b96-d2fe-821424442db7"
+        }
+      ],
+      "key": "aac000b8-49d9-f8d2-c184-fd51fcaca57c"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "2e946cea-a963-069a-619e-044c75875ffb"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "3d29ec8c-405e-30d9-e5d9-1d59baa79668"
+        }
+      ],
+      "key": "855e73f1-6478-bb30-1f97-2757acbdd54b"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/view-all\n\nMost stock and standard Shopify theme Collection pages are paginated. Lots of websites have a button where you can \"View all\"*. Purchase this integration and we will make that happen for you.\n* Once that has happened, users can then filter the entire Collection on a number of attributes.",
+  "title": "View all in collection",
+  "id": "153955cc-d943-4b19-9962-5728aeea610c"
+}
