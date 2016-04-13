@@ -1,0 +1,75 @@
+{
+  "collectionId": "7e17bc8a-863c-4f25-9ef6-641feb9981eb",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "949d5e36-dfc2-3119-d5dd-b7ce2656ed0f"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "9329c783-25e5-01bf-642e-71f0865ab2ef"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 1495,
+          "required": true,
+          "key": "74a2d24f-a415-3394-9854-098c4b567aba"
+        }
+      ],
+      "key": "8d48a5f0-142c-71b1-c730-def928fc28d0"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "ce519c82-f083-69ff-1f5f-60a866c754ce"
+        }
+      ],
+      "key": "b29efeab-f57c-cab7-6887-8c438fcfdeaf"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "398c2272-5d26-b401-fe4c-499cf8bc43bc"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "dd6e0ad2-9dd2-d2cd-3a0a-129d61d63106"
+        }
+      ],
+      "key": "4519f433-c5a7-74c1-2ac4-2ffb52760982"
+    }
+  ],
+  "description": "https://ethercycle.com/pricing/email-flow-automation/\n\nEmail is one of the best ways to bring in new customers and keep them coming back.\n\nBy sending emails automatically based on what customers behavior, you’ll ensure that each customer gets the right message at the right time.",
+  "title": "Email flow automation",
+  "id": "42fe6825-412c-489c-bbe2-97780eac1635"
+}
