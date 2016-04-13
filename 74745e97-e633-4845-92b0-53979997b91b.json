@@ -1,0 +1,75 @@
+{
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "808b4fae-534d-3e15-6575-2a0eaf2358b7"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "d4262bc2-4039-3421-5de4-cd085cf682ba"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 3400,
+          "required": true,
+          "key": "11b61f68-3210-e8b7-6754-d9de91d88e40"
+        }
+      ],
+      "key": "5057a10d-0ca2-aa8c-f572-dc27220935a5"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "b80c75da-cdf3-277c-9576-da36f8aece95"
+        }
+      ],
+      "key": "691d7907-cca8-baf9-6c8f-a884106c8ef7"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "aa4bd3f9-6bfc-6c17-76b1-191121c8fae7"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "bae6fdf0-b9cc-4127-3a01-ddfeaaa87062"
+        }
+      ],
+      "key": "fe9f6f45-932a-9e4e-a503-5b2e7f6fbc47"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/psd-to-shopify\n\nYou have a rad designer-created layered Photoshop file that you want coded into a fully functional store. It will have at least basic references to Index (home) page content, some kind of product Collection matrices, and individual Product detail pages. You will most likely reference some static (\"About Us\" etc.) Pages, possibly a Blog (maybe more than one). You do not have to provide for a cart page, although it would be nice. (see the wiki for more about Shopify’s templates.)",
+  "title": "PSD to Shopify",
+  "id": "74745e97-e633-4845-92b0-53979997b91b"
+}
