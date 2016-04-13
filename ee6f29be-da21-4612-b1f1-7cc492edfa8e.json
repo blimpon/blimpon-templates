@@ -1,0 +1,75 @@
+{
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "484f80d2-6929-7c64-ad57-34dbfb17684a"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "e1a0d8da-f006-063f-30eb-2a024e899528"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 624,
+          "required": true,
+          "key": "b9c09edb-d74f-bf3f-3a81-b7a7e9ede831"
+        }
+      ],
+      "key": "3a7ffd26-9b38-d916-5188-a2396639ef2a"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "9ff71f3b-b26b-7859-7b2b-869a8c87c362"
+        }
+      ],
+      "key": "73fd268f-6b85-9fd8-10c1-278ecb17cf37"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "7ef7d0b3-2e24-a622-a455-7dc05aa24e90"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "09cc925d-14bf-7dad-0e3b-44e97fb23bfc"
+        }
+      ],
+      "key": "24e1d420-ff9f-1adb-1074-d335897c4d63"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nMake the checkout process easier for your customers – they will appreciate this special treatment. Allow your customers to place orders at your Shopify store without redirecting them to the checkout section. This customization creates an alternative checkout process for orders that can have a different shipping method, not available to general public. A shipping method can be based on weight, on the cart total, on flat rate, or a combination of the above criteria.\n\nThis feature will also exclude taxes from the order and enable wholesaler customers to place unpaid orders, offering a fixed period of payment (30, 60, 90 days or any other date after fulfillment) and an alternative payment method (such as bank transfer, not available for retailers). The order can be marked as paid at any time through Shopify admin, whether the payment was made by credit card or any other method.\n\nSee Exclusive Checkout live here!",
+  "title": "One-page checkout",
+  "id": "ee6f29be-da21-4612-b1f1-7cc492edfa8e"
+}
