@@ -1,0 +1,75 @@
+{
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "4a3e2011-fbbd-db2e-7d43-03404485fac8"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "906d9f08-507d-7801-1430-25009525b57c"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 600,
+          "required": true,
+          "key": "1577fcdb-4735-159e-ed93-13ba3c05fac8"
+        }
+      ],
+      "key": "fdbbf12a-e1c2-3e30-0567-a0ee7ce785e8"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "1adc7b59-5b62-50da-af88-280865036a53"
+        }
+      ],
+      "key": "0e8d7757-d26b-d0b1-baea-83def119712f"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "d35c3fcd-1c44-2009-6c50-1d5e6e28399c"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "23f1b161-cfff-632d-df44-547f4fd1d9f9"
+        }
+      ],
+      "key": "d6fb26aa-946f-45fd-273f-2d5ebf13eaed"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/collection-filtering\n\n“Shopify has no concept of sub-collections.”—The Shopify Wiki.\nHOWEVER, it is easy enough to accomplish with a little logical planning and preparation. You will see many Shopify stores with functional sub-category menus and filter lists based on product attributes. Some implementations are more complex than others and there are a couple of attempts to explain such methods on the Shopify Wiki and in the Fora (see here and here). The problem is that a) these certainly will not cover all scenarios, and b) the chances are that if you are reading this you are either not capable of simply just not interested in coding that yourself.\nTell me what you want and I will make it happen! Have a look at the collection pages on the related examples in my portfolio opposite for some examples and inspiration.",
+  "title": "Collection filtering",
+  "id": "7b00ddce-9056-4ef7-b622-04201981d898"
+}
