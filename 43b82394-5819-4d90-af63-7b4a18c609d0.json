@@ -1,0 +1,73 @@
+{
+  "title": "TradeDoubler feed and tag creation",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "b3984da1-8dad-deed-3386-afa972f668d3"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "30fb3d6b-3f20-864b-187d-73d3bc83b948"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 360,
+          "required": true,
+          "key": "aa68b002-db68-8f94-5f1a-6df52e0de0e5"
+        }
+      ],
+      "key": "d1c57848-dda8-39f3-9c18-dd87bc106374"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "fb44e2c0-59cf-7095-1e57-a3a30393ba98"
+        }
+      ],
+      "key": "a71136b9-baf9-e1b1-306d-58a8f3d392cf"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "4fb6b0f2-6fc2-64ac-3b84-335440776f27"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "8a26b1b8-41bd-36b6-e495-2b2a6bcb57b7"
+        }
+      ],
+      "key": "f010f5b3-51f1-9011-431a-3fb2b3abb8ed"
+    }
+  ],
+  "id": "43b82394-5819-4d90-af63-7b4a18c609d0"
+}
