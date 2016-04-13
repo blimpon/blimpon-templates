@@ -1,0 +1,75 @@
+{
+  "collectionId": "ae048a6c-8226-47a6-9b4b-0a720c1878fd",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "6b4d7eb9-e72a-a918-d7fa-011afd0dfe40"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "10203556-1bd3-03b5-662c-5811fa3f4594"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 4995,
+          "required": true,
+          "key": "9b55137d-3cbb-d83f-dbf6-ec1467abcf2e"
+        }
+      ],
+      "key": "82a42e19-2dbc-2d90-7818-cabd7505aa03"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "6d9d3ffe-3aed-a017-0c6e-7934294b134c"
+        }
+      ],
+      "key": "ee13eb66-7fbd-d3c3-888d-4a7139371be4"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "4edfce67-61bc-e975-fe98-cf17c6988a17"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "54a0f03a-f037-e153-6efe-de1c95e24d1c"
+        }
+      ],
+      "key": "8438facd-17b6-a21a-a3a9-85298f68425c"
+    }
+  ],
+  "description": "https://ethercycle.com/pricing/\n\nStarting from scratch? We can help.\n\nWe'll assist you by:\n\nCreating your account\nPicking a theme for your brand\nSetting up your store, theme, and checkout process.\nProviding 30 days of training",
+  "title": "Concierge onboarding",
+  "id": "476708f5-4995-41c1-8b67-6a829c8cdbf7"
+}
