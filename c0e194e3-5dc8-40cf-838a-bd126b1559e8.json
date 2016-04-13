@@ -1,0 +1,75 @@
+{
+  "collectionId": "166a54fc-1dbd-4369-9ce4-18488150de91",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "7f19fa95-6ac7-27f9-c8f2-a6baa64bcaf7"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "97309218-22ef-d786-bf7f-90c77160a3f6"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 72,
+          "required": true,
+          "key": "3c57503e-d73f-4bd3-9db0-b102c9dd5e9c"
+        }
+      ],
+      "key": "8957a5f3-c5bb-fbe6-3f04-69e014f2be2a"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "5c0cb01c-5f85-852f-9267-5b51a27cccc7"
+        }
+      ],
+      "key": "21ecdaba-31aa-1b97-dd60-26ccbcb00f78"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "bf17fa88-30a3-1062-4b0e-a338371e10f7"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "682073f9-c92b-b895-d724-95debd384ab6"
+        }
+      ],
+      "key": "4f472af6-9819-396a-d791-05ce6950990d"
+    }
+  ],
+  "description": "http://microapps.com/shopify/shopify-customizations/\n\nYour wholesalers want to know what are they really gaining from working with you. Be upfront about it and put the retail price of the product alongside the discounted wholesale one, to let the wholesalers see how much you value their loyalty. At just $71.99, this store customization will bring you increased revenue and undivided attention of the wholesale market.",
+  "title": "Show wholesale and retail prices",
+  "id": "c0e194e3-5dc8-40cf-838a-bd126b1559e8"
+}
