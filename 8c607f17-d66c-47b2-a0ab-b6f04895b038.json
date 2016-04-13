@@ -1,0 +1,75 @@
+{
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "2cf4afc5-87b9-4c8b-6fe7-b12756d8d22d"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "261b14a8-19a9-246e-048f-7c626e7fab7b"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 300,
+          "required": true,
+          "key": "0c03c9fe-f21d-9322-9aa0-9dd451a957f8"
+        }
+      ],
+      "key": "da70e0ef-8bf9-27e5-be0f-cb5c07476164"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "506a986c-e1f9-7315-c09a-a6d1128dd7c2"
+        }
+      ],
+      "key": "99db9b94-f431-94ba-b79b-c676257c3f31"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "2d5a3851-a487-d2f5-859b-55ac0e9c0284"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "2291fc57-dfe1-e9ba-92c3-d9ffc7ab2854"
+        }
+      ],
+      "key": "d6023a6c-748b-2a29-f9b6-ddebb5a6dbf1"
+    }
+  ],
+  "description": "http://tricky3.co.uk/products/infinite-scoll\n\nA web design technique that prevents the browser scroll bar from scrolling to the bottom of the page, causing the page to grow with additional content instead\nhttp://en.wiktionary.org/wiki/infinite_scroll\n… like on a Facebook News Feed! Ha. Seriously, you know… Where you scroll down to the bottom of a page of whatever (e.g. status posts, articles, or products) and the next are already starting to load.\nSmashing Magazine has a great article on options and alternative configurations, depending on the UX you are going for (and how queasy you think your users might get!) If you can hack a little code, we have already done some work that you can fork, otherwise we are available for hire.\n\nNever one to ignore my hero and man-crush Scott Jehl, our plugin does that!",
+  "title": "Infinite scroll",
+  "id": "8c607f17-d66c-47b2-a0ab-b6f04895b038"
+}
