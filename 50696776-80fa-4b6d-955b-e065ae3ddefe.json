@@ -1,0 +1,75 @@
+{
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "a95bd594-b37a-6129-3764-69c30034f2e3"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "97da322e-9643-4583-9b34-14c9219865fc",
+      "admin": true,
+      "key": "0fc031ae-a47b-3174-e724-9b5c7a5393eb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 500,
+          "required": true,
+          "key": "fd8a442b-40a0-275d-0c78-b9982d8738dc"
+        }
+      ],
+      "key": "65deb025-782a-2e72-08cd-eb9a59e8bee2"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "6a302308-120a-00d7-9e55-3aeeab4bf596"
+        }
+      ],
+      "key": "427e828f-1823-23a0-4a05-a402784c1ed4"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "690a4e6a-9a78-3cff-3445-7dfaa2a11ce5"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "43abbc54-eb4b-efc0-b101-01894ce45667"
+        }
+      ],
+      "key": "abf66f4c-5e06-6f8e-8374-0f5e1aa08a35"
+    }
+  ],
+  "description": "Google has made many changes to their algorithm recently that favors sites that are experts on a particular topic.  I specialize in making Google view my client's sites as the experts, which helps my client's sites rank at the top of the searches for their industry.  The impact on your traffic and sales is huge when you rank at the top of the search engines.\n",
+  "title": "Drukson",
+  "id": "50696776-80fa-4b6d-955b-e065ae3ddefe"
+}
