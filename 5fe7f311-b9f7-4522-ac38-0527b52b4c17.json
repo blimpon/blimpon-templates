@@ -232,7 +232,7 @@
       "order": 12
     }
   ],
-  "description": "Similar to the Complete speed fixes job, this job goes further and improves all of your failing Plug in SEO 'Speed' checks.",
+  "description": "Similar to the Complete speed fixes job, this job goes further and improves all of your failing Plug in SEO 'Speed' checks.\n\nImportant: The aim of this job is to increase the overall page loading time as measured by GTMetrix (an industry standard checker). You're getting the knowledge and experience of an expert human speed fixer to interpret what automatic speed checkers report should be done and analyzing your code to make sure that a) the change will speed up your site b) will not break key functionality like add to basket c) is possible on your platform.\n\nEvery website on the internet has at least one point that automatic speed checkers report as a problem with speed, meaning that it isn't possible or desirable to get a no 'problems' verdict from a speed checker: they are no substitute for a human expert due to a, b and c above! When the job is complete your fixer will give you a before and after report of the overall page loading time of your site. We can't guarantee specific speed increases, but if your speed has not increased we can reverse the work and give a refund.",
   "collectionId": "9021c072-efaf-4a80-bf57-cbfd72d9ea1f",
   "jobTemplateImageId": "ce3fa33d-d35a-4c29-9daa-ea6473d852cb"
 }
