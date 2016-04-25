@@ -1,0 +1,159 @@
+{
+  "title": "Enable related products {{ step2.stepItem1 }}",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "a65a8822-ddf7-8c5e-4174-98dfed6f49c0"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c",
+      "key": "e9042f39-3d62-aab5-3a44-38fcf7861b46"
+    },
+    {
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "1428db1a-ef85-2b04-d7fd-a88bd78a1edc"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start the job",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Payment",
+          "type": "pay",
+          "help": "It's a one off payment of $180, you will not be charged again.",
+          "required": true,
+          "totalUSD": "180",
+          "key": "c5d49bfe-da5e-64ea-289b-15f45203ea26",
+          "order": 1
+        }
+      ],
+      "key": "fb674c64-c41d-e1e3-05e2-914163284fef",
+      "order": 1
+    },
+    {
+      "title": "Set up",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "What website is the work for?",
+          "type": "text",
+          "required": true,
+          "key": "f14dc317-e044-f3b2-4b5c-3af780e24ef0",
+          "order": 1
+        },
+        {
+          "title": "Create a login",
+          "type": "login",
+          "for": "fixer",
+          "required": true,
+          "description": "Set up a login to your shop admin",
+          "key": "376342a6-9690-703a-2ff3-85b38c849d80",
+          "order": 2
+        }
+      ],
+      "key": "452b33ae-5f02-304a-a1f4-a4ef793b46ba",
+      "order": 2
+    },
+    {
+      "title": "Agree on placement, selection criteria and styling",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Agreed on placement, selection criteria and styling",
+          "type": "confirmation",
+          "required": true,
+          "key": "f3a8ad84-20f3-de22-67ac-7f6968d54fca",
+          "order": 1
+        }
+      ],
+      "key": "cfaa7686-75e3-ba25-a322-cf04afcb842e",
+      "order": 3
+    },
+    {
+      "title": "Add code to show related products on product pages",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Added code to show related products on product pages",
+          "type": "confirmation",
+          "required": true,
+          "key": "2a717881-1c52-c6c7-8751-6714b96d1a68",
+          "order": 1
+        }
+      ],
+      "key": "6cea9b4d-2a43-f71f-af5b-bf16b880b85b",
+      "order": 4
+    },
+    {
+      "title": "Add related products code to cart page",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Added related products code to cart page",
+          "type": "confirmation",
+          "required": true,
+          "key": "2d4f6203-e7c5-72d4-3a09-d3d9393ae12f",
+          "order": 1
+        }
+      ],
+      "key": "9173181d-89ac-3f58-b346-d253ebca5aa4",
+      "order": 5
+    },
+    {
+      "title": "Add theme settings for easy configuration",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Add theme settings for easy configuration",
+          "type": "confirmation",
+          "required": true,
+          "key": "97f57b35-555d-d50d-eb7b-b10e4b2c059d",
+          "order": 1
+        }
+      ],
+      "key": "90ed4cc5-9cee-c030-7168-138b9551a033",
+      "order": 6
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "9829cac5-854b-f735-a9d6-debfc79933cf",
+          "order": 1
+        },
+        {
+          "title": "Payout project manager",
+          "type": "payout",
+          "role": "project manager",
+          "percentageOfBalance": 56.46,
+          "key": "47d62507-2f93-fef5-89f8-29e216a7c61a",
+          "order": 2
+        },
+        {
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "d30327c5-5d18-3273-9906-acde5caf858e",
+          "order": 3
+        }
+      ],
+      "key": "1695a3af-989f-528c-8a25-87ceba1c13c9",
+      "order": 7
+    }
+  ],
+  "jobTemplateImageId": "03180423-38c6-4d9b-8faf-2f2c1a1cf11e",
+  "description": "Showing related products can get shoppers to add more items to their cart, choose higher-margin products, provide alternatives for out-of-stock-items and more.\n\nWe'll make all of the required code changes to display related products on your product pages and your shopping cart page. We'll place and style them to fit with the look and feel of your website. And once we're done, you will be able to configure related products with easy theme settings.\n\nWe target the work to be completely wrapped up 14 days from signup. ",
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0"
+}
