@@ -1,0 +1,159 @@
+{
+  "title": "Setup customer reviews on your shop {{ step2.stepItem1 }}",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "8aa349e4-be1c-cc5c-889e-05b39c1bba62"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c",
+      "key": "6d0e9a7d-c4e9-d967-61a0-9cf45ae69acb"
+    },
+    {
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "356e7970-e8d7-d234-3e62-10b91110171a"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start the job",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Payment",
+          "type": "pay",
+          "help": "It's a one off payment of $180, you will not be charged again.",
+          "required": true,
+          "totalUSD": "180",
+          "key": "36abd1d9-5c4d-64cc-1d11-67d73061c371",
+          "order": 1
+        }
+      ],
+      "key": "7c756725-37ba-417e-4aaf-af3bd381f7a3",
+      "order": 1
+    },
+    {
+      "title": "Set up",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "What website is the work for?",
+          "type": "text",
+          "required": true,
+          "key": "911409f3-f1ef-4bd8-348c-7d0a765c0ebc",
+          "order": 1
+        },
+        {
+          "title": "Create a login",
+          "type": "login",
+          "for": "fixer",
+          "required": true,
+          "description": "Set up a login to your shop admin",
+          "key": "d48acdc3-4170-6dee-10a9-9cdcc4b89ca0",
+          "order": 2
+        }
+      ],
+      "key": "029e8f37-aec3-e2cc-0885-33ef41dc2608",
+      "order": 2
+    },
+    {
+      "title": "Set up customer reviews app",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Set up customer reviews app",
+          "type": "confirmation",
+          "required": true,
+          "key": "6bac489a-0634-1988-6d5c-ec8e4e4c0a85",
+          "order": 1
+        }
+      ],
+      "key": "0593b33c-deec-ff80-cbeb-69a42bc4b1ac",
+      "order": 3
+    },
+    {
+      "title": "Agree style and placement of the review information",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Agreed style and placement of the review information",
+          "type": "confirmation",
+          "required": true,
+          "key": "0a4c378d-cf6b-f142-b503-06d7d1c5bcf1",
+          "order": 1
+        }
+      ],
+      "key": "00c42eb5-d8c9-fe0a-cb1d-f18cfe044e90",
+      "order": 4
+    },
+    {
+      "title": "Show customer reviews and star ratings on product pages",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Showing customer reviews and star ratings on product pages",
+          "type": "confirmation",
+          "required": true,
+          "key": "7a718dbb-213b-eac1-7fae-5c875d86b90d",
+          "order": 1
+        }
+      ],
+      "key": "cd591f0d-2c79-7a89-004c-0a5e3146e7c0",
+      "order": 5
+    },
+    {
+      "title": "Set up SEO friendly schema markup on product pages",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Set up SEO friendly schema markup on product pages",
+          "type": "confirmation",
+          "required": true,
+          "key": "941e349a-5955-57cc-54a4-1aa48a8fb394",
+          "order": 1
+        }
+      ],
+      "key": "054546ff-bd05-09ae-cd8d-8f444e297308",
+      "order": 6
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "0d4de4e2-f192-c618-5f2a-1c22ae6512c3",
+          "order": 1
+        },
+        {
+          "title": "Payout project manager",
+          "type": "payout",
+          "role": "project manager",
+          "percentageOfBalance": 56.46,
+          "key": "ba929f1c-508e-33fc-bd3f-022d456113e7",
+          "order": 2
+        },
+        {
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "fbf4e051-8551-8080-3876-0a0e358cd8f0",
+          "order": 3
+        }
+      ],
+      "key": "92f025fc-ab82-b454-e010-86e17ab26997",
+      "order": 7
+    }
+  ],
+  "jobTemplateImageId": "8b1bb111-29d1-416e-9003-9372e88d201a",
+  "description": "Customer reviews are a standard part of e-commerce. They give shoppers confidence to select the right product based on what their peers think about it.\n\nWith the right review schema markup (HTML code) Google can see this review information and star ratings too, boosting your SEO. And it can often enhance your organic search listing by displaying star ratings right next to your products when they turn up in search results.\n\nWe'll set up a customer reviews app for you including full customisation to suit your style and placement requirements. We'll also edit your code to expose the review schema markup to Google.\n\nWe target the work to be completely wrapped up 14 days from signup.",
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0"
+}
