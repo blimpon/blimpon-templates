@@ -1,0 +1,159 @@
+{
+  "title": "Add Instagram integration to your store {{ step2.stepItem1 }}",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "ff140182-5d9f-925c-56e5-b3dcf13d707f"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c",
+      "key": "06eb7456-7d44-7cd5-c993-68b400c81122"
+    },
+    {
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "fda522d3-25a4-6876-f10f-99937fe02217"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start the job",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Payment",
+          "type": "pay",
+          "help": "It's a one off payment of $180, you will not be charged again.",
+          "required": true,
+          "totalUSD": "180",
+          "key": "38a76255-4e1c-b8ac-d765-dafd078e5811",
+          "order": 1
+        }
+      ],
+      "key": "a69dd576-b021-2bb1-707e-ad5bbe0c89a7",
+      "order": 1
+    },
+    {
+      "title": "Set up",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "What website is the work for?",
+          "type": "text",
+          "required": true,
+          "key": "2830ab3f-1152-2c58-9766-387069c7a43b",
+          "order": 1
+        },
+        {
+          "title": "Create a login",
+          "type": "login",
+          "for": "fixer",
+          "required": true,
+          "description": "Set up a login to your shop admin",
+          "key": "07a6b74b-db27-83f8-a671-d7aae33b8bdc",
+          "order": 2
+        }
+      ],
+      "key": "e0d45e8d-fad5-eded-060a-69bcbba80f46",
+      "order": 2
+    },
+    {
+      "title": "Create Instagram developer app",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Created Instagram developer app to allow photos to be shown on store",
+          "type": "confirmation",
+          "required": true,
+          "key": "763ea5e7-d3c9-ccd0-786d-792a7b92eba8",
+          "order": 1
+        }
+      ],
+      "key": "f950ed61-78a9-1583-517c-9a008e6fc0de",
+      "order": 3
+    },
+    {
+      "title": "Set up feed",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Set up feed to show latest Instagram photos on homepage",
+          "type": "confirmation",
+          "required": true,
+          "key": "0b617e7e-d47c-f814-33db-90ba3162831f",
+          "order": 1
+        }
+      ],
+      "key": "202ab180-add9-6877-65c3-0bbe2d3edcb1",
+      "order": 4
+    },
+    {
+      "title": "Customize the look and feel to suit site",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Customized the look and feel to suit site",
+          "type": "confirmation",
+          "required": true,
+          "key": "e7b50c42-5b48-c121-be82-d0f9a3cb6585",
+          "order": 1
+        }
+      ],
+      "key": "09b761bd-ad82-865b-bb3a-e57ee06fae6b",
+      "order": 5
+    },
+    {
+      "title": "Add theme settings to allow easy configuration",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Added theme settings to include Instagram setting and options (size and number of photos etc.)",
+          "type": "confirmation",
+          "required": true,
+          "key": "f3035c6f-bfba-e35e-63f1-aa169829f804",
+          "order": 1
+        }
+      ],
+      "key": "b1b84ea7-3842-b6cd-1b2b-c9922a9e0426",
+      "order": 6
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "c53072d7-0c9d-6772-8e79-58d8f266277c",
+          "order": 1
+        },
+        {
+          "title": "Payout project manager",
+          "type": "payout",
+          "role": "project manager",
+          "percentageOfBalance": 56.46,
+          "key": "35f325b0-a077-f385-ea14-fdfbc9d603d3",
+          "order": 2
+        },
+        {
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "96ffce3b-45ad-ee45-0135-44539f9a062f",
+          "order": 3
+        }
+      ],
+      "key": "49a96f5d-3f70-83fa-347b-bbf6aaf63638",
+      "order": 7
+    }
+  ],
+  "jobTemplateImageId": "ca1dfb7c-e2fa-4ead-a876-9b099cc42a42",
+  "description": "Engage your visitors and build a new audience by including your Instagram feed on your homepage.\n\nIf you already have an active Instagram, or are thinking about starting one, this can be a good way to keep your site fresh, build followers and update your shop with new content.\n\nWe'll create an Instagram widget on your homepage (or somewhere else if you'd like), fully customised to suit the look and feel of your shop.\n\nWe target the work to be completely wrapped up 14 days from signup.",
+  "collectionId": "4bd8657a-5c0f-4d78-9c9d-64c39aaf33a9"
+}
