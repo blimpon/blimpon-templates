@@ -1,0 +1,174 @@
+{
+  "title": "Set up SSL encryption {{ step2.stepItem1 }}",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "805c8afc-de01-8246-37f0-47608c3f9982"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c",
+      "key": "da0de69a-255b-5422-1ce3-a113edbc83e6"
+    },
+    {
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "af04c19d-ac65-150e-2f71-c32b45f062d1"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start your Set up SSL encryption job",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Payment",
+          "type": "pay",
+          "help": "It's a one off payment of $180, you will not be charged again.",
+          "required": true,
+          "totalUSD": "180",
+          "key": "924242c2-7534-a11f-03f5-c330a2ed4589",
+          "order": 1
+        }
+      ],
+      "key": "1422285c-e849-87aa-06f3-a55880f0349d",
+      "order": 1
+    },
+    {
+      "title": "Set up",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "What website is the work for?",
+          "type": "text",
+          "required": true,
+          "key": "e07a91f1-f94f-d3b4-e7ea-70c5580a4f52",
+          "order": 1
+        },
+        {
+          "title": "Create a login",
+          "type": "login",
+          "for": "fixer",
+          "required": true,
+          "description": "Set up a login to 1) your shop admin and 2) your Google Webmaster Tools with the details below",
+          "key": "224222fc-4b50-d79b-cced-9727c91e36de",
+          "order": 2
+        }
+      ],
+      "key": "fb53c15a-5b67-3ca6-dade-6745310f9072",
+      "order": 2
+    },
+    {
+      "title": "Activate SSL certificates",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Activated SSL certificates",
+          "type": "confirmation",
+          "required": true,
+          "key": "b2b35ed4-910f-c2f2-7d7b-881297ddd9fc",
+          "order": 1
+        }
+      ],
+      "key": "6a7b302e-aaa6-0495-ca8f-c7ebe0b49921",
+      "order": 3
+    },
+    {
+      "title": "Fix mixed content errors",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Fixed mixed content errors",
+          "type": "confirmation",
+          "required": true,
+          "key": "4a7445cb-3fba-c2bb-5fe2-ba4573a2060d",
+          "order": 1
+        }
+      ],
+      "key": "0cc869ac-4dd5-5e34-5626-223e1cc02ff0",
+      "order": 4
+    },
+    {
+      "title": "Change filenames from HTTP to HTTPS",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Changed filenames from HTTP to HTTPS",
+          "type": "confirmation",
+          "required": true,
+          "key": "3e98f163-cd5e-772c-4c9a-9559e355e738",
+          "order": 1
+        }
+      ],
+      "key": "a44057e2-5c4c-173a-0782-f844534dabc7",
+      "order": 5
+    },
+    {
+      "title": "Move unsecured content to Shopify",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Moved unsecured content to Shopify",
+          "type": "confirmation",
+          "required": true,
+          "key": "7c9688d9-5720-dafd-ed12-bd2d1e2565f1",
+          "order": 1
+        }
+      ],
+      "key": "bc71769e-1c85-c55e-47dc-c7a2b8fcfb34",
+      "order": 6
+    },
+    {
+      "title": "Update sitemap in Webmaster Tools",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Updated sitemap in Webmaster Tools",
+          "type": "confirmation",
+          "required": true,
+          "key": "a7de1706-d6c2-2e84-63c8-88c0812a3347",
+          "order": 1
+        }
+      ],
+      "key": "1805fad8-fd0c-ea8a-801c-c88a67530ed5",
+      "order": 7
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "d2d43d33-bd81-2d12-91da-6b4497584c85",
+          "order": 1
+        },
+        {
+          "title": "Payout project manager",
+          "type": "payout",
+          "role": "project manager",
+          "percentageOfBalance": 56.46,
+          "key": "c5925cfb-5a99-7d52-5892-a2cd51a62bb4",
+          "order": 2
+        },
+        {
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "79056495-d751-6f47-35be-a4aaaf0cd20c",
+          "order": 3
+        }
+      ],
+      "key": "dd2a39bc-b069-0d69-a0d8-ae200f9b581d",
+      "order": 8
+    }
+  ],
+  "description": "Setting up SSL encryption adds a new layer of security to your shop, giving customers more trust in purchasing from your store.\n\nA secure site is a positive ranking factor with Google, so your SEO will benefit too.\n\nWhen moving to a fully secure site 'mixed content errors' are common. This means that some of the resources on a page are not being served securely. We'll make sure that users don't get any of these mixed content warnings and your entire shop is migrated to HTTPS smoothly.\n\nWe aim for your work to be completely wrapped up 14 days from signup.",
+  "jobTemplateImageId": "ee0b6f48-8fb6-4b88-898b-37684dfc8941",
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28"
+}
