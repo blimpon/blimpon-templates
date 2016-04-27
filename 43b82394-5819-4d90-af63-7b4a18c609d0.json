@@ -6,10 +6,10 @@
       "key": "b3984da1-8dad-deed-3386-afa972f668d3"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "30fb3d6b-3f20-864b-187d-73d3bc83b948",
+      "name": "expert",
       "admin": true,
-      "key": "30fb3d6b-3f20-864b-187d-73d3bc83b948"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -70,6 +70,6 @@
     }
   ],
   "id": "43b82394-5819-4d90-af63-7b4a18c609d0",
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nWe create a specific XML feed and add all required Tags and JavaScripts for TradeDoubler.",
+  "description": "We create a specific XML feed and add all required Tags and JavaScripts for TradeDoubler.",
   "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0"
 }
