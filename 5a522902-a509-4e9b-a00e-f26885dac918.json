@@ -6,10 +6,10 @@
       "key": "42656e9c-c7ad-99e1-cac1-e10a12118d00"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "c7eba8df-11e5-679d-c165-6bdc416cd9f6",
+      "name": "expert",
       "admin": true,
-      "key": "c7eba8df-11e5-679d-c165-6bdc416cd9f6"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -70,6 +70,6 @@
     }
   ],
   "id": "5a522902-a509-4e9b-a00e-f26885dac918",
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nHave a dynamic XML feed of your entire product database. Use this feed to serve fresh and updated content about your store products to comparison sites, external marketplaces, affiliate stores...",
+  "description": "Have a dynamic XML feed of your entire product database. Use this feed to serve fresh and updated content about your store products to comparison sites, external marketplaces, affiliate stores...",
   "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0"
 }
