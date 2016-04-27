@@ -6,10 +6,10 @@
       "key": "2ffbe783-09c4-7716-3f23-da9647af3d5b"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "160f0e52-ebc1-3b82-dcd7-e0fa701cfe5c",
+      "name": "expert",
       "admin": true,
-      "key": "160f0e52-ebc1-3b82-dcd7-e0fa701cfe5c"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -70,5 +70,5 @@
     }
   ],
   "id": "9025ff0c-6da6-49eb-a0d5-00f7516dce06",
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nOnce you have your Google Shopping Feed created we map the Google Taxonomy with your product types and make sure it's valid to any country/language."
+  "description": "Once you have your Google Shopping Feed created we map the Google Taxonomy with your product types and make sure it's valid to any country/language."
 }
