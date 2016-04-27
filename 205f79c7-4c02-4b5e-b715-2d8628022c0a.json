@@ -6,10 +6,10 @@
       "key": "1ecd7ed6-1cfd-eee4-f03e-230396e96f09"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "9dbc5632-bc62-8d09-e628-7a92874b08a7",
+      "name": "expert",
       "admin": true,
-      "key": "9dbc5632-bc62-8d09-e628-7a92874b08a7"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,8 @@
       "key": "602394d6-f6d4-4748-d530-c69cd77222c1"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nAdd an eye catchy WhatsApp button for your customers to share your products with their friends.",
+  "description": "Add an eye catchy WhatsApp button for your customers to share your products with their friends.",
   "title": "Add WhatsApp share button on product page",
-  "id": "205f79c7-4c02-4b5e-b715-2d8628022c0a"
+  "id": "205f79c7-4c02-4b5e-b715-2d8628022c0a",
+  "jobTemplateImageId": "c74723f4-a38b-4673-a4b2-598cfaa02a35"
 }
