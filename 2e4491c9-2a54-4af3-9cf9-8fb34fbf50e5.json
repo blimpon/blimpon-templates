@@ -6,10 +6,10 @@
       "key": "39da3da6-7f1a-6435-6112-18fedcdf2ff3"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "31c99b27-c8bf-bdd4-6d4a-963de0c7dd2c",
+      "name": "expert",
       "admin": true,
-      "key": "31c99b27-c8bf-bdd4-6d4a-963de0c7dd2c"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,8 @@
       "key": "a319b50d-2ddd-449d-04d4-8bcc6e5027de"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nMake the checkout process easier for your customers – they will appreciate this special treatment. Allow your customers to place orders at your Shopify store without redirecting them to the checkout section. This customization creates an alternative checkout process for orders that can have a different shipping method, not available to general public. A shipping method can be based on weight, on the cart total, on flat rate, or a combination of the above criteria.\n\nThis feature will also exclude taxes from the order and enable wholesaler customers to place unpaid orders, offering a fixed period of payment (30, 60, 90 days or any other date after fulfillment) and an alternative payment method (such as bank transfer, not available for retailers). The order can be marked as paid at any time through Shopify admin, whether the payment was made by credit card or any other method.\n\nSee Exclusive Checkout live here!",
+  "description": "<p>Make the checkout process easier for your customers – they will appreciate this special treatment. Allow your customers to place orders at your Shopify store without redirecting them to the checkout section. This customization creates an alternative checkout process for orders that can have a different shipping method, not available to general public. A shipping method can be based on weight, on the cart total, on flat rate, or a combination of the above criteria.</p>\n\n<p>This feature will also exclude taxes from the order and enable wholesaler customers to place unpaid orders, offering a fixed period of payment (30, 60, 90 days or any other date after fulfillment) and an alternative payment method (such as bank transfer, not available for retailers). The order can be marked as paid at any time through Shopify admin, whether the payment was made by credit card or any other method.</p>",
   "title": "Exclusive wholesale checkout",
-  "id": "2e4491c9-2a54-4af3-9cf9-8fb34fbf50e5"
+  "id": "2e4491c9-2a54-4af3-9cf9-8fb34fbf50e5",
+  "jobTemplateImageId": "3ba31c5a-d5c3-4d01-a524-b032ce9629ae"
 }
