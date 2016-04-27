@@ -6,10 +6,10 @@
       "key": "bc407525-ae5f-3418-0b32-717776859482"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "67892c15-1641-99c3-9125-9577405f7f1b",
+      "name": "expert",
       "admin": true,
-      "key": "67892c15-1641-99c3-9125-9577405f7f1b"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,7 @@
       "key": "ddaa0dc9-7ceb-f921-c226-3e4bd413702b"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nAdd Schema.org tags at your Shopify store to improve your SEO and get found by Search Engines.",
+  "description": "Add Schema.org tags at your Shopify store to improve your SEO and get found by Search Engines.",
   "title": "Schema.org tags",
   "id": "ca3f728d-ffe8-4375-8c60-2f0bbdbf8684"
 }
