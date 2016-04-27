@@ -71,5 +71,6 @@
   ],
   "description": "<p>Change the common selectors of product page for a grid with all variants.</p>\n\n<p>Display a table with options on rows and columns: I. E: columns for sizes and rows for colors\nDisable unavailable variants: the customer can easily see what options have and which variants are unavailable\nSimplify cart view, group all product variants into one line and edit quantities\nSend an order confirmation with the same grid style, much more readable and comprehensive</p>\n\n<p>This customization has three areas:</p>\n\n<p>Product form: A form created from a product variants’ options / Style similar to a spreadsheet\nCart: Grouping all variants of a single product in one line. / Editing products: modify quantities of variants directly on cart\nOrder confirmation: Adaptation of order confirmation to the customer and the store owner to represent products with sizes and colors grouped</p>",
   "title": "Product grid form",
-  "id": "db3b357f-b905-4a56-aa2b-af8415a19e0a"
+  "id": "db3b357f-b905-4a56-aa2b-af8415a19e0a",
+  "jobTemplateImageId": "75033911-d857-47ab-9245-4e1d6546dda1"
 }
