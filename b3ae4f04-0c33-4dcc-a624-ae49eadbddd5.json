@@ -6,10 +6,10 @@
       "key": "fb0f0ee9-d61a-d44f-0b23-4e53d5a949d4"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "db905b42-ef5c-19c6-48b9-1b9bb3bf6819",
+      "name": "expert",
       "admin": true,
-      "key": "db905b42-ef5c-19c6-48b9-1b9bb3bf6819"
+      "defaultUser": "1cefd2c2-0db9-4f04-8ec6-8629591005e1"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -71,5 +71,5 @@
   ],
   "id": "b3ae4f04-0c33-4dcc-a624-ae49eadbddd5",
   "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0",
-  "description": "http://growthscout.com/services/ecommerce-lead-gen-ppc/\n\nAdwords Search Campaigns\nIncrease Qualified Traffic\nAcquire New Customers\nWeekly Optimization\nAd Creation & Testing\nMaximize ROI\nBing Ad Center Management\nReach 30% more customers than Google alone\nAds on Bing Network\nAds on Yahoo Network\nGoogle Retargeting\nFacebook Retargeting\nFacebook Ads\nStay Top Of Mind For Prospects\nIncrease Overall Conversion Rate\nReach New Prospects on Facebook\n\nThere is an additional $1000 one-time setup fee for the first month. "
+  "description": "<ul>\n<li>\nAdwords Search Campaigns\n</li>\n<li>\nIncrease Qualified Traffic\n</li>\n<li>\nAcquire New Customers\n</li>\n<li>\nWeekly Optimization</li>\n<li>\nAd Creation &amp; Testing</li>\n<li>\nMaximize ROI</li>\n<li>\nBing Ad Center Management</li>\n<li>\nReach 30% more customers than Google alone</li>\n<li>\nAds on Bing Network</li>\n<li>\nAds on Yahoo Network</li>\n<li>\nGoogle Retargeting</li>\n<li>\nFacebook Retargeting</li>\n<li>\nFacebook Ads</li>\n<li>\nStay Top Of Mind For Prospects</li>\n<li>\nIncrease Overall Conversion Rate</li>\n<li>\nReach New Prospects on Facebook</li>\n</ul>\n\nThere is an additional $1000 one-time setup fee for the first month. "
 }
