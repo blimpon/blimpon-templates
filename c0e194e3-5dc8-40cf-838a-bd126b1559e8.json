@@ -6,10 +6,10 @@
       "key": "7f19fa95-6ac7-27f9-c8f2-a6baa64bcaf7"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "97309218-22ef-d786-bf7f-90c77160a3f6",
+      "name": "expert",
       "admin": true,
-      "key": "97309218-22ef-d786-bf7f-90c77160a3f6"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,7 @@
       "key": "4f472af6-9819-396a-d791-05ce6950990d"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nYour wholesalers want to know what are they really gaining from working with you. Be upfront about it and put the retail price of the product alongside the discounted wholesale one, to let the wholesalers see how much you value their loyalty. At just $71.99, this store customization will bring you increased revenue and undivided attention of the wholesale market.",
+  "description": "Your wholesalers want to know what are they really gaining from working with you. Be upfront about it and put the retail price of the product alongside the discounted wholesale one, to let the wholesalers see how much you value their loyalty. At just $71.99, this store customization will bring you increased revenue and undivided attention of the wholesale market.",
   "title": "Show wholesale and retail prices",
   "id": "c0e194e3-5dc8-40cf-838a-bd126b1559e8"
 }
