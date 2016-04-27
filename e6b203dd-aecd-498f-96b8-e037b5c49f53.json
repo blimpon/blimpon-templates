@@ -6,10 +6,10 @@
       "key": "8f213ee5-f185-1511-faf4-ac8e8d93386b"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "3444a623-ff2c-443d-65f2-62d6329e455a",
+      "name": "expert",
       "admin": true,
-      "key": "3444a623-ff2c-443d-65f2-62d6329e455a"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,7 @@
       "key": "35f14251-e82c-512b-f3ad-db7238ab45a3"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nIf you work with both wholesalers and retailers, invest into two separate catalogs. You can refine your catalog to show exactly what wholesalers or retailers want to see. For example, display only discounted products to wholesalers (full-price items will be visible only to retailers), or sell some products exclusively to wholesalers (don't show these products to regular customers).",
+  "description": "If you work with both wholesalers and retailers, invest into two separate catalogs. You can refine your catalog to show exactly what wholesalers or retailers want to see. For example, display only discounted products to wholesalers (full-price items will be visible only to retailers), or sell some products exclusively to wholesalers (don't show these products to regular customers).",
   "title": "Exclusive wholesaler catalog",
   "id": "e6b203dd-aecd-498f-96b8-e037b5c49f53"
 }
