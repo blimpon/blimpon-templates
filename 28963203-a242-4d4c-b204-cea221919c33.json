@@ -6,10 +6,10 @@
       "key": "e4cd7524-1a3c-33dd-500b-00d1f2ed4135"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "eac5c70f-28eb-70bd-8c8b-050b7403ba81",
+      "name": "expert",
       "admin": true,
-      "key": "eac5c70f-28eb-70bd-8c8b-050b7403ba81"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,7 @@
       "key": "60c7599b-4a38-1037-fc10-73f78ca48478"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nCreate a pack as a combination of variants and sell it as one product.\n\nSell by packs allows to sell your products in preconfigured paks with a combination of variants.\n\nI. E.:\nFor a dress with 4 sizes, you can prepare a pack with 1 S, 2 M, 2 L, and 1 XL, If a wholesaler buys 1 pack, he’s buying 6 units of the product ( 1S + 2M + 2L + 1XL)If he buys 2 packs, he’s buying 12 products ( 2S + 4M + 4L + 2XL)\n\nYou keep your unitary stock for each variant\nYou don’t need to create new products as packs\nYou can keep selling individual variants to retail customers",
+  "description": "<p>Create a pack as a combination of variants and sell it as one product.</p>\n\n<p>Sell by packs allows to sell your products in preconfigured paks with a combination of variants.</p>\n\n<p>I. E.:\nFor a dress with 4 sizes, you can prepare a pack with 1 S, 2 M, 2 L, and 1 XL, If a wholesaler buys 1 pack, he’s buying 6 units of the product ( 1S + 2M + 2L + 1XL)If he buys 2 packs, he’s buying 12 products ( 2S + 4M + 4L + 2XL)</p>\n\n<p>You keep your unitary stock for each variant\nYou don’t need to create new products as packs\nYou can keep selling individual variants to retail customers</p>",
   "title": "Variant combination packs",
   "id": "28963203-a242-4d4c-b204-cea221919c33"
 }
