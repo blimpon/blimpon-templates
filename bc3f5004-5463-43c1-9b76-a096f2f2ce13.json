@@ -6,10 +6,10 @@
       "key": "839faa5d-ec4a-07fe-87aa-06c49e303ea3"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "8eac95f2-6ed6-cc34-ccda-7d45a1a9b690",
+      "name": "expert",
       "admin": true,
-      "key": "8eac95f2-6ed6-cc34-ccda-7d45a1a9b690"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,7 @@
       "key": "427bc5d1-e44d-fdb8-004b-555f8d460c09"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nAdd Dublin core tags at your Shopify store to improve your SEO and get found by Search Engines.",
+  "description": "Add Dublin core tags at your Shopify store to improve your SEO and get found by Search Engines.",
   "title": "Dublin core tags",
   "id": "bc3f5004-5463-43c1-9b76-a096f2f2ce13"
 }
