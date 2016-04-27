@@ -6,10 +6,10 @@
       "key": "3d78754f-9fc0-f089-18dc-4103337b3e35"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "3f21fd7f-b812-6747-74e7-73b85b24ba3f",
+      "name": "expert",
       "admin": true,
-      "key": "3f21fd7f-b812-6747-74e7-73b85b24ba3f"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -71,5 +71,5 @@
   ],
   "id": "6fce81b3-0e4b-449e-a9b5-dae0f999b190",
   "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0",
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nWe create a specific XML feed of your products following all the Google specifications so you can list your products to Google Merchant and create PLA (Product Listing Ads) and Google retargeting campaigns."
+  "description": "We create a specific XML feed of your products following all the Google specifications so you can list your products to Google Merchant and create PLA (Product Listing Ads) and Google retargeting campaigns."
 }
