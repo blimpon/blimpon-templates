@@ -6,10 +6,10 @@
       "key": "c66991a8-ac65-0608-202f-5945fc8e48b8"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "258ee090-fc16-55f5-80d2-b8239e8a1d23",
+      "name": "expert",
       "admin": true,
-      "key": "258ee090-fc16-55f5-80d2-b8239e8a1d23"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,7 @@
       "key": "9c4148c3-fa66-ee9c-2534-41e49d765b50"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nYour wholesalers want to know more than regular customers. Add extra descriptions, special conditions or any other information on the product, only visible to wholesalers. This can be added directly to product description or presented as a separate info section on the product page, targeting wholesaler customers exclusively.",
+  "description": "Your wholesalers want to know more than regular customers. Add extra descriptions, special conditions or any other information on the product, only visible to wholesalers. This can be added directly to product description or presented as a separate info section on the product page, targeting wholesaler customers exclusively.",
   "title": "Extra product information for wholesalers",
   "id": "f1bd9fc3-ab10-410f-8193-d6108083c107"
 }
