@@ -6,10 +6,10 @@
       "key": "f4b92fff-56d5-c05f-c2d7-c1c6560d5325"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "dc82d702-52ab-718e-bcd6-fe296b2edc34",
+      "name": "expert",
       "admin": true,
-      "key": "dc82d702-52ab-718e-bcd6-fe296b2edc34"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,7 @@
       "key": "f2558cab-dcf8-cff5-c423-e5727cc11132"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nWe design and code memorable and capturing templates for your campaigns.. Our designs are exquisite, and created with readers in mind. We'll get the design you need done quickly, according to your regulations. We guarantee that all of our designs are compatible with most of the top email clients, so you can be confident your campaign will look right to all of its recipients.",
+  "description": "We design and code memorable and capturing templates for your campaigns.. Our designs are exquisite, and created with readers in mind. We'll get the design you need done quickly, according to your regulations. We guarantee that all of our designs are compatible with most of the top email clients, so you can be confident your campaign will look right to all of its recipients.",
   "title": "Email design template",
   "id": "5973724e-bf26-4038-b6a1-df349f181479"
 }
