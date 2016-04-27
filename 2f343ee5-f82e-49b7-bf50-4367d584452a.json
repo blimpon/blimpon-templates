@@ -6,10 +6,10 @@
       "key": "ec830219-6235-cbcb-a5a0-8e3e50ae01f0"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "444fd2c5-18dc-b957-626e-e8e18ca6259f",
+      "name": "expert",
       "admin": true,
-      "key": "444fd2c5-18dc-b957-626e-e8e18ca6259f"
+      "defaultUser": "1cefd2c2-0db9-4f04-8ec6-8629591005e1"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -71,5 +71,5 @@
   ],
   "id": "2f343ee5-f82e-49b7-bf50-4367d584452a",
   "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0",
-  "description": "http://growthscout.com/services/ecommerce-lead-gen-ppc/\n\nAdwords Search Campaigns\nIncrease Qualified Traffic\nAcquire New Customers\nWeekly Optimization\nAd Creation & Testing\nMaximize ROI\n\nThere is an additional $1000 one-time setup fee for the first month. "
+  "description": "<ul>\n<li>Adwords Search Campaigns</li>\n<li>\nIncrease Qualified Traffic</li>\n<li>\nAcquire New Customers</li>\n<li>\nWeekly Optimization</li>\n<li>\nAd Creation &amp; Testing</li>\n<li>\nMaximize ROI</li>\n</ul>\n\nThere is an additional $1000 one-time setup fee for the first month. "
 }
