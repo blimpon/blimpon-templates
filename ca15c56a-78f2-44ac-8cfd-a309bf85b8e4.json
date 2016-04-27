@@ -6,10 +6,10 @@
       "key": "6bb08568-4206-2835-cc0d-275eac5bd971"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "e8ec426f-4708-ba91-f9b6-b1995b59e333",
+      "name": "expert",
       "admin": true,
-      "key": "e8ec426f-4708-ba91-f9b6-b1995b59e333"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,7 @@
       "key": "1e144f9f-acf7-8ea3-6bcc-44aa0d9429ea"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nGather all the information that allows you to authorize wholesalers in one application form. The link to this form can be placed in any part of your site or in an email marketing campaign. Ask for name, address, website, phone number, ABN or any other info that can be relevant to you. This feature will facilitate the process of purchase for both you and your wholesaler customers.",
+  "description": "Gather all the information that allows you to authorize wholesalers in one application form. The link to this form can be placed in any part of your site or in an email marketing campaign. Ask for name, address, website, phone number, ABN or any other info that can be relevant to you. This feature will facilitate the process of purchase for both you and your wholesaler customers.",
   "title": "Wholesaler application form",
   "id": "ca15c56a-78f2-44ac-8cfd-a309bf85b8e4"
 }
