@@ -6,10 +6,10 @@
       "key": "52dbc9a1-982f-e6c5-f2d6-6196fdcdf83d"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "96b495e6-3e11-360b-5d40-1af2df69f186",
+      "name": "expert",
       "admin": true,
-      "key": "96b495e6-3e11-360b-5d40-1af2df69f186"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,7 @@
       "key": "54d2ef97-5827-335a-e454-d06df7c54918"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nWe cut your Psd's to Html and make sure they are compatible to most browsers and devices.",
+  "description": "We cut your PSDs to Html and make sure they are compatible to most browsers and devices.",
   "title": "PSD to HTML",
   "id": "4401a8fd-343f-4170-80c1-4809d05e1b24"
 }
