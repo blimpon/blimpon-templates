@@ -6,10 +6,10 @@
       "key": "07a079e6-ae75-9a79-ab45-70d046fe8ae8"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "4dce7d30-16bc-ec00-028f-17f566e91c57",
+      "name": "expert",
       "admin": true,
-      "key": "4dce7d30-16bc-ec00-028f-17f566e91c57"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -69,7 +69,7 @@
       "key": "4fb91be3-882d-1215-7d94-2f7e27e230a1"
     }
   ],
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nFor products with negotiable price or special purchase conditions (depending on the number of units or other variables), you can hide the price box and \"Add to cart\" button, display a customized message with your contact details, or a special request form to enable customers to get in touch with you regarding the price.\n\nYou will receive an email like the one on the screenshot below.",
+  "description": "For products with negotiable price or special purchase conditions (depending on the number of units or other variables), you can hide the price box and \"Add to cart\" button, display a customized message with your contact details, or a special request form to enable customers to get in touch with you regarding the price.",
   "title": "Ask for price products",
   "id": "5b5e35e6-f8fc-45b9-bad4-1c06d62f7a64"
 }
