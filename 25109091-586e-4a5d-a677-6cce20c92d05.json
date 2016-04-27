@@ -6,10 +6,10 @@
       "key": "6886551f-3fb9-f567-61ec-f814eafc9fc7"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "c6d09391-835d-5f10-0dce-75e6c320c185",
+      "name": "expert",
       "admin": true,
-      "key": "c6d09391-835d-5f10-0dce-75e6c320c185"
+      "defaultUser": "1cefd2c2-0db9-4f04-8ec6-8629591005e1"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -71,5 +71,5 @@
   ],
   "id": "25109091-586e-4a5d-a677-6cce20c92d05",
   "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0",
-  "description": "http://growthscout.com/services/ecommerce-lead-gen-ppc/\n\nAdwords Search Campaigns\nIncrease Qualified Traffic\nAcquire New Customers\nWeekly Optimization\nAd Creation & Testing\nMaximize ROI\nBing Ad Center Management\nReach 30% more customers than Google alone\nAds on Bing Network\nAds on Yahoo Network\n\nThere is an additional $1000 one-time setup fee for the first month. "
+  "description": "<ul>\n<li>\nAdwords Search Campaigns</li>\n<li>\nIncrease Qualified Traffic</li>\n<li>\nAcquire New Customers</li>\n<li>\nWeekly Optimization</li>\n<li>\nAd Creation &amp; Testing</li>\n<li>\nMaximize ROI</li>\n<li>\nBing Ad Center Management</li>\n<li>\nReach 30% more customers than Google alone</li>\n<li>\nAds on Bing Network</li>\n<li>\nAds on Yahoo Network</li>\n</ul>\n\nThere is an additional $1000 one-time setup fee for the first month. "
 }
