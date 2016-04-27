@@ -6,10 +6,10 @@
       "key": "745ec8f9-24a7-757a-f177-850e732a94bc"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "12c77ec6-608d-10f2-e5f6-796490aea51a",
+      "name": "expert",
       "admin": true,
-      "key": "12c77ec6-608d-10f2-e5f6-796490aea51a"
+      "defaultUser": "98b623b4-0197-47e9-88e1-16a69bdf13e3"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
@@ -70,6 +70,6 @@
     }
   ],
   "id": "6a66e091-1d01-45f2-8ecb-d59bb791a40f",
-  "description": "http://microapps.com/shopify/shopify-customizations/\n\nWe create and define the most cost effective display retargeting campaign using your Google Adwords and Google Shopping account.",
+  "description": "We create and define the most cost effective display retargeting campaign using your Google Adwords and Google Shopping account.",
   "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0"
 }
