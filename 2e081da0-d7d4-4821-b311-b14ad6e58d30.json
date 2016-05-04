@@ -6,10 +6,10 @@
       "key": "4b2d111d-0ea0-66f4-b6de-f1f563042a45"
     },
     {
-      "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "02d80f9b-a037-6cd4-1055-16226473ec90",
+      "name": "expert",
       "admin": true,
-      "key": "02d80f9b-a037-6cd4-1055-16226473ec90"
+      "defaultUser": "300e5387-1977-424a-88fc-689ccc5ad3e1"
     }
   ],
   "steps": [
@@ -31,7 +31,7 @@
     },
     {
       "title": "Do the work",
-      "completeRole": "fixer",
+      "completeRole": "expert",
       "order": 2,
       "stepItems": [
         {
