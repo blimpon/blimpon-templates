@@ -1,0 +1,75 @@
+{
+  "collectionId": "b8d4461e-1357-4065-82e3-d9985ba7e91b",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "f4d979c7-0eb9-726e-a290-0c9c8e576ff4"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "8ecffa82-389d-8bb8-952d-7e3dd904cbe3"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 400,
+          "required": true,
+          "key": "24b89af2-f225-e5d4-5007-87c8d832dbeb"
+        }
+      ],
+      "key": "a87fb351-d5b9-bca1-43b9-1bc250356471"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "bc4a00eb-0682-c7ef-04c6-189947c8e3ce"
+        }
+      ],
+      "key": "14c31e5e-9bc7-904f-5322-49412fa89f4b"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "8f21be8f-eaf4-66e2-fb70-19921e165ada"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "fccd43d5-59f9-16ac-b397-2f8a1d56fd81"
+        }
+      ],
+      "key": "0e764e2f-69ff-734b-6517-6112d4b9b21d"
+    }
+  ],
+  "description": "Have a burning question about outreach that you need an answer to? Want an expert's viewpoint on your outreach campaign, your strategy, or your emails? Schedule a phone call to discuss your business.",
+  "title": "One-Off Marketing Strategy Call",
+  "id": "3741b34d-9faf-490e-9269-2d863b3ac6c8"
+}
