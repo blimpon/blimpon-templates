@@ -10,12 +10,6 @@
       "name": "expert",
       "admin": true,
       "defaultUser": "1c9dd6b8-6580-474e-bf80-6df8631c4e0d"
-    },
-    {
-      "name": "marketplace",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "2ce53f7a-e22e-4fa0-8f30-97d196204615",
-      "admin": true
     }
   ],
   "steps": [
@@ -40,13 +34,7 @@
       "completeRole": "expert",
       "order": 2,
       "stepItems": [
-        {
-          "order": 1,
-          "title": "Has the work been done?",
-          "type": "confirmation",
-          "required": true,
-          "key": "12549af8-d40e-cfc0-2702-87b50c218ce7"
-        }
+
       ],
       "key": "c5ca4639-369f-61c7-95e8-73bc0921428c"
     },
@@ -65,15 +53,6 @@
         },
         {
           "order": 2,
-          "title": "Payout marketplace",
-          "type": "payout",
-          "role": "marketplace",
-          "marketplace": true,
-          "percentageOfBalance": 20,
-          "key": "63e9cb7e-9781-4587-8e7f-32c9373d0544"
-        },
-        {
-          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
