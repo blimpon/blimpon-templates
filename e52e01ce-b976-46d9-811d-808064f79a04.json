@@ -5,10 +5,10 @@
       "name": "customer"
     },
     {
+      "key": "dcff7ffc-4b13-44e9-b998-527ac9ceafd0",
       "name": "fixer",
-      "defaultUser": "bef05460-26f0-4cf6-ab67-88c0aa435eb5",
       "admin": true,
-      "key": "dcff7ffc-4b13-44e9-b998-527ac9ceafd0"
+      "defaultUser": "bef05460-26f0-4cf6-ab67-88c0aa435eb5"
     }
   ],
   "steps": [
