@@ -1,0 +1,48 @@
+{
+  "roles": [
+    {
+      "key": "2b213c46-3fb1-43f7-b902-7571885a2eac",
+      "name": "customer",
+      "admin": true
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "bef05460-26f0-4cf6-ab67-88c0aa435eb5",
+      "admin": true,
+      "key": "2641c2ff-c9e1-4547-9eee-24a48b774bad"
+    }
+  ],
+  "steps": [
+    {
+      "key": "0ad68e57-928f-4fc3-b1c3-fd55a8670298",
+      "title": "Send message",
+      "order": 1,
+      "completeRole": "customer",
+      "reviewRole": "fixer",
+      "stepItems": [
+        {
+          "key": "b5c5883e-fdfa-4fa8-ac3c-1b2c4ed67e7c",
+          "title": "Your message",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "key": "2dc1d3db-8667-419f-b1db-f2bb82b37da9",
+      "title": "Reply",
+      "order": 2,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "bf796725-6634-4b32-8746-0726581265ec",
+          "title": "Replied to message",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
+    }
+  ],
+  "description": "Get in touch",
+  "title": "Contact",
+  "id": "ef8c3b34-3980-4a7e-8c52-9f770daf6679"
+}
