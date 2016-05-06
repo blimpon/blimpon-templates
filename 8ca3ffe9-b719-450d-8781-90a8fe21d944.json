@@ -1,0 +1,74 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "a942ef7d-9fdc-a83c-947f-4de1fd8dcdf9"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "bef05460-26f0-4cf6-ab67-88c0aa435eb5",
+      "admin": true,
+      "key": "c4294c94-9251-edde-c135-88c82c32f368"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 185,
+          "required": true,
+          "key": "ccb95ada-b077-e8aa-d6ef-f0a5118799be"
+        }
+      ],
+      "key": "b373ce49-fc20-b875-b306-c1f241d5e522"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e692a4b2-d7d4-8bab-19a7-88dd8dbcdaf7"
+        }
+      ],
+      "key": "e5c99e0f-359f-9b9d-c0c5-eeb68beb2b90"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "30264bce-ef01-9fd7-0e82-f450bdda07d7"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "c1cd2a05-f308-1c58-ea4f-de9d068bc43f"
+        }
+      ],
+      "key": "3849808d-234b-e5a5-13aa-814557c49995"
+    }
+  ],
+  "description": "Do You Need Color Laser Printer Repair, Or Laser Printer Service Repairs within Connecticut Call us: (203) 381-0399 or visit us http://www.copierspluswwllc.com",
+  "title": "Need Laser Printer Service Repairs within Connecticut ? Call us: (203) 381-0399 or visit us: at: http://www.copierspluswwllc.com",
+  "id": "8ca3ffe9-b719-450d-8781-90a8fe21d944"
+}
