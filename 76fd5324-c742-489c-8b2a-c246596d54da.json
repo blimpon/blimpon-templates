@@ -1,0 +1,75 @@
+{
+  "collectionId": "not in a collection",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "95d02597-2b23-1a55-f9a2-171af0fe5cd4"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "admin": true,
+      "key": "40d2a622-b201-d5cc-e31c-54eedf8d88a1"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 49,
+          "required": true,
+          "key": "17adbd6d-7816-768e-cdd2-c254704e007f"
+        }
+      ],
+      "key": "0611fbac-75fe-e289-3ab8-a6265d95baf9"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "787e101b-674a-62c6-6274-85750334ef66"
+        }
+      ],
+      "key": "cec05085-e898-d84c-9872-752cf54344e4"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "59895a96-5b73-3166-b960-2ffaab4c6dec"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "f11d4b0e-3ef3-43f5-a9d4-78ee02242eea"
+        }
+      ],
+      "key": "cf4705c1-f2e5-678b-284e-1975a0182c19"
+    }
+  ],
+  "title": "Shopify SPF email record setup",
+  "description": null,
+  "id": "76fd5324-c742-489c-8b2a-c246596d54da"
+}
