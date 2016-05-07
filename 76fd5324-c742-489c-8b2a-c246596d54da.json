@@ -6,15 +6,20 @@
       "key": "95d02597-2b23-1a55-f9a2-171af0fe5cd4"
     },
     {
+      "key": "40d2a622-b201-d5cc-e31c-54eedf8d88a1",
       "name": "fixer",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
       "admin": true,
-      "key": "40d2a622-b201-d5cc-e31c-54eedf8d88a1"
+      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c"
+    },
+    {
+      "key": "cd358ca5-fff8-c7d5-379c-bfe659c78e99",
+      "name": "project manager",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
     {
-      "title": "Pay",
+      "title": "Start the job",
       "completeRole": "customer",
       "order": 1,
       "stepItems": [
@@ -30,16 +35,30 @@
       "key": "0611fbac-75fe-e289-3ab8-a6265d95baf9"
     },
     {
-      "title": "Do the work",
-      "completeRole": "fixer",
+      "title": "Answer questions",
+      "completeRole": "customer",
       "order": 2,
       "stepItems": [
         {
           "order": 1,
-          "title": "Has the work been done?",
-          "type": "confirmation",
+          "title": "What website is this for?",
+          "type": "text",
           "required": true,
           "key": "787e101b-674a-62c6-6274-85750334ef66"
+        },
+        {
+          "key": "21e82e71-8c0d-062a-e6c6-3c4e194c3077",
+          "title": "Set up Shopify admin access",
+          "order": 2,
+          "type": "login",
+          "for": "fixer"
+        },
+        {
+          "key": "a8921a3a-9967-2a09-03bf-e41f984defca",
+          "title": "Set up access to domain name admin, send a message with details",
+          "order": 3,
+          "type": "confirmation",
+          "description": "Also provide a login to the control panel of company you registered your domain with (GoDaddy, Namecheap etc.) so that we can make the required DNS changes"
         }
       ],
       "key": "cec05085-e898-d84c-9872-752cf54344e4"
@@ -47,7 +66,7 @@
     {
       "title": "Rate",
       "completeRole": "customer",
-      "order": 3,
+      "order": 5,
       "stepItems": [
         {
           "order": 1,
@@ -58,15 +77,52 @@
           "key": "59895a96-5b73-3166-b960-2ffaab4c6dec"
         },
         {
-          "order": 2,
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
           "key": "f11d4b0e-3ef3-43f5-a9d4-78ee02242eea"
+        },
+        {
+          "key": "1caa3268-2e0c-c6f0-5469-aea205c2c60c",
+          "title": "Payout project manager",
+          "order": 2,
+          "type": "payout",
+          "percentageOfBalance": "20",
+          "role": "project manager"
         }
       ],
       "key": "cf4705c1-f2e5-678b-284e-1975a0182c19"
+    },
+    {
+      "key": "e63a8d8e-5606-4bda-a920-c92eec9f792f",
+      "title": "Add Shopify's SPF record to domain",
+      "order": 3,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "f8daf5bc-7fbb-7b3d-fa9f-65dee6f958fa",
+          "title": "<p>Log into the domain name admin and add or edit an SPF record as here: <a href='https://help.shopify.com/manual/intro-to-shopify/initial-setup#customer-email-best-practices'>https://help.shopify.com/manual/intro-to-shopify/initial-setup#customer-email-best-practices</a>.</p>  <p>Note that if there is already an SPF record, edit it to add Shopify: don't remove the existing one. There can only be one SPF record per domain, but it can have multiple entries.</p>",
+          "order": 1,
+          "type": "html",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "key": "f34d1905-a2e1-7e22-cb90-7b710d3b5327",
+      "title": "Validate the SPF record",
+      "order": 4,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "815f1fc4-065f-3e3f-a1ef-9b02f0e59400",
+          "title": "<p>Validate the SPF, checking if it contains an entry for Shopify and any previous entries using the checker here: <a href='http://www.kitterman.com/spf/validate.html'>http://www.kitterman.com/spf/validate.html</a></p>",
+          "order": 1,
+          "type": "html"
+        }
+      ]
     }
   ],
   "title": "Shopify SPF email record setup",
