@@ -77,20 +77,20 @@
           "key": "59895a96-5b73-3166-b960-2ffaab4c6dec"
         },
         {
-          "order": 3,
-          "title": "Payout fixer",
-          "type": "payout",
-          "role": "fixer",
-          "percentageOfBalance": 100,
-          "key": "f11d4b0e-3ef3-43f5-a9d4-78ee02242eea"
-        },
-        {
           "key": "1caa3268-2e0c-c6f0-5469-aea205c2c60c",
           "title": "Payout project manager",
           "order": 2,
           "type": "payout",
           "percentageOfBalance": "20",
           "role": "project manager"
+        },
+        {
+          "order": 3,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "f11d4b0e-3ef3-43f5-a9d4-78ee02242eea"
         }
       ],
       "key": "cf4705c1-f2e5-678b-284e-1975a0182c19"
@@ -126,6 +126,6 @@
     }
   ],
   "title": "Shopify SPF email record setup",
-  "description": null,
+  "description": "<p>As part of the initial setup of your Shopify store you need to allow Shopify to be able to send email from your custom domain, otherwise email may not be delivered to providers like Gmail who check this 'SPF record'.</p>\n<p>An SPF record is a spam prevention mechanism that lets an email provider know who is authorised to send emails from a domain. So, for example, a spammer couldn't pretend to email you from @paypal.com.</p>\n<p>You or your developer can set this up by following the instructions here: <a href=\"https://help.shopify.com/manual/intro-to-shopify/initial-setup#customer-email-best-practices\"> https://help.shopify.com/manual/intro-to-shopify/initial-setup#customer-email-best-practices</a> or we can do it for you on this job.</p>",
   "id": "76fd5324-c742-489c-8b2a-c246596d54da"
 }
