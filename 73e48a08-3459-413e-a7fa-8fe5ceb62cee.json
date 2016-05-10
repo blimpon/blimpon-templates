@@ -1,0 +1,75 @@
+{
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "2c9eefde-1ddb-c666-f899-a0ed8815b8ec"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "b8b90d65-b8c0-4eab-8e36-37522397443f",
+      "admin": true,
+      "key": "b1f4bc45-9ee4-6acb-8262-d15424a7aba0"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 180,
+          "required": true,
+          "key": "35f27294-e26c-1aec-8854-9243857392ff"
+        }
+      ],
+      "key": "6038ff1f-345a-ae04-cf90-9972ffdb6a3e"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "febfe616-02bc-b7e8-98e6-d2bc9f64e750"
+        }
+      ],
+      "key": "2bd15a67-41fc-6aa6-1737-38d10fa77a32"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "09c1ce05-dfde-5d5c-7ae5-72d925a7cf07"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "c2a041e3-bc4e-3a5d-03fa-6ec823f68287"
+        }
+      ],
+      "key": "448a55cd-3bd0-bee7-a508-e23e24fed53c"
+    }
+  ],
+  "description": "Need SEO to be done on my website",
+  "title": "Johan watson",
+  "id": "73e48a08-3459-413e-a7fa-8fe5ceb62cee"
+}
