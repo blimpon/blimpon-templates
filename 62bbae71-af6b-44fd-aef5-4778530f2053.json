@@ -26,9 +26,9 @@
         {
           "title": "Payment",
           "type": "pay",
-          "help": "It's a one off payment of $500, you will not be charged again.",
+          "help": "It's a one off payment of $1,000, you will not be charged again.",
           "required": true,
-          "totalUSD": "500",
+          "totalUSD": "1000",
           "key": "7a1662d1-6bc9-0724-071f-9ce4072414a1",
           "order": 1
         }
@@ -72,16 +72,16 @@
           "description": "Does the store have a Google Webmaster Tools account? If yes please share access to luke@thepixelcrowd.com",
           "required": true,
           "key": "1b119e84-7f61-447c-0121-8c377ec4f394",
-          "order": 2,
+          "order": 3,
           "help": "This article shows how to share access: https://webmasters.googleblog.com/2012/03/safely-share-access-to-your-site-in.html"
         },
         {
-          "title": "Are there any areas you would to be covered within the report?",
+          "title": "What specific areas you would to be covered within the report?",
           "type": "text",
           "help": "This could include adding features to your store, questions about traffic or keywords etc.",
           "required": true,
           "key": "2478c0f3-dba4-0d8d-79cc-1bcbc657b70c",
-          "order": 3,
+          "order": 4,
           "description": "Let the fixer know if there are specific issues relating to your store which you would to be investigated."
         },
         {
@@ -90,32 +90,39 @@
           "help": "This article shows how to share access: https://support.google.com/analytics/answer/1009702?hl=en",
           "required": true,
           "key": "6b4fb9e9-1e71-4db3-094e-94e9e649af1e",
-          "order": 1,
+          "order": 2,
           "description": "Does the store have a Google Analytics account? If yes please share access to luke@thepixelcrowd.com"
         },
         {
           "key": "11fb1c27-a28b-66b9-1a07-03e240dcc39e",
           "title": "Notification Email",
-          "order": 7,
+          "order": 8,
           "type": "sendemail",
           "to": "project manager",
-          "subject": "New Top Line SEO Store Review Project ",
-          "body": "Your Top Line SEO Store Review Project is ready to be worked on"
+          "subject": "Full Store Analysis Report Project ",
+          "body": "Your Full Store Analysis Report Project is ready to be worked on"
         },
         {
           "key": "fe29ad0b-5d23-4ffa-c6c0-2949a1761b81",
           "title": "What marketing activities are you currently using to promote the store?",
-          "order": 4
+          "order": 5
         },
         {
           "key": "a8ac7e48-2b1f-7192-30bb-410123c76a29",
           "title": "What are your main sources of sales and traffic?",
-          "order": 5
+          "order": 6
         },
         {
           "key": "98ff3e95-b8d8-2fa7-fa3a-ef5013b67e62",
           "title": "What are your aims for this review of your store?",
-          "order": 6
+          "order": 7
+        },
+        {
+          "key": "dab45306-146c-a39e-c9ff-2a9b544ef3b8",
+          "title": "Kick Off Call",
+          "order": 1,
+          "description": "Would you like to schedule a call to discuss the work before the project is started?",
+          "help": "Please email luke@thepixelcrowd.com to arrange a meeting time and date"
         }
       ],
       "key": "6c98ff14-07aa-ea02-e3c5-ab6b570852fd",
@@ -143,7 +150,7 @@
       "completeRole": "customer",
       "stepItems": [
         {
-          "title": "Read through the Top Line SEO Store review and give feedback. ",
+          "title": "Read through the Full Store Analysis Report and give feedback. ",
           "type": "confirmation",
           "required": true,
           "key": "6c086c44-e087-41cb-502d-61d4d726aba7",
@@ -176,11 +183,11 @@
         }
       ],
       "key": "565fd191-7bac-3cc2-8ef9-8ce7d3c9cebd",
-      "order": 7
+      "order": 8
     },
     {
       "key": "51402086-ad12-ad29-7e64-6b1c90203efd",
-      "title": "Produce the Top Line SEO Store Review document",
+      "title": "Produce the Full Store Analysis Report document",
       "order": 5,
       "completeRole": "fixer",
       "stepItems": [
@@ -189,6 +196,22 @@
           "title": "The fixer will produce the report and share it with the customer",
           "order": 1,
           "type": "confirmation"
+        }
+      ]
+    },
+    {
+      "key": "ba0d429e-fd64-e340-7cb4-7f6eb972865a",
+      "title": "Post Completion Call",
+      "order": 7,
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "key": "cf8f8e3a-a6d0-9c01-199e-403cfd7e9425",
+          "title": "Arrange a time to run through the report",
+          "order": 1,
+          "type": "confirmation",
+          "description": "Would you like to arrange a time with Luke to run through the report and the findings?",
+          "help": "Please email luke@thepixelcrowd.com to arrange a time and date for a meeting"
         }
       ]
     }
