@@ -203,7 +203,7 @@
       "key": "ba0d429e-fd64-e340-7cb4-7f6eb972865a",
       "title": "Post Completion Call",
       "order": 7,
-      "completeRole": "customer",
+      "completeRole": "fixer",
       "stepItems": [
         {
           "key": "cf8f8e3a-a6d0-9c01-199e-403cfd7e9425",
