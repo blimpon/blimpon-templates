@@ -1,5 +1,5 @@
 {
-  "title": "Complete SEO fixes {{ step2.stepItem1 }} (copy)",
+  "title": "SEO Consulting call (30 mins)",
   "roles": [
     {
       "key": "1a43c7a5-a2f2-7ae4-2130-d60a897252a7",
@@ -42,7 +42,7 @@
       "reviewRole": "",
       "stepItems": [
         {
-          "title": "What website is the work for?",
+          "title": "What website is the call for?",
           "type": "text",
           "required": true,
           "key": "42c525ee-cd0b-dbfc-11de-bde9cf71c59b",
@@ -67,7 +67,7 @@
       "reviewRole": "fixer",
       "stepItems": [
         {
-          "title": "Answer the questions below as best as you can so that we can complete the work exactly how you'd like. If you're unsure about any, simply write 'unsure' and we'll come up with suggestions for your approval.",
+          "title": "Answer the questions below as best as you can so that we can prepare for the call.",
           "type": "html",
           "description": "You can press the help icon for more help on each one.",
           "required": true,
