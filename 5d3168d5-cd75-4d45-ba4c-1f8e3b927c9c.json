@@ -75,89 +75,66 @@
           "order": 1
         },
         {
-          "title": "What main heading (H1) would you like on your homepage?",
+          "title": "What date and time would you like to have the call?",
           "type": "text",
-          "help": "<ul><li>Or you can specify some existing text on the page</li><li>Include keywords you want to target</li><li>Don't make it a long list of comma separated words</li><li>Write in a natural way</li><li>Make it a single sentence</li><li>Don't worry, this isn't permanent as we'll make it easy for you to change later</li></ul>",
+          "help": "Luke works in the UK and is on the GMT time zone. Where possible please ensure proposed call times are between 9am and 5pm UK time.",
           "required": true,
           "key": "2478c0f3-dba4-0d8d-79cc-1bcbc657b70c",
           "order": 2
         },
         {
-          "title": "Where do you want this main heading (H1) located, what size and colour should the text be?",
+          "title": "How old is the store?",
           "type": "text",
-          "help": "If you don't have a strong opinion just write 'make it look good",
+          "help": "Is the store new or a few years old?",
           "required": true,
           "key": "6b4fb9e9-1e71-4db3-094e-94e9e649af1e",
           "order": 3
         },
         {
-          "title": "What new subheading (H2) would you like on your homepage?",
+          "title": "What marketing activities are you currently using to promote the store?",
           "type": "text",
-          "help": "<ul><li>Or you can specify some existing text on the page</li><li>Include keywords you want to target</li><li>Don't make it a long list of comma separated words</li><li>Write in a natural way</li><li>Make it a single sentence</li></ul>",
+          "help": "Are you using paid advertising, social media or content production?",
           "required": true,
           "key": "e9710184-ed55-2dc3-59de-0f96e0c847da",
           "order": 4
         },
         {
-          "title": "Where do you want this subheading (H2) located, what size and colour should the text be?",
+          "title": "What are your main sources of sales and traffic?",
           "type": "text",
-          "help": "If you don't have a strong opinion just write 'make it look good'",
+          "help": "You can find this information within Google Analytics",
           "required": true,
           "key": "04b16c37-4aec-572d-898e-06fffbd3da32",
           "order": 5
         },
         {
-          "title": "What do you want your homepage META description to be?",
+          "title": "What are your aims for this call?",
           "type": "text",
-          "help": "<ul><li>This is usually shown in Google results, so make it compelling</li><li>Include why the searcher should clickthrough to your shop</li><li>Good example: \\\"Quality, handcrafted wooden propeller blades, props and chucks made using traditional processes. In sustainable Cherry, Maple and other woods.\\\"</li><li>Limit it to two or three sentences</li><li>Don't worry, this isn't permanent as we'll make it easy for you to change later</li></ul>",
+          "help": "Let Luke what your aims are for the call",
           "required": true,
           "key": "2f8c3afd-fc98-2cc1-6c03-fecc415fa218",
           "order": 6
         },
         {
-          "title": "What do you want your homepage page title to be?",
+          "title": "Would you like a specific area of question researched before the call takes place?",
           "type": "text",
-          "help": "<ul><li>Select something that's unique about your shop</li><li>Avoid including 'Welcome to' and your shop name</li><li>Good example: \\\"Buy handcrafted wooden propeller blades from sustainable Cherry wood\\\"</li><li>Don't worry, this isn't permanent as we'll make it easy for you to change later</li></ul>",
+          "help": "Please provide as much detail as possible or email information to luke@thepixelcrowd.com",
           "required": true,
           "key": "b450f893-2461-6e71-1bc2-37be60e256db",
           "order": 7
         },
         {
-          "title": "What do you want to include at the end of all page titles?",
-          "type": "text",
-          "help": "<ul><li>Include your shop name</li><li>Keep it concise, including your most popular categories</li><li>Good example: \\\"Ohio Propellers Inc. for propeller blades, props and chucks\\\"</li><li>Don't worry, this isn't permanent as we'll make it easy for you to change later</li></ul>",
-          "required": false,
-          "key": "e5f33b86-aad2-45d3-473f-8d7e76f5fefc",
-          "order": 8
-        },
-        {
-          "title": "New, ready job at Plug in SEO",
+          "title": "New SEO Consulting Call Job Ready ",
           "type": "sendemail",
           "required": true,
           "to": "project manager",
           "subject": "New {{ job_title }} job at Blimpon for you",
           "body": "<h1>New job created: {{ job_title }} at Blimpon</h1><p>The customer has paid, provided access and answered the questions so it's now ready for your work.</p>",
           "key": "79027362-5898-7b77-a9eb-8c88b8614657",
-          "order": 9
+          "order": 8
         }
       ],
       "key": "6c98ff14-07aa-ea02-e3c5-ab6b570852fd",
       "order": 3
-    },
-    {
-      "title": "Quality control",
-      "completeRole": "fixer",
-      "stepItems": [
-        {
-          "title": "Check that all SEO fixes have been completed and the Plug in SEO verdict has improved",
-          "type": "confirmation",
-          "required": true,
-          "key": "6c086c44-e087-41cb-502d-61d4d726aba7",
-          "order": 1
-        }
-      ],
-      "key": "63b4132c-8924-cabe-ae91-eb4212620139",
-      "order": 4
     },
     {
       "title": "Complete the work",
@@ -192,6 +169,20 @@
       ],
       "key": "565fd191-7bac-3cc2-8ef9-8ce7d3c9cebd",
       "order": 5
+    },
+    {
+      "key": "65528957-8151-862e-c18d-1080f8cf918b",
+      "title": "Consulting Call Completed?",
+      "order": 4,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "7dd667d4-8e63-b072-fe59-3dd6a87281a3",
+          "title": "Has the consulting call taken place ...",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
     }
   ],
   "description": "Structure your HTML (website code) properly and ensuring the right keywords are used in the right places is essential to ensure you have the best chance to rank well in Google, Bing and other search engines.\n\nPage titles, meta descriptions, headings, ALT tags all have a part to play in this. With many e-commerce and website platforms like Shopify, Bigcommerce and Wordpress lots of this can be automatically generated with the right code in place. \n\nYour site template code will be fixed to take full advantage of this and correct HTML errors (things like duplicate title tags). You don't need any programming experience. You simply answer a few questions about the keywords you'd like to target. \n\nIf your site isn't in English that's okay too. As long as you can provide keywords in your language and message your fixer in English we can handle all of the coding. Spanish, French, Danish, Thai and other customers have successfully completed this job.",
