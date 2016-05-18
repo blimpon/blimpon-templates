@@ -107,6 +107,15 @@
           "key": "17d6795c-cbe6-7429-f6e6-ffd19abb40a0",
           "title": "question 6",
           "order": 6
+        },
+        {
+          "key": "11fb1c27-a28b-66b9-1a07-03e240dcc39e",
+          "title": "Notification Email",
+          "order": 7,
+          "type": "sendemail",
+          "to": "project manager",
+          "subject": "New Top Line SEO Store Review Project ",
+          "body": "Your Top Line SEO Store Review Project is ready to be worked on"
         }
       ],
       "key": "6c98ff14-07aa-ea02-e3c5-ab6b570852fd",
