@@ -1,0 +1,200 @@
+{
+  "title": "Top Line SEO Store Review (copy)",
+  "roles": [
+    {
+      "key": "1a43c7a5-a2f2-7ae4-2130-d60a897252a7",
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c"
+    },
+    {
+      "name": "customer",
+      "key": "0dfbcc32-2af5-b6a1-eaff-94354fccba6e"
+    },
+    {
+      "key": "9c6a733a-72c2-40a6-c218-a282c3a62209",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start your Top Line SEO Store Review job",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Payment",
+          "type": "pay",
+          "help": "It's a one off payment of $500, you will not be charged again.",
+          "required": true,
+          "totalUSD": "500",
+          "key": "7a1662d1-6bc9-0724-071f-9ce4072414a1",
+          "order": 1
+        }
+      ],
+      "key": "c77840ff-326e-1f8a-772b-0b2cdb478335",
+      "order": 1
+    },
+    {
+      "title": "Set up access",
+      "completeRole": "customer",
+      "reviewRole": "",
+      "stepItems": [
+        {
+          "title": "What website is the work for?",
+          "type": "text",
+          "required": true,
+          "key": "42c525ee-cd0b-dbfc-11de-bde9cf71c59b",
+          "order": 1
+        },
+        {
+          "title": "Create a login",
+          "type": "login",
+          "description": "Add a new user to your site admin with the details shown below. Instructions for: <a href=\"https://docs.shopify.com/manual/settings/account/staff-members#add-new-staff-member\" target=\"_blank\">Shopify, adding a staff member</a>, <a href=\"https://support.bigcommerce.com/articles/Public/Adding-Editing-Users\" target=\"_blank\">Bigcommerce, adding a user</a>.",
+          "required": true,
+          "for": "fixer",
+          "key": "d7a71883-b59e-bf0b-b37f-431c269c88b0",
+          "order": 2
+        }
+      ],
+      "key": "e64737cd-729d-51a2-27f2-a3a3590c34f6",
+      "order": 2
+    },
+    {
+      "title": "Answer questions",
+      "completeRole": "customer",
+      "reviewRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Google Webmaster Tools Access",
+          "type": "text",
+          "description": "Does the store have a Google Webmaster Tools account? If yes please share access to luke@thepixelcrowd.com",
+          "required": true,
+          "key": "1b119e84-7f61-447c-0121-8c377ec4f394",
+          "order": 2,
+          "help": "This article shows how to share access: https://webmasters.googleblog.com/2012/03/safely-share-access-to-your-site-in.html"
+        },
+        {
+          "title": "Are there any areas you would to be covered within the report?",
+          "type": "text",
+          "help": "This could include adding features to your store, questions about traffic or keywords etc.",
+          "required": true,
+          "key": "2478c0f3-dba4-0d8d-79cc-1bcbc657b70c",
+          "order": 3,
+          "description": "Let the fixer know if there are specific issues relating to your store which you would to be investigated."
+        },
+        {
+          "title": "Google Analytics Access",
+          "type": "text",
+          "help": "This article shows how to share access: https://support.google.com/analytics/answer/1009702?hl=en",
+          "required": true,
+          "key": "6b4fb9e9-1e71-4db3-094e-94e9e649af1e",
+          "order": 1,
+          "description": "Does the store have a Google Analytics account? If yes please share access to luke@thepixelcrowd.com"
+        },
+        {
+          "key": "11fb1c27-a28b-66b9-1a07-03e240dcc39e",
+          "title": "Notification Email",
+          "order": 7,
+          "type": "sendemail",
+          "to": "project manager",
+          "subject": "New Top Line SEO Store Review Project ",
+          "body": "Your Top Line SEO Store Review Project is ready to be worked on"
+        },
+        {
+          "key": "fe29ad0b-5d23-4ffa-c6c0-2949a1761b81",
+          "title": "What marketing activities are you currently using to promote the store?",
+          "order": 4
+        },
+        {
+          "key": "a8ac7e48-2b1f-7192-30bb-410123c76a29",
+          "title": "What are your main sources of sales and traffic?",
+          "order": 5
+        },
+        {
+          "key": "98ff3e95-b8d8-2fa7-fa3a-ef5013b67e62",
+          "title": "What are your aims for this review of your store?",
+          "order": 6
+        }
+      ],
+      "key": "6c98ff14-07aa-ea02-e3c5-ab6b570852fd",
+      "order": 3
+    },
+    {
+      "title": "Deadline Shared",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Proposed deadline and initial questions",
+          "type": "confirmation",
+          "description": "The fixer will share a proposed deadline for completion of the review",
+          "help": "Make sure the homepage has a good meta description. The customer has asked for this: {{ step3.stepItem6 }}",
+          "required": true,
+          "key": "b61b40f8-7e45-1a53-5602-541e3c9272ae",
+          "order": 1
+        }
+      ],
+      "key": "a0437cd1-b97b-fa67-de17-70c12a0323e6",
+      "order": 4
+    },
+    {
+      "title": "Review the Work",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Read through the Top Line SEO Store review and give feedback. ",
+          "type": "confirmation",
+          "required": true,
+          "key": "6c086c44-e087-41cb-502d-61d4d726aba7",
+          "order": 1
+        }
+      ],
+      "key": "63b4132c-8924-cabe-ae91-eb4212620139",
+      "order": 6
+    },
+    {
+      "title": "Complete the work",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work?",
+          "type": "faceRating",
+          "required": true,
+          "for": "fixer",
+          "key": "c3bc05fc-b021-390a-cec0-1236c41058b5",
+          "order": 1
+        },
+        {
+          "title": "Payout project manager",
+          "type": "payout",
+          "required": true,
+          "role": "project manager",
+          "percentageOfBalance": "100",
+          "key": "45b22548-ff4e-2698-76ba-f68ee8e5769a",
+          "order": 2
+        }
+      ],
+      "key": "565fd191-7bac-3cc2-8ef9-8ce7d3c9cebd",
+      "order": 7
+    },
+    {
+      "key": "51402086-ad12-ad29-7e64-6b1c90203efd",
+      "title": "Produce the Top Line SEO Store Review document",
+      "order": 5,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "3bd89fb3-1c62-bda5-d8ab-2559c012eef1",
+          "title": "The fixer will produce the report and share it with the customer",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
+    }
+  ],
+  "description": "A Top Line SEO Store Review is a great way to identify changes you could make to help improve your store and help increase sales and SEO.\n\nWe have completed these reviews for a number of stores and is has given them a lot of ideas to implement and past customers have seen a good return on their investment.\n\nThis document we will produce for you will be custom to your store, include a lot of actionable suggestions of how you can create new content and market your site to reach new customers and increase your audience via social media etc, all suggestions will help to increase sales.\n\nThe report will give you a clear list of actions ordered by priority to implement.\n\nThe review will include the following areas:\n\n<ul>\n<li>Mini-SEO audit of technical site elements and setup</li> \n<li>Google Analytics audit and suggestions for changes</li> \n<li>Webmaster Tools account audit and suggestions for changes</li> \n<li>Store features / content review and suggestions</li> \n<li>Content marketing reviews and idea</li> \n</ul>\n\nSEO is often seen as technical wizardry, the truth is it’s all about making sure search engines understand what your content is about and ensuring that your content can be indexed and considered for search engine rankings.\n\nThis review will help you understand the SEO challenges that your site may be facing.\n",
+  "jobTemplateImageId": "fbf2ae13-8361-4990-a6d6-8d85b97f865c",
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "id": "e92b0b39-9ab0-4f8e-b256-d9b0277c9ee6"
+}
