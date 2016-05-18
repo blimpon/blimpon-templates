@@ -145,86 +145,6 @@
       "order": 3
     },
     {
-      "title": "Headings and subheadings",
-      "completeRole": "fixer",
-      "stepItems": [
-        {
-          "title": "Made sure there's a single, good H1 on the homepage",
-          "type": "confirmation",
-          "description": "The customer has asked for this text: {{ step3.stepItem2 }}<br/>Looking like this: {{ step3.stepItem3 }}",
-          "required": true,
-          "key": "5151fb32-9aa9-d219-de7c-63e2bd1f419a",
-          "order": 1
-        },
-        {
-          "title": "Proper subheadings on the homepage",
-          "type": "confirmation",
-          "description": "The customer has asked for this text: {{ step3.stepItem4 }}<br/>Looking like this: {{ step3.stepItem5 }}",
-          "required": true,
-          "key": "003345fb-4583-66c1-e344-3eb4930b96cc",
-          "order": 2
-        }
-      ],
-      "key": "939551e6-cbd2-b12d-ecff-91ec5efb39ff",
-      "order": 4
-    },
-    {
-      "title": "Page titles",
-      "completeRole": "fixer",
-      "stepItems": [
-        {
-          "title": "Good homepage page title",
-          "type": "confirmation",
-          "description": "The customer has asked for this: {{ step3.stepItem7 }}",
-          "required": true,
-          "key": "e4ea279f-e4e3-3670-917c-cf14236c1ef7",
-          "order": 1
-        },
-        {
-          "title": "Auto-generated page titles for all other pages",
-          "type": "confirmation",
-          "help": "Make it so that page titles for all pages are automatically generated, overrideable on a page-by-page basis in the site admin",
-          "required": true,
-          "key": "137c8168-2a75-a8ad-48d6-8ff78bc7a11d",
-          "order": 2
-        },
-        {
-          "title": "Site-wide page title suffix",
-          "type": "confirmation",
-          "description": "Add an automatic suffix to all page titles (apart from the homepage), configurable in the site admin. The customer has asked for: {{ step3.stepItem8 }}",
-          "required": true,
-          "key": "8eea90df-6f88-e114-0479-1cb379c0db9c",
-          "order": 3
-        }
-      ],
-      "key": "16e5d05f-4387-b023-bc6b-da0a48f08717",
-      "order": 5
-    },
-    {
-      "title": "Image ALT tags",
-      "completeRole": "fixer",
-      "stepItems": [
-        {
-          "title": "ALT tags for all homepage images",
-          "type": "confirmation",
-          "help": "Make sure all images on the homepage have good ALT tags. Make them automatically generated if possible, otherwise easily changeable by the customer (using a theme setting or similar)",
-          "required": true,
-          "key": "bdb98be4-8dc0-a965-e001-51d119d3ef90",
-          "order": 1
-        },
-        {
-          "title": "Auto-generated ALT tags for key images: product page, collection page etc.",
-          "type": "confirmation",
-          "help": "Check and fix that things like the product name is the ALT tag for product images on the product page and other key pages",
-          "required": true,
-          "key": "549b60e2-4462-e32c-9aef-27fa05a73d2b",
-          "order": 2
-        }
-      ],
-      "key": "95f750e8-d9bb-5dce-6401-210a529d168d",
-      "order": 6
-    },
-    {
       "title": "Quality control",
       "completeRole": "fixer",
       "stepItems": [
@@ -237,7 +157,7 @@
         }
       ],
       "key": "63b4132c-8924-cabe-ae91-eb4212620139",
-      "order": 7
+      "order": 4
     },
     {
       "title": "Complete the work",
@@ -271,7 +191,7 @@
         }
       ],
       "key": "565fd191-7bac-3cc2-8ef9-8ce7d3c9cebd",
-      "order": 8
+      "order": 5
     }
   ],
   "description": "Structure your HTML (website code) properly and ensuring the right keywords are used in the right places is essential to ensure you have the best chance to rank well in Google, Bing and other search engines.\n\nPage titles, meta descriptions, headings, ALT tags all have a part to play in this. With many e-commerce and website platforms like Shopify, Bigcommerce and Wordpress lots of this can be automatically generated with the right code in place. \n\nYour site template code will be fixed to take full advantage of this and correct HTML errors (things like duplicate title tags). You don't need any programming experience. You simply answer a few questions about the keywords you'd like to target. \n\nIf your site isn't in English that's okay too. As long as you can provide keywords in your language and message your fixer in English we can handle all of the coding. Spanish, French, Danish, Thai and other customers have successfully completed this job.",
