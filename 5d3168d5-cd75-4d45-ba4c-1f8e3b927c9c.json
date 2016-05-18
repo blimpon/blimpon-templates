@@ -20,15 +20,15 @@
   ],
   "steps": [
     {
-      "title": "Start your Complete SEO fixes job",
+      "title": "SEO Consulting Call (30 mins)",
       "completeRole": "customer",
       "stepItems": [
         {
           "title": "Payment",
           "type": "pay",
-          "help": "It's a one off payment of $180, you will not be charged again.",
+          "help": "It's a one off payment of $250, you will not be charged again.",
           "required": true,
-          "totalUSD": "180",
+          "totalUSD": "250",
           "key": "7a1662d1-6bc9-0724-071f-9ce4072414a1",
           "order": 1
         }
@@ -145,31 +145,6 @@
       "order": 3
     },
     {
-      "title": "Meta descriptions",
-      "completeRole": "fixer",
-      "stepItems": [
-        {
-          "title": "Make the homepage meta description {{ step3.stepItem6 }}",
-          "type": "confirmation",
-          "description": "Add a theme setting so this can be changed easily in future",
-          "help": "Make sure the homepage has a good meta description. The customer has asked for this: {{ step3.stepItem6 }}",
-          "required": true,
-          "key": "b61b40f8-7e45-1a53-5602-541e3c9272ae",
-          "order": 1
-        },
-        {
-          "title": "Auto-generated meta descriptions for all other pages",
-          "type": "confirmation",
-          "help": "Make it so that meta descriptions for all pages are automatically generated, overrideable on a page-by-page basis in the site admin",
-          "required": true,
-          "key": "d43b2d50-a6be-1220-b468-8e7ffa2f5898",
-          "order": 2
-        }
-      ],
-      "key": "a0437cd1-b97b-fa67-de17-70c12a0323e6",
-      "order": 4
-    },
-    {
       "title": "Headings and subheadings",
       "completeRole": "fixer",
       "stepItems": [
@@ -191,7 +166,7 @@
         }
       ],
       "key": "939551e6-cbd2-b12d-ecff-91ec5efb39ff",
-      "order": 5
+      "order": 4
     },
     {
       "title": "Page titles",
@@ -223,7 +198,7 @@
         }
       ],
       "key": "16e5d05f-4387-b023-bc6b-da0a48f08717",
-      "order": 6
+      "order": 5
     },
     {
       "title": "Image ALT tags",
@@ -247,7 +222,7 @@
         }
       ],
       "key": "95f750e8-d9bb-5dce-6401-210a529d168d",
-      "order": 7
+      "order": 6
     },
     {
       "title": "Quality control",
@@ -262,7 +237,7 @@
         }
       ],
       "key": "63b4132c-8924-cabe-ae91-eb4212620139",
-      "order": 8
+      "order": 7
     },
     {
       "title": "Complete the work",
@@ -296,7 +271,7 @@
         }
       ],
       "key": "565fd191-7bac-3cc2-8ef9-8ce7d3c9cebd",
-      "order": 9
+      "order": 8
     }
   ],
   "description": "Structure your HTML (website code) properly and ensuring the right keywords are used in the right places is essential to ensure you have the best chance to rank well in Google, Bing and other search engines.\n\nPage titles, meta descriptions, headings, ALT tags all have a part to play in this. With many e-commerce and website platforms like Shopify, Bigcommerce and Wordpress lots of this can be automatically generated with the right code in place. \n\nYour site template code will be fixed to take full advantage of this and correct HTML errors (things like duplicate title tags). You don't need any programming experience. You simply answer a few questions about the keywords you'd like to target. \n\nIf your site isn't in English that's okay too. As long as you can provide keywords in your language and message your fixer in English we can handle all of the coding. Spanish, French, Danish, Thai and other customers have successfully completed this job.",
