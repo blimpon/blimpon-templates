@@ -94,23 +94,28 @@
           "description": "Does the store have a Google Analytics account? If yes please share access to luke@thepixelcrowd.com"
         },
         {
-          "key": "dfdaffa4-0c8f-5901-3e31-dcd646e192c7",
-          "title": "question 4",
-          "order": 4
-        },
-        {
-          "key": "38207a29-f20c-0c57-03fc-82d0261ed125",
-          "title": "question 5",
-          "order": 5
-        },
-        {
           "key": "11fb1c27-a28b-66b9-1a07-03e240dcc39e",
           "title": "Notification Email",
-          "order": 6,
+          "order": 7,
           "type": "sendemail",
           "to": "project manager",
           "subject": "New Top Line SEO Store Review Project ",
           "body": "Your Top Line SEO Store Review Project is ready to be worked on"
+        },
+        {
+          "key": "fe29ad0b-5d23-4ffa-c6c0-2949a1761b81",
+          "title": "What marketing activities are you currently using to promote the store?",
+          "order": 4
+        },
+        {
+          "key": "a8ac7e48-2b1f-7192-30bb-410123c76a29",
+          "title": "What are your main sources of sales and traffic?",
+          "order": 5
+        },
+        {
+          "key": "98ff3e95-b8d8-2fa7-fa3a-ef5013b67e62",
+          "title": "What are your aims for this review of your store?",
+          "order": 6
         }
       ],
       "key": "6c98ff14-07aa-ea02-e3c5-ab6b570852fd",
