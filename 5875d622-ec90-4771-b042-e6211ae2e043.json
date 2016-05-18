@@ -20,15 +20,15 @@
   ],
   "steps": [
     {
-      "title": "Start your Complete SEO fixes job",
+      "title": "Start your Top Line SEO Store Review job",
       "completeRole": "customer",
       "stepItems": [
         {
           "title": "Payment",
           "type": "pay",
-          "help": "It's a one off payment of $180, you will not be charged again.",
+          "help": "It's a one off payment of $500, you will not be charged again.",
           "required": true,
-          "totalUSD": "180",
+          "totalUSD": "500",
           "key": "7a1662d1-6bc9-0724-071f-9ce4072414a1",
           "order": 1
         }
