@@ -16,11 +16,17 @@
       "name": "project manager",
       "admin": true,
       "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "9dfe7922-9b59-4558-9814-c662c8bb1947",
+      "admin": true
     }
   ],
   "steps": [
     {
-      "title": "SEO Consulting call (30 mins)",
+      "title": "Start your Top Line SEO Store Review job",
       "completeRole": "customer",
       "stepItems": [
         {
@@ -149,13 +155,22 @@
           "order": 1
         },
         {
+          "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 20,
+          "key": "3d89479b-5d09-4806-b815-7c8601e042fe"
+        },
+        {
           "title": "Payout project manager",
           "type": "payout",
           "required": true,
           "role": "project manager",
           "percentageOfBalance": "100",
           "key": "45b22548-ff4e-2698-76ba-f68ee8e5769a",
-          "order": 2
+          "order": 3
         }
       ],
       "key": "565fd191-7bac-3cc2-8ef9-8ce7d3c9cebd",
@@ -176,7 +191,7 @@
       ]
     }
   ],
-  "description": "A 30 minute consulting call with Luke Masters via Skype. This call can be used to address a specific SEO issue or chat in general about improving the SEO setup of your Shopify store. \n\nA list of questions will be sent before the call to help understand what you would like to cover during the call and so Luke can prepare for the call. \n\nCommon uses of consulting calls include the following:\n\n<ul>\n<li>Access current online marketing activity and give ideas for improvements</li>\n<li>Suggestions from an SEO expert to improve your current store</li>\n<li>Plan a strategy for future SEO and online marketing activity</li>\n<li>Give ideas of content to produce to drive traffic</li>\n<li>Chat about the type of sites your store could gain links from or partner with</li>\n</ul>",
+  "description": "<p>A 30 minute consulting call with Luke Masters via Skype. This call can be used to address a specific SEO issue or chat in general about improving the SEO setup of your Shopify store.</p>\n\n<p>A list of questions will be sent before the call to help understand what you would like to cover during the call and so Luke can prepare for the call.</p> \n\n<p>Common uses of consulting calls include the following:</p>\n\n<ul>\n<li>Access current online marketing activity and give ideas for improvements</li>\n<li>Suggestions from an SEO expert to improve your current store</li>\n<li>Plan a strategy for future SEO and online marketing activity</li>\n<li>Give ideas of content to produce to drive traffic</li>\n<li>Chat about the type of sites your store could gain links from or partner with</li>\n</ul>",
   "jobTemplateImageId": "fbf2ae13-8361-4990-a6d6-8d85b97f865c",
   "id": "5d3168d5-cd75-4d45-ba4c-1f8e3b927c9c",
   "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28"
