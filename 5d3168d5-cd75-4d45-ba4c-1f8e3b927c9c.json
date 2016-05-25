@@ -15,12 +15,12 @@
       "key": "9c6a733a-72c2-40a6-c218-a282c3a62209",
       "name": "project manager",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
+      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c"
     }
   ],
   "steps": [
     {
-      "title": "Start Your SEO Consulting Call Job",
+      "title": "SEO Consulting call (30 mins)",
       "completeRole": "customer",
       "stepItems": [
         {
