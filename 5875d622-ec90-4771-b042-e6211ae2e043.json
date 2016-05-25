@@ -16,6 +16,12 @@
       "name": "project manager",
       "admin": true,
       "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "769a0930-7612-410d-b782-a79dcf04af7a",
+      "admin": true
     }
   ],
   "steps": [
@@ -67,6 +73,15 @@
       "reviewRole": "fixer",
       "stepItems": [
         {
+          "title": "Google Analytics Access",
+          "type": "text",
+          "help": "This article shows how to share access: https://support.google.com/analytics/answer/1009702?hl=en",
+          "required": true,
+          "key": "6b4fb9e9-1e71-4db3-094e-94e9e649af1e",
+          "order": 1,
+          "description": "Does the store have a Google Analytics account? If yes please share access to luke@thepixelcrowd.com"
+        },
+        {
           "title": "Google Webmaster Tools Access",
           "type": "text",
           "description": "Does the store have a Google Webmaster Tools account? If yes please share access to luke@thepixelcrowd.com",
@@ -85,24 +100,6 @@
           "description": "Let the fixer know if there are specific issues relating to your store which you would to be investigated."
         },
         {
-          "title": "Google Analytics Access",
-          "type": "text",
-          "help": "This article shows how to share access: https://support.google.com/analytics/answer/1009702?hl=en",
-          "required": true,
-          "key": "6b4fb9e9-1e71-4db3-094e-94e9e649af1e",
-          "order": 1,
-          "description": "Does the store have a Google Analytics account? If yes please share access to luke@thepixelcrowd.com"
-        },
-        {
-          "key": "11fb1c27-a28b-66b9-1a07-03e240dcc39e",
-          "title": "Notification Email",
-          "order": 7,
-          "type": "sendemail",
-          "to": "project manager",
-          "subject": "New Top Line SEO Store Review Project ",
-          "body": "Your Top Line SEO Store Review Project is ready to be worked on"
-        },
-        {
           "key": "fe29ad0b-5d23-4ffa-c6c0-2949a1761b81",
           "title": "What marketing activities are you currently using to promote the store?",
           "order": 4
@@ -116,6 +113,15 @@
           "key": "98ff3e95-b8d8-2fa7-fa3a-ef5013b67e62",
           "title": "What are your aims for this review of your store?",
           "order": 6
+        },
+        {
+          "key": "11fb1c27-a28b-66b9-1a07-03e240dcc39e",
+          "title": "Notification Email",
+          "order": 7,
+          "type": "sendemail",
+          "to": "project manager",
+          "subject": "New Top Line SEO Store Review Project ",
+          "body": "Your Top Line SEO Store Review Project is ready to be worked on"
         }
       ],
       "key": "6c98ff14-07aa-ea02-e3c5-ab6b570852fd",
@@ -166,13 +172,22 @@
           "order": 1
         },
         {
+          "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 20,
+          "key": "3c36c16e-2bee-459c-b3ad-335b88d2e565"
+        },
+        {
           "title": "Payout project manager",
           "type": "payout",
           "required": true,
           "role": "project manager",
           "percentageOfBalance": "100",
           "key": "45b22548-ff4e-2698-76ba-f68ee8e5769a",
-          "order": 2
+          "order": 3
         }
       ],
       "key": "565fd191-7bac-3cc2-8ef9-8ce7d3c9cebd",
