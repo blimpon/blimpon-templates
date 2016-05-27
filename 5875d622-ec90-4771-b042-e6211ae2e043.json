@@ -177,7 +177,7 @@
           "type": "payout",
           "role": "marketplace",
           "marketplace": true,
-          "percentageOfBalance": 20,
+          "percentageOfBalance": "10",
           "key": "3c36c16e-2bee-459c-b3ad-335b88d2e565"
         },
         {
