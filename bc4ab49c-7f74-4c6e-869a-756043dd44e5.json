@@ -281,7 +281,7 @@
           "type": "payout",
           "required": true,
           "role": "project manager",
-          "percentageOfBalance": "65.21",
+          "percentageOfBalance": 65.21,
           "key": "9def7b3c-673b-5673-6e39-ed7d3272571b",
           "order": 2
         },
