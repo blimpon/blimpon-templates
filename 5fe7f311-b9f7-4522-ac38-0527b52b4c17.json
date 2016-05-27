@@ -216,7 +216,7 @@
           "title": "Payout project manager",
           "type": "payout",
           "role": "project manager",
-          "percentageOfBalance": "65.21",
+          "percentageOfBalance": 65.21,
           "order": 2
         },
         {
