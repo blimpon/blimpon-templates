@@ -71,5 +71,6 @@
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
   "description": "<div class=\"main-section\"> <p></p>\n<p>Are your website forms getting hit by lots of <span class=\"caps\">SPAM</span>?</p> <p>It's time to remove <span class=\"caps\">SPAM</span> from your online forms today by adding a captcha form to block automated entries.</p> Install a captcha for your online forms today.<p></p> </div><div class=\"main-section\"> <h2>What can I expect?</h2> <ul class=\"green-tick-list\"> <li>Add a basic captcha to prevent spam being submitted to web forms (ie contact forms)</li> <li>Style captcha form in CSS to match the rest of the page and /or form including widths border colour border radius etc</li> </ul> </div>",
   "title": "Setup Captcha Spam Filter on Website Forms",
-  "id": "cc95bb9e-ecf1-4cd4-bb9f-88ac8aee75df"
+  "id": "cc95bb9e-ecf1-4cd4-bb9f-88ac8aee75df",
+  "jobTemplateImageId": "b14f7d45-ac30-4c8f-b6c7-87c24795e72d"
 }
