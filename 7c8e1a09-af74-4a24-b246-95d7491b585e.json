@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "c1887bd4-63df-839f-ebc6-ea07592a0309"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "d44b93d5-94a0-d0fd-f358-85c5bf3f2916"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "279",
+          "required": true,
+          "key": "6f24914d-5d85-c872-7530-f985d6d9efd1"
+        }
+      ],
+      "key": "df2d5959-b819-17ee-689f-7b2719840f38"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e16a626d-e837-160a-50f0-c5e4411ab084"
+        }
+      ],
+      "key": "f79a28c9-4c54-5e09-ed5b-7d30d6986419"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "81542ad1-b89d-3771-4d38-8e30342bf3d9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "6ce1eddb-3a00-6d47-3c4d-c195aa48783f"
+        }
+      ],
+      "key": "99aaa689-4bbb-dad4-e13c-b416c36d990e"
+    }
+  ],
+  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
+  "description": "<div class=\"main-section\"> <p></p>\n<p>One of the most powerful tools to win back customers is to re-target people who have added items into their cart but haven't purchased. Cart Re-targeting works by adding a line of code to your website which tracks when customers add an item to their cart but don't check out.</p> <p>Unlike other types of re-targeting this doesn't show people some generic Ad when they leave it emails them directly with a custom email design suited for your customers.</p> <p>You can set when how often and what you want to email customers who haven't purchased. For example you can email a 5% coupon off their cart contents after 3 days and then a 10% coupon after 7 days.</p> <p>Cart retargeting has been proven to have one of the highest ROI's in winning back customers. The best part? Pay nothing until you recover $500 worth of lost revenue.</p>\n<p></p> </div><div class=\"main-section\"> <h2>What can I expect?</h2> <ul class=\"green-tick-list\"> <li> Code Installation </li> </ul> </div>",
+  "title": "Abandoned Cart Setup - Win Back Lost Customers",
+  "id": "7c8e1a09-af74-4a24-b246-95d7491b585e"
+}
