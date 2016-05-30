@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "b04def0e-0cd0-7bcd-1504-a643b4b6c4b1"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "a436cffe-638d-dce5-09fe-24c7ca6edad3"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "e0670c4e-08b7-6534-1534-7ab46178f256"
+        }
+      ],
+      "key": "053d6ff7-5978-329b-0f09-7ea86bac66f1"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e7627e0e-ca9e-e0e8-bc37-9ebd030543d6"
+        }
+      ],
+      "key": "9e56ce0b-c62c-5e80-ff5c-694f978a3ce5"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "c8f1093b-416a-c748-45a2-9ed4c125d2ab"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "a5d5cde9-a734-ef0f-52c5-9430442efc60"
+        }
+      ],
+      "key": "6003035e-c536-c1b8-2d16-f5f7ff78159a"
+    }
+  ],
+  "collectionId": "4bd8657a-5c0f-4d78-9c9d-64c39aaf33a9",
+  "description": "<div class=\"main-section\"> <p></p>\n<p>Adding social media icons to your website is an easy way to demonstrate where your customers can find you online.</p> <p>If they love what youâ€™re saying they will want to follow you on as many channels as they can â€“ or at least on the ones that they are most active on.</p> <p>This package includes setting up social media icons linking to your accounts for as many social media icons as you need in one project.</p> <p>You can also use this package to get the widgets from social media companies like Facebook and Twitter installed on your website.</p>\n<p></p> </div>\n<div class=\"main-section\"> <h2>What can I expect?</h2> <ul class=\"green-tick-list\"> <li>Add new Social Media icon to your site in the specified location.</li> </ul> </div>",
+  "title": "Add new Social Media icons",
+  "id": "85597fb0-de46-4e59-a7a6-a5f8a2550b5e"
+}
