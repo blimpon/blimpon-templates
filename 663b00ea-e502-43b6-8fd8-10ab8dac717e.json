@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "c1887bd4-63df-839f-ebc6-ea07592a0309"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "d44b93d5-94a0-d0fd-f358-85c5bf3f2916"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "6f24914d-5d85-c872-7530-f985d6d9efd1"
+        }
+      ],
+      "key": "df2d5959-b819-17ee-689f-7b2719840f38"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e16a626d-e837-160a-50f0-c5e4411ab084"
+        }
+      ],
+      "key": "f79a28c9-4c54-5e09-ed5b-7d30d6986419"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "81542ad1-b89d-3771-4d38-8e30342bf3d9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "6ce1eddb-3a00-6d47-3c4d-c195aa48783f"
+        }
+      ],
+      "key": "99aaa689-4bbb-dad4-e13c-b416c36d990e"
+    }
+  ],
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "description": "<div class=\"main-section\"> <p></p>\n<p><a href=\"http://myshopping.com.au/\">MyShopping.com.au</a> is Australia's premier comparison shopping service. They collect information on products and prices from thousands of online stores. All these data are provided in a single convenient and easy to use search engine that helps visitors find the right product at the right price from millions of goods on offer.<br> This service is to setup the tracking code and provide data to their online reports that your can access through the merchant login.</p> <p><strong>Sales Tracking</strong></p> <p>Virtual Sales Tracking is a feature that allows merchants to track actual sales from visitors brought to your e-commerce site by the Myshopping Comparison Shopping Engine.</p> <p>When a purchase is finalised and the shopper reaches your Thank You page a record of that successful sale is sent. The date of the sale the order number and the total amount are available via online reports.</p>  </div><div class=\"main-section\"> <h2>What can I expect?</h2> <ul class=\"green-tick-list\"> <li> Add myshopping.com.au Sales Tracking code to website </li> </ul> </div>",
+  "title": "MyShopping.com.au Tracker Setup",
+  "id": "663b00ea-e502-43b6-8fd8-10ab8dac717e"
+}
