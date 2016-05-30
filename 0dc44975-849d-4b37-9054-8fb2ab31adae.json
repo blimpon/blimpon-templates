@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "c1887bd4-63df-839f-ebc6-ea07592a0309"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "d44b93d5-94a0-d0fd-f358-85c5bf3f2916"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "525",
+          "required": true,
+          "key": "6f24914d-5d85-c872-7530-f985d6d9efd1"
+        }
+      ],
+      "key": "df2d5959-b819-17ee-689f-7b2719840f38"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e16a626d-e837-160a-50f0-c5e4411ab084"
+        }
+      ],
+      "key": "f79a28c9-4c54-5e09-ed5b-7d30d6986419"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "81542ad1-b89d-3771-4d38-8e30342bf3d9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "6ce1eddb-3a00-6d47-3c4d-c195aa48783f"
+        }
+      ],
+      "key": "99aaa689-4bbb-dad4-e13c-b416c36d990e"
+    }
+  ],
+  "collectionId": "ae048a6c-8226-47a6-9b4b-0a720c1878fd",
+  "description": "<div class=\"main-section\"> <p></p>\n<p><strong>Do you want to transfer your online store from BigCartel to Shopify?</strong></p> <p>Lots of online stores are transferring to Shopify because it better suits their businesses needs.</p> <p>Unfortunately transferring from BigCartel to Shopify can be tricky with all the required data migration and unfamiliar jargon. So instead of hacking it yourself why not get a Shopify expert to transfer it for you?</p> <p>Now you can have</p> <ul> <li>Your entire BigCartel store backed up</li> <li>All your products and content pages transferred to Shopify</li> <li>Customer details transferred</li> <li>A shortlist of 3 Shopify themes that closely match your BigCartel store*</li> <li>A new Shopify theme installed</li> </ul> <p>It's never been easier to move from BigCartel to Shopify. What are you waiting for? Start today!</p> <p>*This service does not include purchase of a new Shopify theme. We will recommend 3 themes which the customer will need to purchase</p>\n<p></p> </div><div class=\"main-section\"> <h2>What can I expect?</h2> <ul class=\"green-tick-list\"> <li> Backup Existing BigCartel Store </li> <li> Transfer All products </li> <li> Transfer all Customer Data </li> <li> Transfer all content pages </li> <li> Shortlist 3 Shopify Themes </li> <li> Install new Shopify theme </li> </ul> </div>",
+  "title": "Transfer from BigCartel to Shopify",
+  "id": "0dc44975-849d-4b37-9054-8fb2ab31adae"
+}
