@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "6ffd96b0-dc9c-8152-c170-93c3c77ce670"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "fc9944ed-e5f9-4a94-a3db-85822a257bdb",
+      "key": "b8cc260e-56ff-5126-a062-9a5222b666e8"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "500",
+          "required": true,
+          "key": "ca69b70b-7b26-116d-2825-8036c71a8c24"
+        }
+      ],
+      "key": "0750e307-3da8-d40d-47ad-5d44889a0f8c"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "3106c713-6d11-3467-c9a7-34ea6c6baa35"
+        }
+      ],
+      "key": "f2cbf7af-c533-7404-3ad0-eb68f49d9b66"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "9c08bcbb-5005-a169-ee8b-0cf0743f7d56"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "50c4974a-6b4b-e407-6227-e54858047bd4"
+        }
+      ],
+      "key": "7f4dbec3-76e0-b026-58b9-985b3835b316"
+    }
+  ],
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "description": "Improve how your theme displays in mobile devices.",
+  "title": "Improve responsiveness of your store",
+  "id": "b56298d0-d615-40ea-995b-82c6cd4d9674"
+}
