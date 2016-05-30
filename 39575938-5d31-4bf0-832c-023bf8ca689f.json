@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "b04def0e-0cd0-7bcd-1504-a643b4b6c4b1"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "a436cffe-638d-dce5-09fe-24c7ca6edad3"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "210",
+          "required": true,
+          "key": "e0670c4e-08b7-6534-1534-7ab46178f256"
+        }
+      ],
+      "key": "053d6ff7-5978-329b-0f09-7ea86bac66f1"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e7627e0e-ca9e-e0e8-bc37-9ebd030543d6"
+        }
+      ],
+      "key": "9e56ce0b-c62c-5e80-ff5c-694f978a3ce5"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "c8f1093b-416a-c748-45a2-9ed4c125d2ab"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "a5d5cde9-a734-ef0f-52c5-9430442efc60"
+        }
+      ],
+      "key": "6003035e-c536-c1b8-2d16-f5f7ff78159a"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "description": "<div class=\"main-section\"> <p></p>\n<p>Is your website displaying correctly on mobile devices like an iPhone and iPad? Mobile traffic is growing at an exponential rate with more and more people viewing your website on their mobile phones.</p> <p>If you want to maximize conversion rates with mobile traffic you need to make your website responsive.</p> <p>Now you can get a professional web developer to change the key areas of your website into responsive elements that will adjust across various mobile devices. This will make your website significantly more user friendly.</p> <p>Don't waste your hard earned traffic. Make your website responsive today!</p>\n<p></p> </div>\n<div class=\"main-section\"> <h2>What can I expect?</h2> <ul class=\"green-tick-list\"> <li>Setup media queries for responsive design</li> <li>Code adjustments for responsive design in the header</li> <li>Code adjustments for responsive design in the footer</li> <li>Code adjustments for responsive design for body elements (up to 3 variations)</li> <li>CSS inclusions for Responsive design</li> </ul> </div>",
+  "title": "Make website responsive",
+  "id": "39575938-5d31-4bf0-832c-023bf8ca689f"
+}
