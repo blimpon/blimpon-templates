@@ -71,5 +71,6 @@
   "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
   "description": "<div class=\"main-section\"> <p></p>\n<p>If you run any kind of services business one of the most important things is capturing and nurturing leads from your website.</p> <p>Word of mouth marketing usually goes as far as getting someone to your website but now you need to get their contact details so you can convert them from someone with a casual interest into a paying client.</p> <p>This service involves us setting up a lead generation form on your website to capture the name email phone number and any other information you want from potential clients. This is then emailed directly to you so you can follow up with more information and win them over.</p> <p>You choose what fields you want on your form and where you want it to be displayed. You can even choose whether you want us to just email you the form submissions or post them to MailChimp/CampaignMonitor.</p>\n<p></p> </div>\n<div class=\"main-section\"> <h2>What can I expect?</h2> <ul class=\"green-tick-list\"> <li> Create HTML of form including title fields placeholder text submission button. </li> <li> Style form to match the appearance of website theme. </li> <li> Form submissions emailed to specific email address OR posted to MailChimp CampaignMonitor etc. </li> </ul> </div>",
   "title": "Add lead generation form to your website",
-  "id": "aeb3c822-7fb4-423e-aa67-5484e107d992"
+  "id": "aeb3c822-7fb4-423e-aa67-5484e107d992",
+  "jobTemplateImageId": "30ddb932-d45e-47ff-97c2-0aecf3f6eac0"
 }
