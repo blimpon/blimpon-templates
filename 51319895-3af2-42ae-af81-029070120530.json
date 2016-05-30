@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "c1887bd4-63df-839f-ebc6-ea07592a0309"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "d44b93d5-94a0-d0fd-f358-85c5bf3f2916"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "120",
+          "required": true,
+          "key": "6f24914d-5d85-c872-7530-f985d6d9efd1"
+        }
+      ],
+      "key": "df2d5959-b819-17ee-689f-7b2719840f38"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e16a626d-e837-160a-50f0-c5e4411ab084"
+        }
+      ],
+      "key": "f79a28c9-4c54-5e09-ed5b-7d30d6986419"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "81542ad1-b89d-3771-4d38-8e30342bf3d9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "6ce1eddb-3a00-6d47-3c4d-c195aa48783f"
+        }
+      ],
+      "key": "99aaa689-4bbb-dad4-e13c-b416c36d990e"
+    }
+  ],
+  "collectionId": "4bd8657a-5c0f-4d78-9c9d-64c39aaf33a9",
+  "description": "<div class=\"main-section\"> <p></p>\n<p>Let us setup your website to display your Instagram feed on your website.</p> <p>We can display images from either a specific Instagram account or from an Instagram hashtag.</p> <p>The feed is then displayed on your website in a basic format. You can let us know how big you want the images to display in how many columns and grids.</p>\n<p></p> </div>\n<div class=\"main-section\"> <h2>What can I expect?</h2> <ul class=\"green-tick-list\"> <li>Install and configure Instagram plugin / widget</li> <li>Style widget output to match the website's theme</li> </ul> </div>",
+  "title": "Display Instagram images on your website",
+  "id": "51319895-3af2-42ae-af81-029070120530"
+}
