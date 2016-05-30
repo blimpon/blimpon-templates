@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "82c2bf41-f925-655d-bb53-c95b37070e03"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "05861cbb-930e-4812-926a-84db001b7644",
+      "key": "946b6c9d-cf3f-0f0e-3ddc-ce43c42fe6aa"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "99",
+          "required": true,
+          "key": "452bc105-d7db-6502-d111-f68cf0eef345"
+        }
+      ],
+      "key": "46892147-7f98-be50-d8aa-2ac168f61def"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "d994a258-b5d6-fc53-cf01-e5dd8d9917d7"
+        }
+      ],
+      "key": "c881431a-ec35-3c20-dc09-e3531c75e8c4"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "3f596e41-6150-3198-8b79-323eda263507"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "807345aa-04ea-bfb1-bf14-c72ab8bf5dac"
+        }
+      ],
+      "key": "6e30e9d3-2429-707f-faf2-cca057a31e73"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "description": "Get your  Shopify theme customizations fixed as fast as possible.\n\n- Broken layout issues \n- Responsive issues \n- Browser issues\n\n",
+  "title": "Theme Customizations and Fixes",
+  "id": "18f6bdcb-6749-4727-8570-9a95d41edbb4"
+}
