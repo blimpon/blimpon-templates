@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "1937e5cc-8038-8bdd-acee-2a03c94343ef"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6b1450b2-76c9-47fd-9a0a-80cae51d7cd7",
+      "key": "6a96f898-e8ed-8132-89dd-28dc764a0517"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "899",
+          "required": true,
+          "key": "9afdd265-03bb-36f4-2c2c-40ed49821231"
+        }
+      ],
+      "key": "ca20cf51-0bea-2da3-42eb-8f5a7ea95178"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "d79a7a90-c34a-aeb5-054d-247b6f147d32"
+        }
+      ],
+      "key": "55b36622-0896-3909-5921-47d3facab96e"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "b8d6eed6-8590-f411-a10c-c1c20179b4b9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "783d4dc9-9859-8d7f-d9c9-87a47956f524"
+        }
+      ],
+      "key": "89773755-1e16-9825-d876-174c8d377bad"
+    }
+  ],
+  "collectionId": "ae048a6c-8226-47a6-9b4b-0a720c1878fd",
+  "description": "I offer Shopify theme development services. I will create/customize theme from scratch. Please knock me for more details. Thanks",
+  "title": "Shopify Theme Development",
+  "id": "72f1b259-bbaa-4778-a89a-74e1a84491ca"
+}
