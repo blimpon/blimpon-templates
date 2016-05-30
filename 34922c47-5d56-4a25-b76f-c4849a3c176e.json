@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "c1887bd4-63df-839f-ebc6-ea07592a0309"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "d44b93d5-94a0-d0fd-f358-85c5bf3f2916"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "179",
+          "required": true,
+          "key": "6f24914d-5d85-c872-7530-f985d6d9efd1"
+        }
+      ],
+      "key": "df2d5959-b819-17ee-689f-7b2719840f38"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e16a626d-e837-160a-50f0-c5e4411ab084"
+        }
+      ],
+      "key": "f79a28c9-4c54-5e09-ed5b-7d30d6986419"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "81542ad1-b89d-3771-4d38-8e30342bf3d9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "6ce1eddb-3a00-6d47-3c4d-c195aa48783f"
+        }
+      ],
+      "key": "99aaa689-4bbb-dad4-e13c-b416c36d990e"
+    }
+  ],
+  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
+  "description": "<div class=\"main-section\"> <p></p>\n<p>Whether you're a copywriter or a marketer conversion is ultimately your core objective.</p> <p>As a business owner or adviser your main goal should be maximizing <span class=\"caps\">ROI</span> for your company or client and to that end you must maximize conversions. One of the most effective ways to measure and finding out what converts best is by running Split Testing campaigns and that is precisely what this service aims to do for you. In this particular case we will split test your forms by creating multiple versions of it adding or removing fields changing some formatting etc- all geared towards finding the best converting one.</p> <p><strong>Why your forms are important</strong></p> <p>Perhaps you are running a business that starts with a consultation or a form signup. Either way getting customers to effectively signup for more information or fill out a profile could be the key in generating the transaction you aim to get.</p> <p>Forms as many other elements on the web are tricky. If you make them too short they are prone to spam submissions if you make them too lengthy you are losing surfers interest in filling them out. Finding out what works best towards getting successful form submissions is the key element of this split testing.</p> <p><em>Note: Before purchasing this service bundle please make sure you have an active account on <a href=\"visualwebsiteoptimizer.com\"><span class=\"caps\">VWO</span></a> (visualwebsiteoptimizer.com) or equivalent for split testing as that is <span class=\"caps\">NOT</span> included in this service bundle.</em></p>\n<p></p> </div><div class=\"main-section\"> <h2>What can I expect?</h2> <ul class=\"green-tick-list\"> <li> Consultation on Business Goals </li> <li> Create 5 variations to your website form </li> <li> Set up 5 variations to your website form </li> <li> Install Visual Website Optimizer (Or other AB testing tool) </li> <li> 14 day report </li> </ul> </div>",
+  "title": "AB Testing for Forms: Finding the sweet-spot in better converting online forms",
+  "id": "34922c47-5d56-4a25-b76f-c4849a3c176e"
+}
