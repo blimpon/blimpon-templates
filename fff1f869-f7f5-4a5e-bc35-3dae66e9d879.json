@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "b04def0e-0cd0-7bcd-1504-a643b4b6c4b1"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "a436cffe-638d-dce5-09fe-24c7ca6edad3"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "205",
+          "required": true,
+          "key": "e0670c4e-08b7-6534-1534-7ab46178f256"
+        }
+      ],
+      "key": "053d6ff7-5978-329b-0f09-7ea86bac66f1"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e7627e0e-ca9e-e0e8-bc37-9ebd030543d6"
+        }
+      ],
+      "key": "9e56ce0b-c62c-5e80-ff5c-694f978a3ce5"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "c8f1093b-416a-c748-45a2-9ed4c125d2ab"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "a5d5cde9-a734-ef0f-52c5-9430442efc60"
+        }
+      ],
+      "key": "6003035e-c536-c1b8-2d16-f5f7ff78159a"
+    }
+  ],
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "description": "<div class=\"main-section\"> <p></p>\n<p>If you've got a product with multiple colours you want to make it easy for people to be able to select what colour your customers want to order.</p> <p>This package lets you do a couple of cool things around adding colour swatches to your site including fancy rollover effects and allowing you to have a 'Sold out' icon over colours you no longer have in stock.</p> <p>We'll also document how you can add new swatches in the future yourself for when you get new colours.</p>\n<p></p> </div>\n<div class=\"main-section\"> <h2>What can I expect?</h2> <ul class=\"green-tick-list\"> <li>Create a new Liquid snippet called swatches.liquid</li> <li>Include swatches.liquid in product.liquid</li> <li>Install JS for rollover effects</li> <li>Install Soldout.png and Swatches provided by client</li> <li>Document how to add new swatches so client do so in the future</li> </ul> </div>",
+  "title": "Add Color Swatches to a Shopify site",
+  "id": "fff1f869-f7f5-4a5e-bc35-3dae66e9d879"
+}
