@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "fc9944ed-e5f9-4a94-a3db-85822a257bdb",
       "key": "b8cc260e-56ff-5126-a062-9a5222b666e8"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "af65bc63-4daa-48ce-b136-db49205877d6",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "1aaf848d-a492-4463-91d4-e125c201dba2"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,7 @@
     }
   ],
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
-  "description": "Improve how your theme displays in mobile devices.",
+  "description": "<div class=\"main-section\"> <p></p>\n<p>Is your website displaying correctly on mobile devices like an iPhone and iPad? Mobile traffic is growing at an exponential rate with more and more people viewing your website on their mobile phones.</p> <p>If you want to maximize conversion rates with mobile traffic you need to make your website responsive.</p> <p>Now you can get a professional web developer to change the key areas of your website into responsive elements that will adjust across various mobile devices. This will make your website significantly more user friendly.</p> <p>Don't waste your hard earned traffic. Make your website responsive today!</p>\n<p></p> </div><div class=\"main-section\"> <h2>What can I expect?</h2> <ul class=\"green-tick-list\"> <li>Setup media queries for responsive design</li> <li>Code adjustments for responsive design in the header</li> <li>Code adjustments for responsive design in the footer</li> <li>Code adjustments for responsive design for body elements (up to 3 variations)</li> <li>CSS inclusions for Responsive design</li> </ul> </div>",
   "title": "Improve responsiveness of your store",
   "id": "b56298d0-d615-40ea-995b-82c6cd4d9674"
 }
