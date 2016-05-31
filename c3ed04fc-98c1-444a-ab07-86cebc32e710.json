@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "eebbf873-cc75-ce0b-bf6e-4688f28eee37"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "043fcfb3-fbae-080f-09b7-4fcc92083d50"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "159",
+          "required": true,
+          "key": "22295fa0-2eb7-594c-c299-897e5f79cf14"
+        }
+      ],
+      "key": "d4f03236-e18e-a02b-a9f7-5e655dbc42b5"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "44652c24-89f4-60f9-1748-80135e60965c"
+        }
+      ],
+      "key": "97515eb4-118a-356e-1bc3-d554e1e10553"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "57bf0eda-1b45-489b-ce2d-f29d4dd76b94"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "70f1cd3c-bf20-b739-4eae-a8b5f323021b"
+        }
+      ],
+      "key": "4c508829-9766-86ef-81a9-4c167ae22482"
+    }
+  ],
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "description": "<p>Shopify, alas, isn't multicurrency, but you can improve conversion by displaying prices in the currency your customers prefer. This job lets them select their preferred currency in a dropdown list.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/currencies/show-multiple-currencies\">this Shopify help article</a>.\n</p>",
+  "title": "Show multiple currencies in a dropdown list",
+  "id": "c3ed04fc-98c1-444a-ab07-86cebc32e710"
+}
