@@ -71,5 +71,6 @@
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
   "description": "<p>Shopify, alas, isn't multicurrency, but you can improve conversion by displaying prices in the currency your customers prefer. This job lets them select their preferred currency in a dropdown list.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/currencies/show-multiple-currencies\">this Shopify help article</a>.\n</p>",
   "title": "Show multiple currencies in a dropdown list",
-  "id": "c3ed04fc-98c1-444a-ab07-86cebc32e710"
+  "id": "c3ed04fc-98c1-444a-ab07-86cebc32e710",
+  "jobTemplateImageId": "6a32d428-cb04-4c94-8517-e3bd4989da95"
 }
