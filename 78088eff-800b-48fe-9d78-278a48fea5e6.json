@@ -71,5 +71,6 @@
   "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
   "description": "<p>Display a dropdown that allows your customers to filter products in a collection based on their tags.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/collections/filter-collections-with-product-tags\">this Shopify help article</a>.\n</p>",
   "title": "Filtering collections with product tags",
-  "id": "78088eff-800b-48fe-9d78-278a48fea5e6"
+  "id": "78088eff-800b-48fe-9d78-278a48fea5e6",
+  "jobTemplateImageId": "91b8277a-60de-434b-85b0-d5add384fcd9"
 }
