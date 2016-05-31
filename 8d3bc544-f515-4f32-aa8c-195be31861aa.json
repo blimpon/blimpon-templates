@@ -69,7 +69,7 @@
     }
   ],
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
-  "description": "<p>Add a link in your customer's order history so that they can easily reorder items on the order. They'll simply press 're-order' and it adds it to their cart.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/cart/use-permalinks-to-preload-cart\">this Shopify help article</a>.\n</p>",
+  "description": "<p>Add a link in your customer's order history so that they can easily reorder items on the order. They'll simply press 're-order' and it adds it to their cart.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/cart/use-permalinks-to-preload-cart#reorder\">this Shopify help article</a>.\n</p>",
   "title": "Add a 're-order' link in order history to prepopulate cart",
   "id": "8d3bc544-f515-4f32-aa8c-195be31861aa"
 }
