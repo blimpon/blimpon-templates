@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "6b1450b2-76c9-47fd-9a0a-80cae51d7cd7",
       "key": "6a96f898-e8ed-8132-89dd-28dc764a0517"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "ac265e97-72c9-4f25-badb-d30c99d2eda7",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "a01a062a-b689-4fcf-a064-0ea35a568093"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,7 @@
     }
   ],
   "collectionId": "ae048a6c-8226-47a6-9b4b-0a720c1878fd",
-  "description": "I offer Shopify theme development services. I will create/customize theme from scratch. Please knock me for more details. Thanks",
-  "title": "Shopify Theme Development",
+  "description": "\nDescription\n\nWant to give your Shopify website a custom design?\n\nShopify is one of the fastest growing Ecommerce platforms out there\nand now you can get your custom store design implemented into a\nwebsite template.\n\nNow you can marry the powerful Shopify features with your own\nspecifically designed store.\n\nI will take your design and implement it across your store on the\nmain pages including:\n\n- Homepage\n- Category Page\n- Product Page\n- Content Page (About Us, Shipping, Returns)\n- Shopping Cart\n- Checkout (css only)\n- Custom theme settings\n\nLet Me help you convert your custom website design into a powerful\nShopify site template today.\nBriefing Details\n\n1. I need the PSD file Or Theme that you want to customize.\n\n2. Shopify login details.\n",
+  "title": "Shopify Website customization/Store Setup/ Responsive",
   "id": "72f1b259-bbaa-4778-a89a-74e1a84491ca"
 }
