@@ -69,8 +69,8 @@
     }
   ],
   "collectionId": "",
-  "description": "<p>Allow your shoppers to choose a delivery date for their order with a simple date picker.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/cart/add-date-picker-for-delivery-dates\">this Shopify help article</a>.\n</p>",
-  "title": "gift wrap",
+  "description": "<p>Add an option for your customers to get their entire order gift wrapped. It'll be a checkbox displayed in their cart.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/cart/add-gift-wrap-option\">this Shopify help article</a>.\n</p>",
+  "title": "Add a gift wrap this order option to your cart page",
   "id": "8aaa681a-6255-4db9-a328-3e3f9f02ee5e",
   "jobTemplateImageId": "21c090ee-40fa-4b67-9dbf-1e220f993cf9"
 }
