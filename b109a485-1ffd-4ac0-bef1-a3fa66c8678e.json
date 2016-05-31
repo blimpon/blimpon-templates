@@ -71,5 +71,6 @@
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
   "description": "<p>Allow your shoppers to choose a delivery date for their order with a simple date picker.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/cart/add-date-picker-for-delivery-dates\">this Shopify help article</a>.\n</p>",
   "title": "Add a delivery date picker",
-  "id": "b109a485-1ffd-4ac0-bef1-a3fa66c8678e"
+  "id": "b109a485-1ffd-4ac0-bef1-a3fa66c8678e",
+  "jobTemplateImageId": "2f68b9c5-26d5-43f5-9c5f-04e9d9a27e71"
 }
