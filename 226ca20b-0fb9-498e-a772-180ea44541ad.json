@@ -71,5 +71,6 @@
   "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
   "description": "<p>Sometimes videos can overlap lightboxes as shown. This job applies a simple fix.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/colors-images-and-video/fix-videos-that-overlap-lightboxes\">this Shopify help article</a>.\n</p>",
   "title": "Fix videos that overlap image lightboxes",
-  "id": "226ca20b-0fb9-498e-a772-180ea44541ad"
+  "id": "226ca20b-0fb9-498e-a772-180ea44541ad",
+  "jobTemplateImageId": "442c336f-19c0-4bcd-bfda-b5cec2831f7b"
 }
