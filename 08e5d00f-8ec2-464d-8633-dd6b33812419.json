@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "279a5f87-61f9-4dd7-8794-18a74e139b1a"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "63062a44-21f8-108a-9178-cf8b336778fd"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "c64d230d-fb32-2988-4ccb-ad915146d2e7"
+        }
+      ],
+      "key": "9bf1e84f-5a94-7366-a9a0-c916b9f3af02"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "3e226c48-6c33-d438-3ab8-a3642e983b0a"
+        }
+      ],
+      "key": "fe40b488-71ad-c9c5-61b1-1fb57b079bc9"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "86c4f5b9-617f-d5fc-3744-8d3b431be097"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "900eb9b5-31e2-1b73-ff9f-ee0ec546c8c1"
+        }
+      ],
+      "key": "49802cad-e035-0282-afcf-ae46dd7f0905"
+    }
+  ],
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "description": "If you sell products such as wine, cigarettes, or dangerous goods, you might want to verify the age of visitors who browse your website. You can do this by adding an age verification form to your storefront.\n<div>Want to try doing it yourself? <a href=\"https://help.shopify.com/themes/customization/access/add-age-verification\">read the Shopify help</a>\n</div>",
+  "title": "Add age verification to your online store",
+  "id": "08e5d00f-8ec2-464d-8633-dd6b33812419"
+}
