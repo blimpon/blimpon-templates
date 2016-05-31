@@ -71,5 +71,6 @@
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
   "description": "<p>Display special content on your order status page depending on the shipping method of the order. Great for local pickup.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/checkout/show-content-based-on-shipping-method\">this Shopify help article</a>.\n</p>",
   "title": "Special content on order status page for a shipping method",
-  "id": "e042f3e6-3ee9-4382-85f6-1dd39c8dd0f4"
+  "id": "e042f3e6-3ee9-4382-85f6-1dd39c8dd0f4",
+  "jobTemplateImageId": "93a90451-7e06-4716-92f3-97ba15e3fa45"
 }
