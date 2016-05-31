@@ -71,5 +71,6 @@
   "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
   "description": "<p>Tagging products lets you create subcategories of products in Shopify. This job will set your store up so that customers can select and browse by these subcategories.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/collections/create-subcategories\">this Shopify help article</a>.\n</p>",
   "title": "Create subcategories of products",
-  "id": "f5e43a41-8bf1-473e-8246-935ccb2d4ca1"
+  "id": "f5e43a41-8bf1-473e-8246-935ccb2d4ca1",
+  "jobTemplateImageId": "a034b1d1-8d31-4764-b86b-3628eca5c8a3"
 }
