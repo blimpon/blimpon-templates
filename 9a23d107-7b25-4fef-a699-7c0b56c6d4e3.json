@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "11ebf048-325c-abc8-cadc-2a9a8ee7ef02"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "f56f7eb7-cfdf-f5f3-1ae9-45a665f2d133"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "10431f3e-2bb2-07dc-f056-e6318d5c7c71"
+        }
+      ],
+      "key": "3f74845d-60be-ea58-10ee-502cacf09da3"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "ba9f6bb7-516f-20dc-3d63-c22f8a743958"
+        }
+      ],
+      "key": "d24e5b07-df50-ca22-d4eb-4e98322beeca"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "58c87c3b-47c6-831e-2139-b6b95cf7a0b2"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "8a9a857e-8a86-d407-6606-54fb2329be6b"
+        }
+      ],
+      "key": "349851c3-e15a-97df-18cc-95a5173701cf"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "description": "<p>Add a favicon based on your logo to your shop.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/colors-images-and-video/add-favicon\">this Shopify help article</a>.\n</p>",
+  "title": "Add a favicon to your shop",
+  "id": "9a23d107-7b25-4fef-a699-7c0b56c6d4e3"
+}
