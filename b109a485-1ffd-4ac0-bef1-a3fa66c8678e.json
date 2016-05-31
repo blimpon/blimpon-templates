@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "cbe4f6ca-c294-628d-1063-fa33db6d764f"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "69c4898f-2c8d-ac6d-f1b4-3b7b1462f217"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "9bf2f393-b8c7-b339-c549-7b4790d123b5"
+        }
+      ],
+      "key": "0d908f83-458a-6a1d-e1e5-0d1ab4badea0"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "8e60caaf-c8ef-41c2-644f-40c0d137362a"
+        }
+      ],
+      "key": "e91f17b3-b71e-1301-c5bf-6742795dafe5"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "b2c33c49-88e6-383e-de46-65f8dc06d1b9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "7bbc4ba8-599b-0a74-09f3-0c8a989826f1"
+        }
+      ],
+      "key": "7f02da3c-3a97-987f-9b8d-7a18263350a5"
+    }
+  ],
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "description": "<p>Allow your shoppers to choose a delivery date for their order with a simple date picker.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/cart/add-date-picker-for-delivery-dates\">this Shopify help article</a>.\n</p>",
+  "title": "Add a delivery date picker",
+  "id": "b109a485-1ffd-4ac0-bef1-a3fa66c8678e"
+}
