@@ -71,5 +71,6 @@
   "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
   "description": "<p>Breadcrumb navigation shows your customer where they are and the pages above their current location. If they're on a product page, for example, there'd be a breadcrumb for the collection they came from.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/navigation/add-breadcrumbs\">this Shopify help article</a>.\n</p>",
   "title": "Add breadcrumb navigation",
-  "id": "fbbb66d2-3767-4939-b818-66b268ee68c6"
+  "id": "fbbb66d2-3767-4939-b818-66b268ee68c6",
+  "jobTemplateImageId": "37413e93-b70e-45f0-ac34-70b7d75c35b2"
 }
