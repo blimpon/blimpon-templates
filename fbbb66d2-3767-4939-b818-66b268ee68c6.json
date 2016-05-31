@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "eebbf873-cc75-ce0b-bf6e-4688f28eee37"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "043fcfb3-fbae-080f-09b7-4fcc92083d50"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "22295fa0-2eb7-594c-c299-897e5f79cf14"
+        }
+      ],
+      "key": "d4f03236-e18e-a02b-a9f7-5e655dbc42b5"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "44652c24-89f4-60f9-1748-80135e60965c"
+        }
+      ],
+      "key": "97515eb4-118a-356e-1bc3-d554e1e10553"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "57bf0eda-1b45-489b-ce2d-f29d4dd76b94"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "70f1cd3c-bf20-b739-4eae-a8b5f323021b"
+        }
+      ],
+      "key": "4c508829-9766-86ef-81a9-4c167ae22482"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "description": "<p>Breadcrumb navigation shows your customer where they are and the pages above their current location. If they're on a product page, for example, there'd be a breadcrumb for the collection they came from.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/navigation/add-breadcrumbs\">this Shopify help article</a>.\n</p>",
+  "title": "Add breadcrumb navigation",
+  "id": "fbbb66d2-3767-4939-b818-66b268ee68c6"
+}
