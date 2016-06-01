@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "8aed2f6f-6d7b-7360-86fe-f03e172d92d2"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "fcd5dc40-89de-4de0-ba8a-8fc41838e14a",
+      "key": "62d298fe-d582-c0a1-cdb9-7af3cf49dc80"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 180,
+          "required": true,
+          "key": "a4d7c223-fbf7-43f6-e0a1-5fbe633aaadb"
+        }
+      ],
+      "key": "e1302f89-03ab-d91f-ff36-4f6c63ea32d1"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "fc4e4838-c452-f9b5-431a-8f19f2256f78"
+        }
+      ],
+      "key": "0692664d-b3f0-8024-80ec-f04957590b05"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "5bce99d0-94fc-c44b-1e87-eada7072ce06"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "7fe3b760-9607-77d4-744d-b93f032e498c"
+        }
+      ],
+      "key": "25d481c9-d621-d4d9-26a8-3fc0a1124164"
+    }
+  ],
+  "collectionId": "",
+  "description": "Web Developer, Search Engine Optimization, Identifying Technical Solution, Troubleshooting, Web Graphics, Bug Fixing, Maintaining Data Integrity, JavaScript, Mobile Application, Building Functionality, and Business Analysis",
+  "title": "Sajid Naseem",
+  "id": "466a409f-c36f-4b2b-827e-4d643c933ac1"
+}
