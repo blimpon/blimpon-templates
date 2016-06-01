@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "fbed92ad-51b2-f0a1-5868-2d6b1dc8b94c"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "4320b0c4-e646-4408-9c69-a5b017ddd39b",
+      "key": "088511db-cb5c-8b5e-0c0c-2ff352725b60"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "750",
+          "required": true,
+          "key": "9c69e299-08f7-409e-a8ca-8f7d76999f00"
+        }
+      ],
+      "key": "4d3060b2-d316-96e8-28d6-308317f0c69c"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "254ba52c-9328-c3dc-64c8-7a2c068d12d1"
+        }
+      ],
+      "key": "c260a11c-4b1c-1a76-436c-bed06aebf5ca"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "6a6949fe-940a-a9a0-a8ac-4bba612a1097"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "5bce5b89-39da-0370-bf98-93dcd659a9eb"
+        }
+      ],
+      "key": "ab0a8684-fdc9-a494-4053-986dfa6db1ae"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "description": "Need a new page template/layout for your store? Send in your design/requirements and I will code it for you!",
+  "title": "Code a Custom Page Template",
+  "id": "74978a99-63bf-4880-814b-dd134355370e"
+}
