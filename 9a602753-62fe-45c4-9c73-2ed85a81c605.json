@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "05861cbb-930e-4812-926a-84db001b7644",
       "key": "c6bc21eb-f008-b326-83a4-a9d3c4cdb573"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "bbe9421c-dedb-4e4f-b220-69d94447693e",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "da38a512-4340-4b3e-b76f-9f79825cb96c"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,7 @@
     }
   ],
   "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
-  "description": "Add several randomly picked products from your front-page collection on your homepage. ",
+  "description": "Add several randomly picked products from your front-page collection on your homepage.  Our expert will do everything detailed in this Shopify <a href=\"https://help.shopify.com/themes/customization/showcase-products/feature-multiple-random-products\"> help article </a>\n",
   "title": "Feature multiple random products on your home page",
   "id": "9a602753-62fe-45c4-9c73-2ed85a81c605"
 }
