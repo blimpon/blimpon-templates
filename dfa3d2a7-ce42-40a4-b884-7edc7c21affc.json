@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "153b2f8b-0b31-d107-bf65-4246c54f3e2e"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "e59a3fee-a121-474c-a5ff-12c5befb795e",
+      "key": "b2db0342-c464-0470-c9c8-7c5935db1a1b"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "75",
+          "required": true,
+          "key": "b032ea74-a53c-9dba-0661-f6f58137b895"
+        }
+      ],
+      "key": "8a78a89c-0425-0c46-f2c1-e651e66cdef5"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "b18742b8-5fa7-8ff9-2067-f3f17660381d"
+        }
+      ],
+      "key": "ffa0265d-ef37-17be-bac7-045b505e8a3a"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "5affe614-455f-3ec1-9fbd-f5b992411573"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "c3db9089-7ce5-f041-998b-a12efa73906b"
+        }
+      ],
+      "key": "368734c9-3265-b447-71fb-c8da4bdf7156"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "description": "If you have issues with your web site which is not looking good in mobile, tablet or iPad , then you're at the right place, I can help you fix issues and problems related to this.",
+  "title": "Fix Responsive Layout Problems",
+  "id": "dfa3d2a7-ce42-40a4-b884-7edc7c21affc"
+}
