@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "722349ad-2aba-32f7-b3fa-ade11aba49c6"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "ae86894d-40ce-f09a-3219-6cd25f6430e2"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "0d6eb3c4-ee24-017a-1a9a-457ef3e40f9b"
+        }
+      ],
+      "key": "5249b673-6be6-6da8-56df-5ccf5e7ad387"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "034fed00-abd7-cb66-01c9-0c9d2c2a0a80"
+        }
+      ],
+      "key": "3adf9f42-24ee-3944-2519-e5ccc9711e24"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "1ca5d49f-0abe-c9ab-cfa0-198a18c41031"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "5dbfdb5e-70e0-d4c5-19ee-1496ee7e21f7"
+        }
+      ],
+      "key": "597e6964-ab62-0a00-53ae-24ad442d6776"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "description": "<p>Include extra information like returns advice, sizing and general care instructions in tabs on your product pages.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/products/add-tabs-to-product-descriptions\">this Shopify help article</a>.\n</p>",
+  "title": "Add tabs to product descriptions",
+  "id": "0ede4ffb-ef49-4674-974b-3c545cc0a0fd"
+}
