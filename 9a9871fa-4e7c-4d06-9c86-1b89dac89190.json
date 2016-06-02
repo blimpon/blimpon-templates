@@ -1,0 +1,90 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "18b489cf-ce0c-9f3c-c349-7a27be483e82"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "36a72a6a-fc73-4599-9d14-a4c5781bf18c",
+      "key": "1d9acc01-a0c1-3327-0cc6-5709465e7c78"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "28f8dad3-8e89-490d-ae1d-29208a1add91",
+      "admin": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 180,
+          "required": true,
+          "key": "56abbe0f-cb1d-886f-4d07-8e98c3465613"
+        }
+      ],
+      "key": "9c2816c9-a4f5-fb5b-b9db-97ad8b4cb850"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "9532f758-82d1-90f7-942b-429f2f8938d6"
+        }
+      ],
+      "key": "436911cb-166e-d09d-d50b-1778d233e7bd"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "246682c8-db9f-db04-35c6-7a109f068066"
+        },
+        {
+          "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "61a1b7ad-edae-4d8d-af58-59c1e2e416fc"
+        },
+        {
+          "order": 3,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "769776aa-8563-63ba-ba75-72fa176577cd"
+        }
+      ],
+      "key": "a1f37ffe-3496-0eda-f8f2-a687667b57d4"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "title": "New job template (copy)",
+  "description": "",
+  "id": "9a9871fa-4e7c-4d06-9c86-1b89dac89190"
+}
