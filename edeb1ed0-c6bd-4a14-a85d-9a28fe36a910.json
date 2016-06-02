@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "32af3b6f-9288-426a-860e-b484ba6f476a",
       "key": "aab10ef0-044f-badf-a6ec-348f6cf787eb"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "387481d6-400b-4375-b3de-3273be86d3f9",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "ce7394a7-932f-4056-b6b1-a4bdba43d4f9"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,8 @@
     }
   ],
   "collectionId": "9021c072-efaf-4a80-bf57-cbfd72d9ea1f",
-  "description": "Website optimization services speed up web page",
+  "description": "Boost Website Loading Time &amp; Optimize GTmetrix Web Page Test Scores.",
   "title": "Website speed optimization service",
-  "id": "edeb1ed0-c6bd-4a14-a85d-9a28fe36a910"
+  "id": "edeb1ed0-c6bd-4a14-a85d-9a28fe36a910",
+  "jobTemplateImageId": "9cc79899-1ff3-47e5-a462-8cb0cb3adf5f"
 }
