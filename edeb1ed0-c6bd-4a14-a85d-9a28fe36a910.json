@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "9f794260-ee31-8764-8cf7-806e3c5ddbbc"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "32af3b6f-9288-426a-860e-b484ba6f476a",
+      "key": "aab10ef0-044f-badf-a6ec-348f6cf787eb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "100",
+          "required": true,
+          "key": "f643aabf-e566-87de-ad05-2c5e60c1a885"
+        }
+      ],
+      "key": "f65aeb1a-4395-5d4b-ebf5-2e79cc0c25af"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "21ca2cdd-7aca-ef27-10e2-638aeb391a06"
+        }
+      ],
+      "key": "2e772a0d-8e95-0adf-76b1-9436ae7074c6"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "9f50efd3-8942-6d4c-eb6a-dca52404790a"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "d068b231-9fb2-e352-215f-96c11abde69e"
+        }
+      ],
+      "key": "7980153d-74df-b55b-31e9-a06f34c79755"
+    }
+  ],
+  "collectionId": "9021c072-efaf-4a80-bf57-cbfd72d9ea1f",
+  "description": "Website optimization services speed up web page",
+  "title": "Website speed optimization service",
+  "id": "edeb1ed0-c6bd-4a14-a85d-9a28fe36a910"
+}
