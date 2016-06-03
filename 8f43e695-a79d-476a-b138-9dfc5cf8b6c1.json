@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "789c42b0-0474-1096-7400-d2f5809431ef"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "2cfde0e0-2637-42ee-9282-1b1b13f6e9d5",
+      "key": "58c8c5b1-8050-5d8e-9881-8e009b061b4e"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "2245",
+          "required": true,
+          "key": "8a100f8c-bd0b-54d3-7e08-d16ba01f2b82"
+        }
+      ],
+      "key": "28fff9f5-02e0-5e8f-fbc3-912ab7fe5d53"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "b137e62f-f808-ecdc-af8a-c2cdedebaf32"
+        }
+      ],
+      "key": "840d385d-483f-6593-320e-eae64939605e"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "603e1d41-32b4-12f4-8a15-36345c3f875c"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "d2e34412-8fcf-9877-aaf7-a5bbb68632e0"
+        }
+      ],
+      "key": "195c30b8-e51d-c855-8dc4-3de6aefdcf93"
+    }
+  ],
+  "collectionId": "",
+  "description": "Convert your Shopify store to a custom built solution. ",
+  "title": "Shopify to Custom eCommerce Store",
+  "id": "8f43e695-a79d-476a-b138-9dfc5cf8b6c1"
+}
