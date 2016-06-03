@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "87e412a3-340f-0691-ebff-b63c64fc10e2"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "4e9f51b8-d146-4f7d-b731-78b83e041c1c",
+      "key": "ac454c4d-3553-eb6c-4573-a134e70f1b83"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "2500",
+          "required": true,
+          "key": "4ba3810e-ec39-d3e6-e75e-67da0073de7e"
+        }
+      ],
+      "key": "627b0497-374d-6b9f-5125-ae107379be50"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "16a9e546-8639-6864-c742-ea6e7720418f"
+        }
+      ],
+      "key": "90f49563-2017-8f7d-198b-3268ee0bc46b"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "35533027-9d35-d23f-f145-bcc13e549898"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "46aa9416-9b61-afea-4a7a-e40ca4fe0fd0"
+        }
+      ],
+      "key": "1071f834-401f-5394-de01-09b6cb5bb9a1"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "title": "Website Re-design",
+  "description": "",
+  "id": "dc89195c-4c2b-4530-8060-c75c80b66281"
+}
