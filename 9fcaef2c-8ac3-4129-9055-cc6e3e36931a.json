@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
       "key": "6da86ea6-6ed2-3431-c571-dc587c66e5a0"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "d3e60b3a-b9a3-4164-9c6d-ec000c754174",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "f75be1d0-add4-4dd0-8c04-d0f6cbfb3bb0"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,7 @@
     }
   ],
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
-  "description": "Add a list of articles to any page based on a specific tag. This is complete with title, excerpt and main image from article content",
+  "description": "Add a list of articles to any page based on a specific tag. This is complete with title, excerpt and main image from article content. This job requires that posts have a main image and excerpt.",
   "title": "Add blog articles based on an article tag",
   "id": "9fcaef2c-8ac3-4129-9055-cc6e3e36931a"
 }
