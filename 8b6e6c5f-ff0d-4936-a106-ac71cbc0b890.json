@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "d456bf9d-8d12-15b3-3220-275499c8b796"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "fb3ff9ca-08cd-f1e5-52ad-5262a9f08714"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "160",
+          "required": true,
+          "key": "02b8835c-d114-a367-2a89-ce1c26bd1030"
+        }
+      ],
+      "key": "ef705dd4-d4ab-f0f7-4998-1f23e0b48298"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "2ca0bf9d-5756-21fe-b365-df5de19fc083"
+        }
+      ],
+      "key": "26f2de85-6edb-c13d-8976-8e7d2f668d8e"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "4dda55f0-98f7-5cbf-ae11-21b64a9c2e91"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "0dd4a445-7668-7452-c375-3941dc6919cc"
+        }
+      ],
+      "key": "2d85c57e-3ed9-27f1-a8ea-afea01403ffa"
+    }
+  ],
+  "collectionId": "not in a collection",
+  "title": "Investigate and fix shop.smallpetselect.com issue",
+  "description": "",
+  "id": "8b6e6c5f-ff0d-4936-a106-ac71cbc0b890"
+}
