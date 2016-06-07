@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "079a8ad4-4be8-7625-7a62-a5146b791220"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
+      "key": "a13f3e84-7e91-d475-df06-3186cf9d5d5d"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "75",
+          "required": true,
+          "key": "c919ef2c-bc80-db4b-0c39-fa57911faa91"
+        }
+      ],
+      "key": "378ffa06-c550-582f-e6a4-2049d5949605"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "311981e1-0890-6136-f421-87baa0c755cc"
+        }
+      ],
+      "key": "cbc7c458-b7a4-e54c-66b1-77c688002531"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "718c9d9d-2fa6-5ac0-2e34-3095e281dc1d"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "f8d37a95-bcb0-dd0c-5b45-45656d5e1ca7"
+        }
+      ],
+      "key": "642285c7-629f-0c86-e1f7-91beef1729b1"
+    }
+  ],
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "description": "Add x number of blog posts ordered from latest post at the end of all article pages",
+  "title": "Add latest blog posts below all posts",
+  "id": "3dd079ef-a2ab-4a97-862d-08b33e85c87b"
+}
