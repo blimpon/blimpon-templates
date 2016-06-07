@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "944a86af-c928-625f-dce4-92a9ad515675"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
+      "key": "6da86ea6-6ed2-3431-c571-dc587c66e5a0"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "75",
+          "required": true,
+          "key": "65039d11-df5e-d05a-ed47-a35535aabde9"
+        }
+      ],
+      "key": "ab51f789-2947-af08-05d8-ac038832b0f8"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "404660bc-5d17-daf5-d26b-d8f503cfcaf5"
+        }
+      ],
+      "key": "14e4acb6-f0a1-0673-1e10-6ad94e850ea7"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "835c1aaf-952b-1be1-8d9a-9098c9429cae"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "3b93f33d-a186-8bb4-5260-e3cff1c37e43"
+        }
+      ],
+      "key": "c12c89e6-b364-43bb-b83b-ac7ff6de2bfd"
+    }
+  ],
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "description": "Add a list of articles to any page based on a specific tag. This is complete with title, excerpt and main image from article content",
+  "title": "Add blog articles based on an article tag",
+  "id": "9fcaef2c-8ac3-4129-9055-cc6e3e36931a"
+}
