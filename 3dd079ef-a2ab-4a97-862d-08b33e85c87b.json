@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
       "key": "a13f3e84-7e91-d475-df06-3186cf9d5d5d"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "5cb5cdef-f596-47a8-9f39-db277b34a608",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "cf21e9ce-63ed-45d6-bc9b-f3a8553a3b1c"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,7 @@
     }
   ],
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
-  "description": "Add x number of blog posts ordered from latest post at the end of all article pages",
+  "description": "Add x number of blog posts ordered from latest post at the end of all article pages. This includes main image, excerpt and title. This job requires that posts have a main image and excerpt.",
   "title": "Add latest blog posts below all posts",
   "id": "3dd079ef-a2ab-4a97-862d-08b33e85c87b"
 }
