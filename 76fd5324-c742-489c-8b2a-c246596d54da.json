@@ -9,11 +9,12 @@
       "key": "40d2a622-b201-d5cc-e31c-54eedf8d88a1",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c"
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     },
     {
       "key": "cd358ca5-fff8-c7d5-379c-bfe659c78e99",
       "name": "project manager",
+      "admin": true,
       "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
