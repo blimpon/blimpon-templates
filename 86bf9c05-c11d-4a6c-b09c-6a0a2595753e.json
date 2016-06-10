@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "05861cbb-930e-4812-926a-84db001b7644",
       "key": "fb24de83-f6d2-3e76-53cf-2806d5f55411"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "eb9cf44d-aa5b-47d8-9b7f-62cfa7c45d92",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "bc1a6fee-8971-408c-8f84-0442011679d5"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,8 @@
     }
   ],
   "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
-  "description": "Create alternate template for pages, products, collections, blogs, or gift cards",
+  "description": "Create alternate template for pages, products, collections, blogs, or gift cards. Our expert will do everything detailed in this Shopify <a href=\"https://help.shopify.com/themes/customization/store/create-alternate-templates\">Help article</a>",
   "title": "Create alternate template",
-  "id": "86bf9c05-c11d-4a6c-b09c-6a0a2595753e"
+  "id": "86bf9c05-c11d-4a6c-b09c-6a0a2595753e",
+  "jobTemplateImageId": "2a7c4016-f487-4e31-b082-ebfb83acffcb"
 }
