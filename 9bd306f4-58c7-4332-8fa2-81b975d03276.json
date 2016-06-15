@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "c0db798a-594b-fd85-664b-1295771abde8"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "3337f7e6-db00-4a72-a2c1-428d760ecde5",
+      "key": "e64ddafb-62d3-2e4b-6cab-065d91b930a3"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "90",
+          "required": true,
+          "key": "d42a3341-52ea-54ee-8b1e-36069678c563"
+        }
+      ],
+      "key": "c0c570a4-9f06-c4fc-c486-7be87fd1e1f2"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "1f374ef8-8ee7-8afe-e1db-bf24bad100cb"
+        }
+      ],
+      "key": "fd0914f8-607d-cff8-ce90-c76a74407155"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "ace1efff-a867-b5b9-806c-e6815a284a97"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "b94adc53-4486-b581-3333-d5831a620988"
+        }
+      ],
+      "key": "0ead96ae-2267-60de-dace-64405c21ed2c"
+    }
+  ],
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "description": "Tweak and customize your WordPress site to your needs.",
+  "title": "WordPress Plugin and Theme Customization 1h of work",
+  "id": "9bd306f4-58c7-4332-8fa2-81b975d03276"
+}
