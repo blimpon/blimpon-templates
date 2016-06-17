@@ -109,6 +109,21 @@
           "type": "confirmation"
         }
       ]
+    },
+    {
+      "key": "4f681ece-2693-a9e9-6f76-665d1782d77e",
+      "title": "Prepare redirects",
+      "order": 5,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "2a0ab4ea-5255-3760-f52b-787de03dc28f",
+          "title": "Use the Shopify app, Traffic Control, to set all redirects from smallpetselect.com to blog.smallpetselect.com",
+          "order": 1,
+          "type": "confirmation",
+          "description": "This is $149 (one-time) with 1 year of 404 tracking"
+        }
+      ]
     }
   ],
   "collectionId": "",
