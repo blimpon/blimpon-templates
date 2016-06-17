@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "c70ebac1-d64f-ea05-5747-bdf7fc3bd056"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "5a073e29-72da-1e69-8a11-1604f74b0db0"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 180,
+          "required": true,
+          "key": "e24c2a5f-aec8-890b-5ca9-9640f406c9d5"
+        }
+      ],
+      "key": "df010a85-a1c1-98ec-895e-6416fe9ee67f"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "314425d2-74e5-aa7a-61f6-1d70cfcfb891"
+        }
+      ],
+      "key": "139a42d1-ae8c-b565-0f7b-a297cde964ac"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "a8a8b1c1-4b03-be23-218b-1867dd34a312"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "64800f49-8ceb-2b40-6a1b-50ad3ba3680d"
+        }
+      ],
+      "key": "d97da61d-073d-33b9-73f1-b0fb9b351b03"
+    }
+  ],
+  "collectionId": "",
+  "title": "Move shop to smallpetselect.com, blog to subdomain",
+  "description": "",
+  "id": "641bb5df-2275-4b7f-b78b-6d0e0aeb9247"
+}
