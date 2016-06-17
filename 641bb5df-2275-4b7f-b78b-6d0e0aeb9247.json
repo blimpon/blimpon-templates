@@ -21,9 +21,10 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": 180,
+          "totalUSD": "750",
           "required": true,
-          "key": "e24c2a5f-aec8-890b-5ca9-9640f406c9d5"
+          "key": "e24c2a5f-aec8-890b-5ca9-9640f406c9d5",
+          "description": "Note our plan also uses the Shopify app, Traffic Control, which is $149 one-off including a year of 404 tracking. You'll pay this separately on your Shopify invoice"
         }
       ],
       "key": "df010a85-a1c1-98ec-895e-6416fe9ee67f"
