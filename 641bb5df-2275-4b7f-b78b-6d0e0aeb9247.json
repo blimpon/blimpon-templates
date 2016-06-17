@@ -29,24 +29,9 @@
       "key": "df010a85-a1c1-98ec-895e-6416fe9ee67f"
     },
     {
-      "title": "Do the work",
-      "completeRole": "fixer",
-      "order": 2,
-      "stepItems": [
-        {
-          "order": 1,
-          "title": "Has the work been done?",
-          "type": "confirmation",
-          "required": true,
-          "key": "314425d2-74e5-aa7a-61f6-1d70cfcfb891"
-        }
-      ],
-      "key": "139a42d1-ae8c-b565-0f7b-a297cde964ac"
-    },
-    {
       "title": "Rate",
       "completeRole": "customer",
-      "order": 3,
+      "order": 2,
       "stepItems": [
         {
           "order": 1,
@@ -66,6 +51,64 @@
         }
       ],
       "key": "d97da61d-073d-33b9-73f1-b0fb9b351b03"
+    },
+    {
+      "key": "9557a90f-066d-91da-c43f-30a0e77f0750",
+      "title": "Analyze smallpetselect.com URLs",
+      "order": 3,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "bb0b9fbb-f123-bbd1-6768-359472f9920b",
+          "title": "Import URLs from Webmaster Tools, Google Analytics ",
+          "order": 1,
+          "type": "confirmation"
+        },
+        {
+          "key": "2108ce1d-a11d-df33-2bd6-f4b827c1a930",
+          "title": "Crawl smallpetselect.com to get a list of URLs",
+          "order": 2,
+          "type": "confirmation"
+        },
+        {
+          "key": "9ff92e61-5ea5-961a-e02d-aa0867d60898",
+          "title": "Create a sheet with current URL and new blog.smallpetselect.com URL",
+          "order": 3,
+          "type": "confirmation"
+        },
+        {
+          "key": "c8bc912c-125b-c294-e6a9-66a6efb30fd4",
+          "title": "Check Wordpress code for potential issues of hardcoded URLs, images, plugins etc.",
+          "order": 4,
+          "type": "confirmation"
+        }
+      ]
+    },
+    {
+      "key": "8463d5de-02c4-2839-7ad3-565bad831802",
+      "title": "Domain setup",
+      "order": 4,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "dad9d602-8e35-6d62-a002-f6bd4ffc89a2",
+          "title": "Point blog.smallpetselect.com at Wordpress site",
+          "order": 1,
+          "type": "confirmation"
+        },
+        {
+          "key": "8f3f6bf5-2c62-23ad-56ba-544612e412a6",
+          "title": "Point smallpetselect.com at Shopify store",
+          "order": 2,
+          "type": "confirmation"
+        },
+        {
+          "key": "fbc3bdf8-6597-b176-9704-1fc9a2871aae",
+          "title": "In Shopify admin, set smallpetselect.com as the primary domain and redirect shop.smallpetselect.com to smallpetselect.com",
+          "order": 3,
+          "type": "confirmation"
+        }
+      ]
     }
   ],
   "collectionId": "",
