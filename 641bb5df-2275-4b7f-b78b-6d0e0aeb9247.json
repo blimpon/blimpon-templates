@@ -31,7 +31,7 @@
     {
       "title": "Rate",
       "completeRole": "customer",
-      "order": 2,
+      "order": 7,
       "stepItems": [
         {
           "order": 1,
@@ -55,7 +55,7 @@
     {
       "key": "9557a90f-066d-91da-c43f-30a0e77f0750",
       "title": "Analyze smallpetselect.com URLs",
-      "order": 3,
+      "order": 2,
       "completeRole": "fixer",
       "stepItems": [
         {
@@ -113,7 +113,7 @@
     {
       "key": "4f681ece-2693-a9e9-6f76-665d1782d77e",
       "title": "Prepare redirects",
-      "order": 5,
+      "order": 3,
       "completeRole": "fixer",
       "stepItems": [
         {
@@ -122,6 +122,75 @@
           "order": 1,
           "type": "confirmation",
           "description": "This is $149 (one-time) with 1 year of 404 tracking"
+        }
+      ]
+    },
+    {
+      "key": "9f31e62b-7462-000e-626e-7afc7f2d2175",
+      "title": "Search Console change of address",
+      "order": 6,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "c391c530-61cf-9cf9-5f3b-857209ab9098",
+          "title": "Go through Search Console change of address for shop.smallpetselect.com",
+          "order": 1,
+          "type": "confirmation"
+        },
+        {
+          "key": "9e44f216-b8d2-42f6-5999-185bb2a3d476",
+          "title": "Go through Search Console change of address for smallpetselect.com",
+          "order": 2,
+          "type": "confirmation"
+        }
+      ]
+    },
+    {
+      "key": "eec04c5e-29a5-2685-ef5f-d2ff71a7e6cf",
+      "title": "Test and fix issues",
+      "order": 5,
+      "stepItems": [
+        {
+          "key": "efd8b017-73e9-2a28-912b-c3a47dc1f088",
+          "title": "Thoroughly test browsing around the new blog.smallpetselect.com looking for broken resources and functionality",
+          "order": 1,
+          "type": "confirmation"
+        },
+        {
+          "key": "b04b6e2a-1f07-7ba9-d614-0cdc3e6cc0f2",
+          "title": "Thoroughly test browsing around the new smallpetselect.com looking for broken resources and functionality",
+          "order": 2,
+          "type": "confirmation"
+        }
+      ],
+      "completeRole": "fixer",
+      "reviewRole": "customer"
+    },
+    {
+      "key": "aecd7229-f8d5-4b39-5ff1-d02a55388870",
+      "title": "Review and fix 404 errors day after",
+      "order": 8,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "9a85f7a4-c402-745a-91de-6b81b92cf32b",
+          "title": "Review and fix 404 errors listed in Traffic Control app",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
+    },
+    {
+      "key": "f5a81b04-a8b7-6fdf-7a47-3d39847012db",
+      "title": "Review and fix 404 errors three days after",
+      "order": 9,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "ea7d03ff-910f-d84b-ec5f-d901b21f1378",
+          "title": "Review and fix 404 errors listed in Webmaster Tools",
+          "order": 1,
+          "type": "confirmation"
         }
       ]
     }
