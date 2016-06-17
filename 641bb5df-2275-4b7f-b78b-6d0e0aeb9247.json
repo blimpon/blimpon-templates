@@ -31,7 +31,7 @@
     {
       "title": "Rate",
       "completeRole": "customer",
-      "order": 7,
+      "order": 9,
       "stepItems": [
         {
           "order": 1,
@@ -169,7 +169,7 @@
     {
       "key": "aecd7229-f8d5-4b39-5ff1-d02a55388870",
       "title": "Review and fix 404 errors day after",
-      "order": 8,
+      "order": 7,
       "completeRole": "fixer",
       "stepItems": [
         {
@@ -183,7 +183,7 @@
     {
       "key": "f5a81b04-a8b7-6fdf-7a47-3d39847012db",
       "title": "Review and fix 404 errors three days after",
-      "order": 9,
+      "order": 8,
       "completeRole": "fixer",
       "stepItems": [
         {
