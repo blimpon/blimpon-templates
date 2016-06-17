@@ -198,6 +198,6 @@
   ],
   "collectionId": "",
   "title": "Move shop to smallpetselect.com, blog to subdomain",
-  "description": "",
+  "description": "<p>The current setup is a bit confusing as a customer so I think conversion would certainly improve with a more conventional main domain shop and subdomain blog navigation.</p>\n\n<p>This would be: 1) Move shop.smallpetselect.com to smallpetselect.com. 2) Move smallpetselect.com to blog.smallpetselect.com</p>\n\n<p>Transfers like this are always risky but executed properly your search engine performance should not suffer. I would expect to see a short term dip in search engine referrals regardless.</p>\n\n<p>There's also a risk of broken links/features/images etc. I've included test and fix at various points to make sure we don't leave you in the cold.</p>\n\n<p>What isn't included is any design/content changes you may wish. Perhaps your homepage on the blog could now be more blog-focussed. But I don't see that as critical for usability.</p>\n\n<p>Note that we will use the Traffic Control app to make the bulk redirect piece quicker. This costs $149 one-off including one year of 404 tracking. This isn't included in our price here and will be added to your Shopify bill. We can do it manually but it likely would be more expensive and error-prone!</p>\n\n<p>The good thing is we have both Wordpress and Shopify experts on the team so can take care of the move if anything comes up on either site.</p>\n",
   "id": "641bb5df-2275-4b7f-b78b-6d0e0aeb9247"
 }
