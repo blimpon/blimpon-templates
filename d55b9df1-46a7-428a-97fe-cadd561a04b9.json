@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "8aa0a111-ef31-d528-4f7f-5a6f5ed35b43"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "804b6410-ce35-456c-9165-a08e7d22b3ad",
+      "key": "f1b23528-6cdb-a82a-62e5-8fe1128e30ee"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "1300",
+          "required": true,
+          "key": "656a5389-b457-7bcf-c0c5-a0a6c9ac00ee"
+        }
+      ],
+      "key": "c79c288e-f54e-6529-7842-c9b56cb5b327"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "69e4ae92-213d-00c6-b498-659492d06f54"
+        }
+      ],
+      "key": "6ad315c7-44a7-f162-5723-14e8ad3e3b57"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "44d3ff0a-122c-c337-5946-b692346080c1"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "9bd68b5e-87cc-8817-0d51-fb0a9c16d451"
+        }
+      ],
+      "key": "f835e9ed-8a47-7ed1-2b87-527e16849152"
+    }
+  ],
+  "collectionId": "4bd8657a-5c0f-4d78-9c9d-64c39aaf33a9",
+  "description": "Develop and Implement Instagram Automation Strategy",
+  "title": "Instagram Marketing Automation",
+  "id": "d55b9df1-46a7-428a-97fe-cadd561a04b9"
+}
