@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "804b6410-ce35-456c-9165-a08e7d22b3ad",
       "key": "f1b23528-6cdb-a82a-62e5-8fe1128e30ee"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "933674df-48f7-4554-9b99-039ccd66dcd2",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "b741f12f-1153-4d05-97d1-d129dbb6db57"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -71,5 +86,6 @@
   "collectionId": "4bd8657a-5c0f-4d78-9c9d-64c39aaf33a9",
   "description": "Develop and Implement Instagram Automation Strategy",
   "title": "Instagram Marketing Automation Monthly Service",
-  "id": "894fe43c-75f8-4b2b-9593-47a2fa3ac8b6"
+  "id": "894fe43c-75f8-4b2b-9593-47a2fa3ac8b6",
+  "jobTemplateImageId": "78441dcb-069c-4ea7-88a8-074cce70f6f8"
 }
