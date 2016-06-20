@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "804b6410-ce35-456c-9165-a08e7d22b3ad",
       "key": "f1b23528-6cdb-a82a-62e5-8fe1128e30ee"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "366f32ed-15f0-4377-8a52-b5c3fdb32602",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "0a3245ad-c51e-4e65-ba62-03dd8cd86d08"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,8 @@
     }
   ],
   "collectionId": "4bd8657a-5c0f-4d78-9c9d-64c39aaf33a9",
-  "description": "Develop and Implement Instagram Automation Strategy",
+  "description": "You will receive a completely automated engagement strategy for your brand's/product's Instagram page and 1 month of organic automation service. We will work with you to identify and target your ideal customers and engage with them automatically through Instagram. The service includes a short set up period where we help you gather relevant information on Instagram. Once this service is complete you will walk away with a \"hands free\" Instagram engagement strategy and automation service for 1 month. Our team will also develop posting and content creation strategies to go along with the engagement automation.",
   "title": "Instagram Marketing Automation",
-  "id": "d55b9df1-46a7-428a-97fe-cadd561a04b9"
+  "id": "d55b9df1-46a7-428a-97fe-cadd561a04b9",
+  "jobTemplateImageId": "1333a358-fd3e-49b5-b89e-ef4eeb372f96"
 }
