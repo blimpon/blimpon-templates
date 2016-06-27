@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "4f1243cf-b3d9-4ed5-9f72-1981712ab8db",
       "key": "7fe42c59-c578-8630-d64c-370d03e39af0"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "f33c20a3-6a92-4fb9-b479-7b40a441a758",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "e48887d7-69b4-49b7-b244-0980ec18e93e"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,7 @@
     }
   ],
   "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0",
-  "description": "Google Shopping Management",
-  "title": "Bogdan",
+  "description": "",
+  "title": "Google Shopping Management",
   "id": "3a814fbf-d475-4b56-9186-b2ae5306ee28"
 }
