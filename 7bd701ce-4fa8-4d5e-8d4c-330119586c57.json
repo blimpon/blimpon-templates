@@ -1,0 +1,67 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "aa72249b-eb32-400d-a695-e614e906d751"
+    },
+    {
+      "name": "fixer",
+      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c",
+      "admin": true,
+      "key": "7b938a50-33a4-4cb5-947b-b75e9494032b"
+    }
+  ],
+  "steps": [
+    {
+      "key": "31219c2f-865f-4801-919d-1b6fe69d7ded",
+      "title": "Send message",
+      "order": 2,
+      "completeRole": "customer",
+      "reviewRole": "fixer",
+      "stepItems": [
+        {
+          "key": "addb9937-dc6b-4332-b8a5-ff15e8d2355b",
+          "title": "Your message",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "key": "e3f2e95d-47f1-4cc0-939a-21c24991b129",
+      "title": "Reply",
+      "order": 3,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "22bac3ae-6f0a-43d2-8749-2dfaa42d38b9",
+          "title": "Replied to message",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
+    },
+    {
+      "key": "55b3b24c-ee3a-73a0-74bd-f9917b445f25",
+      "title": "Website Info",
+      "order": 1,
+      "completeRole": "customer",
+      "reviewRole": "fixer",
+      "stepItems": [
+        {
+          "key": "85dfdf5c-d4e0-68ab-a8dc-6f6e18ef485b",
+          "title": "Website Name",
+          "order": 1
+        },
+        {
+          "key": "4a1523d7-bb4f-5eef-d588-d87c7ad942df",
+          "title": "Website Age and Background Info",
+          "order": 2,
+          "description": "Please give me some info about your website, like your current situation and goals!"
+        }
+      ]
+    }
+  ],
+  "description": "Get in touch",
+  "title": "Contact",
+  "id": "7bd701ce-4fa8-4d5e-8d4c-330119586c57"
+}
