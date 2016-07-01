@@ -1,5 +1,5 @@
 {
-  "title": "Ten blog posts monthly {{ step2.stepItem1 }} (quarterly billing) (copy)",
+  "title": "Ten blog posts monthly {{ step2.stepItem1 }} (annual billing)",
   "roles": [
     {
       "name": "customer",
@@ -26,9 +26,9 @@
         {
           "title": "Pay",
           "type": "pay",
-          "help": "Billed quarterly (every three months)",
+          "help": "Billed annually (every year)",
           "required": true,
-          "totalUSD": "1215",
+          "totalUSD": "4320",
           "key": "20e655a6-0665-982d-ed81-4ee7a6948484",
           "order": 1
         }
@@ -231,7 +231,7 @@
           "title": "Payout project manager",
           "type": "payout",
           "role": "project manager",
-          "percentageOfBalance": "46",
+          "percentageOfBalance": "36",
           "order": 2
         },
         {
