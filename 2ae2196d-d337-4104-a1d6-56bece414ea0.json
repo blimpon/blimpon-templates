@@ -1,5 +1,5 @@
 {
-  "title": "Three blog posts {{ step2.stepItem1 }} (copy)",
+  "title": "Three blog posts monthly {{ step2.stepItem1 }} (quarterly billing)",
   "roles": [
     {
       "name": "customer",
@@ -20,15 +20,15 @@
   ],
   "steps": [
     {
-      "title": "Start your Three blog posts job",
+      "title": "Start your Three blog posts / month job",
       "completeRole": "customer",
       "stepItems": [
         {
           "title": "Pay",
           "type": "pay",
-          "help": "It's a one off payment of $159, you will not be charged again.",
+          "help": "Billed quarterly (every three months)",
           "required": true,
-          "totalUSD": "159",
+          "totalUSD": "432",
           "key": "20e655a6-0665-982d-ed81-4ee7a6948484",
           "order": 1
         }
