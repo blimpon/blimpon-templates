@@ -1,0 +1,253 @@
+{
+  "title": "Three blog posts {{ step2.stepItem1 }} (copy)",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "37e548d0-c18e-ad75-e9ea-6e44e7f702dc"
+    },
+    {
+      "key": "90bd34d2-82d7-081c-3f39-345408b3e954",
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "51d9d132-cf0a-42ea-acc6-5cf6bd5037e9"
+    },
+    {
+      "key": "16e6e632-909b-b7ea-671d-2641897eb5e1",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start your Three blog posts job",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Pay",
+          "type": "pay",
+          "help": "It's a one off payment of $159, you will not be charged again.",
+          "required": true,
+          "totalUSD": "159",
+          "key": "20e655a6-0665-982d-ed81-4ee7a6948484",
+          "order": 1
+        }
+      ],
+      "key": "049a1f72-0512-4599-7cc3-f28b3c0dc0b0",
+      "order": 1
+    },
+    {
+      "title": "Set up access",
+      "completeRole": "customer",
+      "reviewRole": "",
+      "stepItems": [
+        {
+          "title": "What website is the work for?",
+          "type": "text",
+          "required": true,
+          "key": "1355bf5f-bd5a-8484-3402-60832a34bdb3",
+          "order": 1
+        },
+        {
+          "title": "Create a login",
+          "type": "login",
+          "description": "Add a new user to your site admin with the details shown below. Instructions for: <a href=\"https://docs.shopify.com/manual/settings/account/staff-members#add-new-staff-member\" target=\"_blank\">Shopify, adding a staff member</a>, <a href=\"https://support.bigcommerce.com/articles/Public/Adding-Editing-Users\" target=\"_blank\">Bigcommerce, adding a user</a>.",
+          "required": true,
+          "for": "fixer",
+          "key": "e0860029-47c3-a7d5-af44-322d5bf26d65",
+          "order": 2
+        }
+      ],
+      "key": "73576597-bf02-0065-fdf2-561c7c498113",
+      "order": 2
+    },
+    {
+      "title": "Answer questions",
+      "completeRole": "customer",
+      "reviewRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Do you have any topic ideas for the blog posts?",
+          "type": "text",
+          "help": "<ul> <li>If a particular post has been popular in the past writing a similar one now could be too</li> <li>Have your competitors had strong success with any topics</li> <li>Is there anything that's very current and talked-about on social media</li></ul>",
+          "required": true,
+          "key": "817f8578-4d30-ef58-bd0c-01c9fffccf93",
+          "order": 1
+        },
+        {
+          "title": "Can your writer start writing straight away or do you want to approve the topics first?",
+          "type": "text",
+          "help": "<ul>  <li>For the fastest work, if you answer all questions in detail it's best to let the writer get writing straight away</li><li>You can approve the post drafts before publishing (below) if you like</li></ul>",
+          "required": true,
+          "key": "17fb2e8c-a05c-76bf-4c30-6baf202c4a23",
+          "order": 2
+        },
+        {
+          "title": "Are there any keywords you'd like to include?",
+          "type": "text",
+          "help": "<ul> <li>If you're running an AdWords campaign with keywords that convert well, tell us about them here</li> <li>Look in your analytics for keywords that already drive traffic to your site</li><li>If you have a search function on your site these can be a great source too</li>  <li>The keywords will be included naturally for maximum SEO benefit</li></ul>",
+          "required": true,
+          "key": "2ab68435-5886-6057-2af3-5b540520fb44",
+          "order": 3
+        },
+        {
+          "title": "Are there particular products/collections/pages or other places you'd like to link to?",
+          "type": "text",
+          "help": "<ul><li>Paste their URLs in here</li> <li>Aim for at least three links per post</li> <li>Choose things in harmony with your desired topics</li></ul>",
+          "required": true,
+          "key": "ae41f63c-2b4f-9679-f2b6-f462e81407cf",
+          "order": 4
+        },
+        {
+          "title": "What are the main call to actions for the posts?",
+          "type": "text",
+          "help": "<ul>  <li>A call to action is the action you'd ideally like the reader to complete</li><li>Things like browse to a product, sign up to your newsletter or subscribe to your blog</li> <li>It's important to have a call to action so that your blog converts readers to do something valuable to your business rather than being a passive visit</li></ul>",
+          "required": true,
+          "key": "08c60e71-1cf8-6689-4cd6-1b5bfb74ce95",
+          "order": 5
+        },
+        {
+          "title": "Are you happy for the posts to be published immediately or would you like to review them first?",
+          "type": "text",
+          "required": true,
+          "key": "3e6620a4-6475-fa0e-64de-db5d514c9301",
+          "order": 6
+        }
+      ],
+      "key": "d329ac53-02ef-c34d-79e4-cdb2d33bc6bf",
+      "order": 3
+    },
+    {
+      "title": "Select a good topic for SEO",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Write about these topics or come up with similar ideas: {{ step3.stepItem1 }}",
+          "type": "confirmation",
+          "required": true,
+          "key": "c13510ce-c742-4097-95af-4b5bec4802dd",
+          "order": 1
+        },
+        {
+          "title": "Get writing straight away or get approval for the topics, the customer would like: {{ step3.stepItem2 }}",
+          "type": "confirmation",
+          "required": true,
+          "key": "d85baeb6-2e83-1256-91bf-33ef4d34fb6f",
+          "order": 2
+        }
+      ],
+      "key": "255ca367-df5b-b9aa-abac-362e623165f6",
+      "order": 4
+    },
+    {
+      "title": "Write three 600-800 word blog posts structured for best SEO",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Include these keywords naturally (no excessive repetition): {{ step3.stepItem3 }}",
+          "type": "confirmation",
+          "required": true,
+          "key": "7358b361-ff00-9a8b-c713-811701748cf7",
+          "order": 1
+        },
+        {
+          "title": "Choose great titles to entice readers, include keywords",
+          "type": "confirmation",
+          "required": true,
+          "key": "3fbf24da-c335-14ee-44c1-f9e7755e3589",
+          "order": 2
+        },
+        {
+          "title": "Make sure the posts are split into sections, each with a heading (the headings should be H2, H3 etc. HTML tag not H1)",
+          "type": "confirmation",
+          "required": true,
+          "key": "dcbfb9fe-f311-1010-7dba-e0c0fde484ff",
+          "order": 3
+        },
+        {
+          "title": "Feature and link to these URLs:",
+          "type": "confirmation",
+          "description": "{{ step3.stepItem4 }}",
+          "required": true,
+          "key": "023457bc-f035-d020-e3d1-d70b2cfdfddf",
+          "order": 4
+        },
+        {
+          "title": "Include this call to action:",
+          "type": "confirmation",
+          "description": "{{ step3.stepItem5 }}",
+          "required": true,
+          "key": "169b7e72-7002-953c-bdca-6c43d3ce2eb6",
+          "order": 5
+        },
+        {
+          "title": "Write between 600-800 words for each post",
+          "type": "confirmation",
+          "required": true,
+          "key": "2d42e59f-f0c5-6036-0bd6-9a03228b4419",
+          "order": 6
+        },
+        {
+          "title": "Include three images per post (quality, interesting images perhaps taken from the website)",
+          "type": "confirmation",
+          "required": true,
+          "key": "9971074a-64cb-d0db-6d70-8dfa72ba0bc4",
+          "order": 7
+        }
+      ],
+      "key": "d44e4991-c7e4-c767-7da4-eb53d5728619",
+      "order": 5
+    },
+    {
+      "title": "Publish direct to the blog",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Publish the posts immediately or send drafts: the customer would like... {{ step3.stepItem6 }}",
+          "type": "confirmation",
+          "required": true,
+          "key": "c5c837fa-ee3a-0852-265d-2c40ce0dd895",
+          "order": 1
+        }
+      ],
+      "key": "af762801-f84f-488f-d6ef-94ad56a518ff",
+      "order": 6
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "key": "b8365ae2-9160-0aaa-1ea1-7e21556d5ff2",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work completed?",
+          "key": "71e31d1f-5710-8b4c-c369-5c3e5acb3e9a",
+          "type": "faceRating",
+          "required": true,
+          "for": "fixer",
+          "order": 1
+        },
+        {
+          "key": "a0df9fc5-d9b6-f8f1-f0a5-8ef9be64c8b6",
+          "title": "Payout project manager",
+          "type": "payout",
+          "role": "project manager",
+          "percentageOfBalance": 56.45,
+          "order": 2
+        },
+        {
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "958fbaaf-b4c0-c6aa-5ec1-4ac85a666799",
+          "order": 3
+        }
+      ],
+      "order": 7
+    }
+  ],
+  "description": "Kick-start your blogging with this job. Three professionally-written blog posts of 600-800 words, spaced out over three weeks. Well-structured for SEO with three or more images for visual interest and search engines.\n\nBlogging is often picked up quickly by search engines. Wordy, unique posts like these are a rich source of keywords for ranking. Posting regularly to your blog compounds the value and is an investment in making your site traffic build over time.\n\nIt can be difficult to know what to write about for SEO: a topic that's both a great read and one that will be picked up by search engines. With this job you can specify exactly the topic to write about or simply outline the conversion action you'd like to achieve (visit a particular product or collection for example).",
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "jobTemplateImageId": "b61c8132-fb76-4d22-a986-cd14a6464982",
+  "id": "2ae2196d-d337-4104-a1d6-56bece414ea0"
+}
