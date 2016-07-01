@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "8404a1de-09b6-f1ac-11ba-12ff988adf21"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "e7c272c0-5a80-c318-4bc9-2cdcfb1b47d2"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "259",
+          "required": true,
+          "key": "87cb7e7f-801d-751d-1ab5-40e5e76529ca"
+        }
+      ],
+      "key": "7223ce7b-1f86-fa8c-779e-96309a485eb9"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "f79fb3a9-9177-20f9-f651-a81096874584"
+        }
+      ],
+      "key": "1251ad4a-4caf-c8c5-2bf5-fb050dfe0e26"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "4be29d57-94f8-50bb-160a-b6ee03dd3ff5"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "5cccaa05-fbd1-b3f4-47aa-9a2e824dccd9"
+        }
+      ],
+      "key": "4988d1b9-519f-5f3e-8cb6-ae9a45c9306c"
+    }
+  ],
+  "collectionId": "not in a collection",
+  "title": "Pack of five jobs for Darragh",
+  "description": "",
+  "id": "6a68d536-3d51-4b4f-9e42-158920040b41"
+}
