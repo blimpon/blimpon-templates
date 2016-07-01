@@ -1,5 +1,5 @@
 {
-  "title": "Five blog posts {{ step2.stepItem1 }} (copy)",
+  "title": "Ten blog posts {{ step2.stepItem1 }}",
   "roles": [
     {
       "name": "customer",
@@ -20,7 +20,7 @@
   ],
   "steps": [
     {
-      "title": "Start your Five blog posts job",
+      "title": "Start your Ten blog posts job",
       "completeRole": "customer",
       "stepItems": [
         {
@@ -28,7 +28,7 @@
           "type": "pay",
           "help": "One-off payment",
           "required": true,
-          "totalUSD": "245",
+          "totalUSD": "450",
           "key": "20e655a6-0665-982d-ed81-4ee7a6948484",
           "order": 1
         }
@@ -140,7 +140,7 @@
       "order": 4
     },
     {
-      "title": "Write five 600-800 word blog posts structured for best SEO",
+      "title": "Write ten 600-800 word blog posts structured for best SEO",
       "completeRole": "fixer",
       "stepItems": [
         {
@@ -231,7 +231,7 @@
           "title": "Payout project manager",
           "type": "payout",
           "role": "project manager",
-          "percentageOfBalance": "56",
+          "percentageOfBalance": "54",
           "order": 2
         },
         {
