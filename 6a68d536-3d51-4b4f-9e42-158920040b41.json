@@ -31,7 +31,7 @@
     {
       "title": "Do the work",
       "completeRole": "fixer",
-      "order": 2,
+      "order": 3,
       "stepItems": [
         {
           "order": 1,
@@ -46,7 +46,7 @@
     {
       "title": "Rate",
       "completeRole": "customer",
-      "order": 3,
+      "order": 4,
       "stepItems": [
         {
           "order": 1,
@@ -66,10 +66,30 @@
         }
       ],
       "key": "4988d1b9-519f-5f3e-8cb6-ae9a45c9306c"
+    },
+    {
+      "key": "2fdc5c1f-8608-acf4-3867-e7f9ecac1baf",
+      "title": "Set up",
+      "order": 2,
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "key": "3cc87898-826e-d23f-a0c9-403e1cf49298",
+          "title": "Create a login to your shop admin",
+          "order": 1,
+          "type": "login",
+          "for": "fixer"
+        },
+        {
+          "key": "075889ff-3cb9-52fa-5e60-f9498dbdae9d",
+          "title": "What website is this for?",
+          "order": 2
+        }
+      ]
     }
   ],
   "collectionId": "not in a collection",
-  "title": "Pack of five jobs for Darragh",
+  "title": "Pack of five jobs for Darragh {{ step2.stepItem2 }}",
   "description": "",
   "id": "6a68d536-3d51-4b4f-9e42-158920040b41"
 }
