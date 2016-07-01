@@ -89,7 +89,7 @@
     }
   ],
   "collectionId": "not in a collection",
-  "title": "Pack of five jobs for Darragh {{ step2.stepItem2 }} (copy)",
-  "description": "",
+  "title": "Product variant thumbnails only for selected colour {{ step2.stepItem2 }}",
+  "description": "As discussed on email:\n\nFix product variant image thumbnails on product page\n<ul>\n<li>below a product variant A, display the thumbnails of only product variant A</li>\n<li>\nwhen the user presses a colour (say, product variant B) hide thumbnails of variant A and show thumbnails of variant B</li>\n</ul>\n",
   "id": "22394fe6-8401-442b-8654-f5f4bf55a1dc"
 }
