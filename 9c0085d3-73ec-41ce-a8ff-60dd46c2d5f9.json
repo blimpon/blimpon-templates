@@ -1,5 +1,5 @@
 {
-  "title": "Five blog posts {{ step2.stepItem1 }} (copy)",
+  "title": "Five blog posts monthly {{ step2.stepItem1 }} (quarterly billing)",
   "roles": [
     {
       "name": "customer",
@@ -20,15 +20,15 @@
   ],
   "steps": [
     {
-      "title": "Start your Five blog posts job",
+      "title": "Start your Five blog posts / month job",
       "completeRole": "customer",
       "stepItems": [
         {
           "title": "Pay",
           "type": "pay",
-          "help": "One-off payment",
+          "help": "Billed quarterly (every three months)",
           "required": true,
-          "totalUSD": "245",
+          "totalUSD": "663",
           "key": "20e655a6-0665-982d-ed81-4ee7a6948484",
           "order": 1
         }
@@ -231,7 +231,7 @@
           "title": "Payout project manager",
           "type": "payout",
           "role": "project manager",
-          "percentageOfBalance": "56",
+          "percentageOfBalance": "47",
           "order": 2
         },
         {
