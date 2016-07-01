@@ -1,5 +1,5 @@
 {
-  "title": "Three blog posts monthly {{ step2.stepItem1 }} (quarterly billing) (copy)",
+  "title": "Three blog posts monthly {{ step2.stepItem1 }} (annual billing)",
   "roles": [
     {
       "name": "customer",
@@ -28,7 +28,7 @@
           "type": "pay",
           "help": "Billed quarterly (every three months)",
           "required": true,
-          "totalUSD": "432",
+          "totalUSD": "1536",
           "key": "20e655a6-0665-982d-ed81-4ee7a6948484",
           "order": 1
         }
