@@ -26,7 +26,7 @@
         {
           "title": "Pay",
           "type": "pay",
-          "help": "Billed quarterly (every three months)",
+          "help": "Billed annually (every year)",
           "required": true,
           "totalUSD": "1536",
           "key": "20e655a6-0665-982d-ed81-4ee7a6948484",
@@ -231,7 +231,7 @@
           "title": "Payout project manager",
           "type": "payout",
           "role": "project manager",
-          "percentageOfBalance": 56.45,
+          "percentageOfBalance": "37",
           "order": 2
         },
         {
