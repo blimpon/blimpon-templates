@@ -52,5 +52,5 @@
     }
   ],
   "title": "Quote request {{ step1.stepItem1 }}",
-  "description": ""
+  "description": "Messenger quote request"
 }
