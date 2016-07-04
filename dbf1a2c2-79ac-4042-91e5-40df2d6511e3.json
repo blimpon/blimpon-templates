@@ -1,0 +1,56 @@
+{
+  "roles": [
+    {
+      "key": "d42e0e74-70c3-7de3-3b26-b68829041b7d",
+      "name": "customer"
+    },
+    {
+      "key": "4b138c27-88ec-4d70-aa8f-0f10988fe860",
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
+    }
+  ],
+  "steps": [
+    {
+      "key": "b31eb0bd-92b4-6cd4-8680-1e426c2ee1a5",
+      "title": "Create quote request",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "key": "a172a3e1-5c7f-e241-9e48-718b6ce2f210",
+          "title": "Which website is this for?",
+          "order": 1
+        },
+        {
+          "key": "91d592c7-77c9-ddb6-2dd7-b06a4c013c45",
+          "title": "What would you like done? The more detail you give, the better proposals and pricing I can get",
+          "order": 2
+        },
+        {
+          "key": "5ae5d918-c802-5e2e-e8d9-0357f08183e3",
+          "title": "What's your budget? An approximate range helps me match you up",
+          "order": 3
+        },
+        {
+          "key": "2623ab56-c7db-d329-bea4-47bb71b2cc2f",
+          "title": "Thanks! I'll take a look at this and find the best expert matches for you. I'll come back to you soon with their proposals",
+          "type": "html",
+          "order": 4
+        }
+      ],
+      "order": 1
+    },
+    {
+      "key": "e70fb4f1-b96d-6409-eb13-c0be624eedf5",
+      "title": "Put together a quote",
+      "completeRole": "fixer",
+      "stepItems": [
+
+      ],
+      "order": 2
+    }
+  ],
+  "title": "Quote request {{ step1.stepItem1 }}",
+  "description": "Messenger quote request"
+}
