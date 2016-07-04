@@ -1,14 +1,14 @@
 {
   "roles": [
     {
-      "key": "d42e0e74-70c3-7de3-3b26-b68829041b7d",
-      "name": "customer"
+      "name": "customer",
+      "key": "d42e0e74-70c3-7de3-3b26-b68829041b7d"
     },
     {
-      "key": "4b138c27-88ec-4d70-aa8f-0f10988fe860",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "4b138c27-88ec-4d70-aa8f-0f10988fe860"
     }
   ],
   "steps": [
@@ -45,12 +45,18 @@
       "key": "e70fb4f1-b96d-6409-eb13-c0be624eedf5",
       "title": "Put together a quote",
       "completeRole": "fixer",
+      "order": 2,
       "stepItems": [
-
-      ],
-      "order": 2
+        {
+          "key": "dbf8e13c-b705-e2a8-316e-94fa22f9aa55",
+          "title": "Quoted",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
     }
   ],
   "title": "Quote request {{ step1.stepItem1 }}",
-  "description": "Messenger quote request"
+  "description": "Messenger quote request",
+  "id": "dbf1a2c2-79ac-4042-91e5-40df2d6511e3"
 }
