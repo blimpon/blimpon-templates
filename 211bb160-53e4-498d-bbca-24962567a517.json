@@ -1,0 +1,163 @@
+{
+  "title": "Google Analytics setup with enhanced ecommerce tracking {{ step2.stepItem1 }} (copy)",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "4143f879-dd8d-a4f1-4b4f-ac202dafc755",
+      "order": 1
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c",
+      "key": "a5ea8890-3b85-651c-0d9f-55ba55ab490f",
+      "order": 2
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "2e058edc-cb9d-48df-8871-abc7bd2e6178",
+      "admin": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start the job",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Payment",
+          "type": "pay",
+          "help": "It's a one off payment of $180, you will not be charged again.",
+          "required": true,
+          "totalUSD": "180",
+          "key": "4990b49e-6758-464a-f1d1-012474c8c70e",
+          "order": 1
+        }
+      ],
+      "key": "d1f78dc7-8678-a428-cc93-a31c24b46a37",
+      "order": 1
+    },
+    {
+      "title": "Set up",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "What website is the work for?",
+          "type": "text",
+          "required": true,
+          "key": "ea891938-51c3-4f8c-270f-64595098fe87",
+          "order": 1
+        },
+        {
+          "title": "Create a login",
+          "type": "login",
+          "for": "fixer",
+          "required": true,
+          "description": "Set up a login to 1) your shop admin and 2) your Google Webmaster Tools (if you have it) 3) Google Analytics (if you have it) with the details below",
+          "key": "2c928ff4-b984-5652-5645-d36a9415c1fd",
+          "order": 2
+        }
+      ],
+      "key": "ac8d216a-b569-23ea-ee10-7d8f0bb9d3a4",
+      "order": 2
+    },
+    {
+      "title": "Set up Google Analytics account",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Set up the Google Analytics account",
+          "type": "confirmation",
+          "required": true,
+          "key": "3a4148e3-052c-5dc3-4ed1-c0d069780500",
+          "order": 1
+        }
+      ],
+      "key": "97b63cd2-0f2b-6003-f1df-f3d7a151df7a",
+      "order": 3
+    },
+    {
+      "title": "Install tracking code throughout site",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Installed tracking code throughout site",
+          "type": "confirmation",
+          "required": true,
+          "key": "430476b3-0890-51bf-053b-663b0e6a5b47",
+          "order": 1
+        }
+      ],
+      "key": "25ff8b0d-7273-a5ab-50f6-e415b8838d05",
+      "order": 4
+    },
+    {
+      "title": "Enable enhanced ecommerce",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Enabled enhanced ecommerce",
+          "type": "confirmation",
+          "required": true,
+          "key": "7b4b988d-76ea-38ed-cd5b-a5f5bcf7382e",
+          "order": 1
+        }
+      ],
+      "key": "05b22ade-95c7-1484-2051-68dc08395e8e",
+      "order": 5
+    },
+    {
+      "title": "Add domains to exclusion list",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Added domains to exclusion list",
+          "type": "confirmation",
+          "required": true,
+          "key": "5d5cfdca-5ce4-0d61-566e-06f78e4d72a0",
+          "order": 1
+        }
+      ],
+      "key": "28e2da56-1a9c-7319-4c79-9a76cef02403",
+      "order": 6
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "19819e2e-bb96-0f8f-e2a4-19292f25dba4",
+          "order": 1
+        },
+        {
+          "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "779ba5c0-923a-4468-91c9-ecbceeff1c13"
+        },
+        {
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "f7be8849-94b4-486d-8423-87607dffbf99",
+          "order": 3
+        }
+      ],
+      "key": "9833b6a4-edf3-76a4-eb20-cb9b61a924a1",
+      "order": 7
+    }
+  ],
+  "jobTemplateImageId": "aae391d3-e841-4eaa-b3b3-abde288a0e95",
+  "description": "<p>Understanding how the marketing activities you're trying are (or aren't) generating traffic and sales is key to wise spending and moving forward to grow your business.</p>\n\n<p>Google Analytics provides all of this insight but can be tricky to set up right. And powerful features like enhanced ecommerce tracking need a little bit more work to set up.</p>\n\n<p>We'll make all of the coding changes required throughout your site to accurately track in Google Analytics and do the setup in Google Analytics too.</p>\n\n<p>We target the work to be completely wrapped up 14 days from signup.</p>",
+  "collectionId": "b8d4461e-1357-4065-82e3-d9985ba7e91b",
+  "id": "211bb160-53e4-498d-bbca-24962567a517"
+}
