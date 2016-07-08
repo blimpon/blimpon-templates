@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "bd581b15-a8b5-9f6a-c114-510a623cd81c"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "19369e95-7631-8537-c1cf-f3e08c7c7846"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "290",
+          "required": true,
+          "key": "6414d58a-25ec-db4c-3c99-703266ce2a0f"
+        }
+      ],
+      "key": "720e59b8-5924-d2fc-0d2b-ab0e18ab274e"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "dbf74261-fbf8-fb94-2688-3e0ad50c11ab"
+        }
+      ],
+      "key": "94959e07-666d-063a-0c9c-92d5e4043c54"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "bbf22ba0-2d12-5a28-2965-b77041caa3e6"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "c110ac28-812c-a113-aed1-7d5c0cf63058"
+        }
+      ],
+      "key": "b054e8fc-95d8-0190-86d9-091eeafb9c13"
+    }
+  ],
+  "collectionId": "",
+  "description": "<p>Create two new pages 'decision maker' and 'vendor' with a similar (but not the same) layout and settings as the homepage</p><p>\n\nLayout</p><p>\nSimilar (but not identical) layout to the homepage, these two new pages will only have the image and video and image and text sections. Plus of course the site navigation and footer.</p><p>\n\nSettings</p><p>\nHomepage content can be controlled using theme settings. These two new pages should also be able to be controlled using theme settings.</p><p>\n\nFor each page add two new theme settings sections as follows:</p>\n<ul>\n<li>image and video</li>\n<li>image and text</li>\n<p>\n\nEach section should have all of the same theme settings as the 'home page - image and video' and 'home page - image and text' and they should work the same way as they do on the homepage (video in a lightbox etc.).</p>\n<p>\n\nThis is a fixed price to deliver the above spec. If we can't do it we will reverse and refund in full.</p>\n</ul>",
+  "title": "Intellilu two new pages controlled by theme settings",
+  "id": "aef7267f-baba-4791-8d34-6b8fdfc3b893"
+}
