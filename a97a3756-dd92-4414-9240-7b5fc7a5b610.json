@@ -70,6 +70,6 @@
   ],
   "collectionId": "",
   "title": "Members only ordering",
-  "description": "",
+  "description": "<ul>\n<li>Utlilize Locksmith app or equivalent to make product cart section login only</li>\n<li>Make the products viewable by all public without pricing</li>\n<li>\nMake the Cart a members only area </li>\n<li>\nMake pricing visible to logged in users only (It is for wholesalers only)</li>\n</ul>\n<p>As discussed on email, we can do this with or without Locksmith. With Locksmith you'd give them a password so they can sign up themself, with our solution you'd give them the URL so they can sign up themself.</p>",
   "id": "a97a3756-dd92-4414-9240-7b5fc7a5b610"
 }
