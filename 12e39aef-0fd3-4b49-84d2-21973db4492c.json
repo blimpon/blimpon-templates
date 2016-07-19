@@ -13,7 +13,7 @@
   ],
   "steps": [
     {
-      "title": "Pay",
+      "title": "Start the job",
       "completeRole": "customer",
       "order": 1,
       "stepItems": [
@@ -74,6 +74,11 @@
       "completeRole": "customer",
       "stepItems": [
         {
+          "key": "2e0f7e10-4c01-1a43-d2d8-7a7a0e13096b",
+          "title": "What website is this for?",
+          "order": 1
+        },
+        {
           "key": "65cbaac2-6179-28c1-911f-6acce97e7abf",
           "title": "Create a login for your site admin",
           "order": 2,
@@ -93,11 +98,6 @@
           "order": 4,
           "type": "login",
           "for": "fixer"
-        },
-        {
-          "key": "2e0f7e10-4c01-1a43-d2d8-7a7a0e13096b",
-          "title": "What website is this for?",
-          "order": 1
         }
       ]
     }
