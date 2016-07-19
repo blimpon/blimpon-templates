@@ -2,13 +2,15 @@
   "roles": [
     {
       "name": "customer",
-      "key": "027e420a-584e-4d93-a6f5-8639b2385f88"
+      "key": "027e420a-584e-4d93-a6f5-8639b2385f88",
+      "order": 1
     },
     {
+      "key": "882c78b9-c535-0db6-8f4a-c3c6962eac8e",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "882c78b9-c535-0db6-8f4a-c3c6962eac8e"
+      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c",
+      "order": 2
     }
   ],
   "steps": [
