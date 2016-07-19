@@ -29,9 +29,9 @@
       "key": "5d9a6894-151a-f3e6-4f32-8d854dd21e24"
     },
     {
-      "title": "Do the work",
+      "title": "Do the work as described",
       "completeRole": "fixer",
-      "order": 2,
+      "order": 3,
       "stepItems": [
         {
           "order": 1,
@@ -46,7 +46,7 @@
     {
       "title": "Rate",
       "completeRole": "customer",
-      "order": 3,
+      "order": 4,
       "stepItems": [
         {
           "order": 1,
@@ -66,6 +66,40 @@
         }
       ],
       "key": "9a179201-623f-932e-d93e-ddcdbb49fc66"
+    },
+    {
+      "key": "06c87c75-f239-9b68-a5e5-79a04af5bee8",
+      "title": "Set up the job",
+      "order": 2,
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "key": "65cbaac2-6179-28c1-911f-6acce97e7abf",
+          "title": "Create a login for your site admin",
+          "order": 2,
+          "type": "login",
+          "for": "fixer"
+        },
+        {
+          "key": "e10c67c0-1b11-4097-dd90-e470d827928e",
+          "title": "Create a login for Google Analytics",
+          "order": 3,
+          "type": "login",
+          "for": "fixer"
+        },
+        {
+          "key": "f07d37c4-35d2-980c-55de-e0984e90eba6",
+          "title": "Create a login for Google Search Console",
+          "order": 4,
+          "type": "login",
+          "for": "fixer"
+        },
+        {
+          "key": "2e0f7e10-4c01-1a43-d2d8-7a7a0e13096b",
+          "title": "What website is this for?",
+          "order": 1
+        }
+      ]
     }
   ],
   "collectionId": "",
