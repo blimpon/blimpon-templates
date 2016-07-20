@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
       "key": "69c4898f-2c8d-ac6d-f1b4-3b7b1462f217"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "744ba34a-c475-489e-a0d6-3fad704313e3",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "53d3e1f9-438f-49af-a4fb-97b166c4f484"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -70,7 +85,7 @@
   ],
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
   "description": "<p>Shopify lets customers set whatever quantity they wish of an item, regardless of if it is in stock or not. They're only told at checkout if they can't buy what they'd hoped to!</p>\n<p>This job will display accurate stock levels and prevent customers being surprised with real stock levels on checkout.</p>\n<p>Our expert will do everything detailed in <a href=\"https://help.shopify.com/themes/customization/cart/prevent-orders-for-out-of-stock-items\">this Shopify help article</a>.\n</p>",
-  "title": "Prevent orders for out-of-stock quantities",
+  "title": "Prevent orders for items that are out of stock",
   "id": "dd7d951f-8f49-4c02-a732-9985aa56c155",
   "jobTemplateImageId": "773e905b-aca0-406d-a0c9-eb3d56e19f68"
 }
