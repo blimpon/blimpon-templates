@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "29616293-fdf8-e973-e906-bb20b4c1c925"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
+      "key": "cee8c23f-9996-73be-15a1-624fca3d2727"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "75",
+          "required": true,
+          "key": "7eda06e0-62a3-eef6-c5f1-5c2561b13457"
+        }
+      ],
+      "key": "1c3f2325-25a6-6668-f762-1a8b7572dc9a"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e1f6c91c-fed1-254f-2c77-f0cf2478e082"
+        }
+      ],
+      "key": "ab5488bd-a950-723f-433e-d5c95bd624e8"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "757be0c0-cef7-a20d-9474-3cb94114b9ef"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "cd992a97-e719-897e-7ca6-c9347a905809"
+        }
+      ],
+      "key": "22ce51b2-68e7-6acb-45ea-46c0fff8c4b9"
+    }
+  ],
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "description": "Force customers to agree to your terms and conditions before they checkout. Includes a basic checkbox, text and a link to your terms and conditions. All lay'd out to fit your current design. ",
+  "title": "Cart: Agreement checkbox before checkout",
+  "id": "e80deaf5-aa3f-4480-a6d0-f1d7ff587179"
+}
