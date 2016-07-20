@@ -84,7 +84,7 @@
     }
   ],
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
-  "description": "Force customers to agree to your terms and conditions before they checkout. Includes a basic checkbox, text and a link to your terms and conditions. All lay'd out to fit your current design. ",
+  "description": "Prevent customers from checking out until they agree to your terms and conditions before they checkout. This will be placed on your cart page. Includes a basic checkbox, text and a link to your terms and conditions. All lay'd out to fit your current design. Some templates also include checkout buttons in other locations. Extra work will be necessary and the total cost will be adjusted accordingly",
   "title": "Add an agree to terms and conditions checkbox on the cart page of your Shopify store",
   "id": "e80deaf5-aa3f-4480-a6d0-f1d7ff587179"
 }
