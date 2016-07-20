@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
       "key": "cee8c23f-9996-73be-15a1-624fca3d2727"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "691eeeff-e270-4f44-9793-c95afe6e7e7a",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "b49da2ed-1955-400f-8b07-54c1d62258f8"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -70,6 +85,6 @@
   ],
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
   "description": "Force customers to agree to your terms and conditions before they checkout. Includes a basic checkbox, text and a link to your terms and conditions. All lay'd out to fit your current design. ",
-  "title": "Cart: Agreement checkbox before checkout",
+  "title": "Add an agree to terms and conditions checkbox on the cart page of your Shopify store",
   "id": "e80deaf5-aa3f-4480-a6d0-f1d7ff587179"
 }
