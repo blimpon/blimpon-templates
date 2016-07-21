@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "6f17f2fa-be17-f6ea-23e2-a79a144c3a4b"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "a8ab192d-6548-4054-80ec-0f0a0f64ee81",
+      "key": "8a35ab91-5dea-e0c4-f5f0-10fe5b7b3247"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "45",
+          "required": true,
+          "key": "58162c65-f34f-ac61-d0c1-d65eea85438f"
+        }
+      ],
+      "key": "9aa6585d-5cc3-f82e-b613-ebd214917c98"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "d72c7381-8200-cc7e-bd79-4bac16150ea9"
+        }
+      ],
+      "key": "1ced6a63-583f-d685-845b-f49aa5c8dbdf"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "b22d7382-8cd9-acc0-7c0e-16032a8d20e1"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "7265f2a1-5ec0-43a5-8455-eba3c2d02181"
+        }
+      ],
+      "key": "f144a007-0625-5810-7dcf-923ec8717452"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "description": "Add infinite scroll (auto paging without clicking) to Shopify collections or to a specific collection. After this tweak you don't have to increase number of products per page. Adding a lot of products to a single collection page is bad will increase the page weight. Therefore this tweak is good for site's performance and SEO as well. Additionally we can improve your SEO by adding SEO friendly infinite scroll, like paging while you scroll too.",
+  "title": "Add infinity scroll to a Shopify collection",
+  "id": "baab624d-f94e-4b5c-bb81-7053d280a854"
+}
