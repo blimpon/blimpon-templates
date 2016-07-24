@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "be80fbd0-d261-68a3-3e75-ae5f872595dc"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "d8b6dfd5-1c78-49e9-8da7-fe462a4218dd",
+      "key": "d913c899-1f19-d3bd-76cf-39ba74191c33"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "250.00",
+          "required": true,
+          "key": "0e543890-a5f3-4966-63f8-3bf694c8b16e"
+        }
+      ],
+      "key": "0ede8c53-886f-6ac6-f13e-ce3137262a53"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "f2dfde27-4292-2606-0e2b-9eb923b08fef"
+        }
+      ],
+      "key": "90b2f351-28d9-3e0c-4ef3-7e97abb6a5a2"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "302021f6-9c6a-cb83-cc9a-9acce67f42d9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "4b1718c5-7efe-955c-e358-2128ef0c378e"
+        }
+      ],
+      "key": "e19cb90b-bb6b-ea8d-1177-9ca96b32352e"
+    }
+  ],
+  "collectionId": "",
+  "description": "Lets See How I Can Help You",
+  "title": "Technology Consultant (copy)",
+  "id": "b12cbc76-b87a-42bf-a4a2-f12f2ad0706a"
+}
