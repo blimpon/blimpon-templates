@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "9235fb01-a60d-692b-0412-3475aa7173dc"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
+      "key": "bbd01591-88e7-1a0e-d0fc-c14191b86ec0"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "125",
+          "required": true,
+          "key": "7d1a970c-ef89-39d7-f4f3-b5c3030ce8fc"
+        }
+      ],
+      "key": "3aa08cbf-4802-709f-42b1-3b7d04e6e842"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "8521a868-79e6-60fa-494e-5d6a05115f96"
+        }
+      ],
+      "key": "31231614-fe04-2d25-8fc4-279b689cb1fe"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "5f8f2f8c-c242-75a6-f8a8-f73bd84490b9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "2ce6cd85-781d-619f-70f4-a1882ffe456d"
+        }
+      ],
+      "key": "0fabdc05-085b-476c-0f93-cb0c9602ed7f"
+    }
+  ],
+  "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
+  "description": "Allow your customers to give you a donation on the cart page before they check out.\n\nWhat you will get:\n- One new product\n- A drop-down box for inputing the donation. Client must provide increments\n- A field label above or next to the box, depends on space. This text is changeable at no extra cost\n- Design and layout will be consistent with gtheme design\n\nAdd ons:\n- Have it show into a popup before checkout (+$100 extra)\n- Pixel-perfect based on design mockup (+$125)",
+  "title": "Add a donation/tip box to your cart page",
+  "id": "bd2cc429-be7c-4b36-93b9-af24630e9b50"
+}
