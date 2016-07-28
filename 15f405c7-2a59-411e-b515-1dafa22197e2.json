@@ -1,0 +1,90 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "f1d292e7-385e-59f5-51fb-0e08fc824aca"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
+      "key": "b3e28a19-20ed-84dd-33f1-15f29cbeddc9"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "e0639b1f-6e00-4771-9784-1805ba0affa9",
+      "admin": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "175",
+          "required": true,
+          "key": "1c5d3649-bc59-f9a0-943b-a59ae010d4aa"
+        }
+      ],
+      "key": "fbe396c0-585f-b080-fb1e-f27fa46cc714"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "98dae843-7947-f65d-c0f5-5c6a56efc6d0"
+        }
+      ],
+      "key": "7246f305-aec2-7dfd-20be-db34ca9c5303"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "ccdf27e0-305a-4f2b-e0ee-f8bdcfd3703b"
+        },
+        {
+          "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "c311ee98-27ba-4848-b019-eab5521ddcc9"
+        },
+        {
+          "order": 3,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "dde0fb9b-eb35-fabe-f0f7-ae193fb7083f"
+        }
+      ],
+      "key": "51f14db5-3718-7162-2d34-bce6c1ff4ff1"
+    }
+  ],
+  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
+  "description": "Adding a second language to your Shopify store will increase the positive experience of your customers. If you provide a version of your site in another language, you are communicating customer care. If you have multiple locations in your traffic report, in other words, if your site is browsed by customers of multiple countries, this small tweak can surely help on many fronts:\n\n- It can increase the amount of customers from countries which are of 2nd or 3rd and fourth place, ect.\n\n- It can attract new sales from countries who lack to convenience to browse your store in their native language\n\n- It creates a high rate on investment which will sound great to the ears of your investors or of great justified value to your budget\n\nIt includes the following:\n\n- Installation and setup of the language application:\n- Adds a language switcher to your header or footer\n- Choose between a drop-down menu, inline list of languages and with or without icon flags\n- Basic styling of switcher (color, font, size, borders)\n\nThis service is intended for Shopify stores that are themed without localization or do not use the localization feature. This service makes use of the free Google Translator language switcher.",
+  "title": "Add a second language to your Shopify store (copy)",
+  "id": "15f405c7-2a59-411e-b515-1dafa22197e2"
+}
