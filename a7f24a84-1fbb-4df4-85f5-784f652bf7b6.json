@@ -85,6 +85,7 @@
   ],
   "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
   "description": "Adding a second language to your Shopify store will increase the positive experience of your customers. If you provide a version of your site in another language, you are communicating customer care. If you have multiple locations in your traffic report, in other words, if your site is browsed by customers of multiple countries, this small tweak can surely help on many fronts:\n\n- It can increase the amount of customers from countries which are of 2nd or 3rd and fourth place, ect.\n\n- It can attract new sales from countries who lack to convenience to browse your store in their native language\n\n- It creates a high rate on investment which will sound great to the ears of your investors or of great justified value to your budget\n\nIt includes the following:\n\n- Installation and setup of the language application:\n- Adds a language switcher to your header or footer\n- Choose between a drop-down menu, inline list of languages and with or without icon flags\n- Basic styling of switcher (color, font, size, borders)\n\nThis service is intended for Shopify stores that are themed without localization or do not use the localization feature. This service makes use of the free Google Translator language switcher.",
-  "title": "Add a second language to your Shopify store (copy) (copy)",
-  "id": "a7f24a84-1fbb-4df4-85f5-784f652bf7b6"
+  "title": "Add a second language to your Shopify store",
+  "id": "a7f24a84-1fbb-4df4-85f5-784f652bf7b6",
+  "jobTemplateImageId": "d53a58a8-a4bc-4507-be8e-c868ff08d5cc"
 }
