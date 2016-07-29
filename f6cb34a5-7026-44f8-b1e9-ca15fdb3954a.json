@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
       "key": "bbd01591-88e7-1a0e-d0fc-c14191b86ec0"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "a2045950-b957-43f2-9328-c9a5a2680f46",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "032353d1-fdd5-4eea-9d53-4c685c563807"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -71,5 +86,6 @@
   "collectionId": "4bd8657a-5c0f-4d78-9c9d-64c39aaf33a9",
   "description": "Is your instagram feed broken since Jun 1, 2016? If your feed shows less than 20 posts, this service can restore it for you. Many Shopify themes were affected by this change because of a recent change in the way the code must be written to pull the feed.",
   "title": "Fix your instagram feed",
-  "id": "f6cb34a5-7026-44f8-b1e9-ca15fdb3954a"
+  "id": "f6cb34a5-7026-44f8-b1e9-ca15fdb3954a",
+  "jobTemplateImageId": "f8acfa26-edb1-4c69-a637-d09488dac8fd"
 }
