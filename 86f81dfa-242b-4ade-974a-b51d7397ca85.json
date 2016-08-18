@@ -30,6 +30,15 @@
           "totalUSD": "49",
           "key": "de5c7a48-581c-6015-f9ad-765be1ca2a29",
           "order": 1
+        },
+        {
+          "key": "be433daa-dade-9503-87ff-ab7fc68e2578",
+          "title": "Job received",
+          "type": "sendemail",
+          "to": "customer",
+          "body": "{% assign split_name = recipient.name | split: ' ' %}\n\nHi {{ split_name.first }}\n\nThanks. We've received your {{ job.title }} job.\n\nOn the job you have one of our expert fixers who will be doing the work, a project manager, and us here at Plug in SEO to make sure you're happy.\n\nWe use the Blimpon project management app to efficiently manage your job and for messaging in the team. \n\n<strong>What happens now?</strong>\n<ul><li>If you haven't already, grant our fixer access to your website admin</li>\n<li>We target the work to be completely wrapped up 14 days from signup</li>\n<li>For the fastest response to any questions log in to Blimpon, go to the job and send a message there</li>\n<li>Once we're finished you'll receive details of everything we've done</li>\n</ul>\n\n<strong>Important note</strong>\nMaking structural changes to your website during and after this job can interfere with or lose our work. Please check with your project manager before changing to a new theme, editing your site templates or adding/removing meta tagging apps.\n\nSo that your job goes smoothly just send a message to your project manager at any time if you're in doubt.\n\nThere's no need to pause your normal day-to-day activities like adding/editing pages/products/collections/blogs etc. All of this is fine and won't affect our work.\n\nWe look forward to getting this job done for you.\n\nBest, Daniel\nPlug in SEO\n\nPS: did you know we're Shopify Experts? reply to this email if you need any other work done on your shop",
+          "subject": "{{ job.title }} job received",
+          "order": 2
         }
       ],
       "key": "c7ac8cad-d40e-9580-9756-ee7ee094decb",
