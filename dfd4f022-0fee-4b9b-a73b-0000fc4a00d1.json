@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "ae689e1a-acf3-9ec5-503b-698a701684bd"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "7a23a090-26ef-cb74-220c-57611d2970f9"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "350",
+          "required": true,
+          "key": "e04b0b25-2a91-f126-7b81-606027d2aed0"
+        }
+      ],
+      "key": "1fc711fd-953b-ebb2-80cb-4535d4abddf8"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "f0f73717-abfd-dba8-7616-22bd5fa07237"
+        }
+      ],
+      "key": "649719d8-1021-fb5a-88aa-65d710a858ee"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "d1063f34-4eba-63fa-f800-c12220c41016"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "aba75d7c-9a90-0990-591d-2e02378b10ab"
+        }
+      ],
+      "key": "63521c2b-2da1-2905-54f7-73881b8a5493"
+    }
+  ],
+  "collectionId": "not in a collection",
+  "title": "Install Bespoke Shipping app, integrate and configure rates",
+  "description": "",
+  "id": "dfd4f022-0fee-4b9b-a73b-0000fc4a00d1"
+}
