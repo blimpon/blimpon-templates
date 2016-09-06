@@ -70,6 +70,6 @@
   ],
   "collectionId": "not in a collection",
   "title": "Install Bespoke Shipping app, integrate and configure rates",
-  "description": "Install the Bespoke Shipping app (https://apps.shopify.com/custom-shipping-rates) \n\nInstall the app and set up shipping rates accordingly:\n\n- If an order contains at least one full priced item everything in that order will ship for free, worldwide. (e.g. if an order has 3 sale/discounted items and 1 full priced item it will qualify for free shipping). \n\n- If an order only contains sale/discounted items (so no full priced items), the following flat rate shipping charges will apply: \nAustralia and New Zealand - $10 \nRest of the World - $30",
+  "description": "<p>Install the Bespoke Shipping app (https://apps.shopify.com/custom-shipping-rates) </p>\n\n<p>Install the app and set up shipping rates accordingly:</p>\n\n<p>- If an order contains at least one full priced item everything in that order will ship for free, worldwide. (e.g. if an order has 3 sale/discounted items and 1 full priced item it will qualify for free shipping). </p>\n\n<p>- If an order only contains sale/discounted items (so no full priced items), the following flat rate shipping charges will apply: \n<br>Australia and New Zealand - $10 \n<br>Rest of the World - $30</p>",
   "id": "dfd4f022-0fee-4b9b-a73b-0000fc4a00d1"
 }
