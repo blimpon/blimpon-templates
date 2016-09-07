@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "0f3a9649-ab00-54f1-4e70-6b784a802f81"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "10c0627c-480b-19ea-2c29-b7f831cc88b9"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "a1b9d185-b32d-80b2-9cb7-264bc98fb132"
+        }
+      ],
+      "key": "0b51d92c-b411-2656-71ea-6b30bcd6ee52"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "60e0a676-cf66-ee91-60ac-bf7b94268ede"
+        }
+      ],
+      "key": "c6978446-45f4-fb36-6e9b-bdddc85a8e5c"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "19d117c9-c7bc-33ee-01a2-44d553fa7bf4"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "020d219c-13d9-f6a4-6130-10a07db3fc57"
+        }
+      ],
+      "key": "da4176e6-a642-5a52-b15b-73b8b1dff957"
+    }
+  ],
+  "collectionId": "",
+  "description": "As discussed on email, resize the homepage slideshow as it is too big vertically.",
+  "title": "Resize homepage slideshow",
+  "id": "6f0e1e09-9541-49bc-b470-41880b19495e"
+}
