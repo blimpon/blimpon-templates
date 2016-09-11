@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "8f749f9d-dff9-44a4-f6e1-9aa59cb8353c"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "ebddee08-f115-4930-9100-ef80bf4b53e9",
+      "key": "f71f6301-bf8d-7395-48da-23b53e06a4eb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "507a9e7d-59e7-0594-e14b-cbd82e2c6e1c"
+        }
+      ],
+      "key": "10681983-ccfb-fa97-cef6-9bf07c8f7a4e"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "906f64cf-6f32-4a0f-7b12-88772b81bcf5"
+        }
+      ],
+      "key": "c9e257a7-51a0-020c-b9c3-9b74a6189f17"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "ecb58321-cbeb-45ad-c9bc-7c6b778f5aad"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "95530666-13fc-3a4f-4da1-d1c5cf73068a"
+        }
+      ],
+      "key": "d1ce04f4-9a3f-f828-8a67-4c5267613264"
+    }
+  ],
+  "collectionId": "",
+  "description": "Digital Marketing Services",
+  "title": "Digital Marketing Services",
+  "id": "9e84ad5d-7e4d-429d-a44a-cf88f648bde5"
+}
