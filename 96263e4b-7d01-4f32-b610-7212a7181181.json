@@ -1,5 +1,5 @@
 {
-  "title": "Three blog posts {{ step2.stepItem1 }} (from quarterly billing)",
+  "title": "Three blog posts {{ step1.stepItem1 }} (from quarterly billing)",
   "roles": [
     {
       "name": "customer",
