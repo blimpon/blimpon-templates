@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "b1362080-49a8-decb-97a6-281e12ad75c6"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "3a4b6c5a-56c0-fe8e-f580-62eec3648bcd"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "159",
+          "required": true,
+          "key": "11fb1d50-f25b-48a5-ac5b-1412389a5668"
+        }
+      ],
+      "key": "9ba9d892-3248-f8b9-20f7-eefa55661612"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "a26ccf40-f835-a77d-6c66-924ab3f931fb"
+        }
+      ],
+      "key": "02eaa6bd-0b60-6a9f-d930-56a19c10e722"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "81f4492f-d625-6a0c-b1d0-a4c5a72b2e01"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "60859a07-f270-26e8-0fd6-9139c21d7c03"
+        }
+      ],
+      "key": "bfbf3588-d9e3-dfa9-8e2a-17a51f2736de"
+    }
+  ],
+  "collectionId": "",
+  "description": "<strong>Size of tap dropdowns : difficult to tap and untap</strong>\n",
+  "title": "Tappable dropdowns and fix broken links",
+  "id": "633ed9e6-af71-4c85-ac5a-4e5f29272d24"
+}
