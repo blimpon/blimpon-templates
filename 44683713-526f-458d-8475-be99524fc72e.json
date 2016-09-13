@@ -69,7 +69,7 @@
     }
   ],
   "collectionId": "",
-  "description": "<strong>Size of tap dropdowns : difficult to tap and untap</strong>\n",
+  "description": "<p>As discussed on email, show Total price = product variant price + 20% of product variant price on the product page</p>",
   "title": "Show inc and exc VAT prices on product page",
   "id": "44683713-526f-458d-8475-be99524fc72e"
 }
