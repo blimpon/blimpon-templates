@@ -5,10 +5,16 @@
       "key": "b1362080-49a8-decb-97a6-281e12ad75c6"
     },
     {
+      "key": "3a4b6c5a-56c0-fe8e-f580-62eec3648bcd",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "3a4b6c5a-56c0-fe8e-f580-62eec3648bcd"
+      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+    },
+    {
+      "key": "5c42b2ed-6f08-c168-f4cc-8c8d96cfb87a",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
@@ -57,12 +63,20 @@
           "key": "81f4492f-d625-6a0c-b1d0-a4c5a72b2e01"
         },
         {
-          "order": 2,
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
           "key": "60859a07-f270-26e8-0fd6-9139c21d7c03"
+        },
+        {
+          "key": "2476b3e3-9628-65f3-de18-e8f2aab81098",
+          "title": "Payout project manager",
+          "order": 2,
+          "type": "payout",
+          "percentageOfBalance": "35",
+          "role": "project manager"
         }
       ],
       "key": "bfbf3588-d9e3-dfa9-8e2a-17a51f2736de"
