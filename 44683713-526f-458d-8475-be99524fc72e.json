@@ -63,20 +63,20 @@
           "key": "81f4492f-d625-6a0c-b1d0-a4c5a72b2e01"
         },
         {
-          "order": 3,
-          "title": "Payout fixer",
-          "type": "payout",
-          "role": "fixer",
-          "percentageOfBalance": 100,
-          "key": "60859a07-f270-26e8-0fd6-9139c21d7c03"
-        },
-        {
           "key": "2476b3e3-9628-65f3-de18-e8f2aab81098",
           "title": "Payout project manager",
           "order": 2,
           "type": "payout",
           "percentageOfBalance": "35",
           "role": "project manager"
+        },
+        {
+          "order": 3,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "60859a07-f270-26e8-0fd6-9139c21d7c03"
         }
       ],
       "key": "bfbf3588-d9e3-dfa9-8e2a-17a51f2736de"
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As discussed on email, show Total price = product variant price + 20% of product variant price on the product page</p>",
-  "title": "Show inc and exc VAT prices on product page",
+  "title": "Show inc and exc VAT prices on product page aecar.co.uk",
   "id": "44683713-526f-458d-8475-be99524fc72e"
 }
