@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<h3>Size of tap dropdowns : difficult to tap and untap</h3>\n<p>Size tap targets appropriately</p>\n<p>Some of the links/buttons on your webpage may be too small for a user to easily tap on a touchscreen. Consider making these tap targets larger to provide a better user experience.</p>\n<p>The following tap targets are close to other nearby tap targets and may need additional spacing around them.</p>\n<ul>\n<li>\nThe tap target &lt;a href=\"javascript:jav…history.go(-1)\"&gt;Back&lt;/a&gt; is close to 2 other tap targets</li>\n<li>\nThe tap target &lt;li class=\"mobile-nav-item navigate\"&gt;n Navigate&lt;/li&gt; is close to 1 other tap targets</li>\n<li>\nThe tap target &lt;li class=\"mobile-nav-item cart\"&gt;c Cart&lt;/li&gt; is close to 1 other tap targets </li>\n<li>\nThe tap target &lt;a href=\"/cart\"&gt;c Cart&lt;/a&gt; is close to 1 other tap targets </li>\n<li>\nThe tap target &lt;a href=\"/pages/about-us\"&gt;About Us&lt;/a&gt; and 8 others are close to other tap targets.</li>\n<li>\nThe tap target &lt;div class=\"Button Button-…Wrap is-mobile\"&gt;Help&lt;/div&gt; is close to 2 other tap targets </li>\n</ul>\n<h3>Discover More' link to 'Style Statement' is not working</h3>\n<p></p>\n<h3>Email sign up in the footer has no link - link to email sign up page</h3>\n<p></p>",
-  "title": "Tappable dropdowns and fix broken links",
+  "title": "Tappable dropdowns and fix broken links mirrordeco.com",
   "id": "633ed9e6-af71-4c85-ac5a-4e5f29272d24"
 }
