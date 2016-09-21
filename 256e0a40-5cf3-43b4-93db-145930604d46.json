@@ -180,6 +180,6 @@
     }
   ],
   "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0",
-  "title": "Adwords review {{ step1.stepItem1 }}",
+  "title": "Adwords review {{ step2.stepItem1 }}",
   "description": ""
 }
