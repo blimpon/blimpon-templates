@@ -5,71 +5,181 @@
       "key": "1c8c91a6-b6a1-3a68-fe7b-68efc2ebc819"
     },
     {
+      "key": "188edd8c-d614-72a4-aeba-30ae2bd5249c",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "188edd8c-d614-72a4-aeba-30ae2bd5249c"
+      "defaultUser": "1cefd2c2-0db9-4f04-8ec6-8629591005e1"
+    },
+    {
+      "key": "3ad635fa-bf51-d3d4-9e9b-2bd0b0c99ac8",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
     {
       "title": "Pay",
       "completeRole": "customer",
-      "order": 1,
       "stepItems": [
         {
-          "order": 1,
           "title": "Payment",
           "type": "pay",
           "totalUSD": "499",
           "required": true,
-          "key": "b4061747-3fad-af82-049c-9833124c54f7"
+          "key": "b4061747-3fad-af82-049c-9833124c54f7",
+          "order": 1
         }
       ],
-      "key": "9da795a3-fd84-ffb6-bc9e-06f7e0c0bf56"
+      "key": "9da795a3-fd84-ffb6-bc9e-06f7e0c0bf56",
+      "order": 1
     },
     {
-      "title": "Do the work",
-      "completeRole": "fixer",
-      "order": 2,
+      "key": "7d72f397-2b1d-de48-55a9-674441463b78",
+      "title": "Set up",
+      "completeRole": "customer",
       "stepItems": [
         {
-          "order": 1,
-          "title": "Has the work been done?",
-          "type": "confirmation",
-          "required": true,
-          "key": "d5f5ce79-f464-f0ea-a1ef-a80867f283c0"
+          "key": "414509bf-efa9-ef02-1af7-e98b6ef49e3c",
+          "title": "What website is this for?",
+          "order": 1
+        },
+        {
+          "key": "4b0a5c43-1f87-6606-8b69-64776e2093e7",
+          "title": "Give access to your Google Adwords account",
+          "type": "login",
+          "for": "fixer",
+          "order": 2
+        },
+        {
+          "key": "1ea83a29-f17b-7f8b-4d6f-4a95f371a5ad",
+          "title": "Anything else James should know?",
+          "required": false,
+          "order": 3
         }
       ],
-      "key": "5cb1e12a-c20c-86fd-5962-c4e7325a7628"
+      "reviewRole": "fixer",
+      "order": 2
+    },
+    {
+      "title": "Audit campaign structure & targeting",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Audit campaign structure & targeting",
+          "type": "confirmation",
+          "required": true,
+          "key": "d5f5ce79-f464-f0ea-a1ef-a80867f283c0",
+          "order": 1
+        }
+      ],
+      "key": "5cb1e12a-c20c-86fd-5962-c4e7325a7628",
+      "order": 3
+    },
+    {
+      "key": "ad1cc6c0-4258-d821-7997-f18047a21840",
+      "title": "Quality score analysis & suggestions to improve it",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "da848750-5321-a0ba-40ce-5cf00ec0cd1f",
+          "title": "Quality score analysis & suggestions to improve it",
+          "type": "confirmation",
+          "order": 1
+        }
+      ],
+      "order": 4
+    },
+    {
+      "key": "a86111e3-0cd8-9da7-c334-a87f94f48e50",
+      "title": "Audit keyword usage",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "71a02c0c-3059-8e3d-7c35-2d59e81d2e14",
+          "title": "Audit keyword usage",
+          "type": "confirmation",
+          "order": 1
+        }
+      ],
+      "order": 5
+    },
+    {
+      "key": "e8614e7c-263c-e589-9c56-12ea11f8cf97",
+      "title": "Audit ad copy, working and relevance",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "2344a6d6-e3d4-75f0-97d5-1e343631d973",
+          "title": "Audit ad copy, working and relevance",
+          "type": "confirmation",
+          "order": 1
+        }
+      ],
+      "order": 6
+    },
+    {
+      "key": "030d2377-ea1e-b209-cfa0-c0654331c683",
+      "title": "Audit landing page & display URLs",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "bf5f9750-ff07-554b-2e3c-917ca6ccd062",
+          "title": "Audit landing page & display URLs",
+          "type": "confirmation",
+          "order": 1
+        }
+      ],
+      "order": 7
+    },
+    {
+      "key": "c25d45dd-07e2-39a1-795e-4ccf0cf1ed32",
+      "title": "Insights on best and worst performing ad groups",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "e73ec967-7b56-f872-df5b-9a32c899eef1",
+          "title": "Insights on best and worst performing ad groups",
+          "type": "confirmation",
+          "order": 1
+        }
+      ],
+      "order": 8
     },
     {
       "title": "Rate",
       "completeRole": "customer",
-      "order": 3,
       "stepItems": [
         {
-          "order": 1,
           "title": "How happy are you with the work completed?",
           "type": "faceRating",
           "for": "fixer",
           "required": true,
-          "key": "623da6d0-b667-7b4d-f570-1336ac3e73f8"
+          "key": "623da6d0-b667-7b4d-f570-1336ac3e73f8",
+          "order": 1
         },
         {
-          "order": 2,
+          "key": "938d818b-e08d-783e-e627-1e0b24a09d26",
+          "title": "Payout project manager",
+          "type": "payout",
+          "percentageOfBalance": "15",
+          "role": "project manager",
+          "order": 2
+        },
+        {
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
-          "key": "cb29a1aa-e051-eba9-3679-1ad080f0af10"
+          "key": "cb29a1aa-e051-eba9-3679-1ad080f0af10",
+          "order": 3
         }
       ],
-      "key": "04742973-7215-2ebb-2efc-9de10b0be8fb"
+      "key": "04742973-7215-2ebb-2efc-9de10b0be8fb",
+      "order": 9
     }
   ],
   "collectionId": "",
   "title": "Adwords review",
-  "description": "",
-  "id": "256e0a40-5cf3-43b4-93db-145930604d46"
+  "description": ""
 }
