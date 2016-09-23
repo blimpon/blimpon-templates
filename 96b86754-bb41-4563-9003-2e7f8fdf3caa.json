@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "6f7a446c-cb4b-14fc-8ea7-53fdab965d8f"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "2bd00e62-1383-d06f-4b56-0ed38011d300"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "489",
+          "required": true,
+          "key": "85611d13-dbe5-e38b-6c5c-cc6b0a5b8d39"
+        }
+      ],
+      "key": "dc2f1ca1-3335-0844-369c-4d4199d7c880"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "f0c1f61a-90e3-efe5-2ce4-804cd1e7cf23"
+        }
+      ],
+      "key": "d7830910-185b-8b40-2d7c-5ee2c3c1139f"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "a927bfc0-39a3-4b5d-992a-85302c0790e0"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "539bddee-baee-f89a-f7d7-4f029f654cfd"
+        }
+      ],
+      "key": "451bc069-5cf1-831d-8797-b4061e5980f3"
+    }
+  ],
+  "collectionId": "",
+  "description": "As discussed and agreed on email here: http://dsh.re/e166f",
+  "title": "Product page 'USPS Priority' snippet and shipping estimate",
+  "id": "96b86754-bb41-4563-9003-2e7f8fdf3caa"
+}
