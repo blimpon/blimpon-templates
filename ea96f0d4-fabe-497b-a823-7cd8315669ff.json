@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "2124881c-e211-fba3-aede-bc0c1ab8d201"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "d45c6cba-0d67-bd98-21c1-b44af0fbc8cc"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "50",
+          "required": true,
+          "key": "ca551869-ec9c-46db-a461-0985a1fe44f5"
+        }
+      ],
+      "key": "6c45df05-24ff-7c6b-53b0-016b06c730c5"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "89171d62-cf62-dda4-2eaf-b91fda72d934"
+        }
+      ],
+      "key": "771e74ff-54ac-00a0-b674-5b6706879738"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "c753ad92-3cfa-2f6d-addd-8fff74a1f012"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "069d0831-6996-ca08-9766-544792d4fe57"
+        }
+      ],
+      "key": "ec1d27fa-123b-0012-f078-fd89eaaae8e2"
+    }
+  ],
+  "collectionId": "",
+  "description": "<p>Audit of Google product listing ads including advice on products that are getting very few impressions and help with setting up image embedded texts ads in Adwords.</p>\n<p>Once we've done this job we'll recommend further packages for any issues/areas of optimisation we find.</p>",
+  "title": "Google product listing ads audit",
+  "id": "ea96f0d4-fabe-497b-a823-7cd8315669ff"
+}
