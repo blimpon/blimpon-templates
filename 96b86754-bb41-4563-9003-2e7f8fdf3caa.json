@@ -5,10 +5,16 @@
       "key": "6f7a446c-cb4b-14fc-8ea7-53fdab965d8f"
     },
     {
+      "key": "2bd00e62-1383-d06f-4b56-0ed38011d300",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "2bd00e62-1383-d06f-4b56-0ed38011d300"
+      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+    },
+    {
+      "key": "18a1b75a-1fc9-2943-8116-e2c823162018",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
@@ -57,12 +63,20 @@
           "key": "a927bfc0-39a3-4b5d-992a-85302c0790e0"
         },
         {
-          "order": 2,
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
           "key": "539bddee-baee-f89a-f7d7-4f029f654cfd"
+        },
+        {
+          "key": "844b2cdb-f3e5-aa21-7dda-c4456ea29b70",
+          "title": "Payout project manager",
+          "order": 2,
+          "type": "payout",
+          "percentageOfBalance": "15",
+          "role": "project manager"
         }
       ],
       "key": "451bc069-5cf1-831d-8797-b4061e5980f3"
@@ -70,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "As discussed and agreed on email here: http://dsh.re/e166f",
-  "title": "Product page 'USPS Priority' snippet and shipping estimate",
+  "title": "Product page 'USPS Priority' snippet and shipping estimate tulsabodyjewelry.com",
   "id": "96b86754-bb41-4563-9003-2e7f8fdf3caa"
 }
