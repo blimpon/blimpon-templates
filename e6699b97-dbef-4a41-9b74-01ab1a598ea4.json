@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "979",
+          "totalUSD": "879",
           "required": true,
           "key": "114325f8-afd8-581d-7a6b-ab665c6bf8cb"
         }
@@ -63,20 +63,20 @@
           "key": "c7890767-300b-8ab1-34a7-b6cc6744c36e"
         },
         {
-          "order": 3,
-          "title": "Payout fixer",
-          "type": "payout",
-          "role": "fixer",
-          "percentageOfBalance": 100,
-          "key": "6b38e62e-3828-2f86-3c28-b0dfcf221ed0"
-        },
-        {
           "key": "09f334e8-1d7f-328e-e4d8-b03d2e80268d",
           "title": "Payout project manager",
           "order": 2,
           "type": "payout",
           "percentageOfBalance": "15",
           "role": "project manager"
+        },
+        {
+          "order": 3,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "6b38e62e-3828-2f86-3c28-b0dfcf221ed0"
         }
       ],
       "key": "abb65ab0-5147-55c9-f8bf-fadb5a6d5fbb"
