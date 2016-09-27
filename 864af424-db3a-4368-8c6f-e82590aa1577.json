@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "78bc48c9-dc34-0a30-141b-ae09ce402510"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "9863e58f-fe24-6862-c84f-a75c91644a14"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "46045e18-7cf1-a9fa-0cb1-eaba98add870"
+        }
+      ],
+      "key": "80c7ea16-86c1-5854-71be-e156c9d57057"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "95af5d1e-acf7-e6ba-8c72-b6b1c912d051"
+        }
+      ],
+      "key": "29fd75e7-df02-cefa-af0d-485d4bb21adb"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "3480a8d5-412c-184b-f82e-27354706a634"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "0d8e2142-a5e2-37be-adf9-df200bb3e626"
+        }
+      ],
+      "key": "20f00dfd-fabb-c983-ea1c-a4a12fe8de99"
+    }
+  ],
+  "collectionId": "",
+  "description": "Reproduce the functionality of the removed slow zoom plugin with EasyZoom, which works much faster on mobile",
+  "title": "Implement EasyZoom on product pages",
+  "id": "864af424-db3a-4368-8c6f-e82590aa1577"
+}
