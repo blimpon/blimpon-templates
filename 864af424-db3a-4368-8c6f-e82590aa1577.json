@@ -5,10 +5,16 @@
       "key": "78bc48c9-dc34-0a30-141b-ae09ce402510"
     },
     {
+      "key": "9863e58f-fe24-6862-c84f-a75c91644a14",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "9863e58f-fe24-6862-c84f-a75c91644a14"
+      "defaultUser": "72657670-dd6f-45ca-b779-8c643bfdcd4d"
+    },
+    {
+      "key": "20903a5b-d025-13f4-9d3a-c620e70369e1",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
@@ -57,12 +63,20 @@
           "key": "3480a8d5-412c-184b-f82e-27354706a634"
         },
         {
-          "order": 2,
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
           "key": "0d8e2142-a5e2-37be-adf9-df200bb3e626"
+        },
+        {
+          "key": "6a32d47c-a596-aa7c-57fd-505dd52d86b1",
+          "title": "Payout project manager",
+          "order": 2,
+          "type": "payout",
+          "percentageOfBalance": "15",
+          "role": "project manager"
         }
       ],
       "key": "20f00dfd-fabb-c983-ea1c-a4a12fe8de99"
@@ -70,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "Reproduce the functionality of the removed slow zoom plugin with EasyZoom, which works much faster on mobile",
-  "title": "Implement EasyZoom on product pages",
+  "title": "Implement EasyZoom on mirrordeco.com product pages",
   "id": "864af424-db3a-4368-8c6f-e82590aa1577"
 }
