@@ -29,13 +29,13 @@
       "key": "f29be381-d11d-35b3-6275-17d47a4956bb"
     },
     {
-      "title": "Do the work",
+      "title": "Set up the individual jobs",
       "completeRole": "fixer",
       "order": 2,
       "stepItems": [
         {
           "order": 1,
-          "title": "Has the work been done?",
+          "title": "Individual jobs set up?",
           "type": "confirmation",
           "required": true,
           "key": "1eb4fd56-ebbe-d03a-d4b8-0efc93d5f257"
@@ -44,20 +44,12 @@
       "key": "a8d358b1-53d8-5400-f821-7a802f10b245"
     },
     {
-      "title": "Rate",
-      "completeRole": "customer",
+      "title": "Complete",
+      "completeRole": "fixer",
       "order": 3,
       "stepItems": [
         {
           "order": 1,
-          "title": "How happy are you with the work completed?",
-          "type": "faceRating",
-          "for": "fixer",
-          "required": true,
-          "key": "cd6e0190-d230-a762-87a3-34c4924d7716"
-        },
-        {
-          "order": 2,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
