@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "6ea34eb9-62a9-36dc-06f8-3c710ce5eadf"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "c8f5c68f-e3f7-8108-d5c3-8db7b39e5052"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "953",
+          "required": true,
+          "key": "6d0bbb43-8be5-96ec-0b1a-9013a310b363"
+        }
+      ],
+      "key": "f29be381-d11d-35b3-6275-17d47a4956bb"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "1eb4fd56-ebbe-d03a-d4b8-0efc93d5f257"
+        }
+      ],
+      "key": "a8d358b1-53d8-5400-f821-7a802f10b245"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "cd6e0190-d230-a762-87a3-34c4924d7716"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "77aff9a7-d323-8e82-1672-f32a1c57a820"
+        }
+      ],
+      "key": "63f543d6-7c4b-f186-86aa-653d4bb31c90"
+    }
+  ],
+  "collectionId": "",
+  "description": "As discussed on email, here's the package of Premium Speed Fixes, Premium on-page SEO fixes and Foundation Blogging with a 10% discount",
+  "title": "Premium Speed, Premium SEO and Foundation Blogging packages",
+  "id": "509953a8-6426-40ab-bbf1-f1cdaefee843"
+}
