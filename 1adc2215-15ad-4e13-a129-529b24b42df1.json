@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "28b029c1-01bc-4b84-efdf-202a22555350"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "7085c7ad-f5af-1d2c-6375-99d692ef5203"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "169",
+          "required": true,
+          "key": "4d99b790-f543-068a-2ab1-3649807f53a7"
+        }
+      ],
+      "key": "ce378d71-01ee-25fd-162f-1f2915666208"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "f5d74b4e-44b3-dae3-2a15-f62c24a6a830"
+        }
+      ],
+      "key": "a5137a69-0417-e8a6-1a4f-2bfe660b107d"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "d6387f8b-d43d-349d-d392-d6bc40026044"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "b401c010-1a43-fd4a-c4ca-04b5fe68acf9"
+        }
+      ],
+      "key": "383b994a-830d-900b-5fe5-9adec00f8a1b"
+    }
+  ],
+  "collectionId": "",
+  "title": "Pre-ordering on tulsabodyjewelry.com",
+  "description": "",
+  "id": "1adc2215-15ad-4e13-a129-529b24b42df1"
+}
