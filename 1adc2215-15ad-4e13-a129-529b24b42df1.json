@@ -5,10 +5,16 @@
       "key": "28b029c1-01bc-4b84-efdf-202a22555350"
     },
     {
+      "key": "7085c7ad-f5af-1d2c-6375-99d692ef5203",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "7085c7ad-f5af-1d2c-6375-99d692ef5203"
+      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+    },
+    {
+      "key": "0cf0550c-91b1-7bba-9979-4ac3e411a9de",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
@@ -70,6 +76,6 @@
   ],
   "collectionId": "",
   "title": "Pre-ordering on tulsabodyjewelry.com",
-  "description": "",
+  "description": "<p>\nIf any item is out of stock and the pre-order is enabled, delivery estimate disappears and is replaced by an explanation of the pre-order process. It appears in the exact same spot where the delivery estimate would have been. Text can be edited in Shopify admin. To read (in red lettering):\n</p>\n<p>\n\"This item is currently out of stock,\nbut will be automatically reordered.\nWe'll ship it to you the same day we\nreceive it from the manufacturer. The\nestimated wait can vary depending on\nthe particular maker! more info &gt;&gt;\"\n</p>\n<p>\nThe \"more info &gt;&gt;\" link will trigger a popup where I can post a chart with all the different manufacturers, but again I will need to be able to edit this. For now you could just make it say \"estimates are coming soon\" and I'll replace that.\n</p>\n<p>\nPlus a small tweak too: remove two lines from above and one line from below from the \"&lt; Return to Previous Page\" link.\n</p>",
   "id": "1adc2215-15ad-4e13-a129-529b24b42df1"
 }
