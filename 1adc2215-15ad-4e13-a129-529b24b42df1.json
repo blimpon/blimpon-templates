@@ -63,12 +63,20 @@
           "key": "d6387f8b-d43d-349d-d392-d6bc40026044"
         },
         {
-          "order": 2,
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
           "key": "b401c010-1a43-fd4a-c4ca-04b5fe68acf9"
+        },
+        {
+          "key": "18f0608f-4165-cdee-1207-a01eba622cae",
+          "title": "Payout project manager",
+          "order": 2,
+          "type": "payout",
+          "percentageOfBalance": "15",
+          "role": "project manager"
         }
       ],
       "key": "383b994a-830d-900b-5fe5-9adec00f8a1b"
