@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "1cbe0fd4-911d-9435-2925-08921a284612"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "17c618a8-c36f-19c1-8920-2153c8452dbb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "449",
+          "required": true,
+          "key": "a4f32439-fee7-628f-0f34-50172c89664a"
+        }
+      ],
+      "key": "93f4b605-1eae-a3cc-6efc-77dc499aaa90"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "ffa0daf9-65d1-f0e5-9ee2-e74d7464d1be"
+        }
+      ],
+      "key": "1ec2bc13-e932-1d06-dcba-977a022c735f"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "7700c462-4598-54b8-24b3-80aef3c0d18f"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "b1a0327c-f198-87f2-ab1f-f809f892e21d"
+        }
+      ],
+      "key": "8dc452b9-f480-05ad-1393-e1bf62830cc1"
+    }
+  ],
+  "collectionId": "",
+  "title": "Calendar on product page ocean-fleet-seafood.myshopify.com",
+  "description": "",
+  "id": "f5da3205-2656-4b8a-8116-421d2aa2a55f"
+}
