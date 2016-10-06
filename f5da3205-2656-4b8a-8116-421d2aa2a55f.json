@@ -5,10 +5,16 @@
       "key": "1cbe0fd4-911d-9435-2925-08921a284612"
     },
     {
+      "key": "17c618a8-c36f-19c1-8920-2153c8452dbb",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "17c618a8-c36f-19c1-8920-2153c8452dbb"
+      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+    },
+    {
+      "key": "80b514ca-734a-72b5-f567-2fa43144fc70",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
@@ -57,12 +63,20 @@
           "key": "7700c462-4598-54b8-24b3-80aef3c0d18f"
         },
         {
-          "order": 2,
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
           "key": "b1a0327c-f198-87f2-ab1f-f809f892e21d"
+        },
+        {
+          "key": "0e4548ad-d863-16bf-c0f4-555134e5ec43",
+          "title": "Payout project manager",
+          "order": 2,
+          "type": "payout",
+          "percentageOfBalance": "15",
+          "role": "project manager"
         }
       ],
       "key": "8dc452b9-f480-05ad-1393-e1bf62830cc1"
@@ -70,6 +84,6 @@
   ],
   "collectionId": "",
   "title": "Calendar on product page ocean-fleet-seafood.myshopify.com",
-  "description": "",
+  "description": "<div>\n<h4>Description</h4>\n<p>Design and develop one calendar on a product page. It has a way to select date before adding product into cart. Fully responsive.</p>\n<p>The calendar will appear in a small window on the product page similar to this: http://prntscr.com/cq4lkz</p>\n<p>2 colors to distinguish products:</p>\n<p>\nRed - #ff0000 - To indicate products which have been added to cart but customer hasn't paid for them</p>\n<p>Green - #00ff00 - To indicate products which the customer has paid for them</p>\n<p>These colors can be configured easily in the Shopify admin.</p>\n<p>The delivery date selected by a customer will be shown as a product properties note in the order.\n</p>\n<p>In case of a conflict: If a date has both paid and unpaid, Red color will be used for the date.</p>\n<p>Certain dates can be made impossible to select. Like, Saturday cannot be selected. This is a code change so Chloe will provide dates that can't be selected</p>\n\n<h4>Limitations</h4>\n<p>\nCustomers must log in first and then they can add into cart. Guest checkout must be turned off, otherwise we can't show them paid orders</p>\n<p>To make this clear to the customer, a popup message or similar will be displayed asking them to log in.</p>\n<p>In responsive, screens may not have everything displayed because of the small available screen width and height.</p>\n</div>",
   "id": "f5da3205-2656-4b8a-8116-421d2aa2a55f"
 }
