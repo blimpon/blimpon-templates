@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "defded17-0e61-bc4b-81ec-045e9ad233d3"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "8b8c844d-def9-1271-e5fe-fd4e17e5096d"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "69",
+          "required": true,
+          "key": "bde8adfd-bc08-79de-b367-d534d099a367"
+        }
+      ],
+      "key": "c51b24fb-c038-7f71-028a-3c0363666cea"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "b2e6e19b-7bcb-1e13-7ed4-7d1e94185404"
+        }
+      ],
+      "key": "b530aa6f-2736-ec9e-245e-7e6da83be84e"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "32b9dc47-49d2-3baa-3ff7-d1f3965f10ef"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "76846bed-f925-97fb-019d-717a751e285f"
+        }
+      ],
+      "key": "8cf89ce8-39bf-867f-9d7a-0ef1bba3bb49"
+    }
+  ],
+  "collectionId": "",
+  "description": "Lazy loading of the collection page product images will speed up the experience for visitors and especially those on mobile devices.",
+  "title": "Implement lazy loading on the collection view images",
+  "id": "1ec8bc0e-06cf-4456-a8f9-2dcf37065c00"
+}
