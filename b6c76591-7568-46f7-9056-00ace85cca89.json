@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "72c73f36-9236-1ff8-f102-e3158ef72c72"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "1f9e757c-76f5-cdea-ad16-c76941cacf02"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "1063",
+          "required": true,
+          "key": "44149601-4020-077c-fd58-c191883ac29b"
+        }
+      ],
+      "key": "d3078766-dfc3-bf26-025a-2dfd77f3856c"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "dd26f86d-4db7-aa03-087d-aca448500a77"
+        }
+      ],
+      "key": "5736a63d-f03d-8142-c7af-1caaafb14740"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "e2ec6907-781b-1ee9-7751-2aea7172c5f4"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "06b66afb-ab56-83cf-ea8f-1e30204f047c"
+        }
+      ],
+      "key": "600bd536-cbaf-b111-42b0-346b4730bf79"
+    }
+  ],
+  "collectionId": "",
+  "description": "<div>\n<h2>NetDeco</h2>\n<p>NetDeco home page mobile version - banner resized; fix spacing for sub header ‘featured products’; main navigation drop-downs applied; product filters checked</p>\n<p>NetDeco home page - ‘As Seen In’ section (same as MD) added</p>\n<p>\nAmend text under 'Availability' and 'Delivery' on the PRODUCT page of mirrors to match MD, for the 4 different shipping options, which are tagged - free1, free2, pre1 and pre2. The text details can be taken straight from MD and I've added the 4 tags on ND.\nThe delivery info text needs to be followed through for each of the 4 tags/shipping options, on the CART page - replicate from MD.</p>\n<h2>MirrorDeco</h2>\n<p>MirrorDeco home page footer - add Facebook page link, add Instagram page link</p>\n<p>\n</p>\n<p>Text under 'Availability' and 'Delivery' on the PRODUCT page of non-mirrors needs to be updated. The tag is - pre3 - and the text is:</p>\n<p>\n\nAvailability<br>\nCurrently awaiting stock.<br>\nOrder today for delivery in 2-4 weeks</p>\n<p>\n\nDelivery<br>\n£4.99 Delivery to UK Mainland, 2-4 weeks<br>\n£15 Delivery to Scottish Highlands, Northern Ireland &amp; Off-shore Islands, 3-5 weeks<br>\n</p>\n<p>\nThe delivery info text needs to follow through onto CART page - DELIVERY 2-4 WEEKS</p>\n<p>\n\n</p>\n<p>The MD logo needs to be replaced by the original version - resized to match current size as it appears on the site. We tried reducing the image quality, but it's slightly blurred at the moment. File provided</p>\n<p>\n\nThe scrolling arrows on the product window on the product page need to be updated on MD to grey, from blue, file provided</p>\n<p>\n\nThe text colour for the product title needs updating on MD on the search results page, to match the catalogue page</p>\n</div>",
+  "title": "MirrorDeco & NetDeco changes",
+  "id": "b6c76591-7568-46f7-9056-00ace85cca89"
+}
