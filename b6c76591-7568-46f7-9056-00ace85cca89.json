@@ -5,10 +5,16 @@
       "key": "72c73f36-9236-1ff8-f102-e3158ef72c72"
     },
     {
+      "key": "1f9e757c-76f5-cdea-ad16-c76941cacf02",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "1f9e757c-76f5-cdea-ad16-c76941cacf02"
+      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+    },
+    {
+      "key": "d0434ea8-ba54-f3ad-2e46-7e410df77b64",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
@@ -29,13 +35,13 @@
       "key": "d3078766-dfc3-bf26-025a-2dfd77f3856c"
     },
     {
-      "title": "Do the work",
-      "completeRole": "fixer",
+      "title": "Set up the jobs and allocate",
+      "completeRole": "project manager",
       "order": 2,
       "stepItems": [
         {
           "order": 1,
-          "title": "Has the work been done?",
+          "title": "Done",
           "type": "confirmation",
           "required": true,
           "key": "dd26f86d-4db7-aa03-087d-aca448500a77"
@@ -45,22 +51,14 @@
     },
     {
       "title": "Rate",
-      "completeRole": "customer",
+      "completeRole": "project manager",
       "order": 3,
       "stepItems": [
         {
           "order": 1,
-          "title": "How happy are you with the work completed?",
-          "type": "faceRating",
-          "for": "fixer",
-          "required": true,
-          "key": "e2ec6907-781b-1ee9-7751-2aea7172c5f4"
-        },
-        {
-          "order": 2,
-          "title": "Payout fixer",
+          "title": "Payouts",
           "type": "payout",
-          "role": "fixer",
+          "role": "project manager",
           "percentageOfBalance": 100,
           "key": "06b66afb-ab56-83cf-ea8f-1e30204f047c"
         }
