@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "38f03263-ad10-1c65-6399-8098c18865c9"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "27af1be2-0e68-c4c8-ec17-55f22d45a627"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "af956393-aae8-f217-f396-c261187cc2ee"
+        }
+      ],
+      "key": "433b9559-80d9-2c60-d833-23d8e33ab9ce"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "ff575c6d-3934-c442-d4f2-3d8234ffe2df"
+        }
+      ],
+      "key": "069b21ed-f194-b0df-d610-7ca4cbdf1f4e"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "265882b6-e2df-be8c-27a3-64a4c4bfa993"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "601d5aac-b06f-4469-5088-984b1ccd1f66"
+        }
+      ],
+      "key": "00e08697-c1c9-41b5-3294-ce7cc06f6e0f"
+    }
+  ],
+  "collectionId": "",
+  "description": "Fix problem with currency selection not persisting and incorrect currency conversion being shown",
+  "title": "Fix multiple currency calculations",
+  "id": "9e8777a8-a4be-43f3-9f57-2585d73cb916"
+}
