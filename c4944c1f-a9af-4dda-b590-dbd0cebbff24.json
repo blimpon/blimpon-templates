@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "5bad36fe-915e-695f-2e7f-4ed766bed00e"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "72657670-dd6f-45ca-b779-8c643bfdcd4d",
+      "key": "0c838f30-5e33-1a82-161e-f4d4b3a96b7a"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "80",
+          "required": true,
+          "key": "a5a0a3f3-a8d2-239b-8ebd-b697f4e50b95"
+        }
+      ],
+      "key": "734390c6-fa62-c813-0d7f-070f58208d9e"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "816e3116-7507-ca0f-1939-ff26f5fc37cb"
+        }
+      ],
+      "key": "81f85de1-948f-37c7-06c6-adb0dd01bf1b"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "153ee734-efc4-d461-db3b-d958eb532d26"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "5352e719-2ba0-4572-8051-c42eea5ba025"
+        }
+      ],
+      "key": "daaa9b4f-c038-9f96-6361-5318a564fe32"
+    }
+  ],
+  "collectionId": "9021c072-efaf-4a80-bf57-cbfd72d9ea1f",
+  "description": "Lazy load is a technic that allows your website to load resources as they are needed instead of loading them all at once.\nThis will have a significant impact on both mobile and desktop loading times and it's specially effective for visitiors with slow connections and webpages with long product listings.\n\nThis allows your page to keep the same content while improving your customers experience.\n\nWe target the work to be completely wrapped up 14 days from signup.\n\n- Set up lazy loading for collection views",
+  "title": "Lazy loading product images",
+  "id": "c4944c1f-a9af-4dda-b590-dbd0cebbff24"
+}
