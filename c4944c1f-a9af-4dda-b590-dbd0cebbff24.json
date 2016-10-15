@@ -69,7 +69,7 @@
     },
     {
       "key": "2c85fd15-6795-0690-5117-8d7961ed2a85",
-      "title": "Set up lazy loading for collection views",
+      "title": "Set up lazy loading for collection view images",
       "order": 2,
       "completeRole": "fixer",
       "stepItems": [
