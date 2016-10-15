@@ -35,24 +35,9 @@
       "key": "734390c6-fa62-c813-0d7f-070f58208d9e"
     },
     {
-      "title": "Do the work",
-      "completeRole": "fixer",
-      "order": 2,
-      "stepItems": [
-        {
-          "order": 1,
-          "title": "Has the work been done?",
-          "type": "confirmation",
-          "required": true,
-          "key": "816e3116-7507-ca0f-1939-ff26f5fc37cb"
-        }
-      ],
-      "key": "81f85de1-948f-37c7-06c6-adb0dd01bf1b"
-    },
-    {
       "title": "Rate",
       "completeRole": "customer",
-      "order": 3,
+      "order": 4,
       "stepItems": [
         {
           "order": 1,
@@ -81,6 +66,32 @@
         }
       ],
       "key": "daaa9b4f-c038-9f96-6361-5318a564fe32"
+    },
+    {
+      "key": "2c85fd15-6795-0690-5117-8d7961ed2a85",
+      "title": "Set up lazy loading for collection views",
+      "order": 2,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "3cf52c5f-93cf-ff1d-ec1c-3e6ddf9238d2",
+          "title": "Implement lazy loading on collection view product images",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "key": "ecacf199-5c6e-c62d-1dbb-69e44b804ffa",
+      "title": "Test everything on site works as normal",
+      "order": 3,
+      "stepItems": [
+        {
+          "key": "8f174fa8-d616-5254-4f4d-102a6c6892af",
+          "title": "Test everything on site works as normal",
+          "order": 1
+        }
+      ],
+      "completeRole": "fixer"
     }
   ],
   "collectionId": "9021c072-efaf-4a80-bf57-cbfd72d9ea1f",
