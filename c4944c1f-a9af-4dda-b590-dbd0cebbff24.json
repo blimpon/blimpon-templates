@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "72657670-dd6f-45ca-b779-8c643bfdcd4d",
       "key": "0c838f30-5e33-1a82-161e-f4d4b3a96b7a"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "ae86c277-271a-43a5-afbd-c1944e2461a5",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "7bdcfec1-e0aa-4677-b08e-0148e1de5b54"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,7 @@
     }
   ],
   "collectionId": "9021c072-efaf-4a80-bf57-cbfd72d9ea1f",
-  "description": "Lazy load is a technic that allows your website to load resources as they are needed instead of loading them all at once.\nThis will have a significant impact on both mobile and desktop loading times and it's specially effective for visitiors with slow connections and webpages with long product listings.\n\nThis allows your page to keep the same content while improving your customers experience.\n\nWe target the work to be completely wrapped up 14 days from signup.\n\n- Set up lazy loading for collection views",
+  "description": "Lazy load is a technic that allows your website to load resources as they are needed instead of loading them all at once.<br><br>\n\nThis will have a significant impact on both mobile and desktop loading times and it's specially effective for visitors with slow connections and webpages with long product listings.<br><br>\n\nThis allows your page to keep the same content while improving your customers experience.<br>\n\nWe target the work to be completely wrapped up 14 days from signup.",
   "title": "Lazy loading product images",
   "id": "c4944c1f-a9af-4dda-b590-dbd0cebbff24"
 }
