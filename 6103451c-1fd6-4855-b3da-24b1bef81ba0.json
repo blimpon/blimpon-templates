@@ -5,10 +5,16 @@
       "key": "b0a48cfa-8c59-a5d8-3591-b817aaafd653"
     },
     {
+      "key": "5b8047e3-0cb9-63cc-65c6-caad8ee771d5",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "5b8047e3-0cb9-63cc-65c6-caad8ee771d5"
+      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c"
+    },
+    {
+      "key": "966274aa-a959-080d-6f3e-ac90d8576da3",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
@@ -57,12 +63,20 @@
           "key": "bbbba311-2720-8fbb-007b-49722a8c5960"
         },
         {
-          "order": 2,
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
           "key": "7b64e94b-e561-d1f3-ba7b-5ecb4a38014b"
+        },
+        {
+          "key": "1956c0d5-cdee-0ee2-6359-1cddbe62d7d6",
+          "title": "Payout project manager",
+          "order": 2,
+          "type": "payout",
+          "percentageOfBalance": "15",
+          "role": "project manager"
         }
       ],
       "key": "62e42a16-18f6-b6d7-28ce-11d25c9b0263"
@@ -70,6 +84,6 @@
   ],
   "collectionId": "",
   "title": "NetDeco SEO",
-  "description": "",
+  "description": "<p>NetDeco SEO as agreed with Luke on email</p>\n<p>Including...</p>\n<p>Home -</p><p>\nThe page title needs expanding, as it is currently quite short</p><p>\n\nMirror collection page - </p><p>\nNo meta description currently </p><p>\nCould add a paragraph of text to describe the collection (down the page to be less visible)</p><p>\nMultiple H1 headings </p><p>\nNo main H1 heading</p><p>\n\nMirror Product pages - </p><p>\nMultiple H1 headings </p>",
   "id": "6103451c-1fd6-4855-b3da-24b1bef81ba0"
 }
