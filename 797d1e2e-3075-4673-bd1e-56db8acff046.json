@@ -5,10 +5,16 @@
       "key": "2dfcceed-43f4-6352-14d3-5b96121c64dc"
     },
     {
+      "key": "aa931c7a-9189-cac2-0783-b0773f2af9a6",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "aa931c7a-9189-cac2-0783-b0773f2af9a6"
+      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+    },
+    {
+      "key": "944a9c31-61b7-91f0-ae0e-03e4828e02ec",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
@@ -57,12 +63,20 @@
           "key": "c720167d-d725-f87a-43de-10769b614ea3"
         },
         {
-          "order": 2,
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
           "key": "0abec9b6-e389-bec8-e0c3-baa9f826101f"
+        },
+        {
+          "key": "db2b5ed2-ce17-7ed1-b659-9e151b67bf43",
+          "title": "Payout project manager",
+          "order": 2,
+          "type": "payout",
+          "percentageOfBalance": "20",
+          "role": "project manager"
         }
       ],
       "key": "3c4f92bf-92fe-aa4a-2fad-0d270fd49141"
@@ -70,6 +84,6 @@
   ],
   "collectionId": "",
   "title": "Information box tulsabodyjewelry.com",
-  "description": "",
+  "description": "<p>This graphic: http://dsh.re/9bf63 shows two very similar boxes under our review box on product pages. They will behave the same when you hit the expand link, the box expands to reveal additional text. The \"Return &amp; Exchange Policy\" box should appear on every product page. The \"NeoMetal Body Jewelry\" box should appear only on product pages that are tagged \"NeoMetal\". I will want to have many different info boxes like these that are triggered by other keywords, probably about a dozen to start with.</p>",
   "id": "797d1e2e-3075-4673-bd1e-56db8acff046"
 }
