@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "b0a48cfa-8c59-a5d8-3591-b817aaafd653"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "5b8047e3-0cb9-63cc-65c6-caad8ee771d5"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "180",
+          "required": true,
+          "key": "48a2bbc8-3b1b-2bef-3429-a60f1ed770d1"
+        }
+      ],
+      "key": "45f273f0-7d4c-cb3d-a805-09f3bd4008f3"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "69de0fd0-a970-20f5-5b14-6e80171c71be"
+        }
+      ],
+      "key": "8c1bb980-769a-69de-c2f6-a25b4038a488"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "bbbba311-2720-8fbb-007b-49722a8c5960"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "7b64e94b-e561-d1f3-ba7b-5ecb4a38014b"
+        }
+      ],
+      "key": "62e42a16-18f6-b6d7-28ce-11d25c9b0263"
+    }
+  ],
+  "collectionId": "",
+  "title": "NetDeco SEO",
+  "description": "",
+  "id": "6103451c-1fd6-4855-b3da-24b1bef81ba0"
+}
