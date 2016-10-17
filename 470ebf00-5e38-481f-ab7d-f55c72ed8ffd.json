@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "331e1b90-9935-5561-0aa1-c35ad4dbed3f"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "dc31fd8e-e4a2-a199-23ea-6bb9457290ea"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "50",
+          "required": true,
+          "key": "bd3f3013-c5af-9a03-0d24-10a6b27e8c3a"
+        }
+      ],
+      "key": "8fb727d1-2283-df90-550f-c2ba9a89d28e"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "9a368823-05b6-df80-ce81-94d1f464706b"
+        }
+      ],
+      "key": "6aab2e41-2354-1f64-7e2f-9c61b1b89c72"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "1e87180d-c520-a1d0-ba00-553d19776c8f"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "af97fbec-b004-cc4d-5553-11a5c9098c6d"
+        }
+      ],
+      "key": "9d850382-0b9a-c095-c8d4-c7a7a68d5c3c"
+    }
+  ],
+  "collectionId": "",
+  "title": "NetDeco product page banner ",
+  "description": "Add banner to ND product page to redirect traffic to MD home page. Banner to be added above product title and underneath banner for ‘Easy Ordering … ‘ ",
+  "id": "470ebf00-5e38-481f-ab7d-f55c72ed8ffd"
+}
