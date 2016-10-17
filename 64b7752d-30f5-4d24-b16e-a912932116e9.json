@@ -5,10 +5,16 @@
       "key": "331e1b90-9935-5561-0aa1-c35ad4dbed3f"
     },
     {
+      "key": "dc31fd8e-e4a2-a199-23ea-6bb9457290ea",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "dc31fd8e-e4a2-a199-23ea-6bb9457290ea"
+      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+    },
+    {
+      "key": "658812e8-2c85-3a98-5b22-e69e110435f0",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
@@ -21,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "50",
+          "totalUSD": "75",
           "required": true,
           "key": "bd3f3013-c5af-9a03-0d24-10a6b27e8c3a"
         }
@@ -35,10 +41,11 @@
       "stepItems": [
         {
           "order": 1,
-          "title": "Has the work been done?",
-          "type": "confirmation",
+          "title": "Design changes",
+          "type": "html",
           "required": true,
-          "key": "9a368823-05b6-df80-ce81-94d1f464706b"
+          "key": "9a368823-05b6-df80-ce81-94d1f464706b",
+          "description": "<p>2A: MirrorDeco home page footer - add Facebook page link</p>\n\n    <p>2D: The MD logo needs to be replaced by the original version - resized to match current size as it appears on the site. We tried reducing the image quality, but it's slightly blurred at the moment. File provided</p>\n    <p>\n\n        2E: The scrolling arrows on the product window on the product page need to be updated on MD to grey, from blue, file provided</p>\n    <p>\n\n        2F: The text colour for the product title needs updating on MD on the search results page, to match the catalogue page</p>"
         }
       ],
       "key": "6aab2e41-2354-1f64-7e2f-9c61b1b89c72"
