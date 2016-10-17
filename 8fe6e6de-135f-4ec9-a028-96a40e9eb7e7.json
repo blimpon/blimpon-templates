@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "50",
+          "totalUSD": "75",
           "required": true,
           "key": "bd3f3013-c5af-9a03-0d24-10a6b27e8c3a"
         }
