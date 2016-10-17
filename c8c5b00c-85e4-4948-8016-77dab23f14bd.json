@@ -35,10 +35,11 @@
       "stepItems": [
         {
           "order": 1,
-          "title": "Has the work been done?",
-          "type": "confirmation",
+          "title": "Mobile version",
+          "type": "html",
           "required": true,
-          "key": "9a368823-05b6-df80-ce81-94d1f464706b"
+          "key": "9a368823-05b6-df80-ce81-94d1f464706b",
+          "description": " <p>1A: NetDeco home page mobile version - banner resized; fix spacing for sub header ‘featured products’; main navigation drop-downs applied; product filters checked</p>"
         }
       ],
       "key": "6aab2e41-2354-1f64-7e2f-9c61b1b89c72"
