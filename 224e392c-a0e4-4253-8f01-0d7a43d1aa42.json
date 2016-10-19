@@ -5,10 +5,16 @@
       "key": "f9f8656b-9794-bc06-481e-358f6d795543"
     },
     {
+      "key": "52152548-f960-3eef-a5fa-c039f488fd1c",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "52152548-f960-3eef-a5fa-c039f488fd1c"
+      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+    },
+    {
+      "key": "02987b2c-2a4a-e519-9896-0901a539a715",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
@@ -57,19 +63,27 @@
           "key": "f54c4a89-9a75-447a-447b-c37c81d4afd0"
         },
         {
-          "order": 2,
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
           "key": "75be0c7f-b0d7-1496-17f2-14b88851d962"
+        },
+        {
+          "key": "18cd1da4-ea96-47d9-5ced-e21288ac1de2",
+          "title": "Payout project manager",
+          "order": 2,
+          "type": "payout",
+          "percentageOfBalance": "20",
+          "role": "project manager"
         }
       ],
       "key": "417e9603-11c5-3ff1-724f-088e34a10d19"
     }
   ],
   "collectionId": "",
-  "title": "Popup only shown on desktop, disabled on mobile",
+  "title": "Popup only shown on desktop, disabled on mobile beltology.com",
   "description": "",
   "id": "224e392c-a0e4-4253-8f01-0d7a43d1aa42"
 }
