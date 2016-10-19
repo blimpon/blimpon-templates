@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "a6ac734d-bc30-636b-3bdc-24d02116fe30"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "047cc430-a11a-f672-90ea-159bebd46fac"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "139",
+          "required": true,
+          "key": "00fc7efc-7b85-1a2b-7126-68458855378a"
+        }
+      ],
+      "key": "71ff8c03-761c-6469-a4ae-85606125309b"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "feeb1c65-889f-220e-0a28-2b7b415021ce"
+        }
+      ],
+      "key": "805327eb-39e9-2d13-11f2-6e6c62ed103b"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "f57db8f2-efcb-e3b5-baf3-08ee8153ffb3"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "0de91915-e5b7-ac7b-6593-54d82f13e313"
+        }
+      ],
+      "key": "e134bd4d-2611-287b-7c83-4a161037aa69"
+    }
+  ],
+  "collectionId": "",
+  "title": "Show matching product image when user hovers over a color swatch kingsrush.com",
+  "description": "",
+  "id": "494fa6b8-7837-40a8-972b-efb6717d2283"
+}
