@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "b491ab19-aa3f-15d7-3e20-8e598263780a"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "48753a8c-3c0e-156f-7af6-b89947ceae2c"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "159",
+          "required": true,
+          "key": "b1e0c846-b015-5286-9890-2e79f6c95d3b"
+        }
+      ],
+      "key": "d9cbd442-907f-c5f2-a144-98398524c451"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "c0686281-031d-6053-39a1-41c0fbc14567"
+        }
+      ],
+      "key": "fd912b9d-46ca-b3a5-0ce5-c666113cfe5d"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "6df1c775-dc02-fbc4-ed29-8bbed9b6f888"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "f4648fec-b70e-3d0b-c670-aaff437ce117"
+        }
+      ],
+      "key": "9b2fa855-f51b-7dc4-7617-1c5e802260a9"
+    }
+  ],
+  "collectionId": "",
+  "description": "As agreed on email",
+  "title": "Design changes to match PSD plus video grid recoverrecords.com",
+  "id": "4daf41d7-3bf5-41fc-a2c0-c227c8c41acd"
+}
