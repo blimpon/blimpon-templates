@@ -1,0 +1,101 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "5bad36fe-915e-695f-2e7f-4ed766bed00e"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "72657670-dd6f-45ca-b779-8c643bfdcd4d",
+      "key": "0c838f30-5e33-1a82-161e-f4d4b3a96b7a"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "ae86c277-271a-43a5-afbd-c1944e2461a5",
+      "admin": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "80",
+          "required": true,
+          "key": "a5a0a3f3-a8d2-239b-8ebd-b697f4e50b95"
+        }
+      ],
+      "key": "734390c6-fa62-c813-0d7f-070f58208d9e"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 4,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "153ee734-efc4-d461-db3b-d958eb532d26"
+        },
+        {
+          "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "7bdcfec1-e0aa-4677-b08e-0148e1de5b54"
+        },
+        {
+          "order": 3,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "5352e719-2ba0-4572-8051-c42eea5ba025"
+        }
+      ],
+      "key": "daaa9b4f-c038-9f96-6361-5318a564fe32"
+    },
+    {
+      "key": "2c85fd15-6795-0690-5117-8d7961ed2a85",
+      "title": "Set up lazy loading for collection view images",
+      "order": 2,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "3cf52c5f-93cf-ff1d-ec1c-3e6ddf9238d2",
+          "title": "Implement lazy loading on collection view product images",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "key": "ecacf199-5c6e-c62d-1dbb-69e44b804ffa",
+      "title": "Test everything on site works as normal",
+      "order": 3,
+      "stepItems": [
+        {
+          "key": "8f174fa8-d616-5254-4f4d-102a6c6892af",
+          "title": "Test everything on site works as normal",
+          "order": 1
+        }
+      ],
+      "completeRole": "fixer"
+    }
+  ],
+  "collectionId": "9021c072-efaf-4a80-bf57-cbfd72d9ea1f",
+  "description": "Lazy load is a technic that allows your website to load resources as they are needed instead of loading them all at once.<br><br>\n\nThis will have a significant impact on both mobile and desktop loading times and it's specially effective for visitors with slow connections and webpages with long product listings.<br><br>\n\nThis allows your page to keep the same content while improving your customers experience.<br>\n\nWe target the work to be completely wrapped up 14 days from signup.",
+  "title": "Lazy loading product images (copy)",
+  "id": "fe77b589-68c3-4a5d-906a-31fda0d2a404"
+}
