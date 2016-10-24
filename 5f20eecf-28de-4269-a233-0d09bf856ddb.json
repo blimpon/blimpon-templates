@@ -63,20 +63,20 @@
           "key": "c1b4867e-ad08-7a9b-58d0-3409fbde13c6"
         },
         {
-          "order": 3,
-          "title": "Payout fixer",
-          "type": "payout",
-          "role": "fixer",
-          "percentageOfBalance": 100,
-          "key": "1f89668e-c95d-8119-7280-d851e764345a"
-        },
-        {
           "key": "dfebbbad-fd93-44e7-033a-a9cd16796ff4",
           "title": "Payout project manager",
           "order": 2,
           "type": "payout",
           "percentageOfBalance": "20",
           "role": "project manager"
+        },
+        {
+          "order": 3,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "1f89668e-c95d-8119-7280-d851e764345a"
         }
       ],
       "key": "b716200f-611c-31c9-665c-3f7853d7ed39"
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "As agreed on email, change the 'add to cart' button to 'hire' and also add a date picker so customers can select how many days they want it for.",
-  "title": "Change 'add to cart' to 'hire' and add date picker",
+  "title": "Change 'add to cart' to 'hire' and add date picker borrowadressboutique.com",
   "id": "5f20eecf-28de-4269-a233-0d09bf856ddb"
 }
