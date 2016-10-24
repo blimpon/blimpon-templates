@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "4547c0ca-5d1f-be56-be83-555474f3bdf2"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "d2c40014-4561-3898-88e2-18e984d6ddcb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "299",
+          "required": true,
+          "key": "ca8094ad-8af5-4ed2-37a6-40378dade450"
+        }
+      ],
+      "key": "f9ee9380-8275-652a-9b91-86b3dc90c330"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "c71db98d-7969-0f87-8665-5396b3e4fae3"
+        }
+      ],
+      "key": "e7a072c6-5419-cb76-e621-d2dce5b1f312"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "eb2a20bd-9760-5a44-410a-6c66d0237c84"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "24de7b75-5ee9-aa3c-7a12-92b338627c31"
+        }
+      ],
+      "key": "515a430d-489d-bdc4-97a2-000236dc863a"
+    }
+  ],
+  "collectionId": "",
+  "description": "As agreed on email",
+  "title": "Shop by size banner, Shipping banner color, Sizing page and social media icon beltology.com",
+  "id": "442cd7d2-64cb-4841-92a5-0d846fe0c409"
+}
