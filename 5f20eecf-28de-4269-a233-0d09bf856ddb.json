@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "5303e6a1-b805-83a6-2ff7-f9a6a4804326"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "a07669d1-43b3-4495-98d1-e940d124035d"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "139",
+          "required": true,
+          "key": "ae985c5d-43b9-8f70-7e42-5e4564f6897c"
+        }
+      ],
+      "key": "7dfa6a43-2c99-65fc-c471-39d1d278db22"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "8e39de0a-927a-a0ba-3fa2-8e69cc8c981b"
+        }
+      ],
+      "key": "4bb5eedc-58df-6e17-b705-8d65b1a26de0"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "c1b4867e-ad08-7a9b-58d0-3409fbde13c6"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "1f89668e-c95d-8119-7280-d851e764345a"
+        }
+      ],
+      "key": "b716200f-611c-31c9-665c-3f7853d7ed39"
+    }
+  ],
+  "collectionId": "",
+  "description": "As agreed on email, change the 'add to cart' button to 'hire' and also add a date picker so customers can select how many days they want it for.",
+  "title": "Change 'add to cart' to 'hire' and add date picker",
+  "id": "5f20eecf-28de-4269-a233-0d09bf856ddb"
+}
