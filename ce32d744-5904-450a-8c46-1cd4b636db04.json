@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "92500243-9c1a-5889-a62b-29b1ebab52b8"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "336309cd-3764-4ad9-93e3-292500a51b45"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "0e9b6db4-2250-bf6a-e95e-fd12e06287fe"
+        }
+      ],
+      "key": "8a895e64-7724-9bef-0793-0fc479a366ba"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "7c3929c2-0481-7276-3505-3511f27e4085"
+        }
+      ],
+      "key": "8c158c96-bbba-d88f-061d-0b06484a5f56"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "4dfbd543-718e-958c-2bab-1449ed9b1332"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "ca06ec7b-67ac-116e-0808-9c51e09f5dec"
+        }
+      ],
+      "key": "4f5295b2-d0a3-4ae6-b8dc-ab87fee294cb"
+    }
+  ],
+  "collectionId": "",
+  "description": "As agreed with Fabio on messaging, here's the bug fix job for scrolling. It's a reduced rate because we've already done a Premium speed fixes job for you.",
+  "title": " Bug fix scrolling on mobile: make scrolling smooth",
+  "id": "ce32d744-5904-450a-8c46-1cd4b636db04"
+}
