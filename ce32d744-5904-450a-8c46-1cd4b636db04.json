@@ -5,10 +5,16 @@
       "key": "92500243-9c1a-5889-a62b-29b1ebab52b8"
     },
     {
+      "key": "336309cd-3764-4ad9-93e3-292500a51b45",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
-      "key": "336309cd-3764-4ad9-93e3-292500a51b45"
+      "defaultUser": "72657670-dd6f-45ca-b779-8c643bfdcd4d"
+    },
+    {
+      "key": "8b5ad790-6130-205f-01f5-d44ce43a4640",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
