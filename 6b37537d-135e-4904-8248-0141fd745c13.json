@@ -1,0 +1,89 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "e335710b-9da8-438d-5f53-13f1896560f5"
+    },
+    {
+      "key": "43b7ba17-1e67-5f97-5414-1e78f40274ab",
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+    },
+    {
+      "key": "e56b74f1-0126-c27a-b708-f4e515ee42d7",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "282",
+          "required": true,
+          "key": "2edfbfaf-a940-829c-0445-b82cb37b94cd"
+        }
+      ],
+      "key": "ea5dafd7-edba-29c1-41a4-ae4697278869"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "148c22f8-10f7-61be-4bd6-7cee022ecf1b"
+        }
+      ],
+      "key": "a7a736c0-bf95-0fae-fb3d-6db88f1100ae"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "d33b92ac-32ef-2c5d-872e-8eda67ca0535"
+        },
+        {
+          "key": "488db152-511e-cf7d-3a77-61f67da24b68",
+          "title": "Payout project manager",
+          "order": 2,
+          "type": "payout",
+          "percentageOfBalance": "20",
+          "role": "project manager"
+        },
+        {
+          "order": 3,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "ace6d980-48bc-51e2-4f8f-1b4103649627"
+        }
+      ],
+      "key": "1033822d-2b8e-fc5b-258c-f9b93f8d5752"
+    }
+  ],
+  "collectionId": "",
+  "description": "Spec as agreed on email",
+  "title": "Site Speed Optimization beltology.com (copy)",
+  "id": "6b37537d-135e-4904-8248-0141fd745c13"
+}
