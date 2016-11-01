@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "282",
+          "totalUSD": "299",
           "required": true,
           "key": "2edfbfaf-a940-829c-0445-b82cb37b94cd"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "Spec as agreed on email",
-  "title": "Site Speed Optimization beltology.com (copy)",
+  "title": "Style Finder beltology.com",
   "id": "6b37537d-135e-4904-8248-0141fd745c13"
 }
