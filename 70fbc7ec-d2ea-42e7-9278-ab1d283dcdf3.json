@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "e335710b-9da8-438d-5f53-13f1896560f5"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "43b7ba17-1e67-5f97-5414-1e78f40274ab"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "299",
+          "required": true,
+          "key": "2edfbfaf-a940-829c-0445-b82cb37b94cd"
+        }
+      ],
+      "key": "ea5dafd7-edba-29c1-41a4-ae4697278869"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "148c22f8-10f7-61be-4bd6-7cee022ecf1b"
+        }
+      ],
+      "key": "a7a736c0-bf95-0fae-fb3d-6db88f1100ae"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "d33b92ac-32ef-2c5d-872e-8eda67ca0535"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "ace6d980-48bc-51e2-4f8f-1b4103649627"
+        }
+      ],
+      "key": "1033822d-2b8e-fc5b-258c-f9b93f8d5752"
+    }
+  ],
+  "collectionId": "",
+  "description": "Spec as agreed on email",
+  "title": "Collaboration Landing Pages beltology.com",
+  "id": "70fbc7ec-d2ea-42e7-9278-ab1d283dcdf3"
+}
