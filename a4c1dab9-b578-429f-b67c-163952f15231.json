@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "79",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "As agreed on email",
-  "title": "Change moving banners to 3 static blocks interfixsupplies.co.uk (copy)",
+  "title": "Change 'Newsletter' to 'Sign up...' (text TBD) interfixsupplies.co.uk",
   "id": "a4c1dab9-b578-429f-b67c-163952f15231"
 }
