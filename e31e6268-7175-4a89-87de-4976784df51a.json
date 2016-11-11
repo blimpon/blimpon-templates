@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "199",
+          "totalUSD": "99",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "As agreed on email",
-  "title": "Make changes to the blog template interfixsupplies.co.uk (copy)",
+  "title": "Share button with popup interfixsupplies.co.uk",
   "id": "e31e6268-7175-4a89-87de-4976784df51a"
 }
