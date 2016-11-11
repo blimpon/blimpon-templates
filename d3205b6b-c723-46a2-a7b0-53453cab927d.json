@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "299",
+          "totalUSD": "199",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "As agreed on email",
-  "title": "Design & implement 'About us' and 'Affiliate program' pages recoverrecords.com (copy)",
+  "title": "Inc/Exc VAT Slider to change all website prices interfixsupplies.co.uk",
   "id": "d3205b6b-c723-46a2-a7b0-53453cab927d"
 }
