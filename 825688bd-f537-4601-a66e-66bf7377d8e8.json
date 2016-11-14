@@ -1,5 +1,5 @@
 {
-  "title": "Premium SEO fixes {{ step2.stepItem1 }} (copy)",
+  "title": "Premium SEO fixes {{ step2.stepItem1 }} (split payment)",
   "roles": [
     {
       "key": "60200aed-b4b1-9046-73ca-ea14d2098d76",
@@ -24,13 +24,20 @@
       "completeRole": "customer",
       "stepItems": [
         {
-          "title": "Payment",
+          "title": "Payment #1",
           "type": "pay",
-          "help": "It's a one off payment of $320, you will not be charged again.",
+          "help": "It's a one off payment of $220, you will not be charged again.",
           "required": true,
-          "totalUSD": "320",
+          "totalUSD": "220",
           "key": "c48e0b05-1b67-134a-ad55-3b74dc55be18",
           "order": 1
+        },
+        {
+          "key": "04ea1d44-da7a-ada5-cf0b-0571b15f57d4",
+          "title": "Payment #2",
+          "order": 2,
+          "type": "pay",
+          "totalUSD": "100"
         }
       ],
       "key": "042d2153-8270-c6e6-1052-a2bd02ea6084",
