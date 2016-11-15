@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "79",
+          "totalUSD": "249",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "As agreed on email",
-  "title": "Slider banner mirrordeco.com (copy)",
+  "title": "Front page redesign tulsabodyjewelry.com",
   "id": "daa0be74-1193-4162-9652-1cdcc37b81d6"
 }
