@@ -12,6 +12,12 @@
       "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c",
       "key": "a5ea8890-3b85-651c-0d9f-55ba55ab490f",
       "order": 2
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "2e058edc-cb9d-48df-8871-abc7bd2e6178",
+      "admin": true
     }
   ],
   "steps": [
@@ -24,7 +30,7 @@
           "type": "pay",
           "help": "It's a one off payment of $180, you will not be charged again.",
           "required": true,
-          "totalUSD": "180",
+          "totalUSD": "349",
           "key": "4990b49e-6758-464a-f1d1-012474c8c70e",
           "order": 1
         }
@@ -129,12 +135,21 @@
           "order": 1
         },
         {
+          "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "779ba5c0-923a-4468-91c9-ecbceeff1c13"
+        },
+        {
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
           "key": "f7be8849-94b4-486d-8423-87607dffbf99",
-          "order": 2
+          "order": 3
         }
       ],
       "key": "9833b6a4-edf3-76a4-eb20-cb9b61a924a1",
