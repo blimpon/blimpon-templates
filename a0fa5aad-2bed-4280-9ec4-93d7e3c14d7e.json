@@ -1,5 +1,5 @@
 {
-  "title": "Google Analytics setup with enhanced ecommerce tracking {{ step2.stepItem1 }} (copy)",
+  "title": "Google Analytics audit and setup {{ step2.stepItem1 }}",
   "roles": [
     {
       "name": "customer",
@@ -28,9 +28,9 @@
         {
           "title": "Payment",
           "type": "pay",
-          "help": "It's a one off payment of $180, you will not be charged again.",
+          "help": "It's a one off payment of $419, you will not be charged again.",
           "required": true,
-          "totalUSD": "180",
+          "totalUSD": "419",
           "key": "4990b49e-6758-464a-f1d1-012474c8c70e",
           "order": 1
         }
