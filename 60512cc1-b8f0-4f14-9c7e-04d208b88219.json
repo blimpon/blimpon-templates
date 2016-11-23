@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "249",
+          "totalUSD": "159",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "As agreed on email",
-  "title": "Front page redesign tulsabodyjewelry.com (copy)",
+  "description": "As agreed on email: \"The drop-down menus respond as soon as you hover your mouse over them, and we wish to alter this to either drop-down on click, or better still, drop down after a short delay – to work like this site;www.screwfix.com, where it hesitates and then drops down, greying other areas of the site out.\"",
+  "title": "Navigation dropdown changes interfixdirect.co.uk",
   "id": "60512cc1-b8f0-4f14-9c7e-04d208b88219"
 }
