@@ -1,0 +1,188 @@
+{
+  "title": "Complete speed fixes {{ step2.stepItem1 }} (copy)",
+  "roles": [
+    {
+      "name": "customer",
+      "key": "a4d98a87-a62a-24f1-3344-3e34720ecfee"
+    },
+    {
+      "key": "260e7b33-0134-efd8-0b29-31fe87086668",
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "72657670-dd6f-45ca-b779-8c643bfdcd4d"
+    },
+    {
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "3b6dc166-c2ff-4195-6cd9-ed48a6198133"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start your Complete speed fixes job",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Pay",
+          "type": "pay",
+          "help": "It's a one off payment of $149, you will not be charged again.",
+          "required": true,
+          "totalUSD": 149,
+          "key": "92001127-2db5-a41e-0e45-099514c51080",
+          "order": 1
+        }
+      ],
+      "key": "50b07909-9a15-3d20-8556-e892d9d43c41",
+      "order": 1
+    },
+    {
+      "title": "Set up access",
+      "completeRole": "customer",
+      "reviewRole": "",
+      "stepItems": [
+        {
+          "title": "What website is the work for?",
+          "type": "text",
+          "required": true,
+          "key": "3cb67c5e-1de5-d306-1336-6810e4f7ae59",
+          "order": 1
+        },
+        {
+          "title": "Create a login",
+          "type": "login",
+          "description": "Add a new user to your site admin with the details shown below. Instructions for: <a href=\"https://docs.shopify.com/manual/settings/account/staff-members#add-new-staff-member\" target=\"_blank\">Shopify, adding a staff member</a>, <a href=\"https://support.bigcommerce.com/articles/Public/Adding-Editing-Users\" target=\"_blank\">Bigcommerce, adding a user</a>.",
+          "required": true,
+          "for": "fixer",
+          "key": "bf3beeec-37a0-0adb-9b67-3f43f9efca82",
+          "order": 2
+        }
+      ],
+      "key": "34405b46-01a6-29a2-9c14-e8debff08d2c",
+      "order": 2
+    },
+    {
+      "title": "Answer questions",
+      "completeRole": "customer",
+      "reviewRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Are there any apps or plugins that can be removed?",
+          "type": "text",
+          "description": "Cleanly removing apps and plugins that you no longer use is one of the key things to speed up your site. List apps or plugins you no longer require and can be cleanly removed. If there are none, write 'none'.",
+          "required": true,
+          "key": "4bd14580-6040-ae9e-b995-1dabe6248c6f",
+          "order": 1
+        },
+        {
+          "key": "be433daa-dade-9503-87ff-ab7fc68e2578",
+          "title": "Job received",
+          "type": "sendemail",
+          "to": "customer",
+          "body": "{% assign split_name = recipient.name | split: ' ' %}\n\nHi {{ split_name.first }}\n\nThanks. We've received your {{ job.title }} job.\n\nOn the job you have one of our expert fixers who will be doing the work, a project manager, and us here at Plug in SEO to make sure you're happy.\n\nWe use the Blimpon project management app to efficiently manage your job and for messaging in the team. \n\n<strong>What happens now?</strong>\n<ul><li>If you haven't already, grant our fixer access to your website admin</li>\n<li>We target the work to be completely wrapped up 14 days from signup</li>\n<li>For the fastest response to any questions log in to Blimpon, go to the job and send a message there</li>\n<li>Once we're finished you'll receive details of everything we've done</li>\n</ul>\n\n<strong>Important note</strong>\nMaking structural changes to your website during and after this job can interfere with or lose our work. Please check with your project manager before changing to a new theme, editing your site templates or adding/removing meta tagging apps.\n\nSo that your job goes smoothly just send a message to your project manager at any time if you're in doubt.\n\nThere's no need to pause your normal day-to-day activities like adding/editing pages/products/collections/blogs etc. All of this is fine and won't affect our work.\n\nWe look forward to getting this job done for you.\n\nBest, Daniel\nPlug in SEO\n\nPS: did you know we're Shopify Experts? reply to this email if you need any other work done on your shop",
+          "subject": "{{ job.title }} job received",
+          "order": 2
+        }
+      ],
+      "key": "c27fd8ff-bb78-f943-5458-29950da3a57f",
+      "order": 3
+    },
+    {
+      "title": "Remove redundant code",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Remove unused apps and plugins",
+          "type": "confirmation",
+          "description": "Remove these apps and plugins and their associated code: {{ step3.stepItem1 }}",
+          "required": true,
+          "key": "d699d260-804a-69a8-1f12-7131266c83f5",
+          "order": 1
+        }
+      ],
+      "key": "3d897465-c726-9f27-5abe-abd16d2e529f",
+      "order": 4
+    },
+    {
+      "title": "Improve one of the failing Speed checks",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Improve one of the failing Speed checks",
+          "type": "confirmation",
+          "required": true,
+          "key": "d6419a3b-c24b-c311-3590-c4b865cc615d",
+          "order": 1
+        }
+      ],
+      "key": "db920d12-bd56-6e91-0ac9-bf97ffd959f3",
+      "order": 5
+    },
+    {
+      "title": "Test everything on site works as normal",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Test everything on site works as normal",
+          "type": "confirmation",
+          "required": true,
+          "key": "3193e857-a1d8-dd1b-3020-f8f9f56d5e87",
+          "order": 1
+        }
+      ],
+      "key": "e4644ae9-8a8a-57e8-d896-cca30f9b347d",
+      "order": 6
+    },
+    {
+      "title": "Detail what's been done",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Write up what you've done and message the customer with details",
+          "type": "confirmation",
+          "required": true,
+          "key": "3f826a46-cb91-d5f4-5ba2-63415f8d3d7b",
+          "order": 1
+        }
+      ],
+      "key": "319c8aaf-aadc-1318-24ed-02b2f90eb8c1",
+      "order": 7
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "required": true,
+          "for": "fixer",
+          "key": "8723ce5d-b656-40e7-bf6b-1fd96b83d5db",
+          "order": 1
+        },
+        {
+          "key": "543ad4e7-53a0-6ee9-3ded-f12739cbdf29",
+          "title": "Payout project manager",
+          "type": "payout",
+          "role": "project manager",
+          "percentageOfBalance": "56.44",
+          "order": 2
+        },
+        {
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "6944ce0d-cef5-80bf-a1cb-476e71c72f8d",
+          "order": 3
+        }
+      ],
+      "key": "cd722e9e-8864-349d-2097-bc9287b8b1ba",
+      "order": 8
+    }
+  ],
+  "description": "Visitors get frustrated and will leave your site if it fails to load quickly. They're increasingly browsing from slower and less reliable mobile networks making it even more crucial that your site responds fast. Slowness will affect your conversion rate.\n\nGoogle considers speed as a quality factor when it ranks your site. Plus, all search engines will not fully crawl a site that is slow. Speed is a key part of a solid SEO foundation for your site.\n\nOften there are ways to streamline your HTML, Javascript and CSS code files to make your site respond and download faster (technically speaking: minification, compression, removing redundant code etc.).\n\nThis job will take one of your failing checks from the Plug in SEO 'Speed' check and improve it. All of the coding is handled for you: you don't need any programming experience. There might be some questions about apps that can be removed but other than that everything else will be taken care of to speed up your site.\n\nFixing one of your failing checks often improves another check, so this can be enough to noticeably speed up your site.",
+  "jobTemplateImageId": "0bd0b79e-007a-4cc7-b55c-cb8451ece012",
+  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
+  "id": "2ded8349-9771-49aa-b5f1-e1c8406971a9"
+}
