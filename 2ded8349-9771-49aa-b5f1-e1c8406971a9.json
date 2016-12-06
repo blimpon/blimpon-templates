@@ -1,5 +1,5 @@
 {
-  "title": "Complete speed fixes {{ step2.stepItem1 }} (copy)",
+  "title": "Complete speed fixes bmcwear.com",
   "roles": [
     {
       "name": "customer",
@@ -26,9 +26,9 @@
         {
           "title": "Pay",
           "type": "pay",
-          "help": "It's a one off payment of $149, you will not be charged again.",
+          "help": "It's a one off payment of $129, you will not be charged again.",
           "required": true,
-          "totalUSD": 149,
+          "totalUSD": "129",
           "key": "92001127-2db5-a41e-0e45-099514c51080",
           "order": 1
         }
@@ -183,6 +183,5 @@
   ],
   "description": "Visitors get frustrated and will leave your site if it fails to load quickly. They're increasingly browsing from slower and less reliable mobile networks making it even more crucial that your site responds fast. Slowness will affect your conversion rate.\n\nGoogle considers speed as a quality factor when it ranks your site. Plus, all search engines will not fully crawl a site that is slow. Speed is a key part of a solid SEO foundation for your site.\n\nOften there are ways to streamline your HTML, Javascript and CSS code files to make your site respond and download faster (technically speaking: minification, compression, removing redundant code etc.).\n\nThis job will take one of your failing checks from the Plug in SEO 'Speed' check and improve it. All of the coding is handled for you: you don't need any programming experience. There might be some questions about apps that can be removed but other than that everything else will be taken care of to speed up your site.\n\nFixing one of your failing checks often improves another check, so this can be enough to noticeably speed up your site.",
   "jobTemplateImageId": "0bd0b79e-007a-4cc7-b55c-cb8451ece012",
-  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
   "id": "2ded8349-9771-49aa-b5f1-e1c8406971a9"
 }
