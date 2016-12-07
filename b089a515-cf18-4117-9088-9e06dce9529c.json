@@ -1,5 +1,5 @@
 {
-  "title": "Premium speed fixes {{ step2.stepItem1 }} (copy)",
+  "title": "Premium speed fixes bmcwear.com",
   "roles": [
     {
       "name": "customer",
@@ -26,9 +26,9 @@
         {
           "title": "Pay",
           "type": "pay",
-          "help": "It's a one off payment of $320, you will not be charged again.",
+          "help": "It's a one off payment of $290, you will not be charged again.",
           "required": true,
-          "totalUSD": "320",
+          "totalUSD": "290",
           "key": "d1eda51c-13c9-97c6-8085-b8197ce7d64c",
           "order": 1
         }
@@ -242,7 +242,6 @@
     }
   ],
   "description": "Similar to the Complete speed fixes job, this job goes further and improves all of your failing Plug in SEO 'Speed' checks.\n\n<p><strong>Important:</strong> The aim of this job is to increase the overall page loading time as measured by GTMetrix (an industry standard checker). You're getting the knowledge and experience of an expert human speed fixer to interpret what automatic speed checkers report should be done and analyzing your code to make sure that a) the change will speed up your site b) will not break key functionality like add to basket c) is possible on your platform.</p>\n\nEvery website on the internet has at least one point that automatic speed checkers report as a problem with speed, meaning that it isn't possible or desirable to get a no 'problems' verdict from a speed checker: they are no substitute for a human expert due to a, b and c above! When the job is complete your fixer will give you a before and after report of the overall page loading time of your site. We can't guarantee specific speed increases, but if your speed has not increased we can reverse the work and give a refund.",
-  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
   "jobTemplateImageId": "abf4e1a5-b477-4255-9ded-81a5d1593a0a",
   "id": "b089a515-cf18-4117-9088-9e06dce9529c"
 }
