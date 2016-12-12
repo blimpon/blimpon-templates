@@ -8,7 +8,7 @@
       "key": "ebdc5f04-6fc9-44f1-6670-138eed80fd2b",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+      "defaultUser": "72657670-dd6f-45ca-b779-8c643bfdcd4d"
     },
     {
       "key": "4b2aaf94-d735-4fb5-217e-17f0747be6ca",
@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "79",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "As agreed on email",
-  "title": "Responsive design changes tulsabodyjewelry.com (copy)",
+  "description": "As agreed on messaging, fix the overlay staying on top as the image slider has a z-index of 99999 and the black overlay 1111111",
+  "title": "CSS overlay fix ivorycloset.com",
   "id": "d0c3dbf8-395f-4cc9-989d-482026f7047c"
 }
