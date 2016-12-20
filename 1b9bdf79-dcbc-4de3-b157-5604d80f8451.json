@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "289",
+          "totalUSD": "79",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "As agreed on email",
-  "title": "Add collection on home page, Custom Related Products, Product page design changes cardworksplus.myshopify.com (copy)",
+  "title": "Add Hreflang tags rugandweave.com",
   "id": "1b9bdf79-dcbc-4de3-b157-5604d80f8451"
 }
