@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "199",
+          "totalUSD": "99",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "Work completed, price emailed 29 November 2016 at 16:15 from Niraj to Andrew",
-  "title": "Sale page: changes and functionality (customisation of banner image, top banner list, etc) beltology.com (copy)",
+  "description": "Work completed",
+  "title": "Collection products automatically balance beltology.com",
   "id": "d95f0e5a-dc6f-4f97-8587-afe20f96eef6"
 }
