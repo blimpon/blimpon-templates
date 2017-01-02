@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "11027a4d-284d-44a1-82f6-157e0bd2fba1",
       "key": "d8b09687-2115-9355-9355-881190c70c40"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "c7c9d77a-269c-43c8-af64-019c40137dc6",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "94da5ad9-0a02-4999-9680-aa0c8a25c5f4"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -71,5 +86,6 @@
   "collectionId": "ae048a6c-8226-47a6-9b4b-0a720c1878fd",
   "description": "I will setup  your new shopify store and add up to 50 products for you. ",
   "title": "Shopify Set Up ",
-  "id": "05f2fbf1-39ef-44ec-b18a-8c87ee61c436"
+  "id": "05f2fbf1-39ef-44ec-b18a-8c87ee61c436",
+  "jobTemplateImageId": "56bc21bd-1afa-40be-be26-7fd2aa832449"
 }
