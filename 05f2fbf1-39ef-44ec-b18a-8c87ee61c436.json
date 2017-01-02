@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "6cfdf988-270a-5fd3-5321-3d9245a5c119"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "11027a4d-284d-44a1-82f6-157e0bd2fba1",
+      "key": "d8b09687-2115-9355-9355-881190c70c40"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "497",
+          "required": true,
+          "key": "cc8ad393-bd55-cad0-2d2b-8341e7a36aa7"
+        }
+      ],
+      "key": "63ac44a4-78ab-e8ff-38e4-8c82ae67ee37"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "48b744fa-13ea-2c06-ad06-f103a99750a8"
+        }
+      ],
+      "key": "659ea14a-4692-39c0-b4dc-3fc069147a77"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "cb1211cd-be1e-5e4f-e908-1a2a6588e12c"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "84587102-2174-fdd7-daad-5daded1ead27"
+        }
+      ],
+      "key": "a172e0a3-de4d-1ace-edf7-dd1b9e145501"
+    }
+  ],
+  "collectionId": "ae048a6c-8226-47a6-9b4b-0a720c1878fd",
+  "description": "I will setup  your new shopify store and add up to 50 products for you. ",
+  "title": "Shopify Set Up ",
+  "id": "05f2fbf1-39ef-44ec-b18a-8c87ee61c436"
+}
