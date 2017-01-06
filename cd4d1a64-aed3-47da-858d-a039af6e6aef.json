@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "199",
+          "totalUSD": "175",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "As agreed on email",
-  "title": "Show added product item summary popup for 5 sec in desktop and mobile etre-belle.es (copy)",
+  "description": "As agreed on email:\n\n<ul>\n<li>Add new H1 heading to homepage</li>\n<li>Add paragraph text to homepage</li>\n<li>Single H1 on product pages as product name</li>\n<li>Appropriate subheadings on product pages</li>\n<li>Single H1 on collection pages as collection name</li>\n</ul>",
+  "title": "Custom SEO enhancements for fanemblems.com",
   "id": "cd4d1a64-aed3-47da-858d-a039af6e6aef"
 }
