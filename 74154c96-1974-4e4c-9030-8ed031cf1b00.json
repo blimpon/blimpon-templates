@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "399",
+          "totalUSD": "2000",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "As agreed on email:\n\n<ol>\n<li>Remove \"Default\" dropdown menu</li>\n<li>Add additional tabs - \"Description\" &amp; Technical Specs</li>\n</ol>\n \n<h3>Product &amp; Collection Pages</h3>\n<ol>\n<li>Add sidebar menu</li>\n</ol>\n\n<h3>Slideshow</h3>\n<ol>\n<li>Responsive slides - adjust to width of screen rather than cropping</li>\n</ol>\n\n<h3>Collection Pages</h3>\n<ol>\n<li>Add section for text under products (for keyword text for SEO)</li>\n</ol>",
-  "title": "Various changes netsys-america.com (copy)",
+  "description": "<p>As agreed on email, this job is for Phase 1.1 below. Other phases will be started and paid for on separately.</p>\n\n<h3>Phase 1: Unlimited Product option + Swatch(Thumbnail) [ $3000 | Approx time: 2-3 weeks ]</h3>\n\n<br><h4>1.1 Design ($2000)</h4>\n<p>I'll make design mock-up/wire-frame with detail work flow. So you can have whole idea about the app how it will work and for the design. You will check and if you find any changes I'll make it. This module gives us flexibility to change instantly before we make final design and development.</p>\n\n<h4>1.2 Development ($1000)</h4>\n<p>From finalized design and work flow I'll make it functionally working.</p>\n\n<h3>Phase 2: Quantity Break [ $2000 |  Approx time: 2 weeks ]</h3>\n\n<br><h4>2.1 Design ($1100)</h4>\n<p>Same as above</p>\n<h4>2.2 Development ($899)</h4>\n<p>Same as above</p>",
+  "title": "App development phase 1.1 mammothelectronics.com",
   "id": "74154c96-1974-4e4c-9030-8ed031cf1b00"
 }
