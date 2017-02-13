@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "349",
+          "totalUSD": "79",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "Three changes as agreed on email:\n\n<ol>\n<li>Remove more option from main nav so hidden menu item can be display on front</li>\n<li>Second menu bar in top of the header</li>\n<li>Merge featured collection into one and expand to 7 option</li>\n</ol>",
-  "title": "Various changes premadecheerleadingmusic-com.myshopify.com (copy)",
+  "description": "As agreed on email",
+  "title": "Remove shipping calculator section from the cart factorybuys.com.au",
   "id": "8c52f97b-ed2f-43e0-b399-5bd9d52ebe1c"
 }
