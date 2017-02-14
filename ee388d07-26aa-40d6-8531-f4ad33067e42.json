@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "1422a1e8-fcd3-c3e7-3cce-30176f4fa9c0"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "546bb684-18da-467e-b36d-92c3aba78981",
+      "key": "5fd725a5-8670-526e-56a6-083cbdbbf1cb"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "125",
+          "required": true,
+          "key": "d48bbef5-2416-22be-fc9e-f4d89b551194"
+        }
+      ],
+      "key": "869eb81d-2106-8ab9-8534-98691c73dc3e"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "654ccac5-8dcd-4a81-6f62-8996e6e9a070"
+        }
+      ],
+      "key": "bff94203-82ac-9b47-78f7-b8d0c2dbbb80"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "a00e9740-cfa3-2b20-5a68-663956888533"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "2d35b1bc-a8cf-d87a-cc14-74448a28c2ef"
+        }
+      ],
+      "key": "6b60ed72-e7c9-c5cd-2680-d75fe7710054"
+    }
+  ],
+  "collectionId": "",
+  "description": "Add a typing function to your website. Example: minionmade.com.",
+  "title": "Add Typed.js to Shopify Site",
+  "id": "ee388d07-26aa-40d6-8531-f4ad33067e42"
+}
