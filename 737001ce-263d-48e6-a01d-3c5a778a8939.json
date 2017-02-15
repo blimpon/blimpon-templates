@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "2011b71a-78bf-6eee-7230-8f91064b0a54"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "034dd8d9-eefd-2470-46a3-d33d6baa8090"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "949",
+          "required": true,
+          "key": "09e50490-050a-10e7-fbe4-efef1362a061"
+        }
+      ],
+      "key": "a92b5e8a-aabb-c253-97e0-9023c6d9c9a5"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "8a3fa5bf-c81f-1f86-07b4-55bd7a45d033"
+        }
+      ],
+      "key": "e007511f-e6ae-33c0-b71c-81a0b3a6c333"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "24d14f49-0f6f-0c7c-7eb1-8cd901e0fa8b"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "249b2ad7-ca60-8cc0-0953-b6508fb1bcd4"
+        }
+      ],
+      "key": "aacfe6f2-5a8c-2422-2702-8fdc4c0fb4b7"
+    }
+  ],
+  "collectionId": "",
+  "title": "One-on-one Shopify SEO training using Plug in SEO Plus, including initial setup and configuration astersonline.com",
+  "description": "",
+  "id": "737001ce-263d-48e6-a01d-3c5a778a8939"
+}
