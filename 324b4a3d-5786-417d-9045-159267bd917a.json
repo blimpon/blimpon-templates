@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "79",
+          "totalUSD": "139",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "As agreed on email",
-  "title": "Make banner 'The NV-202EKIT Graphic (3rd one down)' on home page responsive netsys-direct.com (copy)",
+  "description": "As agreed on email:\n\n<p><strong>1. Photo in email pop up:</strong> Notice how there is more white space on the bottom than the top? Also, the white space on the left looks uneven as well. Can you make it so the image is centered and that the white spaces area all even</p>\n<p><strong>2. All Collections Shop by Size and Shop by Collection on Mobile:</strong> It looks like these fields do not scroll down with you on mobile. Can we have it so that as you scroll down these two fields attached to the top of the page and follow you down? </p>\n<p><strong>3. Swatches on Mobile:</strong> Noticed that a lot of product swatches are not coming up on mobile. For example, the brown leather, wools, and elements are missing their swatches on mobile even though they are working on desktop.</p>\n<p>Is there a better system for swatches we should be using? Happy to revamp this. Right now it's a bit complicated. </p>\n<p><strong>4. \"Product not availble\" after filtering products:</strong> After you filter by size, it says that the product is not availble in the collections that are missing your selected size. Can we make it so these don't come up at all. So that it only shows the collections with products in your size?</p>\n<p><strong>5. Paypal/Amazon buttons in cart:</strong> Can we make it so these are the same size?</p>\n<p><strong>6. Account Log In:</strong> In checkout, customers have the ability to login. Can we get rid of this? We think it causes confusion. Can we make edits to checkout? If not should we upgrade our account so we can do this?</p>\n<p><strong>9. Center product image in cart on mobile:</strong> Right now when you look in your cart on mobile the image of the product is a little to the left. Can we center this?</p>\n<p><strong>10. Add to cart button on mobile:</strong> Can we make this button larger on mobile? Maybe double it's height? </p>\n<p><strong>11. Swatch on this product:</strong> Also, can't seem to figure out how to get the swatch working on this product: https://www.beltology.com/collections/all-collections/products/simplex-belt-burgundy-navy</p>\n",
+  "title": "Nine changes beltology.com",
   "id": "324b4a3d-5786-417d-9045-159267bd917a"
 }
