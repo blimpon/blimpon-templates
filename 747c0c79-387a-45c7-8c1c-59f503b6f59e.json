@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "139",
+          "totalUSD": "149",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "We won't remove the cherry plugin, instead try to speed up your site with it in place. We're not 100% confident that we'll be able to show a tangible increase doing it this way, and of course it doesn't sort out the root issue. If speed doesn't tangibly improve we'll reverse and refund in full.",
-  "title": "Attempt to speed up gowynne.com leaving cherry plugins in place (copy)",
+  "description": "As agreed on email",
+  "title": "Point Shopify store to domain mamagama.com.hk",
   "id": "747c0c79-387a-45c7-8c1c-59f503b6f59e"
 }
