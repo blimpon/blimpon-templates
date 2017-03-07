@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "149",
+          "totalUSD": "279",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "As agreed on email",
-  "title": "Point Shopify store to domain mamagama.com.hk (copy)",
+  "title": "5 music player setups, homepage slider changes full-out-music-productions-custom.myshopify.com",
   "id": "2c7e9913-d758-43dd-820b-9161003c3a1b"
 }
