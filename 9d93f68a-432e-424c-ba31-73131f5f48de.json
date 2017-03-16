@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "279",
+          "totalUSD": "749",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "As agreed on email",
-  "title": "5 music player setups, homepage slider changes full-out-music-productions-custom.myshopify.com (copy)",
+  "description": "As agreed on email.\n\nIt needs: \n\n<ul>\n<li>to be on a single webpage , using modals</li>\n<li>to be connected to my shopify (iframe, SDK, forms, whatever) </li>\n<li>to be responsive </li>\n<li>to skip step2 </li>\n</ul>",
+  "title": "Single page purchase with checkout serenylabs.com",
   "id": "9d93f68a-432e-424c-ba31-73131f5f48de"
 }
