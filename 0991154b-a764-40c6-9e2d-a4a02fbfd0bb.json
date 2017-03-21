@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "1599",
+          "totalUSD": "2599",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "<p>Where it isn't possible to provide a fixed price quote we can work on a day rate.</p>\n<p>This job is three days of development from our senior Shopify developer including project management.</p>\n<p>We guarantee to provide three full days of development with details of hours spent and remaining on request- just send us a message. Note that day rates are not covered by our 'reverse and refund' guarantee offered for fixed price jobs.</p>",
-  "title": "Three days of senior Shopify developer time (copy)",
+  "description": "<p>Where it isn't possible to provide a fixed price quote we can work on a day rate.</p>\n<p>This job is five days of development from our senior Shopify developer including project management.</p>\n<p>We guarantee to provide five full days of development with details of hours spent and remaining on request- just send us a message. Note that day rates are not covered by our 'reverse and refund' guarantee offered for fixed price jobs.</p>",
+  "title": "Five days of senior Shopify developer time",
   "id": "0991154b-a764-40c6-9e2d-a4a02fbfd0bb"
 }
