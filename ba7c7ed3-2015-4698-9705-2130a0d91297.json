@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "749",
+          "totalUSD": "549",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "As agreed on email.\n\nIt needs: \n\n<ul>\n<li>to be on a single webpage, using modals</li>\n<li>to be connected to my shopify (iframe, SDK, forms, whatever) </li>\n<li>to be responsive </li>\n<li>to skip step2 </li>\n</ul>",
-  "title": "Single page purchase with checkout serenylabs.com (copy)",
+  "description": "<p>Where it isn't possible to provide a fixed price quote we can work on a day rate.</p>\n<p>This job is one day of development from our senior Shopify developer including project management.</p>\n<p>We guarantee to provide a full day of development with details of hours spent and remaining on request- just send us a message. Note that day rates are not covered by our 'reverse and refund' guarantee offered for fixed price jobs.</p>",
+  "title": "One day of senior Shopify developer time",
   "id": "ba7c7ed3-2015-4698-9705-2130a0d91297"
 }
