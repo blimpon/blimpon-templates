@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "299",
+          "totalUSD": "129",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "As agreed on email:\n\n<ol>\n<li>Sound player on all product pictures just like premadecheerleadingmusic.com site.  However we would like this player to have a BLUE color theme.</li>\n<li>Playlist on each artist page.  However we do not want a picture on this playlist.  Can you make it look something like this picture I've created?</li>\n<li>Add section to Home Page. (The 3 menu/pictures shown below that I've copied from the cheerleading site)  The section is called 'multiple link blocks' on our FULL OUT Music Productions Custom site---I think it's a THEME thing, but wanted to see if it's something you're able to add. </li>\n</ol>",
-  "title": "Add music player in products and Artist pages, Add new section on home page vocal-depot.myshopify.com (copy)",
+  "description": "As agreed on email:\n\n<ul>\n<li>Move item description to be under the price options.</li>\n<li>Remove Customer review and product tags tabs.</li>\n<li>Format the product page so it looks better.</li>\n</ul>",
+  "title": "Product page design changes recoverrecords.com",
   "id": "e8c40ee7-20a6-4321-a5da-61bcab59c96b"
 }
