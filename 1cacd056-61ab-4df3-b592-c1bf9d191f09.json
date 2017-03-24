@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "129",
+          "totalUSD": "1000",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "As agreed on email:\n\n<ul>\n<li>Move item description to be under the price options.</li>\n<li>Remove Customer review and product tags tabs.</li>\n<li>Format the product page so it looks better.</li>\n</ul>",
-  "title": "Product page design changes recoverrecords.com (copy)",
+  "description": "<p>As agreed on email:</p>\n\n<h3>Phase 1: Unlimited Product option + Swatch (Thumbnail)</h3>\n<h4>1.2 Development ($1000)</h4>",
+  "title": "App development phase 1.2 mammothelectronics.com",
   "id": "1cacd056-61ab-4df3-b592-c1bf9d191f09"
 }
