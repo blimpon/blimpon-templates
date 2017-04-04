@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "399",
+          "totalUSD": "139",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "<h2>Top Half Requirements</h2>\n\n<ol>\n<li>First Top Header: want this to be a fairly thin TEAL (not coral) with text centered in the header\nwhere I can update the text to whatever I want at any given time.</li>\n<li>Second Top Header: Want this to be a thicker translucent NAVY border.\nWant logo in upper LEFT hand corner.\nWant the \"\"SHOP\"\", \"\"OUR STORY\"\", \"\"BLOG\"\" and CONTACT\"\" text as is in the mock up. They will\nall be linked to separate pages.\nKeep the Log in, Search and Check Out Icons as is.\nWant the header to move with the user as they scroll down the page.</li>\n<li>Top 1/2 of homepage: will be 2-3 sliding pictures (example of one picture and format for top half\nto the right).\nKeep the text formatting as is.\nWant each sliding page to act as a \"button\" that will be linked to other pages (either SHOP, OUR\nSTORY). For this example, this page would link to the OUR STORY page.\nWant to add arrows for the user to scroll through each slide.\nWant to add a pop up in the lower right hand corner which has my social media information\nlinked and when you click on it, it opens up another tab in your browser.\nUse the same icons we did on the password / landing page. Text is to match the rest of the page.\nWant the pop up to be translucent so you are still able to see the background water picture, but\ndo not want the icons to be translucent. Want the user</li>\n</ol>\n\n<h2>Bottom Half Requirements</h2>\n\n<ol>\n<li>Top border that moves with user as you scroll down: Want that same navy border from up top to\nmove with the user as the scroll down the page.</li>\n<li>Add to side by side pictures: Want to get rid of the white space I have now and add two graphics\nwith text overlay (as buttons) just like the slide pages.</li>\n<li>Footer: Want the footer to match the TEAL from the top border. Basically just mimic what's\nhere.\nWant to add social media icons as well that are linked to my pages.\nContact us, Size Chart, Terms &amp; Conditions / Privacy are all other linked pages.</li>\n</ol>",
-  "title": "Home page changes okaicos.com (copy)",
+  "description": "As agreed on email",
+  "title": "Setup fancybox/popup box on product page aecar.co.uk",
   "id": "948d4ef1-7ea3-4b82-9c5e-22688c4e51a4"
 }
