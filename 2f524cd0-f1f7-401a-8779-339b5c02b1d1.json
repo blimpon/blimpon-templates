@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "79",
+          "totalUSD": "139",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "As agreed on email",
-  "title": "Our Story page layout as per Mockup okaicos.com (copy)",
+  "title": "Blog page layout as per Mockup okaicos.com",
   "id": "2f524cd0-f1f7-401a-8779-339b5c02b1d1"
 }
