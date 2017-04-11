@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "249",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "As agreed on email",
-  "title": "Change product variant image on dropdown select + Apply Automatic Discount serenylabs.com (copy)",
+  "description": "<p>As agreed on email:</p>\n\n<p>The customer pushes a colour variant swatch and this changes the primary image that's displayed (push pink and the pink primary image is displayed etc. rather than the initial default).</p>\n\n<p>Also, the colour variant pushed should be the one added to the cart.</p>\n\n<p>If you start the job today (Tuesday 11th April) I can get the team on it tomorrow first thing and have it wrapped up for you within the day all going well.</p>",
+  "title": "Fix colour swatches feature on schoolbadgesuk.co.uk",
   "id": "56be1820-b454-4bc7-8187-9d5ca56a4169"
 }
