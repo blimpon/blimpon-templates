@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "349",
+          "totalUSD": "99",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "<p>1. Same headers and footer information from the homepage. \n<br>2. Want to add a product scroll under the main product page. I don’t have the pictures yet but they are coming. Want to build now though so I can plug them in when I have them. \n<br>3. Want to add a product description. Think we can keep what I have now.\n\n<br>Color options: there will be three total color options.\n\n<br>Sizing will be numeric, so ensure it’s a drop down. Same with QTY.\n\n<br>4. Sizing guide will have to link to another page (Sizing Guide). \n<br>5. Social media linked</p>",
-  "title": "Product page layout changes okaicos.com (copy)",
+  "description": "As agreed on email",
+  "title": "Change product variant image on dropdown select + Apply Automatic Discount serenylabs.com",
   "id": "2a3b406d-33da-4fdb-a498-83502dd758eb"
 }
