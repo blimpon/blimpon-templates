@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "139",
+          "totalUSD": "349",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "1. This will be the \"BLOG\" page from the header.<br>\n2. Same Headers and Footer as the homepage.<br>\n3. Want this page to be set up as a Grid. Example to the right. Where I can upload pictures and the user can click into the pictures to find out more information.",
-  "title": "Blog page layout as per Mockup okaicos.com (copy)",
+  "description": "<p>1. Same headers and footer information from the homepage. \n<br>2. Want to add a product scroll under the main product page. I don’t have the pictures yet but they are coming. Want to build now though so I can plug them in when I have them. \n<br>3. Want to add a product description. Think we can keep what I have now.\n\n<br>Color options: there will be three total color options.\n\n<br>Sizing will be numeric, so ensure it’s a drop down. Same with QTY.\n\n<br>4. Sizing guide will have to link to another page (Sizing Guide). \n<br>5. Social media linked</p>",
+  "title": "Product page layout changes okaicos.com",
   "id": "70c27bfa-58ad-461a-b8c5-8e310c1eb480"
 }
