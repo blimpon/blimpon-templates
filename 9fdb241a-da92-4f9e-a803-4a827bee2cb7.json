@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "1100",
+          "totalUSD": "899",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Quantity Break / Volume Discount: 2.1 Design mammothelectronics.com (copy)",
+  "title": "Quantity Break / Volume Discount: 2.2 Development mammothelectronics.com",
   "id": "9fdb241a-da92-4f9e-a803-4a827bee2cb7"
 }
