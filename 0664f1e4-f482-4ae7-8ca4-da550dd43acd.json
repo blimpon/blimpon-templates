@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "139",
+          "totalUSD": "1100",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "<p>As agreed on email:</p>\n\n<p>Set checkout iframe on popup box and make 4 columns \nDescription: </p>\n<p>1) evaluate how much time needed for having the checkout iframe become a popup \njust like https://clean-energy-patch.giddyup.deals/offer-04/ </p>\n<p>2) having 4 product_lists instead of 3. Meaning we'd like to have 4 columns that does not fit into the page-width class, should be extended</p>",
-  "title": "Set checkout iframe on popup box and make 4 columns serenylabs.com (copy)",
+  "description": "<p>As agreed on email</p>",
+  "title": "Quantity Break / Volume Discount: 2.1 Design mammothelectronics.com",
   "id": "0664f1e4-f482-4ae7-8ca4-da550dd43acd"
 }
