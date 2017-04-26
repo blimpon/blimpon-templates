@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "79",
+          "totalUSD": "49",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Show a (fancy) popup when a given parameter is set in the URL serenylabs.com (copy)",
+  "title": "Switch back to a 3-columns page for 'my special offers' serenylabs.com",
   "id": "24c80d0a-62da-40e3-8501-dc114e2c5b1e"
 }
