@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "49",
+          "totalUSD": "249",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "<p>As agreed on email</p>",
-  "title": "Switch back to a 3-columns page for 'my special offers' serenylabs.com (copy)",
+  "description": "<p>As agreed on email:</p>\n<p>1) add some type of pop-up to keep capturing emails when the site is live. Add an email capture pop up when the site is first accessed that can be updated with whatever text. Linked to the other email list.</p>\n<p>2) Adjust homepage slideshow images to work well on mobile</p>\n<p>3) Sizing guide - do not open to another page. The user should stay on the product page. A pop up within the product page. </p>\n<p>4) Add a zoom feature to the product page so users can zoom to see short details</p>\n<p>5) Search - a small box that opens in the upper right hand corner that users can type in to (rather than a separate page)</p>",
+  "title": "Site design and functional changes okaicos.com",
   "id": "9fa0682f-8f84-4fa7-9a6e-668366583310"
 }
