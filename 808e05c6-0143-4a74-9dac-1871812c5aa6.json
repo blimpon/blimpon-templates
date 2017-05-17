@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "49",
+          "totalUSD": "99",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "<p>As agreed on email:</p>\n<p>Revert the popup so that when one clicks the \"order\" button, it changes its pages and goes to checkout</p>",
-  "title": "Revert the popup serenylabs.com  (copy)",
+  "description": "<p>As agreed on email</p>",
+  "title": "Add Music Timer in Product Page premadecheerleadingmusic.com",
   "id": "808e05c6-0143-4a74-9dac-1871812c5aa6"
 }
