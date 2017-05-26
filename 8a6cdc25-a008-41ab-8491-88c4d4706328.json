@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "aa35ac5b-3378-a9c8-e2e2-262571d64b7a"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "eafe16ff-368b-4238-a96d-51380df7ffc5",
+      "key": "460ee213-bce3-f222-60ef-c21e56ccb858"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 180,
+          "required": true,
+          "key": "65ea1e91-381a-043a-fbf1-7c2a308f7dfa"
+        }
+      ],
+      "key": "8cd00a43-23df-3732-1201-037096b243a1"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "c5c4a3e0-1474-1954-1c12-c9a93695fe90"
+        }
+      ],
+      "key": "34dff427-6a7e-84f9-f26f-748dd51d3d86"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "632cc6eb-b797-506d-e81f-d8b95b78908c"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "0827f934-a393-a886-cacc-be43e0558623"
+        }
+      ],
+      "key": "421095e9-e652-ac2e-665a-9b93b0cb9143"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "description": "Change product types to a relevant and specific type &amp; Add tags to products. \n\nimplement product filter sidebar in collection pages.\n\nCreate mega menu(theme already has the capability)",
+  "title": "Menu Setup",
+  "id": "8a6cdc25-a008-41ab-8491-88c4d4706328"
+}
