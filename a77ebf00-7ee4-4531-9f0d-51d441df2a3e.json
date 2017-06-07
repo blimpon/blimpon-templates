@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "79",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Create an email template in MailChimp okaicos.com  (copy)",
+  "title": "Show inventory count in product page bolleboll.no",
   "id": "a77ebf00-7ee4-4531-9f0d-51d441df2a3e"
 }
