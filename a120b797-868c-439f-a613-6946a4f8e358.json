@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "79",
+          "totalUSD": "299",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Show inventory count in product page bolleboll.no (copy)",
+  "title": "Redesign of home page (desktop) beltology.com",
   "id": "a120b797-868c-439f-a613-6946a4f8e358"
 }
