@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "299",
+          "totalUSD": "114.7",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Redesign of home page (desktop) beltology.com (copy)",
+  "title": "Press page, Menu changes, Collections page banner redesign mirrordeco.com",
   "id": "a818dd20-201f-4cda-9297-cf6c294a9b27"
 }
