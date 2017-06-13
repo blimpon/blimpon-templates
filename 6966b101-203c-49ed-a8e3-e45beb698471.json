@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "115",
+          "totalUSD": "209",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Press page, Menu changes, Collections page banner redesign mirrordeco.com (copy)",
+  "title": "Index, Collections, Product & Search page restore changes tulsabodyjewelry.com",
   "id": "6966b101-203c-49ed-a8e3-e45beb698471"
 }
