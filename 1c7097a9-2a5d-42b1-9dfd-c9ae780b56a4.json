@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "209",
+          "totalUSD": "139",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Index, Collections, Product & Search page restore changes tulsabodyjewelry.com (copy)",
+  "title": "Design and small functional changes tulsabodyjewelry.com",
   "id": "1c7097a9-2a5d-42b1-9dfd-c9ae780b56a4"
 }
