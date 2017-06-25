@@ -11,10 +11,10 @@
       "key": "eb5a02dc-d347-df8a-0e40-18ff893e7786"
     },
     {
-      "name": "marketplace",
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
       "key": "c8a81d53-b26b-4f9f-b19d-4adcbb71fefb",
-      "admin": true
+      "name": "marketplace",
+      "admin": false,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
     }
   ],
   "steps": [
