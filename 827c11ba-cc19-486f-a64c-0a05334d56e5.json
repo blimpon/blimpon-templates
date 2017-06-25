@@ -2,19 +2,15 @@
   "roles": [
     {
       "name": "customer",
-      "key": "70d73c0b-47ea-448d-2f12-97d1168a24f3"
+      "key": "70d73c0b-47ea-448d-2f12-97d1168a24f3",
+      "order": 1
     },
     {
       "name": "fixer",
       "admin": true,
       "defaultUser": "554a86ea-419b-418b-8399-c71c018234b6",
-      "key": "eb5a02dc-d347-df8a-0e40-18ff893e7786"
-    },
-    {
-      "key": "c8a81d53-b26b-4f9f-b19d-4adcbb71fefb",
-      "name": "marketplace",
-      "admin": false,
-      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
+      "key": "eb5a02dc-d347-df8a-0e40-18ff893e7786",
+      "order": 2
     }
   ],
   "steps": [
