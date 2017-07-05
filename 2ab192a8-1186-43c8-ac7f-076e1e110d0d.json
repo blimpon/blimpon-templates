@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "149",
+          "totalUSD": "129",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Add plus/minus quantity in cart drawer and cart page tulsabodyjewelry.com (copy)",
+  "title": "Theme customization",
   "id": "2ab192a8-1186-43c8-ac7f-076e1e110d0d"
 }
