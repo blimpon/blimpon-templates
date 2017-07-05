@@ -11,6 +11,12 @@
       "defaultUser": "554a86ea-419b-418b-8399-c71c018234b6",
       "key": "eb5a02dc-d347-df8a-0e40-18ff893e7786",
       "order": 2
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "013187c5-cfd1-4032-9b81-a9e166178fa4",
+      "admin": true
     }
   ],
   "steps": [
@@ -80,7 +86,7 @@
     }
   ],
   "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0",
-  "description": "- Google Adwords Search Campaigns\n- Dynamic Search Ads Campaigns\n- Remarketing Search Campaigns\n\n* One-time campaigns setup fee $300\nSetup &amp; Optimisation:\n\n- Weekly/monthly reports\n- Weekly optimisation\n- Keyword research\n- Bid management\n- Seletion of landing pages\n- Set up cost per clicks\n- Adding/removing keywords based on performance\n- Adding negative keywords\n- Ad creation and testing\n- Adding sitelinks, callouts, call extensions, structured snippets",
+  "description": "- Google Adwords Search Campaigns\n- Dynamic Search Ads Campaigns\n- Remarketing Search Campaigns\n- Display Network Campaigns\n\n* One-time campaigns setup fee $350\n\nSetup and Optimisation:\n\n- Weekly/monthly reports\n- Weekly optimisation\n- Keyword research\n- Bid management\n- Seletion of landing pages\n- Set up cost per clicks\n- Adding/removing keywords based on performance\n- Adding negative keywords\n- Ad creation and testing\n- Adding sitelinks, callouts, call extensions, structured snippets and other extensions.",
   "title": "Adwords Management and Optimisation",
   "id": "827c11ba-cc19-486f-a64c-0a05334d56e5",
   "jobTemplateImageId": "600eefea-213a-458d-9892-63f949c62345"
