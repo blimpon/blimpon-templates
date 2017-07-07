@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "129",
+          "totalUSD": "99",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Theme customization (copy)",
+  "title": "Video and Instagram feed add to homepage melange-luxury.com",
   "id": "abf2dbfe-c9c6-4f18-b109-72a00531c472"
 }
