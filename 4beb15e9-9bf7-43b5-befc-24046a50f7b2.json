@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "199",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Video and Instagram feed add to homepage melange-luxury.com (copy)",
+  "title": "Mailchimp integration campwander.com",
   "id": "4beb15e9-9bf7-43b5-befc-24046a50f7b2"
 }
