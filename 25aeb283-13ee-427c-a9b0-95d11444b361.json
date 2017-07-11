@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "199",
+          "totalUSD": "99",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Mailchimp integration campwander.com (copy)",
+  "title": "Hide variant option on product detail page epicdrops.com",
   "id": "25aeb283-13ee-427c-a9b0-95d11444b361"
 }
