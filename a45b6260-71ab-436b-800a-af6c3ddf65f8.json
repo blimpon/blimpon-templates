@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "79",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Hide variant option on product detail page epicdrops.com (copy)",
+  "title": "Disable COD Option on Cart page ruse.in",
   "id": "a45b6260-71ab-436b-800a-af6c3ddf65f8"
 }
