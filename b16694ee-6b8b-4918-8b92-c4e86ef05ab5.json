@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "299",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Put some HTML on product detail page otogeek.id (copy)",
+  "title": "Integration zeroUp with Shopify helena-elizabeth-yann.myshopify.com",
   "id": "b16694ee-6b8b-4918-8b92-c4e86ef05ab5"
 }
