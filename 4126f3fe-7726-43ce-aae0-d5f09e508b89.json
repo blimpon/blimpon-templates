@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "249",
+          "totalUSD": "99",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Home page mobile version beltology.com (copy)",
+  "title": "Return to shopping' link/button on my shopping cart page humperbumper.com",
   "id": "4126f3fe-7726-43ce-aae0-d5f09e508b89"
 }
