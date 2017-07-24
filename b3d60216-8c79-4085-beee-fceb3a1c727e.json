@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "199",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Return to shopping' link/button on my shopping cart page humperbumper.com (copy)",
+  "title": "Photo gallery for Shopify v3apparel.com ",
   "id": "b3d60216-8c79-4085-beee-fceb3a1c727e"
 }
