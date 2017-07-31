@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "129",
+          "totalUSD": "249",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Customization on product detail page epicdrops.com (copy)",
+  "title": "Small changes on pookie-wookie.co.uk",
   "id": "04437c8c-7ca5-45c1-a9bd-aa68dfd52765"
 }
