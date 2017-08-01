@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "249",
+          "totalUSD": "149",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Small changes on pookie-wookie.co.uk (copy)",
+  "title": "Optimize site loading speed boutiqueacademia.com",
   "id": "e4bbe9ad-2779-4542-bfc4-5110f30f63f7"
 }
