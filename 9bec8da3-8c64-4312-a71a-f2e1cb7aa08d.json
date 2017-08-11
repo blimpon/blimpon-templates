@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "199",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Add What’s Hot and new link/ dropdown for main navigation in https://www.mirrordeco.com site.",
+  "title": "Photo gallery for https://v3apparel-us.myshopify.com",
   "id": "9bec8da3-8c64-4312-a71a-f2e1cb7aa08d"
 }
