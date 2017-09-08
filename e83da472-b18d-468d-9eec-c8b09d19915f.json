@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "300",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Quantities update without hitting the \"Update\" button (copy)",
+  "title": "Create new Sizing page - https://www.beltology.com/",
   "id": "e83da472-b18d-468d-9eec-c8b09d19915f"
 }
