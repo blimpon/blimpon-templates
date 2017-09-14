@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "249",
+          "totalUSD": "149",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "On page SEO and Mailchimp (copy)",
+  "title": "Unavailable sizes and colors do not show up in the products",
   "id": "71d3d351-2624-4349-a0f6-2e8cf3e7421c"
 }
