@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "149",
+          "totalUSD": "199",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Unavailable sizes and colors do not show up in the products (copy)",
+  "title": "Make a drop down cart",
   "id": "72c36ec2-cd9b-4cb3-8e4d-ea5eb05784ef"
 }
