@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "199",
+          "totalUSD": "299",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Customize product page based on requirements (copy)",
+  "title": "Solve slider audio and responsive for https://beachsheetz.com/",
   "id": "f99e6b46-c93d-462d-98a7-3a32399a156e"
 }
