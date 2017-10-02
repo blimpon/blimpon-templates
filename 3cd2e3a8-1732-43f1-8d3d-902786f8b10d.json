@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "499",
+          "totalUSD": "299",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Integrate Shopify store to Brandboom.com (copy)",
+  "title": "Collection filter and product tile changes",
   "id": "3cd2e3a8-1732-43f1-8d3d-902786f8b10d"
 }
