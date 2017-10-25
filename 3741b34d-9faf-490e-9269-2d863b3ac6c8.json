@@ -104,13 +104,22 @@
           "order": 2,
           "title": "Payout marketplace",
           "type": "payout",
+          "role": "Blimpon Customer Support",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "d25a9df6-3867-4c5c-a262-399ebda12ef8"
+        },
+        {
+          "order": 3,
+          "title": "Payout marketplace",
+          "type": "payout",
           "role": "marketplace",
           "marketplace": true,
           "percentageOfBalance": "15",
           "key": "44b39c6b-f429-42b3-b544-c2337ed3b7ee"
         },
         {
-          "order": 3,
+          "order": 4,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
