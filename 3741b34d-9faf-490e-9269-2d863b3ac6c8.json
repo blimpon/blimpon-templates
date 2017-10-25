@@ -104,13 +104,22 @@
           "order": 2,
           "title": "Payout marketplace",
           "type": "payout",
+          "role": "Blimpon Customer Suppor",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "049da463-5814-4daa-8905-a290f96280f9"
+        },
+        {
+          "order": 3,
+          "title": "Payout marketplace",
+          "type": "payout",
           "role": "Blimpon Customer Support",
           "marketplace": true,
           "percentageOfBalance": 15,
           "key": "d25a9df6-3867-4c5c-a262-399ebda12ef8"
         },
         {
-          "order": 3,
+          "order": 4,
           "title": "Payout marketplace",
           "type": "payout",
           "role": "marketplace",
@@ -119,7 +128,7 @@
           "key": "44b39c6b-f429-42b3-b544-c2337ed3b7ee"
         },
         {
-          "order": 4,
+          "order": 5,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -133,5 +142,5 @@
   "description": "<h2>Attention Shopify Store Owners</h2>\n<p>Are you looking for answers to your questions about your Shopify store's marketing and growth? </p>\n<p>Do you wish you could get an Ecommerce marketing expert on the line to answer your questions and provide their insight and expertise? </p>\n<p><strong>Are you wondering what steps make sense next to grow your store?</strong> </p>\n<p>Have a burning question about Shopify that you need an answer to? Want an expert's viewpoint on your marketing? Have questions that you're looking for answers to? </p>\n<p>My name is Kai Davis and I'm a 10-year veteran of the Ecommerce industry as a business owner and as a consultant.<br></p>\n<p>Schedule a call with me today and get an expert's input and insight on your store — plus, you'll receive a free copy of my course \"Shopify SEO: Simplified,\" to help you understand what steps to take to optimize your store to get more search engine traffic. </p>\n<h2>Book your call today and get your free bonus course!</h2>\n<p>Click 'Start The Job' below and create your Blimpon account (or log into your existing account) and pay for this service. Once you pay, you'll receive a list of next steps. </p>\n",
   "title": "Shopify \"Ecommerce Answers\" 1-on-1 Video Call",
   "id": "3741b34d-9faf-490e-9269-2d863b3ac6c8",
-  "jobTemplateImageId": "308c0217-67a2-46e7-a77f-9baac34b6670"
+  "jobTemplateImageId": "815da160-bf90-4632-9942-ae720e04bc11"
 }
