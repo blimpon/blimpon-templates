@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "199",
+          "totalUSD": "149",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Changes on rage-nation-apparel.myshopify.com (copy)",
+  "title": " Add \"add to cart\" and quantity box on the collection page",
   "id": "a4b37611-05b9-420e-9fc3-5057e77f8913"
 }
