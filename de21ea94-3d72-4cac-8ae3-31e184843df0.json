@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "149",
+          "totalUSD": "199",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Add \"add to cart\" and quantity box on the collection page. (copy) (copy) (copy) (copy)",
+  "title": "Premium SEO fixes",
   "id": "de21ea94-3d72-4cac-8ae3-31e184843df0"
 }
