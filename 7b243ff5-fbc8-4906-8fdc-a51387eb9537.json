@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "199",
+          "totalUSD": "149",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Changed product thumbnail on biddymurphy.com (copy)",
+  "title": "Functional changes for madetothrill.com",
   "id": "7b243ff5-fbc8-4906-8fdc-a51387eb9537"
 }
