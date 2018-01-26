@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "199",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Searching result is covered by the body or the slider (copy)",
+  "title": "Create TAG for every products and add description to all collection pages",
   "id": "2faf676e-e132-4388-9545-5a39cc7f38fb"
 }
