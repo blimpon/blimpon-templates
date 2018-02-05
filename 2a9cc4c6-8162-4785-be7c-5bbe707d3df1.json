@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "149",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Install APP into her store (copy)",
+  "title": "Show discounts on product page",
   "id": "2a9cc4c6-8162-4785-be7c-5bbe707d3df1"
 }
