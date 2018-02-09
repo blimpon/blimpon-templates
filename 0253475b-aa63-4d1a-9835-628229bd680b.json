@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "149",
+          "totalUSD": "249",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "The BUY button will not need to add anything to the shopping cart (copy)",
+  "title": "Change Home page and create IG",
   "id": "0253475b-aa63-4d1a-9835-628229bd680b"
 }
