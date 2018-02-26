@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "299",
+          "totalUSD": "249",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Modify product page - https://en.kickdeals.co/ (copy)",
+  "title": "Create new page for https://www.beltology.com/",
   "id": "b3983016-2b18-4dc2-ad88-2b5feb335597"
 }
