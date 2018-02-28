@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "249",
+          "totalUSD": "99",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Create new page for https://www.beltology.com/ (copy)",
+  "title": "Hide sale product on http://www.alpinestart.com",
   "id": "7ae7d842-8b86-47ba-9f2b-5fb1f8bde4ce"
 }
