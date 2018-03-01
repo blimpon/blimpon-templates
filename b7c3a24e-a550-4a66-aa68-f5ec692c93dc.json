@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "99",
+          "totalUSD": "4000",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Hide sale product on http://www.alpinestart.com (copy)",
+  "title": "Store redesign for https://feastbox.redrickshaw.com",
   "id": "b7c3a24e-a550-4a66-aa68-f5ec692c93dc"
 }
