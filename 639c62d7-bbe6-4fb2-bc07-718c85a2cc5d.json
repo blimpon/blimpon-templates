@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "4000",
+          "totalUSD": "199",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Store redesign for https://feastbox.redrickshaw.com (copy)",
+  "title": "Customize product page in new theme",
   "id": "639c62d7-bbe6-4fb2-bc07-718c85a2cc5d"
 }
