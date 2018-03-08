@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "2c2e75d5-4564-7f69-ee8b-fda108af48dd"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "35a30e76-6735-4d92-9a91-78f4ec2e121c",
+      "key": "265feba7-65ae-ac72-8aed-dab1122e5847"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "150.00",
+          "required": true,
+          "key": "0f4767fc-be3d-ec88-0774-022d90f5f7ef"
+        }
+      ],
+      "key": "fef1fb0d-1379-44e2-7510-17673169798a"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "5088c4fa-f6e5-9629-881e-d14483fa8d64"
+        }
+      ],
+      "key": "19067710-086c-c357-2674-deb717a69be1"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "71dba7e5-a2cf-caa6-1eaa-213d61c8e788"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "da5b4c67-0266-7589-0e51-dadd1b9e723a"
+        }
+      ],
+      "key": "45748ff0-ebcc-0e78-91d0-7400a8a783e9"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "description": "Website Design price is very different depending on what you desire.  Please contact for a more direct quote.  Thank you!  I have currently over 132 unique domains I own and operate solely.  I can show you some of my clients sites as well.  ",
+  "title": "Website Design, Website creation",
+  "id": "937d5cb1-cc44-4611-a7eb-9c5785299e5e"
+}
