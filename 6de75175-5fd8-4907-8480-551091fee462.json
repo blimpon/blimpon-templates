@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "9a7da002-ff3b-1386-f089-1a06459f08cd"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "35a30e76-6735-4d92-9a91-78f4ec2e121c",
+      "key": "fb9ababa-d74b-6617-c1fa-897c813bd40b"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "10.00",
+          "required": true,
+          "key": "98e142ae-9f2b-50f1-23b5-ab813dd69ddf"
+        }
+      ],
+      "key": "a6bee638-d959-63a0-cde1-55c4e2bb67b9"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "67be3e6b-1a85-9917-7a01-ae66bb161205"
+        }
+      ],
+      "key": "0feb527f-fb2f-97a2-8a40-768c1e901c5f"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "ddfe4f6d-b583-ee1e-fb88-0fa86e60f0d9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "57e18816-2d9a-0a12-8816-ab8693a9d1e7"
+        }
+      ],
+      "key": "bec7c088-7809-9065-786e-714892cd38ac"
+    }
+  ],
+  "collectionId": "b8d4461e-1357-4065-82e3-d9985ba7e91b",
+  "description": "Digital Deals Express Web Services.  We can help rank your site!  Need 10,000 visitors over the course of a day?  100,000?  From a certain country?  Need a link or two clicked on a page? let us know!",
+  "title": "Targeted website visits - customizable (drip fed, certain amounts per hour, day etc.)",
+  "id": "6de75175-5fd8-4907-8480-551091fee462"
+}
