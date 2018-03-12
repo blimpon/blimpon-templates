@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "299",
+          "totalUSD": "249",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Add music player (copy)",
+  "title": "Create new gallery",
   "id": "289e8ccd-2a6b-47e3-a9a2-e599c042ab2f"
 }
