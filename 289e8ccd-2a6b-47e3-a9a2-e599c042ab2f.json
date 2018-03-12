@@ -1,0 +1,89 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "2d5abbe6-92ae-f7d0-c89e-b05c72898b22"
+    },
+    {
+      "key": "ebdc5f04-6fc9-44f1-6670-138eed80fd2b",
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+    },
+    {
+      "key": "4b2aaf94-d735-4fb5-217e-17f0747be6ca",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "299",
+          "required": true,
+          "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
+        }
+      ],
+      "key": "8415256a-1f9e-f956-d99a-d4828d1fc781"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "73f35705-265a-c467-3cda-d4828b8c690b"
+        }
+      ],
+      "key": "9e4462b8-4b5a-be35-f5b1-8d0a82ba5d53"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "54f7e333-44a4-1b0a-7934-1059ca2b296c"
+        },
+        {
+          "key": "e89bb69d-f35e-5d02-1f94-a29601d4d1f6",
+          "title": "Payout project manager",
+          "order": 2,
+          "type": "payout",
+          "percentageOfBalance": "20",
+          "role": "project manager"
+        },
+        {
+          "order": 3,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "6917402d-4dba-9323-bbca-537ac0845660"
+        }
+      ],
+      "key": "acaace0f-374c-a98d-d3fc-43ecefb285ae"
+    }
+  ],
+  "collectionId": "",
+  "description": "<p>As agreed on email</p>",
+  "title": "Add music player (copy)",
+  "id": "289e8ccd-2a6b-47e3-a9a2-e599c042ab2f"
+}
