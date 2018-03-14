@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "199",
+          "totalUSD": "149",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Update blog page (copy)",
+  "title": "Set AJAX on Add to cart button ",
   "id": "af84d4f5-fff8-40a6-99cf-6e1bad1a847d"
 }
