@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "699",
+          "totalUSD": "599",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Changes on menu and product page on https://www.designchicken.hk (copy)",
+  "title": "Create new mega menu and customize collection page\n",
   "id": "216f38fc-4895-4c8a-8289-4104533a2b8b"
 }
