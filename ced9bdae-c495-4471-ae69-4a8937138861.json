@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "599",
+          "totalUSD": "399",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Create new mega menu and customize collection page\n (copy)",
+  "title": "Update product page on https://bonefly.com",
   "id": "ced9bdae-c495-4471-ae69-4a8937138861"
 }
