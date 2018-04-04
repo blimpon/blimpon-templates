@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "399",
+          "totalUSD": "349",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Update product page on https://bonefly.com (copy)",
+  "title": "Offer cosmetics samples on https://www.gloworganicbrighton.co.uk/",
   "id": "0618dc6f-3da9-49a6-a053-fd46f39d6170"
 }
