@@ -9,8 +9,13 @@
       "key": "882c78b9-c535-0db6-8f4a-c3c6962eac8e",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "c179b004-3487-4144-ba68-13725f01c56c",
-      "order": 2
+      "defaultUser": "4e31644a-2c3f-42a5-a6d3-e2f91eb7102e"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "4d91d1c1-ba46-4d94-abe4-34d08a3c569e",
+      "admin": true
     }
   ],
   "steps": [
