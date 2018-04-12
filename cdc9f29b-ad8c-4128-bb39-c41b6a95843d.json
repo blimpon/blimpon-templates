@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "249",
+          "totalUSD": "179",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Create a new page for https://www.beltology.com (copy)",
+  "title": "New page for https://okaicos.com/",
   "id": "cdc9f29b-ad8c-4128-bb39-c41b6a95843d"
 }
