@@ -112,6 +112,16 @@
           "required": true,
           "key": "3e6620a4-6475-fa0e-64de-db5d514c9301",
           "order": 6
+        },
+        {
+          "title": "New, ready job at Blimpon",
+          "type": "sendemail",
+          "required": true,
+          "to": "project manager",
+          "subject": "New {{ job.title }} job at Blimpon for you",
+          "body": "<h1>New job created: {{ job.title }} at Blimpon</h1><p>The customer has paid, provided access and answered the questions so it's now ready for your work.</p>",
+          "key": "79027362-5898-7b77-a9eb-8c88b8614657",
+          "order": 7
         }
       ],
       "key": "d329ac53-02ef-c34d-79e4-cdb2d33bc6bf",
@@ -247,6 +257,5 @@
     }
   ],
   "description": "Kick-start your blogging with this job. Three professionally-written blog posts of 600-800 words, spaced out over three weeks. Well-structured for SEO with three or more images for visual interest and search engines.\n\nBlogging is often picked up quickly by search engines. Wordy, unique posts like these are a rich source of keywords for ranking. Posting regularly to your blog compounds the value and is an investment in making your site traffic build over time.\n\nIt can be difficult to know what to write about for SEO: a topic that's both a great read and one that will be picked up by search engines. With this job you can specify exactly the topic to write about or simply outline the conversion action you'd like to achieve (visit a particular product or collection for example).",
-  "jobTemplateImageId": "b61c8132-fb76-4d22-a986-cd14a6464982",
-  "id": "b6c2b4f1-af6f-433e-831b-c3ee32122302"
+  "jobTemplateImageId": "b61c8132-fb76-4d22-a986-cd14a6464982"
 }
