@@ -121,6 +121,16 @@
           "subject": "{{ job.title }} job received",
           "to": "customer",
           "order": 7
+        },
+        {
+          "title": "New, ready job at Blimpon",
+          "type": "sendemail",
+          "required": true,
+          "to": "project manager",
+          "subject": "New {{ job.title }} job at Blimpon for you",
+          "body": "<h1>New job created: {{ job.title }} at Blimpon</h1><p>The customer has paid, provided access and answered the questions so it's now ready for your work.</p>",
+          "key": "79027362-5898-7b77-a9eb-8c88b8614657",
+          "order": 8
         }
       ],
       "key": "e37b33b9-4adc-f25e-d5ca-c6a7a6291b12",
