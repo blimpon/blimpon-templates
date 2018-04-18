@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "399",
+          "totalUSD": "199",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Some adjustment for https://giantoy.com/ (copy)",
+  "title": "Create new 2 pages for https://okaicos.com/",
   "id": "4035c1d2-8ca5-4902-88a8-51e9cd2c454d"
 }
