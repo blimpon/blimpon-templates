@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "199",
+          "totalUSD": "5100",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Create new 2 pages for https://okaicos.com/ (copy)",
+  "title": "Phase 2 for http://feastbox.redrickshaw.com ",
   "id": "3cbe532a-d5dc-4b3b-b425-e508a29515ce"
 }
