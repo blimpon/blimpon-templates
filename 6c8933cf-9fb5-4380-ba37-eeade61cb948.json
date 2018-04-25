@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "5100",
+          "totalUSD": "249",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Phase 2 for http://feastbox.redrickshaw.com  (copy)",
+  "title": "Modify product page according to requirements on https://hymnsofgrace.com ",
   "id": "6c8933cf-9fb5-4380-ba37-eeade61cb948"
 }
