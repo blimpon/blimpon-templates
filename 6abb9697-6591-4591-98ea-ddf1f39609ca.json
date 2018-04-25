@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "249",
+          "totalUSD": "329",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Modify product page according to requirements on https://hymnsofgrace.com  (copy)",
+  "title": "Extra work",
   "id": "6abb9697-6591-4591-98ea-ddf1f39609ca"
 }
