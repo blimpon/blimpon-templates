@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "60503a3a-f355-2e5d-a4e3-cd013102ac56"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
+      "key": "9bbe8065-9aa4-4dc7-f193-7851f0bf6028"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "0f567d44-da2d-7293-e5ca-8fb41777e49f"
+        }
+      ],
+      "key": "e75687cf-6c0d-ab42-24f0-c6f7f5f3b468"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "7e697d9f-5c60-f6ef-58b7-7bc20458a545"
+        }
+      ],
+      "key": "f5f96bb2-f1da-f926-4ed8-dd4be7060ab6"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "cc8c2097-5f30-7d57-ee22-39b591ec1089"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "f6690e72-91d9-e06c-c54d-4d58a9d8aa70"
+        }
+      ],
+      "key": "2b5c47d1-3e3d-0a7c-6734-a198b0ecbefc"
+    }
+  ],
+  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
+  "description": "Let your customers decide to gift-wrap their product right on the product page",
+  "title": "Add a Gift-Wrap option per product on the product page",
+  "id": "60f4a6a4-868b-4440-85ad-09177ed50c96"
+}
