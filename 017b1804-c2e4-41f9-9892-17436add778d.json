@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "a6aa005d-4650-855e-80f1-d88eed1b4379"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
+      "key": "db3b3231-41da-01e5-25da-ddacd715d4d0"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "fc0b06a6-9eb7-167b-2b57-a3344ff283a9"
+        }
+      ],
+      "key": "113c49f4-d6f8-07e2-bb8f-b613293d2350"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "5ecf90fc-9098-b903-27e3-a33db84fd793"
+        }
+      ],
+      "key": "089a5f39-ecfd-9f54-fcd8-740f4ab69355"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "039c03ae-b826-c182-1143-5a0993809b51"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "153e9504-008a-9312-c484-7277a74ebc5b"
+        }
+      ],
+      "key": "be1a526d-c620-567e-8a5f-e5bb0cb3ab59"
+    }
+  ],
+  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
+  "description": "For customers who wish to save time and have some items already gift-wrapped to give to friends, this tweak allows them to add a gift-wrap option per item instead of the entire order/cart",
+  "title": "Add a Gift-wrap option per item in the cart",
+  "id": "017b1804-c2e4-41f9-9892-17436add778d"
+}
