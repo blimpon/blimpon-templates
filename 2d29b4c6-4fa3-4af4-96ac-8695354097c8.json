@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
       "key": "fc044107-51b1-031f-b485-3a7576219ae0"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "5cdc2d62-a3f3-4a50-ba1c-e8831e5d5a92",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "9a2bf62b-9732-4b09-90e2-d9372123645e"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,7 @@
     }
   ],
   "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
-  "description": "You have an All Collections collection which includes \"categories\" and \"brands\". Want to filter one or the other and save time? This is the job",
-  "title": "Auto-filtering of the all-collections to show only the brands",
+  "description": "You have an All Collections collection which includes both \"categories\" and \"brands\" and you want to filter one or the other and save time? This is the job. This tweak removes collection items from the view. It does so automatically and will continue to work for all new categories and vendors added in the future. Because pagination happens before this process, page results amount will vary.",
+  "title": "Auto-filtering of the all-collections to show only the brands or categories",
   "id": "2d29b4c6-4fa3-4af4-96ac-8695354097c8"
 }
