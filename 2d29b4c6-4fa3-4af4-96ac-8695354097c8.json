@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "b27d6524-d9e2-7fd3-04f9-58f6f38075e3"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
+      "key": "fc044107-51b1-031f-b485-3a7576219ae0"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "79",
+          "required": true,
+          "key": "a0078994-9b7c-e3a9-9706-bd246b73d7f2"
+        }
+      ],
+      "key": "4eb76928-6d4a-c78f-6395-8f2028274077"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "029310f5-9826-4855-8b18-78e145fb074a"
+        }
+      ],
+      "key": "3bc128ea-07ff-61c6-aeee-52c991228e28"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "f6b67ef9-77d0-4916-40f4-9865ffe5f194"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "5b03446d-0947-3b28-da9e-6ecb94948046"
+        }
+      ],
+      "key": "9fe4b5e5-ebc8-6f1b-bef9-65ae0e03d708"
+    }
+  ],
+  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
+  "description": "You have an All Collections collection which includes \"categories\" and \"brands\". Want to filter one or the other and save time? This is the job",
+  "title": "Auto-filtering of the all-collections to show only the brands",
+  "id": "2d29b4c6-4fa3-4af4-96ac-8695354097c8"
+}
