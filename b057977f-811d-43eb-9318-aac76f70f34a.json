@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "f52e372e-4579-4a6b-b65b-39c488dc066d",
       "key": "9b98454a-4c93-f12e-89cf-6eb716bbe6e2"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "c8dce1b1-abf3-41fe-bd5f-72866d9c9c58",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "e7683eea-977f-450c-853e-5b23e5e3a560"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,8 @@
     }
   ],
   "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0",
-  "description": "you  Need a Google Adwords Shopping Campaign and Add Upto 50 Products in Google Merchant Center",
+  "description": "you  Need a Google Adwords Shopping Campaign and Add Upto 50 Products in Google Merchant Center 1 Region",
   "title": "Google Adwords PLA (Google Adwords Shopping Campaign )",
-  "id": "b057977f-811d-43eb-9318-aac76f70f34a"
+  "id": "b057977f-811d-43eb-9318-aac76f70f34a",
+  "jobTemplateImageId": "68fec763-79eb-4131-bd50-1c3870caaabd"
 }
