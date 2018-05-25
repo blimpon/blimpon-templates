@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "f2b0c109-7b1b-fd32-7944-8f574493e4ea"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "f52e372e-4579-4a6b-b65b-39c488dc066d",
+      "key": "9b98454a-4c93-f12e-89cf-6eb716bbe6e2"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "285",
+          "required": true,
+          "key": "bf6a7510-20fc-f36d-1e20-3eaf04b663d8"
+        }
+      ],
+      "key": "5c93756a-e065-7494-9c9c-7b808e4de1c4"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e2005557-fc86-8eee-5132-cadcd767abb6"
+        }
+      ],
+      "key": "ebf95973-0442-0889-47ea-8bb52ec57983"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "e50367e7-8e4a-fd3a-2663-c9b7d8e97130"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "c5d046e6-cd02-1059-394a-8115c9ad3b6c"
+        }
+      ],
+      "key": "4a847098-6e72-41db-a4db-95169bed5d6d"
+    }
+  ],
+  "collectionId": "79252394-22cf-4f9b-959d-c7281b408ee0",
+  "description": "you  Need a Google Adwords Shopping Campaign and Add Upto 50 Products in Google Merchant Center",
+  "title": "Google Adwords PLA (Google Adwords Shopping Campaign )",
+  "id": "b057977f-811d-43eb-9318-aac76f70f34a"
+}
