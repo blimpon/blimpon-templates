@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "80b303b8-0d53-469f-be36-18d277412ee6",
       "key": "804daac7-d40c-77f8-f6b5-10b54ddd33d7"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "8cc0565c-0bfe-48e1-8c88-45016132aa76",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "2b1334ef-a184-4163-94b1-14bab41db3dc"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -71,5 +86,6 @@
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
   "description": "Add extra information like Shipping, Returns, Size Chart in tabs on your product pages.",
   "title": "Add tabs to product descriptions",
-  "id": "a684c37c-29b2-4174-9303-bd7e72adeabf"
+  "id": "a684c37c-29b2-4174-9303-bd7e72adeabf",
+  "jobTemplateImageId": "1cb7df2c-9ecd-4102-8a15-005ade0f5e53"
 }
