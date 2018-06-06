@@ -21,71 +21,70 @@
     {
       "title": "Pay",
       "completeRole": "customer",
-      "order": 1,
       "stepItems": [
         {
-          "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "45",
+          "totalUSD": "79",
           "required": true,
-          "key": "50d2df7b-ab76-d56c-e966-1786d21031ee"
+          "key": "50d2df7b-ab76-d56c-e966-1786d21031ee",
+          "order": 1
         }
       ],
-      "key": "3a848de6-9d3f-4d70-06e1-69c5add0790a"
+      "key": "3a848de6-9d3f-4d70-06e1-69c5add0790a",
+      "order": 1
     },
     {
       "title": "Do the work",
       "completeRole": "fixer",
-      "order": 2,
       "stepItems": [
         {
-          "order": 1,
           "title": "Has the work been done?",
           "type": "confirmation",
           "required": true,
-          "key": "4b22a81d-1abb-1d23-4d88-33671891d7f4"
+          "key": "4b22a81d-1abb-1d23-4d88-33671891d7f4",
+          "order": 1
         }
       ],
-      "key": "5d957efa-3d07-8ee5-5ff7-6d2c69f5e68e"
+      "key": "5d957efa-3d07-8ee5-5ff7-6d2c69f5e68e",
+      "order": 2
     },
     {
       "title": "Rate",
       "completeRole": "customer",
-      "order": 3,
       "stepItems": [
         {
-          "order": 1,
           "title": "How happy are you with the work completed?",
           "type": "faceRating",
           "for": "fixer",
           "required": true,
-          "key": "57629395-93f2-b83c-2906-00998df37a25"
+          "key": "57629395-93f2-b83c-2906-00998df37a25",
+          "order": 1
         },
         {
-          "order": 2,
           "title": "Payout marketplace",
           "type": "payout",
           "role": "marketplace",
           "marketplace": true,
           "percentageOfBalance": 15,
-          "key": "2b1334ef-a184-4163-94b1-14bab41db3dc"
+          "key": "2b1334ef-a184-4163-94b1-14bab41db3dc",
+          "order": 2
         },
         {
-          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
           "percentageOfBalance": 100,
-          "key": "31092569-2ae0-54df-3df4-d3ec807ce95c"
+          "key": "31092569-2ae0-54df-3df4-d3ec807ce95c",
+          "order": 3
         }
       ],
-      "key": "21d503ad-bfe0-0427-dd09-8566203fbd08"
+      "key": "21d503ad-bfe0-0427-dd09-8566203fbd08",
+      "order": 3
     }
   ],
   "collectionId": "fca14e3d-7126-46e9-a1af-4d678a7f75b0",
   "description": "Add extra information like Shipping, Returns, Size Chart in tabs on your product pages.",
   "title": "Add tabs to product page",
-  "id": "a684c37c-29b2-4174-9303-bd7e72adeabf",
   "jobTemplateImageId": "280dbb6f-9aa7-40ff-9a9d-c86932f7b1fe"
 }
