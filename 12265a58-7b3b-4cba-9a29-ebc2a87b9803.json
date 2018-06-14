@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "300",
+          "totalUSD": "99",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "New home page for https://www.beltology.com/ (copy)",
+  "title": "Add Constant search bar",
   "id": "12265a58-7b3b-4cba-9a29-ebc2a87b9803"
 }
