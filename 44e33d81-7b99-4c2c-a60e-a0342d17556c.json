@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "239",
+          "totalUSD": "79",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Make sure all page template types are structured for best SEO  (copy)",
+  "title": "Fix up to 50 broken  links",
   "id": "44e33d81-7b99-4c2c-a60e-a0342d17556c"
 }
