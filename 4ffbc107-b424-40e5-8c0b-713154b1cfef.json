@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "220",
+          "totalUSD": "239",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Full SEO page title and meta description templating setup  (copy)",
+  "title": "Make sure all page template types are structured for best SEO ",
   "id": "4ffbc107-b424-40e5-8c0b-713154b1cfef"
 }
