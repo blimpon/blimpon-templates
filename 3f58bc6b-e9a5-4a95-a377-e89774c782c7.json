@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "79",
+          "totalUSD": "380",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "<p>As agreed on email</p>",
-  "title": "Fix up to 50 broken  links (copy)",
+  "description": "<p>$35/each after</p>",
+  "title": "Individual page optimizations",
   "id": "3f58bc6b-e9a5-4a95-a377-e89774c782c7"
 }
