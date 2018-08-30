@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "66b2122c-0182-e110-aa16-5da3366bd6a3"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "b38ef822-78ec-4555-8cfa-5b24f34efd09",
+      "key": "cf513cbe-6743-79c3-5924-54a87a24a48c"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "500",
+          "required": true,
+          "key": "7e9f858b-d780-bd3d-6db8-dac54e3de065"
+        }
+      ],
+      "key": "083a6b21-0b60-520c-eaca-ec84a51a3714"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "b00fbf6d-97ac-9f94-9792-d2d468b40922"
+        }
+      ],
+      "key": "1c1c3d81-7e57-7234-dd1b-a549bd6c71e8"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "474c6d5f-c6b9-07ba-7c74-ae789a346e63"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "6cb5d288-b3f9-17c0-28ae-eac5264d3e91"
+        }
+      ],
+      "key": "cca209e6-014c-49e8-d6fb-da02124730fd"
+    }
+  ],
+  "collectionId": "eb32bbe8-3868-4c2c-91cc-7c137bc42240",
+  "description": "Add a row of random collections in any template pages. Can include collection image, description and link.",
+  "title": "Random Collections",
+  "id": "3d2201c6-3467-4892-8913-33a08534abf8"
+}
