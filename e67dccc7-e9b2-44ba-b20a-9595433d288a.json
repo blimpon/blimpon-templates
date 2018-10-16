@@ -8,7 +8,7 @@
       "key": "ebdc5f04-6fc9-44f1-6670-138eed80fd2b",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "51d9d132-cf0a-42ea-acc6-5cf6bd5037e9"
+      "defaultUser": "4e31644a-2c3f-42a5-a6d3-e2f91eb7102e"
     },
     {
       "key": "4b2aaf94-d735-4fb5-217e-17f0747be6ca",
@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "299",
+          "totalUSD": "79",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "Write a detailed article including drafting ideas, researching topics and sourcing royalty free images. Includes reasonable revisions.",
-  "title": "Detailed article ca. 4000 words (copy)",
+  "description": "",
+  "title": "Add URL redirects as discussed on email",
   "id": "e67dccc7-e9b2-44ba-b20a-9595433d288a"
 }
