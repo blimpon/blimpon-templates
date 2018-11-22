@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "149",
+          "totalUSD": "199",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "MirrorDeco - What's Hot section (copy)",
+  "title": "Header modification",
   "id": "e2ea5320-2265-4bbf-874f-ec5a7ed2215b"
 }
