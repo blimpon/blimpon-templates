@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "199",
+          "totalUSD": "149",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -84,6 +84,6 @@
   ],
   "collectionId": "",
   "description": "<p>As agreed on email</p>",
-  "title": "Header modification (copy)",
+  "title": "Minnie Rose site updates",
   "id": "55309efe-cc7f-465a-b43d-227952dc933e"
 }
