@@ -8,7 +8,7 @@
       "key": "ebdc5f04-6fc9-44f1-6670-138eed80fd2b",
       "name": "fixer",
       "admin": true,
-      "defaultUser": "0d8df11c-d67b-4179-8c5c-628fdac19c2a"
+      "defaultUser": "72657670-dd6f-45ca-b779-8c643bfdcd4d"
     },
     {
       "key": "4b2aaf94-d735-4fb5-217e-17f0747be6ca",
@@ -27,7 +27,7 @@
           "order": 1,
           "title": "Payment",
           "type": "pay",
-          "totalUSD": "149",
+          "totalUSD": "180",
           "required": true,
           "key": "8c5ab1f1-31ac-56f8-8de6-bcbd67ec0a1f"
         }
@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "<p>As agreed on email</p>",
-  "title": "Trade page (copy)",
+  "description": "<p>This is for detailed tests and analysis of the current setup and making a plan including options for the next stage. No changes will be made to the shop in this job.</p>",
+  "title": "Initial tests, analysis and plan",
   "id": "ec65077c-96ae-458b-9d71-1f42af26413e"
 }
