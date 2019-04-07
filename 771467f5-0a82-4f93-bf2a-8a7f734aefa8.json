@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "8e79c594-8edd-fcee-e4fc-fe5131aae2d0"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "f08790fa-9953-4870-b669-10838326d906",
+      "key": "726aced8-ae0d-43a3-7db8-fc762e3df3a8"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 180,
+          "required": true,
+          "key": "9d9730f5-abb1-5015-dce3-9d44f15929ea"
+        }
+      ],
+      "key": "840bbb11-8ee2-2e74-8aaf-82ce20e6d0f6"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "e8330157-84a6-c959-0872-40ba862c0715"
+        }
+      ],
+      "key": "a0ff0d93-47aa-4dc2-1eb2-0d8e3ef2eaa2"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "34c040c5-fa5e-68fe-8068-5ca84a63522a"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "71cdccac-ff9e-0a88-5a8a-6b6fcdbf342d"
+        }
+      ],
+      "key": "a40daf0a-e936-a69d-d3f8-f71bffc22755"
+    }
+  ],
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "description": "https://bikroy-property.page4.me/",
+  "title": "bikroy property",
+  "id": "771467f5-0a82-4f93-bf2a-8a7f734aefa8"
+}
