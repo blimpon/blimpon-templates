@@ -1,0 +1,90 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "9143fdac-4ada-4c29-0e74-ac6914fba65b"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "b298bac9-3882-4348-8c16-18c92384638a",
+      "key": "330b15be-6d59-d37e-15c8-232e4cce4e17"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "444e82d1-d985-4ff6-9386-3ac91f9c3630",
+      "admin": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "400",
+          "required": true,
+          "key": "5ddb5828-fb31-a19d-1e44-36f86d2b4ba7"
+        }
+      ],
+      "key": "5aa98256-89f8-8764-ef3e-cb0cf21283f8"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "d5530941-0941-e5e1-ae3f-66b3c82b8c6e"
+        }
+      ],
+      "key": "b9528fd1-46c9-b461-6119-901df8bdf250"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "9aa22c6d-fa7a-83d2-5d69-ca758faffa4c"
+        },
+        {
+          "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "d6ef1e24-2c48-4414-beb6-a4230e7fd6bf"
+        },
+        {
+          "order": 3,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "61a3e993-44a4-abaa-755a-9167c0db7020"
+        }
+      ],
+      "key": "fb60c107-35f8-93bc-85f8-b62db830f0a1"
+    }
+  ],
+  "collectionId": "ae048a6c-8226-47a6-9b4b-0a720c1878fd",
+  "description": "I am interested in providing my services to build complete shopify stores. I would be setting up a fully functional shopify store, ready to be used. The store ownership would be transferred to the client on the completion of the development of the store. Check out my work at www.thefootballfantic.in",
+  "title": "Shopify Store Setup (copy)",
+  "id": "15214d8e-e0d8-45f4-84b9-f421ca5ecd74"
+}
