@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "afc2f831-b30f-4951-9eaf-dd6336eec90e",
       "key": "f70dd2fd-c5ce-a00d-b473-bf87a790cf33"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "363866ac-7342-4d68-9400-54e039138124",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "bf622db3-7957-40b3-83e5-c8e4cebf5a46"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -71,5 +86,6 @@
   "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
   "description": "This is a one-of-a-kind service where we create A SINGLE PRODUCT SHOPIFY STORE based on strategies that have proven to work. Today, a general store is not effective anymore. There's no point in wasting time uploading hundreds of products in your store when you don't know which product is going to sell! More and more merchants are realising this and switching over to single product stores and you should too. \n\nKey Advantages of single product store\n\nBuild a powerful \"landing page\" style shopping experience\nFocus on the specific features (with close up shots) of the chosen product\nYou're able to laser focus on target audience which increases your chance of sales \nEasy logistics - no need for messy catalog management, pricing headaches, so much more!\nWhat you'll get\n\nA ready-made single product store setup with free Shopify theme (for premium theme please purchase first)\nIn-depth product research for a winning product in your niche \nKey Pages, Conversion Apps, Design, Content &amp; Copy, Domain/Payment/Shipping Facilitation - all checked! ",
   "title": "Building A Powerful Single Product Store",
-  "id": "3fa1e99c-1e48-45f1-a28b-2cef237fe8bf"
+  "id": "3fa1e99c-1e48-45f1-a28b-2cef237fe8bf",
+  "jobTemplateImageId": "c00326da-545a-4eb3-9ed8-2bd540a3f98f"
 }
