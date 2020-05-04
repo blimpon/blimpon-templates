@@ -62,7 +62,7 @@
       "order": 2
     },
     {
-      "title": "Quality control",
+      "title": "SEO problems flagged by Plug in SEO fixed",
       "completeRole": "fixer",
       "stepItems": [
         {
@@ -108,7 +108,7 @@
         }
       ],
       "key": "40cda436-b6a3-9937-2045-2e9a9711df57",
-      "order": 5
+      "order": 7
     },
     {
       "key": "ac6d13e1-cde9-cb0c-1f3e-049ba464c48a",
@@ -129,6 +129,35 @@
           "order": 2
         }
       ]
+    },
+    {
+      "key": "cbf6504a-c063-fc84-63cd-17a4d4ef79b4",
+      "title": "On-Page Optimization and Keyword Targeting",
+      "order": 5,
+      "stepItems": [
+        {
+          "key": "a358d5ea-a4b4-fada-7629-9fc49d1901bd",
+          "title": "Keyword optimized important SEO elements ",
+          "order": 1,
+          "type": "confirmation",
+          "description": "Page title, meta description, heading, subheading"
+        }
+      ],
+      "completeRole": "fixer"
+    },
+    {
+      "key": "2d86448d-5e70-4c6f-a116-b4cbf8ea64ca",
+      "title": "SEO improvements report",
+      "order": 6,
+      "stepItems": [
+        {
+          "key": "de58334f-e684-31b2-8130-5e7638351ef8",
+          "title": "Sent SEO report to the customer",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ],
+      "completeRole": "fixer"
     }
   ],
   "description": "Just the failing items picked up by the Plug in SEO 'SEO problems' check will be fixed. This includes changing your HTML, so you don't need any coding experience.\n\nThere will be a few questions during signup about the keywords you'd like to target too.",
