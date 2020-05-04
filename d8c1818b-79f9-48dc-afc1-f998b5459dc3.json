@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "c8416b54-d214-0731-0ab2-72035ba3734b"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "4e31644a-2c3f-42a5-a6d3-e2f91eb7102e",
+      "key": "a75d0ef2-00ec-40ac-0481-687c78daf9d4"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "162",
+          "required": true,
+          "key": "85ad31ca-34e0-d2a6-1cb1-014894833b75"
+        }
+      ],
+      "key": "8bbaab40-707f-3dcf-16dd-0d87fd3ce91d"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "86fc9664-c1e8-ff91-cff5-0855a949f12a"
+        }
+      ],
+      "key": "5e5956d8-6f08-9231-1f4a-c8a21f70873e"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "1abfa3ed-ee35-6adb-e8b2-314a2e9de54e"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "e819f976-d047-bcdb-4622-5e78c9dd1741"
+        }
+      ],
+      "key": "e8770790-5045-1781-fa5e-48e929474831"
+    }
+  ],
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "description": "Just the failing items picked up by the Plug in SEO 'SEO problems' check will be fixed. This includes changing your HTML, so you don't need any coding experience. There will be a few questions during signup about the keywords you'd like to target too.",
+  "title": "10% off Basic SEO Fix Job",
+  "id": "d8c1818b-79f9-48dc-afc1-f998b5459dc3"
+}
