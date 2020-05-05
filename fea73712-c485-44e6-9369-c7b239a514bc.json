@@ -19,7 +19,7 @@
   ],
   "steps": [
     {
-      "title": "Pay",
+      "title": "Start your Complete SEO fixes job",
       "completeRole": "customer",
       "order": 1,
       "stepItems": [
@@ -29,7 +29,9 @@
           "type": "pay",
           "totalUSD": "270",
           "required": true,
-          "key": "b9886574-3f39-c232-b890-e420ea12745b"
+          "key": "b9886574-3f39-c232-b890-e420ea12745b",
+          "description": "",
+          "help": "It's a one off payment of $180, you will not be charged again."
         }
       ],
       "key": "ac5cc709-a698-6d10-351a-0ec12fc21999"
