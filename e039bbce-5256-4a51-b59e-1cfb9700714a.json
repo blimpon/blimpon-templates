@@ -1,5 +1,5 @@
 {
-  "title": "10% off Premium SEO fixes {{ step2.stepItem1 }} (copy)",
+  "title": "10% off Complete SEO fixes {{ step2.stepItem1 }}",
   "roles": [
     {
       "key": "79569861-26a6-6072-706b-adb9ac072a64",
@@ -20,7 +20,7 @@
   ],
   "steps": [
     {
-      "title": "Start your Premium SEO fixes job",
+      "title": "Start your Complete SEO fixes job",
       "completeRole": "customer",
       "stepItems": [
         {
@@ -28,7 +28,7 @@
           "type": "pay",
           "help": "It's a one off payment of $180, you will not be charged again.",
           "required": true,
-          "totalUSD": "480",
+          "totalUSD": "270",
           "key": "fd6b41d8-f483-eed0-6f09-132869bcada8",
           "order": 1
         }
