@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "4e31644a-2c3f-42a5-a6d3-e2f91eb7102e",
       "key": "caadd215-a18a-92e7-a124-6a794f16dacc"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "0808f046-0778-4955-8900-de4ebc63bb11",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "f1d10d4f-80ec-424d-a817-6193dba30fb2"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -71,5 +86,6 @@
   "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
   "title": "10% off Complete SEO fixes - 2",
   "description": "",
-  "id": "fea73712-c485-44e6-9369-c7b239a514bc"
+  "id": "fea73712-c485-44e6-9369-c7b239a514bc",
+  "jobTemplateImageId": "15e435da-314f-492c-af0f-d7ceb5d03325"
 }
