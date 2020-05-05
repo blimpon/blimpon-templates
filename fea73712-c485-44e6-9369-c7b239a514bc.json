@@ -54,7 +54,7 @@
     {
       "title": "Rate",
       "completeRole": "customer",
-      "order": 5,
+      "order": 8,
       "stepItems": [
         {
           "order": 1,
@@ -128,7 +128,7 @@
     {
       "key": "6c829286-745e-5c9b-8198-496371df1785",
       "title": "SEO problems flagged by Plug in SEO fixed",
-      "order": 6,
+      "order": 5,
       "completeRole": "fixer",
       "stepItems": [
         {
@@ -156,12 +156,13 @@
     {
       "key": "0449dbbc-85f7-1248-2751-1f57cee5a99c",
       "title": "SEO improvements report",
-      "order": 8,
+      "order": 6,
       "stepItems": [
         {
           "key": "81fdb8ff-d406-3292-84cc-2d7a47da980a",
           "title": "Sent SEO report to the customer",
-          "order": 1
+          "order": 1,
+          "type": "confirmation"
         }
       ],
       "completeRole": "fixer"
