@@ -103,7 +103,8 @@
           "type": "login",
           "description": "Add a new user to your site admin with the details shown below. Instructions for: <a href=\"https://docs.shopify.com/manual/settings/account/staff-members#add-new-staff-member\" target=\"_blank\">Shopify, adding a staff member</a>, <a href=\"https://support.bigcommerce.com/articles/Public/Adding-Editing-Users\" target=\"_blank\">Bigcommerce, adding a user</a>."
         }
-      ]
+      ],
+      "reviewRole": "fixer"
     },
     {
       "key": "d9a67258-52c8-74bb-3529-1802b6167f40",
