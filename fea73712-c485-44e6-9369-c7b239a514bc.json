@@ -124,6 +124,47 @@
         }
       ],
       "reviewRole": "fixer"
+    },
+    {
+      "key": "6c829286-745e-5c9b-8198-496371df1785",
+      "title": "SEO problems flagged by Plug in SEO fixed",
+      "order": 6,
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "key": "fb7d20e4-de4b-c82f-da10-60bebfaff727",
+          "title": "Check that all SEO fixes have been completed and the Plug in SEO verdict has improved",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ]
+    },
+    {
+      "key": "24e4fb6b-1aee-49d4-0f22-b6341782c621",
+      "title": "On-Page Optimization and Keyword Targeting",
+      "order": 7,
+      "stepItems": [
+        {
+          "key": "641d9f5a-b9be-c112-a426-4c3451225908",
+          "title": "Keyword optimized important SEO elements ",
+          "order": 1,
+          "description": "Page title, meta description, heading, subheading"
+        }
+      ],
+      "completeRole": "fixer"
+    },
+    {
+      "key": "0449dbbc-85f7-1248-2751-1f57cee5a99c",
+      "title": "SEO improvements report",
+      "order": 8,
+      "stepItems": [
+        {
+          "key": "81fdb8ff-d406-3292-84cc-2d7a47da980a",
+          "title": "Sent SEO report to the customer",
+          "order": 1
+        }
+      ],
+      "completeRole": "fixer"
     }
   ],
   "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
