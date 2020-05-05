@@ -83,6 +83,27 @@
         }
       ],
       "key": "7e6017ef-38fb-aebf-01a3-e03dab8e63f8"
+    },
+    {
+      "key": "d3bfc7b1-84bc-cc53-f007-6caf70212072",
+      "title": "Set up access",
+      "order": 4,
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "key": "20367bd5-03c0-173f-d246-997b811efeab",
+          "title": "What website is the work for? (Shopify URL)",
+          "order": 1,
+          "type": "text"
+        },
+        {
+          "key": "d5e89698-7f11-08a7-39bc-cb30bb1b01ce",
+          "title": "Create a login",
+          "order": 2,
+          "type": "login",
+          "description": "Add a new user to your site admin with the details shown below. Instructions for: <a href=\"https://docs.shopify.com/manual/settings/account/staff-members#add-new-staff-member\" target=\"_blank\">Shopify, adding a staff member</a>, <a href=\"https://support.bigcommerce.com/articles/Public/Adding-Editing-Users\" target=\"_blank\">Bigcommerce, adding a user</a>."
+        }
+      ]
     }
   ],
   "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
