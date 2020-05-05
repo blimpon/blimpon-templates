@@ -39,7 +39,7 @@
     {
       "title": "Do the work",
       "completeRole": "fixer",
-      "order": 4,
+      "order": 7,
       "stepItems": [
         {
           "order": 1,
@@ -52,7 +52,7 @@
       "key": "260e30ef-2fe1-d3d9-c221-6cef89446414"
     },
     {
-      "title": "Rate",
+      "title": "Complete the work",
       "completeRole": "customer",
       "order": 8,
       "stepItems": [
@@ -128,7 +128,7 @@
     {
       "key": "6c829286-745e-5c9b-8198-496371df1785",
       "title": "SEO problems flagged by Plug in SEO fixed",
-      "order": 5,
+      "order": 4,
       "completeRole": "fixer",
       "stepItems": [
         {
@@ -142,7 +142,7 @@
     {
       "key": "24e4fb6b-1aee-49d4-0f22-b6341782c621",
       "title": "On-Page Optimization and Keyword Targeting",
-      "order": 7,
+      "order": 5,
       "stepItems": [
         {
           "key": "641d9f5a-b9be-c112-a426-4c3451225908",
