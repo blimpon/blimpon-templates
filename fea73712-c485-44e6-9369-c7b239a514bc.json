@@ -37,24 +37,9 @@
       "key": "ac5cc709-a698-6d10-351a-0ec12fc21999"
     },
     {
-      "title": "Do the work",
-      "completeRole": "fixer",
-      "order": 7,
-      "stepItems": [
-        {
-          "order": 1,
-          "title": "Has the work been done?",
-          "type": "confirmation",
-          "required": true,
-          "key": "2b59cdd3-5e8c-1e69-2e11-17893dc07dbc"
-        }
-      ],
-      "key": "260e30ef-2fe1-d3d9-c221-6cef89446414"
-    },
-    {
       "title": "Complete the work",
       "completeRole": "customer",
-      "order": 8,
+      "order": 7,
       "stepItems": [
         {
           "order": 1,
