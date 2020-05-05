@@ -1,0 +1,167 @@
+{
+  "title": "10% off Complete SEO fixes {{ step2.stepItem1 }}  (copy)",
+  "roles": [
+    {
+      "key": "79569861-26a6-6072-706b-adb9ac072a64",
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "4e31644a-2c3f-42a5-a6d3-e2f91eb7102e"
+    },
+    {
+      "name": "customer",
+      "key": "db147b14-420b-fbc8-ec84-ac61fe56dc60"
+    },
+    {
+      "key": "c59d79ad-b581-d683-b5d0-6e5f3e6d399c",
+      "name": "project manager",
+      "admin": true,
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start your Complete SEO fixes job",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "Payment",
+          "type": "pay",
+          "help": "It's a one off payment of $180, you will not be charged again.",
+          "required": true,
+          "totalUSD": "270",
+          "key": "fd6b41d8-f483-eed0-6f09-132869bcada8",
+          "order": 1
+        }
+      ],
+      "key": "7841580d-1bdd-b998-e2ff-1c38a27eb11e",
+      "order": 1
+    },
+    {
+      "title": "Set up access",
+      "completeRole": "customer",
+      "reviewRole": "",
+      "stepItems": [
+        {
+          "title": "What website is the work for?",
+          "type": "text",
+          "required": true,
+          "key": "05b09e2f-2895-7654-b274-e665974cfe06",
+          "order": 1
+        },
+        {
+          "title": "Create a login",
+          "type": "login",
+          "description": "Add a new user to your site admin with the details shown below. Instructions for: <a href=\"https://docs.shopify.com/manual/settings/account/staff-members#add-new-staff-member\" target=\"_blank\">Shopify, adding a staff member</a>, <a href=\"https://support.bigcommerce.com/articles/Public/Adding-Editing-Users\" target=\"_blank\">Bigcommerce, adding a user</a>.",
+          "required": true,
+          "for": "fixer",
+          "key": "b0fc915d-08a2-20cc-2ad5-235e43c86b46",
+          "order": 2
+        }
+      ],
+      "key": "d2ca9f86-6f28-a7e1-ecd9-096d0a63bff4",
+      "order": 2
+    },
+    {
+      "title": "SEO problems flagged by Plug in SEO fixed",
+      "completeRole": "fixer",
+      "stepItems": [
+        {
+          "title": "Check that all SEO fixes have been completed and the Plug in SEO verdict has improved",
+          "type": "confirmation",
+          "required": true,
+          "key": "3def69fb-201b-7059-8513-6d775d550508",
+          "order": 1
+        }
+      ],
+      "key": "5a2b5cbe-a0db-85a2-ecab-35060db021d2",
+      "order": 4
+    },
+    {
+      "title": "Complete the work",
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "title": "How happy are you with the work?",
+          "type": "faceRating",
+          "required": true,
+          "for": "fixer",
+          "key": "61812a70-488e-c183-9ddb-0b57b198800e",
+          "order": 1
+        },
+        {
+          "title": "Payout project manager",
+          "type": "payout",
+          "required": true,
+          "role": "project manager",
+          "percentageOfBalance": "34.62",
+          "key": "1c7b2ae2-b5c4-386d-9ed7-65ec59845390",
+          "order": 2
+        },
+        {
+          "title": "Payout fixer",
+          "type": "payout",
+          "required": true,
+          "role": "fixer",
+          "percentageOfBalance": "100",
+          "key": "00806866-abfc-1965-c51b-ac32f3b119d2",
+          "order": 3
+        }
+      ],
+      "key": "40cda436-b6a3-9937-2045-2e9a9711df57",
+      "order": 7
+    },
+    {
+      "key": "ac6d13e1-cde9-cb0c-1f3e-049ba464c48a",
+      "title": "Answer Questions",
+      "order": 3,
+      "completeRole": "customer",
+      "reviewRole": "fixer",
+      "stepItems": [
+        {
+          "key": "96b0d543-ae4a-155a-2365-d08b0872a196",
+          "title": "What products/services are your selling?",
+          "order": 1,
+          "type": "text"
+        },
+        {
+          "key": "8cf5b88b-790d-583c-c732-bcaeba50c24e",
+          "title": "Provide at least 3 websites who are selling/offering the same products/services.",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "key": "cbf6504a-c063-fc84-63cd-17a4d4ef79b4",
+      "title": "On-Page Optimization and Keyword Targeting",
+      "order": 5,
+      "stepItems": [
+        {
+          "key": "a358d5ea-a4b4-fada-7629-9fc49d1901bd",
+          "title": "Keyword optimized important SEO elements ",
+          "order": 1,
+          "type": "confirmation",
+          "description": "Page title, meta description, heading, subheading"
+        }
+      ],
+      "completeRole": "fixer"
+    },
+    {
+      "key": "2d86448d-5e70-4c6f-a116-b4cbf8ea64ca",
+      "title": "SEO improvements report",
+      "order": 6,
+      "stepItems": [
+        {
+          "key": "de58334f-e684-31b2-8130-5e7638351ef8",
+          "title": "Sent SEO report to the customer",
+          "order": 1,
+          "type": "confirmation"
+        }
+      ],
+      "completeRole": "fixer"
+    }
+  ],
+  "description": "Just the failing items picked up by the Plug in SEO 'SEO problems' check will be fixed. This includes changing your HTML, so you don't need any coding experience.\n\nThere will be a few questions during signup about the keywords you'd like to target too.",
+  "jobTemplateImageId": "169ee5d3-f459-4687-9868-9b4718f6a1d5",
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "id": "437b0afd-e3b9-49d0-ae72-eb786cec75e9"
+}
