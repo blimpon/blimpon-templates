@@ -9,11 +9,17 @@
       "admin": true,
       "defaultUser": "4e31644a-2c3f-42a5-a6d3-e2f91eb7102e",
       "key": "ee9e9518-9edc-2c5a-00cc-224159b1b02b"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "740ed5f7-8027-4cea-91e3-30f7e459fb0b",
+      "admin": true
     }
   ],
   "steps": [
     {
-      "title": "Pay",
+      "title": "Start your Basic SEO fixes job",
       "completeRole": "customer",
       "order": 1,
       "stepItems": [
@@ -27,21 +33,6 @@
         }
       ],
       "key": "bab013fc-0cb5-d341-cf2f-4376db756f8a"
-    },
-    {
-      "title": "Do the work",
-      "completeRole": "fixer",
-      "order": 2,
-      "stepItems": [
-        {
-          "order": 1,
-          "title": "Has the work been done?",
-          "type": "confirmation",
-          "required": true,
-          "key": "1e988b0c-7dff-05a2-2e78-0baacfcb1f7a"
-        }
-      ],
-      "key": "595dedf9-e957-a065-16f3-7bf3dfdf16c0"
     },
     {
       "title": "Rate",
@@ -58,6 +49,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "f18577b6-320c-4454-8a5f-a1aa0de9a554"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -66,6 +66,25 @@
         }
       ],
       "key": "8c5792fa-67b4-1394-1d28-250dfed6765f"
+    },
+    {
+      "key": "e86962f6-34fc-9c77-8f6e-cabbd6755255",
+      "title": "Set up access",
+      "order": 2,
+      "completeRole": "customer",
+      "stepItems": [
+        {
+          "key": "c5f6db89-c1dd-1158-47b2-e5c4c0a29963",
+          "title": "What website is the work for?",
+          "order": 1
+        },
+        {
+          "key": "79ac5cfe-be88-1b32-eb0b-3d030ee7187b",
+          "title": "Add a new user to your site admin with the details shown below. Instructions for: <a href=\"https://docs.shopify.com/manual/settings/account/staff-members#add-new-staff-member\" target=\"_blank\">Shopify, adding a staff member</a>, <a href=\"https://support.bigcommerce.com/articles/Public/Adding-Editing-Users\" target=\"_blank\">Bigcommerce, adding a user</a>.",
+          "order": 2,
+          "type": "login"
+        }
+      ]
     }
   ],
   "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
