@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "05f579a6-8052-7f00-7b81-a8974adbf218"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "4e31644a-2c3f-42a5-a6d3-e2f91eb7102e",
+      "key": "ee9e9518-9edc-2c5a-00cc-224159b1b02b"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "160",
+          "required": true,
+          "key": "b6ca4616-b9b4-de52-67ea-16be8e13977d"
+        }
+      ],
+      "key": "bab013fc-0cb5-d341-cf2f-4376db756f8a"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "1e988b0c-7dff-05a2-2e78-0baacfcb1f7a"
+        }
+      ],
+      "key": "595dedf9-e957-a065-16f3-7bf3dfdf16c0"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "0f201717-627b-3e8f-68de-8b5e5f69efa5"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "01049765-5c36-bc64-1245-ae4999cd81ea"
+        }
+      ],
+      "key": "8c5792fa-67b4-1394-1d28-250dfed6765f"
+    }
+  ],
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "title": "20% off Basic SEO Fixes",
+  "description": "",
+  "id": "001c2682-c9af-47f9-bb57-6e7563c377d2"
+}
