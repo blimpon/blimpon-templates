@@ -26,11 +26,12 @@
         {
           "title": "Payment",
           "type": "pay",
-          "help": "It's a one off payment of $180, you will not be charged again.",
+          "help": "",
           "required": true,
           "totalUSD": "160",
           "key": "fd6b41d8-f483-eed0-6f09-132869bcada8",
-          "order": 1
+          "order": 1,
+          "description": "It's a one off payment of $160, you will not be charged again."
         }
       ],
       "key": "7841580d-1bdd-b998-e2ff-1c38a27eb11e",
