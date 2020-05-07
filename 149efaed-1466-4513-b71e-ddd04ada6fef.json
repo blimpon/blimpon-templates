@@ -30,7 +30,8 @@
           "required": true,
           "totalUSD": "425",
           "key": "fd6b41d8-f483-eed0-6f09-132869bcada8",
-          "order": 1
+          "order": 1,
+          "description": "It's a one off payment of $425, you will not be charged again."
         }
       ],
       "key": "7841580d-1bdd-b998-e2ff-1c38a27eb11e",
