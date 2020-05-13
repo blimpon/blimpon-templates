@@ -1,5 +1,5 @@
 {
-  "title": "20% off Basic SEO fixes {{ step2.stepItem1 }} (copy)",
+  "title": "10% off Basic SEO fixes {{ step2.stepItem1 }}",
   "roles": [
     {
       "key": "79569861-26a6-6072-706b-adb9ac072a64",
@@ -162,7 +162,7 @@
     }
   ],
   "description": "",
-  "jobTemplateImageId": "169ee5d3-f459-4687-9868-9b4718f6a1d5",
+  "jobTemplateImageId": "a482feae-db60-42b8-b8b3-81813813a586",
   "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
   "id": "b2f18926-c338-4746-b7f0-2301d8e556c8"
 }
