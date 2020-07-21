@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "69375d16-710f-a4c9-4f91-5eea807bf5c7"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "ae6761d9-eb08-4580-9584-2f008ad35aa3",
+      "key": "dfa788fa-d7c1-1ced-6cfa-aa9eb49dfaf1"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "189",
+          "required": true,
+          "key": "82471818-9f3e-368e-59e3-a98e568f7e36"
+        }
+      ],
+      "key": "9ae43154-9c2c-55e9-c77a-0b96a8f3d2ba"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "c498743c-1cce-858b-2b02-69bb847eb60d"
+        }
+      ],
+      "key": "7d8157aa-e800-3d4b-40af-a8ec26be0f0f"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "ce191b3e-87d9-a7ba-e40b-e33619ac43f9"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "84a9f197-1994-d0d1-2800-c1e7bdbb3741"
+        }
+      ],
+      "key": "7e37b8c8-a3dd-bdfb-4bf1-0da8a0825a2f"
+    }
+  ],
+  "collectionId": "not in a collection",
+  "description": "Did you know…\n\nAll business needs a powerful copy to succeed. You have to use words to convey your products and services to people.\n\nYour content will stick a valuable impression of your company. It can even propel your brand as an authority in your industry.\n\nHowever…\n\nBusy entrepreneurs like you might have difficulty finding some spare time to write content. Juggling endless tasks and serious responsibilities every day, boosting your brand through copies might be a struggle.\n\nThis is where OUR SERVICES come to help you.\n\nRest easy knowing that we will write the copies for you in a polished and refined tone and style perfect for your brand!\n\nSave time and money without compromising your copies with the blog writing packages that we offer. Sounds great? Well, let us give you an overview of what you’ll get from us from beginning to end.\n\nBrainstorming\nWe’d love to provide exactly what you want so it’s important for us to hear your thoughts. Let’s work together and brainstorm the list of topics that goes with your brand. You can be specific with your subject and outline, or if you’re still looking for ideas, we can also propose some topics that you could work for you.\n\nPower Writing\nTime for some content! We will research and write the topics we’ve discussed on the brainstorming. Each copy will have a kick-ass headline, will be professionally-written, and of 600-800 words. This will be spaced out over three weeks to build steady traffic. The content will be structured for SEO and will be included with images and/or a video to increase ranking in search engines. We can assure you that the copy will be a rich source of keywords without sounding off or too wordy. All will be checked and verified using a premium plagiarism checker.\n\nEnjoy More Free Time!\nThe final draft will then be sent to you for further corrections or clarifications. We accept a single round of revisions to ensure that each copy suits you best. And there you have it, content made easier for you in no time!\n\nHere’s what you can expect from us…\n\n1. Expertise\nWe have been in the trade for 10 years now. Since then, we have written various contents under different niches. Name one, we probably have written something about it already. \n \nWe know the importance of great and engaging content that is why we always make sure we understand who the target audience is, what they want to read, and how they want to read it. \n\n2. Quality. \nYou can get 100% unique and original content that is properly researched and backed up by facts. No need to worry about any fluff or unverifiable statements. \n \n3. Consistency. \nWhat you will get from us from the start is what you will get no matter how long we end up working for you, the only difference is that our work will improve through time; it will never lose its quality. We believe that consistency is always the key to long-term and successful working relationships\n \n4. Passion.\nWe’re crazy in love with what we do. We treat writing not as a job but as an opportunity- an opportunity to broaden our knowledge, an opportunity to enjoy and, of course, an opportunity to do what we love. \n\nWe will not feel stressed if you make is write a lot of content, and instead, we will thank you and enjoy it. That is what makes us different from anyone. You can benefit more from us.\n\nHave the professional and consistent writing done for you and your brand. Let’s do all the hard work for you so you can focus more on other important tasks and responsibilities. \n\nSTART NOW!\n\n\n",
+  "title": "3-Blog Post",
+  "id": "e84482a0-198d-48fc-81f3-70215c7499d8"
+}
