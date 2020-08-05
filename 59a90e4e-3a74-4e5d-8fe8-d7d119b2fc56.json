@@ -1,0 +1,90 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "29b5d5b3-f8b3-53be-7ced-dbf61bd7a5b3"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "ae6761d9-eb08-4580-9584-2f008ad35aa3",
+      "key": "1aafd3e0-3563-5a69-cd7a-52b90c970ce0"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "e56e0036-ff3f-4b8d-bde0-c3902c8bfe3f",
+      "admin": true
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "189",
+          "required": true,
+          "key": "2ae84b31-fb53-9d81-f2e0-0a986a2499f7"
+        }
+      ],
+      "key": "dd8572e1-7fe3-0059-2de0-3752e3876dfb"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "44e9eb39-1ca5-f64f-35a0-a3c31d3227a3"
+        }
+      ],
+      "key": "0ac794b6-1923-327e-a1bd-8160f41f6893"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "a6a1e70b-dc91-e070-45d9-acad73ccc844"
+        },
+        {
+          "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "14de0aa0-ae55-4515-a163-8cf277ca3750"
+        },
+        {
+          "order": 3,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "54f6c4ce-6aeb-8b12-3eab-08ab59c1c3bc"
+        }
+      ],
+      "key": "275937a9-e7f7-ea45-b63a-9b6aba2aaebe"
+    }
+  ],
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "description": "<b>Did you know…</b>\n<br>\nAll Shopify Businesses needs a compelling  copy to succeed. You have to use words to convey your products and services to people.\n<br>\nYour content will stick to a valuable impression of your company. It can even propel your brand as an authority in your industry.\n<br>\n<br>\nHowever…\n<br>\nBusy entrepreneurs like you might have difficulty finding some spare time to write content. Between endless tasks and serious responsibilities every day, boosting your brand through copies might be a struggle.\n<br>\n<br>\n<br>\nThis is where <b>OUR SERVICES</b> come to help you.\n<br>\nWe will write the content for you in a polished, refined tone and style that speaks for your brand!\n<br>\n<br>\n<br>\nSave time and money without compromising the quality of copies and blogs with our content writing packages. Sounds great? \n<br>\nLet us give you an overview of what you’ll get from us from beginning to end.\n<br>\n<br>\n<br>\n<b>Brainstorming</b>\nWe’d love to provide precisely what you want, so it’s essential for us to hear your thoughts. \n<br>\nWe work with you to brainstorm the list of topics that go with your brand. You can be specific with your subject and outline, or if you’re still looking for ideas, we can also propose some topics that could work for you.\n<br>\n<br>\n<br>\n<b>Power Writing</b>\nTime for some content! We will research and write the topics we’ve discussed on the brainstorming. Each copy will have a kick-ass headline, will be professionally-written, and of 600-800 words. We will space them out over three weeks to build steady traffic. The content will be structured for SEO and will include images and/or videos to increase ranking in search engines. We can assure you that the copy will be a rich source of keywords without sounding off or too wordy.\n<br>\n<br>\n<br>\n<b>Enjoy More Free Time!</b>\nWe will send you the final draft for further corrections or clarifications. We accept a single round of revisions to ensure that each copy suits you best. And there you have it; content made it easier for you in no time!\n<br>\nHere’s what you can expect from us…\n<br>\n<b>1. Expertise</b>\n<br>\nWe have been in the trade for ten years now. Since then, we have written content for over 1000 Shopify Merchants. \n<br>\nWe know the importance of excellent and engaging content, that is why we always make sure we understand who the target audience is, what they want to read, and how they want to read it.\n<br>\n<br>\n<br>\n<b>2. Quality</b>\nYou get 100% unique, original, and thoroughly researched content backed up by facts. So, you don't need to worry about any fluff or unverifiable statements.\n<br>\n <br>\n<b>3. Consistency</b>\nWhat you will get from us from the start is what you will get no matter how long we end up working for you, the only difference is that our work will improve through time; it will never lose its quality. We believe that consistency is always the key to long-term and successful working relationships.\n <br>\n<b>4. Passion.</b>\nWe’re crazy in love with what we do. We treat writing not as a job but as an opportunity- an opportunity to broaden our knowledge, to enjoy, and of course, to do what we love. \n<br>\nWe will not feel stressed if you make us write a lot of content, and instead, we will thank you and enjoy it. That is what makes us different from anyone. You can benefit more from hiring us.\n<br>\nHave the professional and consistent writing done for you and your brand. Let us do all the hard work for you to focus more on other essential tasks and responsibilities to grow your business.\n<br>\n<br>\n<br>\n<b>START NOW!</b>\n",
+  "title": "3-blog post (copy)",
+  "id": "59a90e4e-3a74-4e5d-8fe8-d7d119b2fc56"
+}
