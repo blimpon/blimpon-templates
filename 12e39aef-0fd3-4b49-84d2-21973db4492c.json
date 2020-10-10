@@ -101,16 +101,9 @@
           "for": "fixer"
         },
         {
-          "key": "e10c67c0-1b11-4097-dd90-e470d827928e",
-          "title": "Create a login for Google Analytics",
-          "order": 3,
-          "type": "login",
-          "for": "fixer"
-        },
-        {
           "key": "f07d37c4-35d2-980c-55de-e0984e90eba6",
           "title": "Create a login for Google Search Console",
-          "order": 4,
+          "order": 3,
           "type": "login",
           "for": "fixer"
         }
