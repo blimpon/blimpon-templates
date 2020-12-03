@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "6e68bf68-5f1f-e766-f912-70435d2aebb7"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "06747b86-8351-45d4-b16e-48c3cae24b8f",
+      "key": "d0dee7f9-b8cf-8342-fdca-50c3e9084e79"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": 180,
+          "required": true,
+          "key": "dead60b9-114a-032d-ddd9-284f74a7edf4"
+        }
+      ],
+      "key": "920182c6-9e9a-9e10-f33b-b745746ac4cb"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "50bf7e9b-9c2b-039b-0661-f6b4db24a497"
+        }
+      ],
+      "key": "5fb18197-6724-c421-03f1-9a70c740f714"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "5ffc8ee5-1201-c03d-6747-7a57696a925d"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "0e977226-68e0-6de2-2b63-0e2ff7983257"
+        }
+      ],
+      "key": "36cd44fc-afd7-ebc2-90ee-5afd135c4a37"
+    }
+  ],
+  "collectionId": "",
+  "title": "ROHIT SRIVASTAVA",
+  "description": "",
+  "id": "fcc28181-4d57-410b-8aff-c6337057af7a"
+}
