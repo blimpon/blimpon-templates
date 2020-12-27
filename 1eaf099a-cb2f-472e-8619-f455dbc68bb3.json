@@ -35,7 +35,7 @@
           "type": "sendemail",
           "to": "fixer",
           "subject": "New {{ title }} job at Blimpon",
-          "body": "<h1>New job created: {{ job.title }} at Blimpon</h1>",
+          "body": "<h1>New job created: {{ title }} at Blimpon</h1>",
           "order": 2
         },
         {
