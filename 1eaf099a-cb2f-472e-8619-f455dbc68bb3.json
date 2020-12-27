@@ -33,8 +33,8 @@
           "key": "9e31113d-a574-9b2e-c0bf-8d56a7c3383d",
           "title": "Someone signed up for a Plug in SEO fix job!",
           "type": "sendemail",
-          "to": "fixer",
-          "subject": "New job at Blimpon",
+          "to": "project manager",
+          "subject": "New {{ title }} job at Blimpon",
           "body": "<h1>New job created: {{ job.title }} at Blimpon</h1>",
           "order": 2
         },
