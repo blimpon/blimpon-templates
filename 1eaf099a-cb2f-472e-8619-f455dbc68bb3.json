@@ -1,5 +1,5 @@
 {
-  "title": "Basic SEO fixes {{ steps.stepItems.description1 }} ",
+  "title": "Basic SEO fixes {{ step1.stepItem1 }} ",
   "roles": [
     {
       "key": "79569861-26a6-6072-706b-adb9ac072a64",
