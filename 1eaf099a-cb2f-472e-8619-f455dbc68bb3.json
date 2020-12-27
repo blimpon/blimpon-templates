@@ -42,7 +42,7 @@
           "type": "sendemail",
           "to": "fixer",
           "subject": "New {{ job_title }} job at Blimpon",
-          "body": "<h1>New job created: {{ job_title }} at Blimpon</h1>\n<p>The customer has paid. Please get in touch with the customer. {{ roles['customer'].name }} (fixer), {{ roles['customer'].email }} </p>"
+          "body": "<h1>New job created: {{ job_title }} at Blimpon</h1>\n<p>The customer has paid. Please get in touch with the customer. </p>  {{ step1.stepItem1 }}, {{ step1.stepItem2 }}"
         }
       ],
       "key": "7841580d-1bdd-b998-e2ff-1c38a27eb11e",
