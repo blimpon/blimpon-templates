@@ -24,6 +24,12 @@
       "completeRole": "customer",
       "stepItems": [
         {
+          "key": "409dc959-eaad-5567-18ed-5c01cdd2a111",
+          "title": "What website is the work for?",
+          "order": 1,
+          "description": "Provide us with the complete website URL please. Please follow this format: <strong> https://stockphototees.com/ or https://stock-photo-tees.myshopify.com/</strong>"
+        },
+        {
           "title": "Payment",
           "type": "pay",
           "help": "It's a one off payment of $180, you will not be charged again.",
@@ -31,12 +37,6 @@
           "totalUSD": "180",
           "key": "fd6b41d8-f483-eed0-6f09-132869bcada8",
           "order": 2
-        },
-        {
-          "key": "409dc959-eaad-5567-18ed-5c01cdd2a111",
-          "title": "What website is the work for?",
-          "order": 1,
-          "description": "Provide us with the complete website URL please. Please follow this format: <strong> https://stockphototees.com/ or https://stock-photo-tees.myshopify.com/</strong>"
         }
       ],
       "key": "7841580d-1bdd-b998-e2ff-1c38a27eb11e",
@@ -48,20 +48,13 @@
       "reviewRole": "",
       "stepItems": [
         {
-          "title": "What website is the work for?",
-          "type": "text",
-          "required": true,
-          "key": "05b09e2f-2895-7654-b274-e665974cfe06",
-          "order": 1
-        },
-        {
           "title": "Create a login",
           "type": "login",
           "description": "Add a new user to your site admin with the details shown below. Instructions for: <a href=\"https://docs.shopify.com/manual/settings/account/staff-members#add-new-staff-member\" target=\"_blank\">Shopify, adding a staff member</a>",
           "required": true,
           "for": "fixer",
           "key": "b0fc915d-08a2-20cc-2ad5-235e43c86b46",
-          "order": 2
+          "order": 1
         }
       ],
       "key": "d2ca9f86-6f28-a7e1-ecd9-096d0a63bff4",
