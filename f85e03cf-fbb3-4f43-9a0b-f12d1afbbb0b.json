@@ -30,15 +30,6 @@
           "description": "Provide us with the complete website URL please. Please follow this format: <strong> https://stockphototees.com/ or https://stock-photo-tees.myshopify.com/</strong>"
         },
         {
-          "title": "Payment",
-          "type": "pay",
-          "help": "It's a one off payment of $180, you will not be charged again.",
-          "required": true,
-          "totalUSD": "180",
-          "key": "fd6b41d8-f483-eed0-6f09-132869bcada8",
-          "order": 2
-        },
-        {
           "key": "9e31113d-a574-9b2e-c0bf-8d56a7c3383d",
           "title": "Someone signed up for a Plug in SEO fix job!",
           "order": 3,
@@ -46,6 +37,12 @@
           "to": "fixer",
           "subject": "New {{ job_title }} job at Blimpon",
           "body": "<h1>New job created: {{ job_title }} at Blimpon</h1><p>The customer has paid. Please get in touch with the customer.</p>"
+        },
+        {
+          "key": "e824948c-1b35-556c-b196-174d19823ec1",
+          "title": "Email address where we can reach you.",
+          "order": 2,
+          "type": "text"
         }
       ],
       "key": "7841580d-1bdd-b998-e2ff-1c38a27eb11e",
@@ -57,6 +54,14 @@
       "reviewRole": "",
       "stepItems": [
         {
+          "key": "346faa09-aba2-32f3-fb8f-afc5383363c0",
+          "title": "Payment",
+          "order": 1,
+          "type": "pay",
+          "help": "It's a one off payment of $270, you will not be charged again.",
+          "totalUSD": "180"
+        },
+        {
           "title": "Create a login",
           "type": "login",
           "description": "Add a new user to your site admin with the details shown below. Instructions for: <a href=\"https://docs.shopify.com/manual/settings/account/staff-members#add-new-staff-member\" target=\"_blank\">Shopify, adding a staff member</a>",
@@ -64,14 +69,6 @@
           "for": "fixer",
           "key": "b0fc915d-08a2-20cc-2ad5-235e43c86b46",
           "order": 2
-        },
-        {
-          "key": "346faa09-aba2-32f3-fb8f-afc5383363c0",
-          "title": "Payment",
-          "order": 1,
-          "type": "pay",
-          "help": "It's a one off payment of $270, you will not be charged again.",
-          "totalUSD": "180"
         }
       ],
       "key": "d2ca9f86-6f28-a7e1-ecd9-096d0a63bff4",
