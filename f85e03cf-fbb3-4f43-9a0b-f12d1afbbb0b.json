@@ -52,7 +52,7 @@
       "order": 1
     },
     {
-      "title": "Set up access",
+      "title": "Pay and set up access",
       "completeRole": "customer",
       "reviewRole": "",
       "stepItems": [
@@ -63,7 +63,15 @@
           "required": true,
           "for": "fixer",
           "key": "b0fc915d-08a2-20cc-2ad5-235e43c86b46",
-          "order": 1
+          "order": 2
+        },
+        {
+          "key": "346faa09-aba2-32f3-fb8f-afc5383363c0",
+          "title": "Payment",
+          "order": 1,
+          "type": "pay",
+          "help": "It's a one off payment of $270, you will not be charged again.",
+          "totalUSD": "180"
         }
       ],
       "key": "d2ca9f86-6f28-a7e1-ecd9-096d0a63bff4",
