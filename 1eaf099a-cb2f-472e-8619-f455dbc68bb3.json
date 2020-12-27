@@ -43,6 +43,16 @@
           "to": "fixer",
           "subject": "New {{ job_title }} job at Blimpon",
           "body": "<h1>New job created: {{ job_title }} at Blimpon</h1>\n<p>The customer has paid. Please get in touch with the customer. </p>  Name: {{ roles['customer'].name }}\nEmail: {{ roles['customer'].email }}"
+        },
+        {
+          "key": "bd9dee56-e6ec-92b8-f077-7419f8e690c6",
+          "title": "You signed up for a Plug in SEO fix job!",
+          "order": 4,
+          "type": "sendemail",
+          "for": "customer",
+          "to": "customer",
+          "subject": "You signed up for a Plug in SEO fix job!",
+          "body": "<p>Thanks for signing up for an SEO fix job. Please complete the payment, if you haven't already.</p>"
         }
       ],
       "key": "7841580d-1bdd-b998-e2ff-1c38a27eb11e",
