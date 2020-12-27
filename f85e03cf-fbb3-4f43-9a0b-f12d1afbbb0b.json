@@ -37,6 +37,15 @@
           "totalUSD": "180",
           "key": "fd6b41d8-f483-eed0-6f09-132869bcada8",
           "order": 2
+        },
+        {
+          "key": "9e31113d-a574-9b2e-c0bf-8d56a7c3383d",
+          "title": "Someone signed up for a Plug in SEO fix job!",
+          "order": 3,
+          "type": "sendemail",
+          "to": "fixer",
+          "subject": "New {{ job_title }} job at Blimpon",
+          "body": "<h1>New job created: {{ job_title }} at Blimpon</h1><p>The customer has paid. Please get in touch with the customer.</p>"
         }
       ],
       "key": "7841580d-1bdd-b998-e2ff-1c38a27eb11e",
