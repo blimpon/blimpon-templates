@@ -1,5 +1,5 @@
 {
-  "title": "Basic SEO fixes {{ steps1.stepItems.description }} ",
+  "title": "Basic SEO fixes {{ steps.stepItems.description1 }} ",
   "roles": [
     {
       "key": "79569861-26a6-6072-706b-adb9ac072a64",
@@ -26,7 +26,7 @@
         {
           "key": "409dc959-eaad-5567-18ed-5c01cdd2a111",
           "title": "What website is the work for?",
-          "description": "Provide us with the complete website URL please. Please follow this format: <strong> https://stockphototees.com/ or https://stock-photo-tees.myshopify.com/</strong>",
+          "description1": "Provide us with the complete website URL please. Please follow this format: <strong> https://stockphototees.com/ or https://stock-photo-tees.myshopify.com/</strong>",
           "order": 1
         },
         {
