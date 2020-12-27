@@ -30,15 +30,9 @@
           "description": "Provide us with the complete website URL please. Please follow this format: <strong> https://stockphototees.com/ or https://stock-photo-tees.myshopify.com/</strong>"
         },
         {
-          "key": "e824948c-1b35-556c-b196-174d19823ec1",
-          "title": "Email address where we can reach you.",
-          "order": 2,
-          "type": "text"
-        },
-        {
           "key": "9e31113d-a574-9b2e-c0bf-8d56a7c3383d",
           "title": "Someone signed up for a Plug in SEO fix job!",
-          "order": 3,
+          "order": 2,
           "type": "sendemail",
           "to": "fixer",
           "subject": "New {{{ title }} job at Blimpon",
@@ -47,7 +41,7 @@
         {
           "key": "bd9dee56-e6ec-92b8-f077-7419f8e690c6",
           "title": "You signed up for a Plug in SEO fix job!",
-          "order": 4,
+          "order": 3,
           "type": "sendemail",
           "for": "customer",
           "to": "customer",
