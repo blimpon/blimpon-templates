@@ -34,7 +34,7 @@
           "title": "Someone signed up for a Plug in SEO fix job!",
           "type": "sendemail",
           "to": "fixer",
-          "subject": "New {{ job_title}} job at Blimpon",
+          "subject": "New job at Blimpon",
           "body": "<h1>New job created: {{ job.title }} at Blimpon</h1>",
           "order": 2
         },
@@ -79,8 +79,8 @@
           "title": "New, ready job at Plug in SEO",
           "type": "sendemail",
           "to": "project manager",
-          "subject": "New {{ job_title }} job at Blimpon for you",
-          "body": "<h1>New job created: {{ job_title }} at Blimpon</h1><p>The customer has paid, provided access and answered the questions so it's now ready for your work.</p>",
+          "subject": "New {{ job.title }} job at Blimpon for you",
+          "body": "<h1>New job created: {{ job.title }} at Blimpon</h1><p>The customer has paid, provided access and answered the questions so it's now ready for your work.</p>",
           "order": 3
         },
         {
