@@ -83,7 +83,7 @@
     }
   ],
   "collectionId": "",
-  "description": "<p>Redirect every broken link to its new, equivalent page (not the homepage) to ensure the SEO value gets passed over and isn't lost. The price for this depends on how many broken links you currently have.</p>",
-  "title": "Fix up to 50 broken  links",
+  "description": "<p>Redirect every broken link (identified by Plug in SEO broken link checker) to its new, equivalent page to ensure the SEO value gets passed over and isn't lost.</p>",
+  "title": "Fix broken  links",
   "id": "44e33d81-7b99-4c2c-a60e-a0342d17556c"
 }
