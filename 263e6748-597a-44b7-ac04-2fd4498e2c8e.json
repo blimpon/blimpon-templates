@@ -62,7 +62,7 @@
           "title": "Payment",
           "type": "pay",
           "help": "It's a one off payment of $270, you will not be charged again.",
-          "totalUSD": "180",
+          "totalUSD": "270",
           "order": 1
         },
         {
