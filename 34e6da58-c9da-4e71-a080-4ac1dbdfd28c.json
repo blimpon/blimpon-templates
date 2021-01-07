@@ -97,23 +97,6 @@
       "order": 2
     },
     {
-      "title": "Answer the onboarding form here:",
-      "completeRole": "customer",
-      "reviewRole": "fixer",
-      "stepItems": [
-        {
-          "title": "https://forms.gle/eLrW19mdWFkD9RAA6",
-          "type": "html",
-          "description": "You can press the help icon for more help on each one.",
-          "required": true,
-          "key": "20558009-945e-c939-9218-a4dee1fa36c2",
-          "order": 1
-        }
-      ],
-      "key": "b8ea055b-4790-bbc2-3ea7-2969fe5f4c9f",
-      "order": 3
-    },
-    {
       "title": "Quality control",
       "completeRole": "fixer",
       "stepItems": [
@@ -126,7 +109,7 @@
         }
       ],
       "key": "5a2b5cbe-a0db-85a2-ecab-35060db021d2",
-      "order": 4
+      "order": 3
     },
     {
       "title": "Complete the work",
@@ -160,7 +143,7 @@
         }
       ],
       "key": "40cda436-b6a3-9937-2045-2e9a9711df57",
-      "order": 5
+      "order": 4
     }
   ],
   "description": "Just the failing items picked up by the Plug in SEO 'SEO problems' check will be fixed. This includes changing your HTML, so you don't need any coding experience.\n\nThere will be a few questions during signup about the keywords you'd like to target too.",
