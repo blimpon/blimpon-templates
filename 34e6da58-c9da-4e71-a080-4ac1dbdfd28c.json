@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "70af42ab-b85e-f6ac-fed9-91e8e0357254"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "4e31644a-2c3f-42a5-a6d3-e2f91eb7102e",
+      "key": "2b3bc5d6-6988-fb7d-06fa-bdc793785262"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "40",
+          "required": true,
+          "key": "ccd805ed-d6b8-d2ce-e96c-040bc081ed1f"
+        }
+      ],
+      "key": "f2802327-b466-e248-6eb2-ac9ed60be5b8"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "5032bca8-bfb7-25da-4ae5-0f5b74328826"
+        }
+      ],
+      "key": "2b43d0b0-6300-8fcb-43b9-18c1cc0e29a1"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "7722b592-f68b-3b41-e3b2-693f09c43527"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "66127be3-2032-50de-1481-30e8c5044251"
+        }
+      ],
+      "key": "403d2463-71d3-6ff5-12c7-3475fe8b6d7c"
+    }
+  ],
+  "collectionId": "1ec3e8b4-d86f-4f70-b84d-3eb4bea30a28",
+  "description": "Complete schema markup for products, collections, blog, articles, etc. This will automatically generate Structured Data for you wherever it is appropriate on your shop. You just have to make sure that the right data is available for each product in the Shopify admin then it will be included in the structured data.",
+  "title": "Structured Data - Complete Schema Markup",
+  "id": "34e6da58-c9da-4e71-a080-4ac1dbdfd28c"
+}
