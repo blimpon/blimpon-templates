@@ -1,0 +1,75 @@
+{
+  "roles": [
+    {
+      "name": "customer",
+      "key": "7fbbebd6-71a8-7fd9-b85d-b61f601b628a"
+    },
+    {
+      "name": "fixer",
+      "admin": true,
+      "defaultUser": "050f9ec8-2d9f-4c74-9fc6-8ad6e2fde744",
+      "key": "313fa4de-91c5-a1e4-3bdd-1a1155477054"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Pay",
+      "completeRole": "customer",
+      "order": 1,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Payment",
+          "type": "pay",
+          "totalUSD": "250",
+          "required": true,
+          "key": "00e5bebc-ad78-c4ae-d8e9-b6448bcb49dc"
+        }
+      ],
+      "key": "50b89570-fac5-37bd-4903-672813bae414"
+    },
+    {
+      "title": "Do the work",
+      "completeRole": "fixer",
+      "order": 2,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "Has the work been done?",
+          "type": "confirmation",
+          "required": true,
+          "key": "41f0bfe5-5593-6cdb-1d5e-9606f40a64bf"
+        }
+      ],
+      "key": "0db51dc3-7943-a204-66b9-dd22dfb8cefa"
+    },
+    {
+      "title": "Rate",
+      "completeRole": "customer",
+      "order": 3,
+      "stepItems": [
+        {
+          "order": 1,
+          "title": "How happy are you with the work completed?",
+          "type": "faceRating",
+          "for": "fixer",
+          "required": true,
+          "key": "3f1300c4-57a0-dee8-9b1f-7e3ebb42a013"
+        },
+        {
+          "order": 2,
+          "title": "Payout fixer",
+          "type": "payout",
+          "role": "fixer",
+          "percentageOfBalance": 100,
+          "key": "8224dabf-9316-d1da-3b94-da44a27d5f4d"
+        }
+      ],
+      "key": "1015912f-7b7c-dce2-a087-f8f8455a0992"
+    }
+  ],
+  "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
+  "description": "To give your customer best experience, you designed your website on a platform that offers best animation and design scheme. FIGMA &amp; Webflow are very popular in this domain.\n\n\n\nBut you also need a robust Ecommerce engine, applications, plugins and other features that are important for an online business.\n\n\n\nTherefore, you want to convert your website to a mature platform (E.g. Shopify, Prestashop, WooCommerce) without losing UI/UX elements.\n\n\n\nTo convert your website, you have below options\n\n\n\nConvert your website using adapters and tools\nConvert using Custom Coding\n\n\nProblem with Adapter &amp; Tools:\n\nThey are cheaper but are you sure you want to put your live business into a tool that is designed with very limited options. Adapter and tools are bad at dynamic contents conversion such as product, collection pages etc. The settings are also a big problems and we end up finding and fixing the entire website through custom coding which make the effort almost the same.\n\nWith 10 years of custom coding Experience, I will,\n\n\n\nConvert From: \nWebflow, FIGMA, SquareSpace, Adobe PSD &amp; Ai\n\nConvert to: Shopify ",
+  "title": "Convert PSD, figma, webflow, Ai to shopify",
+  "id": "695a9be3-4af2-4e35-a45c-dad89a09e99b"
+}
