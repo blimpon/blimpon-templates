@@ -9,6 +9,12 @@
       "admin": true,
       "defaultUser": "050f9ec8-2d9f-4c74-9fc6-8ad6e2fde744",
       "key": "313fa4de-91c5-a1e4-3bdd-1a1155477054"
+    },
+    {
+      "name": "marketplace",
+      "defaultUser": "6201ca6a-1b17-4591-98e7-db4245093ed6",
+      "key": "4bd2e297-868e-4d1c-99fe-a095013aa288",
+      "admin": true
     }
   ],
   "steps": [
@@ -58,6 +64,15 @@
         },
         {
           "order": 2,
+          "title": "Payout marketplace",
+          "type": "payout",
+          "role": "marketplace",
+          "marketplace": true,
+          "percentageOfBalance": 15,
+          "key": "b859183f-5c60-437d-9ad0-1d7c10bab4e1"
+        },
+        {
+          "order": 3,
           "title": "Payout fixer",
           "type": "payout",
           "role": "fixer",
@@ -69,7 +84,7 @@
     }
   ],
   "collectionId": "c69bdbbf-7f22-4929-8888-40e9921fe802",
-  "description": "To give your customer best experience, you designed your website on a platform that offers best animation and design scheme. FIGMA &amp; Webflow are very popular in this domain.\n\n\n\nBut you also need a robust Ecommerce engine, applications, plugins and other features that are important for an online business.\n\n\n\nTherefore, you want to convert your website to a mature platform (E.g. Shopify, Prestashop, WooCommerce) without losing UI/UX elements.\n\n\n\nTo convert your website, you have below options\n\n\n\nConvert your website using adapters and tools\nConvert using Custom Coding\n\n\nProblem with Adapter &amp; Tools:\n\nThey are cheaper but are you sure you want to put your live business into a tool that is designed with very limited options. Adapter and tools are bad at dynamic contents conversion such as product, collection pages etc. The settings are also a big problems and we end up finding and fixing the entire website through custom coding which make the effort almost the same.\n\nWith 10 years of custom coding Experience, I will,\n\n\n\nConvert From: \nWebflow, FIGMA, SquareSpace, Adobe PSD &amp; Ai\n\nConvert to: Shopify ",
+  "description": "\nWith 10 years of custom coding Experience, I will, Convert FIgma, Webflow, PSD, Illustrator and Sketch Design to Shopify ",
   "title": "Convert PSD, figma, webflow, Ai to shopify",
   "id": "695a9be3-4af2-4e35-a45c-dad89a09e99b"
 }
